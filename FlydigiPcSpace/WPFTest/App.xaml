@@ -12,6 +12,10 @@
                 <ResourceDictionary Source="Language\StringResource.zh-CN.xaml"/>
                 <ResourceDictionary Source="Language\StringResource.ko.xaml"/>
                 <ResourceDictionary Source="Language\StringResource.ko-KR.xaml"/>
+                <ResourceDictionary Source="Styles\Button.xaml"/>
+                <ResourceDictionary Source="Styles\ScrollViewer.xaml"/>
+                <ResourceDictionary Source="Styles\Slider.xaml"/>
+                <ResourceDictionary Source="Styles\ComboBox.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

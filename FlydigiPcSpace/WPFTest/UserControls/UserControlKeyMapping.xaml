@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="WPFTest.UserControls.UserControlKeyMapping"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:WPFTest.UserControls"
+             MouseEnter="UserControl_MouseEnter" MouseLeave="UserControl_MouseLeave" Width="132" Height="20"
+             Background="#19868788">
+    <Button Click="Button_Click" Style="{StaticResource ButtonStyleNull}">
+        <Grid>
+            <StackPanel Orientation="Horizontal">
+                <Label Name="mLabelCurrent" Content="A" Width="66" Padding="0,0,0,0" Foreground="White"
+               HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="12"/>
+                <Image Name="mImageCurrent" Width="66" Height="10" Source="/Resources/img_key_name_left.png"
+               Visibility="Collapsed"/>
+                <Label Name="mLabelTarget" Content="A" Width="66" Padding="0,0,0,0" Foreground="White"
+               HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="12"/>
+                <Image Name="mImageTarget" Width="66" Height="10" Source="/Resources/img_key_name_left.png"
+               Visibility="Collapsed"/>
+            </StackPanel>
+            <Image Name="mArrow" Source="/Resources/icon_arrow_right_white.png" Width="8" Height="8"/>
+        </Grid>
+    </Button>
+</UserControl>

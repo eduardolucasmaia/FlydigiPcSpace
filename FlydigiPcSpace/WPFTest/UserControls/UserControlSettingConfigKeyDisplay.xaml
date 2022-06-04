@@ -1,0 +1,148 @@
+﻿<UserControl x:Class="WPFTest.UserControls.UserControlSettingConfigKeyDisplay"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:WPFTest.UserControls"
+             Width="782" Height="650">
+    <Grid>
+        <Grid Name="mDisplayOutside" Visibility="Visible">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,76,0,0">
+                <Label MouseLeftButtonDown="mLabelTop_MouseLeftButtonDown" Name="mLabelTop"
+               Content="{DynamicResource side}" Foreground="White" FontSize="16"/>
+                <Label Content="|" Foreground="White" FontSize="16"/>
+                <Label MouseLeftButtonDown="mLabelFront_MouseLeftButtonDown" Name="mLabelFront"
+               Content="{DynamicResource front}" Foreground="#0074ff" FontSize="16"/>
+                <Label Content="|" Foreground="White" FontSize="16"/>
+                <Label MouseLeftButtonDown="mLabelAfter_MouseLeftButtonDown" Name="mLabelAfter"
+               Content="{DynamicResource back}" Foreground="White" FontSize="16"/>
+            </StackPanel>
+            <Grid Name="mLayoutFront" Width="520" Height="383" HorizontalAlignment="Center"
+            VerticalAlignment="Center" Visibility="Visible">
+                <Panel.Background>
+                    <ImageBrush x:Name="mImgFront" ImageSource="/Resources/img_apex2_front.png"/>
+                </Panel.Background>
+                <Image Name="mKeyUP" Width="30" Height="30" Source="/Resources/img_key_up.png" Margin="176,141,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyRight" Width="30" Height="30" Source="/Resources/img_key_right.png" Margin="205,170,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyLeft" Width="30" Height="30" Source="/Resources/img_key_left.png" Margin="146,170,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyDown" Width="30" Height="30" Source="/Resources/img_key_down.png" Margin="175,199,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyA" Width="35" Height="35" Source="/Resources/img_key_a.png" Margin="377,123,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyB" Width="35" Height="35" Source="/Resources/img_key_b.png" Margin="409,79,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyX" Width="35" Height="35" Source="/Resources/img_key_x.png" Margin="346,78,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyY" Width="35" Height="35" Source="/Resources/img_key_y.png" Margin="377,48,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyC" Width="35" Height="35" Source="/Resources/img_key_c.png" Margin="400,175,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyZ" Width="35" Height="35" Source="/Resources/img_key_z.png" Margin="435,146,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeySelect" Width="35" Height="35" Source="/Resources/img_key_select.png" Margin="204,64,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyStart" Width="35" Height="35" Source="/Resources/img_key_start.png" Margin="290,64,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyL3" Width="65" Height="65" Source="/Resources/img_key_l3.png" Margin="88,59,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyR3" Width="65" Height="65" Source="/Resources/img_key_r3.png" Margin="296,144,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Name="mLayoutAfter" Width="622" Height="403" HorizontalAlignment="Center"
+            VerticalAlignment="Center" Visibility="Hidden">
+                <Panel.Background>
+                    <ImageBrush x:Name="mImgAfter" ImageSource="/Resources/img_apex2_after.png"/>
+                </Panel.Background>
+                <Image Name="mKeyM1" Width="40" Height="60" Source="/Resources/img_key_m1.png" Margin="160,188,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyM2" Width="40" Height="60" Source="/Resources/img_key_m2.png" Margin="420,186,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyM3" Width="45" Height="40" Source="/Resources/img_key_m3.png" Margin="220,177,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyM4" Width="45" Height="40" Source="/Resources/img_key_m4.png" Margin="357,177,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Name="mLayoutTop" Width="592" Height="262" HorizontalAlignment="Center" VerticalAlignment="Center"
+            Visibility="Hidden">
+                <Panel.Background>
+                    <ImageBrush x:Name="mImgTop" ImageSource="/Resources/img_apex2_top.png"/>
+                </Panel.Background>
+                <Image Name="mKeyRB" Width="145" Height="60" Source="/Resources/img_key_rb.png" Margin="84,67,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyRT" Width="88" Height="98" Source="/Resources/img_key_rt.png" Margin="86,112,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyLB" Width="145" Height="60" Source="/Resources/img_key_lb.png" Margin="370,67,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyLT" Width="88" Height="98" Source="/Resources/img_key_lt.png" Margin="418,112,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyM5" Width="50" Height="40" Source="/Resources/img_key_m5.png" Margin="173,122,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Name="mKeyM6" Width="50" Height="40" Source="/Resources/img_key_m6.png" Margin="366,125,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Name="mBubble" Width="132" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top"
+            Visibility="Hidden">
+                <StackPanel Orientation="Horizontal" Height="20" Background="#0074ff">
+                    <Label Name="mLabelCurrent" Content="A" Width="66" Padding="0,0,0,0" Foreground="White"
+                 HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="12"/>
+                    <Image Name="mImageCurrent" Width="66" Height="10" Source="/Resources/img_key_name_left.png"
+                 Visibility="Collapsed"/>
+                    <Label Name="mLabelTarget" Content="A" Width="66" Padding="0,0,0,0" Foreground="White"
+                 HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="12"/>
+                    <Image Name="mImageTarget" Width="66" Height="10" Source="/Resources/img_key_name_left.png"
+                 Visibility="Collapsed"/>
+                </StackPanel>
+                <Image Source="/Resources/icon_arrow_right_white.png" Width="8" Height="8"/>
+                <Image Source="/Resources/icon_arrow_down_blue.png" Width="10" Height="10" HorizontalAlignment="Center"
+               VerticalAlignment="Bottom" Margin="0,0,0,-2"/>
+            </Grid>
+        </Grid>
+        <Grid Name="mDisplayInside" Visibility="Hidden">
+            <Grid Name="mLayoutFrontLeft" Visibility="Hidden">
+                <Image Name="mImgFrontLeft" Source="/Resources/img_apex2_front_left.png"/>
+                <Image Name="mInsideKeyUP" Source="/Resources/img_key_up.png" Margin="473,280,192,282"/>
+                <Image Name="mInsideKeyRight" Source="/Resources/img_key_right.png" Margin="561,360,134,207"/>
+                <Image Name="mInsideKeyLeft" Source="/Resources/img_key_left.png" Margin="410,345,281,193"/>
+                <Image Name="mInsideKeyDown" Source="/Resources/img_key_down.png" Margin="461,431,189,130"/>
+                <Image Name="mInsideKeySelect" Source="/Resources/img_key_select.png" Margin="535,82,118,473"/>
+                <Image Name="mInsideKeyL3" Source="/Resources/img_key_l3.png" Margin="256,67,349,407"/>
+            </Grid>
+            <Grid Name="mLayoutFrontRight" Visibility="Hidden">
+                <Image Name="mImgFrontRight" Source="/Resources/img_apex2_front_right.png"/>
+                <Image Name="mInsideKeyA" Source="/Resources/img_key_a.png" Margin="455,345,200,211"/>
+                <Image Name="mInsideKeyB" Source="/Resources/img_key_b.png" Margin="547,243,131,326"/>
+                <Image Name="mInsideKeyX" Source="/Resources/img_key_x.png" Margin="377,236,281,329"/>
+                <Image Name="mInsideKeyY" Source="/Resources/img_key_y.png" Margin="478,153,220,405"/>
+                <Image Name="mInsideKeyC" Source="/Resources/img_key_c.png" Margin="535,471,161,76"/>
+                <Image Name="mInsideKeyZ" Source="/Resources/img_key_z.png" Margin="618,406,72,157"/>
+                <Image Name="mInsideKeyStart" Source="/Resources/img_key_start.png" Margin="249,190,460,353"/>
+                <Image Name="mInsideKeyR3" Source="/Resources/img_key_r3.png" Margin="256,398,338,73"/>
+            </Grid>
+            <Grid Name="mLayoutAfterLeft" Visibility="Hidden">
+                <Image Name="mImgAfterLeft" Source="/Resources/img_apex2_after_left.png"/>
+                <Image Name="mInsideKeyM1" Source="/Resources/img_key_m1.png" Margin="328,280,342,206"/>
+                <Image Name="mInsideKeyM3" Source="/Resources/img_key_m3.png" Margin="472,256,173,288"/>
+            </Grid>
+            <Grid Name="mLayoutAfterRight" Visibility="Hidden">
+                <Image Name="mImgAfterRight" Source="/Resources/img_apex2_after_right.png"/>
+                <Image Name="mInsideKeyM2" Source="/Resources/img_key_m2.png" Margin="520,276,156,210"/>
+                <Image Name="mInsideKeyM4" Source="/Resources/img_key_m4.png" Margin="358,258,298,286"/>
+            </Grid>
+            <Grid Name="mLayoutTopLeft" Visibility="Hidden">
+                <Image Name="mImgTopLeft" Source="/Resources/img_apex2_top_left.png"/>
+                <Image Name="mInsideKeyRB" Source="/Resources/img_key_rb.png" Margin="240,235,263,294"/>
+                <Image Name="mInsideKeyRT" Source="/Resources/img_key_rt.png" Margin="237,329,365,120"/>
+                <Image Name="mInsideKeyM5" Source="/Resources/img_key_m5.png" Margin="408,355,252,216"/>
+            </Grid>
+            <Grid Name="mLayoutTopRight" Visibility="Hidden">
+                <Image Name="mImgTopRight" Source="/Resources/img_apex2_top_right.png"/>
+                <Image Name="mInsideKeyLB" Source="/Resources/img_key_lb.png" Margin="406,238,123,296"/>
+                <Image Name="mInsideKeyLT" Source="/Resources/img_key_lt.png" Margin="502,315,123,136"/>
+                <Image Name="mInsideKeyM6" Source="/Resources/img_key_m6.png" Margin="402,343,281,238"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

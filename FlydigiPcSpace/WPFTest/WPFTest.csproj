@@ -109,6 +109,78 @@
     <Compile Include="UserControls\UserControlJoystick.xaml.cs">
       <DependentUpon>UserControlJoystick.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UserControlKeyMapping.xaml.cs">
+      <DependentUpon>UserControlKeyMapping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlLedColor.xaml.cs">
+      <DependentUpon>UserControlLedColor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlLedMode.xaml.cs">
+      <DependentUpon>UserControlLedMode.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlLedMotorLevel.xaml.cs">
+      <DependentUpon>UserControlLedMotorLevel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlLineJoystickDisplay.xaml.cs">
+      <DependentUpon>UserControlLineJoystickDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlLineJoystickSetting.xaml.cs">
+      <DependentUpon>UserControlLineJoystickSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlMacroAction.xaml.cs">
+      <DependentUpon>UserControlMacroAction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlMacroActionEdit.xaml.cs">
+      <DependentUpon>UserControlMacroActionEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlSelectMenu.xaml.cs">
+      <DependentUpon>UserControlSelectMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlSelectMenuColor.xaml.cs">
+      <DependentUpon>UserControlSelectMenuColor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlSettingConfigBasic.xaml.cs">
+      <DependentUpon>UserControlSettingConfigBasic.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlSettingConfigJoystick.xaml.cs">
+      <DependentUpon>UserControlSettingConfigJoystick.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlSettingConfigJoystickDisplay.xaml.cs">
+      <DependentUpon>UserControlSettingConfigJoystickDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlSettingConfigKey.xaml.cs">
+      <DependentUpon>UserControlSettingConfigKey.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlSettingConfigKeyDisplay.xaml.cs">
+      <DependentUpon>UserControlSettingConfigKeyDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlSettingConfigKeySetting.xaml.cs">
+      <DependentUpon>UserControlSettingConfigKeySetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlSettingConfigLed.xaml.cs">
+      <DependentUpon>UserControlSettingConfigLed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlSettingConfigMotion.xaml.cs">
+      <DependentUpon>UserControlSettingConfigMotion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlSettingConfigMotionDisplay.xaml.cs">
+      <DependentUpon>UserControlSettingConfigMotionDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlSettingConfigTrigger.xaml.cs">
+      <DependentUpon>UserControlSettingConfigTrigger.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlSettingConfigTriggerDisplay.xaml.cs">
+      <DependentUpon>UserControlSettingConfigTriggerDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlTitle.xaml.cs">
+      <DependentUpon>UserControlTitle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlTopBar.xaml.cs">
+      <DependentUpon>UserControlTopBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlTrigger.xaml.cs">
+      <DependentUpon>UserControlTrigger.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utils\Constant.cs" />
     <Compile Include="Utils\DongleCommand.cs" />
     <Compile Include="Utils\FDllWrapper.cs" />
@@ -119,6 +191,27 @@
     <Compile Include="Utils\IDelegateCallbackValueTwoObject.cs" />
     <Compile Include="Utils\LoadLibraryFlags.cs" />
     <Compile Include="Utils\NetworkUtils.cs" />
+    <Compile Include="Windows\PageConfigSetting.xaml.cs">
+      <DependentUpon>PageConfigSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\WindowDialogCommon.xaml.cs">
+      <DependentUpon>WindowDialogCommon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\WindowDialogConfigTest.xaml.cs">
+      <DependentUpon>WindowDialogConfigTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\WindowDialogConnect.xaml.cs">
+      <DependentUpon>WindowDialogConnect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\WindowDialogDownload.xaml.cs">
+      <DependentUpon>WindowDialogDownload.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\WindowDialogFm.xaml.cs">
+      <DependentUpon>WindowDialogFm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\WindowFactoryTest.xaml.cs">
+      <DependentUpon>WindowFactoryTest.xaml</DependentUpon>
+    </Compile>
     <Page Include="Activitys\PageConfigList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -159,6 +252,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Styles\button.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\combobox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\scrollviewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\slider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UserControls\Arc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -180,6 +289,102 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\UserControlJoystick.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlKeyMapping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlLedColor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlLedMode.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlLedMotorLevel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlLineJoystickDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlLineJoystickSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlMacroAction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlMacroActionEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlSelectMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlSelectMenuColor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlSettingConfigBasic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlSettingConfigJoystick.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlSettingConfigJoystickDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlSettingConfigKey.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlSettingConfigKeyDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlSettingConfigKeySetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlSettingConfigLed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlSettingConfigMotion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlSettingConfigMotionDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlSettingConfigTrigger.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlSettingConfigTriggerDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlTitle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlTopBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlTrigger.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -218,6 +423,34 @@
       <DependentUpon>WindowMain.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Windows\PageConfigSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\WindowDialogCommon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\WindowDialogConfigTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\WindowDialogConnect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\WindowDialogDownload.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\WindowDialogFm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\WindowFactoryTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -246,8 +479,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Windows\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

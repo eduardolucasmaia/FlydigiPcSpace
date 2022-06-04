@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="WPFTest.UserControls.UserControlSettingConfigMotionDisplay"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:WPFTest.UserControls"
+             Width="782" Height="650">
+    <Canvas Name="mCanvas" Width="480" Height="240" HorizontalAlignment="Center" VerticalAlignment="Top"
+          Margin="0,80,0,0">
+        <Image Name="mPoint" Width="160" Height="72" HorizontalAlignment="Left" VerticalAlignment="Top"
+           Source="/Resources/img_motion.png" Canvas.Left="157" Canvas.Top="91"/>
+    </Canvas>
+</UserControl>

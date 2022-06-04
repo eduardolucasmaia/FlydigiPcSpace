@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="WPFTest.UserControls.UserControlLineJoystickSetting"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:WPFTest.UserControls"
+             Width="320" Height="440" Background="#181818">
+    <FrameworkElement.Resources>
+        <Style x:Key="StyleThumbMove" TargetType="{x:Type Thumb}">
+            <Setter Property="Control.Background" Value="Transparent"/>
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Thumb}">
+                        <Border x:Name="border" Background="{TemplateBinding Control.Background}">
+                            <Image Source="/Resources/icon_move.png"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="StyleThumbMoveTree" TargetType="{x:Type Thumb}">
+            <Setter Property="Control.Background" Value="Transparent"/>
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Thumb}">
+                        <Border x:Name="border" Background="{TemplateBinding Control.Background}">
+                            <Image Source="/Resources/icon_move_tree.png"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </FrameworkElement.Resources>
+    <StackPanel Orientation="Vertical">
+        <Label Content="{DynamicResource sensitivity_curve}" Padding="0" Foreground="White" FontSize="14"
+           HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Top"/>
+        <StackPanel Margin="20,20,20,20" Orientation="Horizontal" VerticalAlignment="Top">
+            <Label MouseLeftButtonDown="Button_Click_Default" Name="mButtonDefault"
+             Content="{DynamicResource default}" Width="80" Height="20" BorderThickness="1"
+             BorderBrush="#0074ff" Padding="1" Background="#4c0074ff" Foreground="White" FontSize="12"
+             FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label MouseLeftButtonDown="Button_Click_Fast" Name="mButtonFast" Content="{DynamicResource immediate}"
+             Width="80" Height="20" BorderThickness="0" BorderBrush="#0074ff" Padding="0" Background="#330074ff"
+             Foreground="#868788" FontSize="12" Margin="16,0,0,0" HorizontalContentAlignment="Center"
+             VerticalContentAlignment="Center"/>
+            <Label MouseLeftButtonDown="Button_Click_Delay" Name="mButtonDelay" Content="{DynamicResource delay}"
+             Width="80" Height="20" BorderThickness="0" BorderBrush="#0074ff" Padding="0" Background="#330074ff"
+             Foreground="#868788" FontSize="12" Margin="16,0,0,0" HorizontalContentAlignment="Center"
+             VerticalContentAlignment="Center"/>
+        </StackPanel>
+        <Grid Margin="0,10,0,0" Width="320" Height="320">
+            <Label Content="{DynamicResource output}" Foreground="#868788" FontSize="10" Margin="20,0,0,0"/>
+            <Label Content="{DynamicResource input}" Foreground="#868788" FontSize="10" VerticalAlignment="Bottom"
+             HorizontalAlignment="Right" Margin="0,0,15,0"/>
+            <Grid Width="276" Height="276">
+                <Panel.Background>
+                    <ImageBrush ImageSource="/Resources/bg_grid_num.png"/>
+                </Panel.Background>
+                <Grid HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="17,0,0,15">
+                    <Panel.Background>
+                        <ImageBrush ImageSource="/Resources/bg_grid.png"/>
+                    </Panel.Background>
+                    <Canvas Name="mCanvas" Width="250" Height="250">
+                        <Line Name="mLine1" X1="0" Y1="0" X2="0" Y2="0" Stroke="#0074FF" StrokeThickness="1"/>
+                        <Line Name="mLine2" X1="0" Y1="0" X2="0" Y2="0" Stroke="#0074FF" StrokeThickness="1"/>
+                        <Line Name="mLine3" X1="0" Y1="0" X2="0" Y2="0" Stroke="#0074FF" StrokeThickness="1"/>
+                        <Thumb DragDelta="mZero_DragDelta" DragCompleted="mZero_DragCompleted" Name="mZero" Width="36"
+                   Height="278" Canvas.Left="-18" Canvas.Bottom="-30" Style="{StaticResource StyleThumbMoveTree}"/>
+                        <Thumb DragDelta="mPoint1_DragDelta" DragCompleted="mPoint1_DragCompleted" Name="mPoint1" Width="30"
+                   Height="30" Canvas.Left="100" Canvas.Bottom="150" Style="{StaticResource StyleThumbMove}"/>
+                        <Thumb DragDelta="mPoint2_DragDelta" DragCompleted="mPoint2_DragCompleted" Name="mPoint2" Width="30"
+                   Height="30" Canvas.Left="150" Canvas.Bottom="200" Style="{StaticResource StyleThumbMove}"/>
+                    </Canvas>
+                </Grid>
+            </Grid>
+        </Grid>
+    </StackPanel>
+</UserControl>

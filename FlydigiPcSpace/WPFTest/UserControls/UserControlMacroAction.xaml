@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="WPFTest.UserControls.UserControlMacroAction"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:WPFTest.UserControls"
+             Width="320" Height="48">
+    <Grid>
+        <Button Click="Button_Click" Width="320" Height="47" BorderThickness="0"
+            Style="{StaticResource ButtonStyleNull}">
+            <StackPanel Name="mLayout" Orientation="Horizontal" Width="320" Height="47" Background="#181818">
+                <Label Name="mLabelTime" Width="80" Content="0s" Foreground="#868788" FontSize="12"
+               VerticalAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label Width="1" Height="40" Content="0s" Padding="0" Background="#333333" VerticalAlignment="Center"/>
+                <Image Name="mImageKey" Width="24" Height="24" Source="/Resources/img_key_circle_a_gray.png"
+               Margin="30,0,0,0"/>
+                <Image Name="mImageActionState" Width="16" Height="16" Source="/Resources/icon_key_pressed_gray.png"
+               Margin="20,0,0,0"/>
+                <Label Name="mLabelActionDesc" Padding="0" Content="A键松开" Foreground="#868788" FontSize="12"
+               VerticalAlignment="Center" Margin="20,0,0,0"/>
+            </StackPanel>
+        </Button>
+        <Label Width="320" Height="1" Background="#333333" VerticalAlignment="Bottom"/>
+    </Grid>
+</UserControl>

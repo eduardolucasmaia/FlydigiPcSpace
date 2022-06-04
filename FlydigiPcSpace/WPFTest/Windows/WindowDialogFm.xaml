@@ -1,0 +1,40 @@
+﻿<Window x:Class="WPFTest.Windows.WindowDialogFm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTest.Windows"
+        Title="{DynamicResource app_name}" Width="1200" Height="720" Background="#80000000"
+        AllowsTransparency="true" WindowStyle="None" ResizeMode="NoResize"
+        WindowStartupLocation="CenterOwner" Icon="/WPFTest;component/Resources/logo_blue.ico">
+    <FrameworkElement.Resources>
+        <Style x:Key="DownloadProgressBar" TargetType="{x:Type ProgressBar}">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ProgressBar}">
+                        <Grid>
+                            <Border Name="PART_Track" CornerRadius="1" Background="White"/>
+                            <Border Name="PART_Indicator" CornerRadius="1" Background="#0074ff" HorizontalAlignment="Left"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </FrameworkElement.Resources>
+    <Grid Width="480" Height="180" Background="#333333">
+        <StackPanel VerticalAlignment="Center">
+            <ProgressBar Name="mProgressBar" Width="200" Height="10" Value="0" Maximum="100" Minimum="0"
+                   Style="{StaticResource DownloadProgressBar}"/>
+            <Label Name="mLabelProgress" Padding="20" Content="{DynamicResource download_progress}" Foreground="White"
+             FontSize="14" HorizontalAlignment="Center"/>
+            <Button Click="mButtonStartNewApp_Click" Name="mButtonStartNewApp" Width="100" Height="30"
+              Background="#0074ff" Content="{DynamicResource start_new_version}" Foreground="White" FontSize="15"
+              HorizontalAlignment="Center" Style="{StaticResource ButtonStyleNull}" Visibility="Collapsed"/>
+            <Button Click="mButtonDownload_Click" Name="mButtonDownload" Width="100" Height="30" Background="#0074ff"
+              Content="{DynamicResource download_again}" Foreground="White" FontSize="15"
+              HorizontalAlignment="Center" Style="{StaticResource ButtonStyleNull}" Visibility="Collapsed"/>
+        </StackPanel>
+        <Label Name="mLabelVersion" Padding="10" Content="{DynamicResource new_version}" Foreground="White"
+           FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

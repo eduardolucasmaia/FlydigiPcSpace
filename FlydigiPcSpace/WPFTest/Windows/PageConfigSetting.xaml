@@ -1,0 +1,116 @@
+﻿<Page x:Class="WPFTest.Windows.PageConfigSetting"
+      xmlns:UserControls="clr-namespace:WPFTest.UserControls"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WPFTest.Windows"
+      Loaded="Page_Loaded" Initialized="Page_Initialized" MouseDown="Page_MouseDown"
+      Unloaded="Page_Unloaded" Width="1200" Height="652" Title="PageConfigSetting">
+    <FrameworkElement.Resources>
+        <Style x:Key="ButtonConfigStyle" TargetType="{x:Type Button}">
+            <Setter Property="Control.BorderThickness" Value="0"/>
+            <Setter Property="Control.Background" Value="#181818"/>
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Rectangle Fill="{TemplateBinding Control.Background}"/>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="UIElement.IsMouseOver" Value="true">
+                                <Setter Property="Control.Background" Value="Transparent"/>
+                            </Trigger>
+                            <Trigger Property="UIElement.IsMouseOver" Value="false">
+                                <Setter Property="Control.Background" Value="Transparent"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </FrameworkElement.Resources>
+    <Grid Background="Black">
+        <Grid Name="mGrid" Width="500" Height="250" HorizontalAlignment="Right" VerticalAlignment="Top"
+          Background="White" Margin="0,140,200,0"/>
+        <Image Name="mBackgroundImage" Source="/Resources/background_led.png"/>
+        <StackPanel Orientation="Vertical" Background="#181818" HorizontalAlignment="Left">
+            <Button Click="mButtonLed_Click" Name="mButtonLed" Width="96" Height="96"
+              Style="{StaticResource ButtonConfigStyle}">
+                <Grid HorizontalAlignment="Center">
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                        <Image Name="mImageLed" Width="26" Height="26" Source="/Resources/icon_setting_led_gray.png"
+                   VerticalAlignment="Top"/>
+                        <Label Name="mLabelLed" Content="{DynamicResource basic_adjustment}" Foreground="#868788"
+                   VerticalAlignment="Top" Margin="0,2,0,0" FontSize="15"/>
+                    </StackPanel>
+                </Grid>
+            </Button>
+            <Button Click="mButtonKey_Click" Name="mButtonKey" Width="96" Height="96"
+              Style="{StaticResource ButtonConfigStyle}">
+                <Grid HorizontalAlignment="Center">
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                        <Image Name="mImageKey" Width="26" Height="26" Source="/Resources/icon_setting_key_gray.png"
+                   VerticalAlignment="Top"/>
+                        <Label Name="mLabelKey" Content="{DynamicResource key_adjustment}" Foreground="#868788"
+                   VerticalAlignment="Top" Margin="0,2,0,0" FontSize="15"/>
+                    </StackPanel>
+                </Grid>
+            </Button>
+            <Button Click="mButtonJoystick_Click" Name="mButtonJoystick" Width="96" Height="96"
+              Style="{StaticResource ButtonConfigStyle}">
+                <Grid HorizontalAlignment="Center">
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                        <Image Name="mImageJoystick" Width="24" Height="24" Source="/Resources/icon_setting_joystick_gray.png"
+                   VerticalAlignment="Top"/>
+                        <Label Name="mLabelJoystick" Content="{DynamicResource joystick_adjustment}" Foreground="#868788"
+                   VerticalAlignment="Top" Margin="0,8,0,0" FontSize="15"/>
+                    </StackPanel>
+                </Grid>
+            </Button>
+            <Button Click="mButtonMotion_Click" Name="mButtonMotion" Width="96" Height="96"
+              Style="{StaticResource ButtonConfigStyle}">
+                <Grid HorizontalAlignment="Center">
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                        <Image Name="mImageMotion" Width="24" Height="24" Source="/Resources/icon_setting_motion_gray.png"
+                   VerticalAlignment="Top"/>
+                        <Label Name="mLabelMotion" Content="{DynamicResource sensing_adjustment}" Padding="0" Foreground="#868788"
+                   VerticalAlignment="Top" Margin="0,8,0,0" FontSize="15"/>
+                    </StackPanel>
+                </Grid>
+            </Button>
+            <Button Click="mButtonTrigger_Click" Name="mButtonTrigger" Width="96" Height="96"
+              Style="{StaticResource ButtonConfigStyle}" Visibility="Collapsed">
+                <Grid HorizontalAlignment="Center">
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                        <Image Name="mImageTrigger" Width="24" Height="24" Source="/Resources/icon_banji_normal.png"
+                   VerticalAlignment="Top"/>
+                        <Label Name="mLabelTrigger" Content="{DynamicResource trigger_adjustment}" Padding="0"
+                   Foreground="#868788" VerticalAlignment="Top" Margin="0,8,0,0" FontSize="15"/>
+                    </StackPanel>
+                </Grid>
+            </Button>
+        </StackPanel>
+        <Grid Margin="97,0,0,0" Height="652">
+            <UserControls:UserControlSettingConfigBasic x:Name="mLayoutBasic" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <UserControls:UserControlSettingConfigLed x:Name="mLayoutLed" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <UserControls:UserControlSettingConfigKey x:Name="mLayoutKey" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <UserControls:UserControlSettingConfigJoystick x:Name="mLayoutJoystick" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <UserControls:UserControlSettingConfigMotion x:Name="mLayoutMotion" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <UserControls:UserControlSettingConfigJoystickDisplay x:Name="mLayoutJoystickDisplay" Visibility="Hidden" HorizontalAlignment="Left"
+                                                            VerticalAlignment="Top" Margin="320, 0, 0, 0"/>
+            <UserControls:UserControlSettingConfigMotionDisplay x:Name="mLayoutMotionDisplay" Visibility="Hidden" HorizontalAlignment="Left"
+                                                          VerticalAlignment="Top" Margin="320,0,0,0"/>
+            <UserControls:UserControlSettingConfigJoystick x:Name="mLayoutTrigger" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <UserControls:UserControlSettingConfigTriggerDisplay x:Name="mLayoutTriggerDisplay" Visibility="Hidden" HorizontalAlignment="Left"
+                                                           VerticalAlignment="Top" Margin="320, 0, 0, 0"/>
+        </Grid>
+        <Grid Name="mLoading" Background="#80000000" Visibility="Hidden">
+            <Label Name="mLoadingLabel" Width="500" Height="40" Content="{DynamicResource tips_switch_xinput_step1}"
+             VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center"
+             VerticalAlignment="Center" Foreground="White" FontSize="12" Margin="350,416,350,264"
+             Visibility="Visible"/>
+        </Grid>
+    </Grid>
+</Page>

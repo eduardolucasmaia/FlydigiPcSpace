@@ -1,0 +1,151 @@
+﻿<UserControl x:Class="WPFTest.UserControls.UserControlTopBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Width="1200" Height="68" Background="#181818">
+    <FrameworkElement.Resources>
+        <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Control.BorderThickness" Value="0"/>
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Rectangle Fill="{TemplateBinding Control.Background}"/>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="UIElement.IsMouseOver" Value="true">
+                                <Setter Property="Control.Background" Value="#101010"/>
+                            </Trigger>
+                            <Trigger Property="UIElement.IsMouseOver" Value="false">
+                                <Setter Property="Control.Background" Value="Transparent"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ButtonStyleMin" TargetType="{x:Type Button}">
+            <Setter Property="Control.BorderThickness" Value="0"/>
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="{TemplateBinding FrameworkElement.Width}" Height="{TemplateBinding FrameworkElement.Height}">
+                            <Image x:Name="Img" VerticalAlignment="Center" HorizontalAlignment="Center"
+                     Source="/Resources/icon_min_gray.png"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="UIElement.IsMouseOver" Value="true">
+                                <Setter Property="Control.Background" Value="Transparent"/>
+                            </Trigger>
+                            <Trigger Property="UIElement.IsMouseOver" Value="false">
+                                <Setter Property="Control.Background" Value="Transparent"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ButtonStyleClose" TargetType="{x:Type Button}">
+            <Setter Property="Control.BorderThickness" Value="0"/>
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="{TemplateBinding FrameworkElement.Width}" Height="{TemplateBinding FrameworkElement.Height}">
+                            <Image x:Name="Img" VerticalAlignment="Center" HorizontalAlignment="Center"
+                     Source="/Resources/icon_close_gray.png"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="UIElement.IsMouseOver" Value="true">
+                                <Setter Property="Control.Background" Value="Transparent"/>
+                            </Trigger>
+                            <Trigger Property="UIElement.IsMouseOver" Value="false">
+                                <Setter Property="Control.Background" Value="Transparent"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="GridStyle" TargetType="{x:Type Grid}">
+            <Setter Property="Panel.Background" Value="#0074FF"/>
+            <Style.Triggers>
+                <Trigger Property="UIElement.IsMouseOver" Value="true">
+                    <Setter Property="Panel.Background" Value="#101010"/>
+                </Trigger>
+                <Trigger Property="UIElement.IsMouseOver" Value="false">
+                    <Setter Property="Panel.Background" Value="Transparent"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </FrameworkElement.Resources>
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Height="27">
+            <Grid Width="30">
+                <Button Width="16" Height="16" BorderThickness="0" Style="{StaticResource ButtonStyleNull}">
+                    <Image Name="mDeviceState" Source="/Resources/icon_unconnect.png"/>
+                </Button>
+            </Grid>
+            <Grid Width="30">
+                <Button Click="btn_min_Click" Name="btn_min" Width="16" Height="16" Style="{StaticResource ButtonStyleMin}">
+                    <Image x:Name="btn_min_image" Source="/Resources/icon_min_gray.png"/>
+                </Button>
+            </Grid>
+            <Grid Width="30">
+                <Button Click="btn_close_Click" Name="btn_close" Width="16" Height="16"
+                Style="{StaticResource ButtonStyleClose}">
+                    <Image x:Name="btn_close_image" Source="/Resources/icon_close_gray.png"/>
+                </Button>
+            </Grid>
+        </StackPanel>
+        <Label Width="1200" Height="1" Background="Black"/>
+        <Grid Height="40">
+            <Button Click="logo_Click" Name="logo" Width="96" Height="40" HorizontalAlignment="Left"
+              BorderThickness="0" Style="{StaticResource ButtonStyleNull}">
+                <Image Source="/Resources/icon_logo_blue.png"/>
+            </Button>
+            <Button Click="back_Click" Name="back" Width="96" Height="40" HorizontalAlignment="Left"
+              Visibility="Hidden" Style="{StaticResource ButtonStyle}">
+                <Image Width="20" Height="20" Source="/Resources/icon_back.png" HorizontalAlignment="Center"/>
+            </Button>
+            <Label Width="1" Height="40" Background="Black" HorizontalAlignment="Left" Margin="96,0,0,0"/>
+            <Label Name="mCurrentConfigName" Content="{DynamicResource config1}" Padding="0" FontSize="15" Height="40"
+             Foreground="#0074ff" HorizontalAlignment="Left" VerticalContentAlignment="Center"
+             Margin="120,0,0,0"/>
+            <Label Name="mCurrentModeName" Visibility="Hidden" Content="{DynamicResource modeName2}" Padding="0"
+             FontSize="15" Height="40" Foreground="#0074ff" HorizontalAlignment="Left"
+             VerticalContentAlignment="Center" Margin="120,0,0,0"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Label Name="mLineConfigReset" Width="1" Height="40" Background="Black"/>
+                <Button Click="mButtonConfigReset_Click" Name="mButtonConfigReset" Width="180" HorizontalAlignment="Right"
+                Style="{StaticResource ButtonStyle}">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Label Name="mLabelConfigReset" Content="{DynamicResource config_reset}" Foreground="White" FontSize="13"/>
+                        <Image Name="mImageConfigReset" Width="16" Height="16" Source="/Resources/icon_reset_defaults.png"/>
+                    </StackPanel>
+                </Button>
+                <Label Name="mLineConfigTest" Width="1" Height="40" Background="Black"/>
+                <Button Click="mButtonConfigTest_Click" Name="mButtonConfigTest" Width="180" HorizontalAlignment="Right"
+                Style="{StaticResource ButtonStyle}">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Label Name="mLabelConfigTest" Content="{DynamicResource test}" Foreground="White" FontSize="13"/>
+                        <Image Name="mImageConfigTest" Width="16" Height="16" Source="/Resources/icon_test_white.png"/>
+                    </StackPanel>
+                </Button>
+                <Label Name="mLineConfigApply" Width="1" Height="40" Background="Black"/>
+                <Button Click="ButtonConfigApply_Click" Name="mButtonConfigApply" Width="180" HorizontalAlignment="Right"
+                Style="{StaticResource ButtonStyle}">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Label Name="mLabelConfigApply" Content="{DynamicResource apply_to_gamepad}" Foreground="White"
+                   FontSize="13"/>
+                        <Image Name="mImageConfigApply" Width="16" Height="16" Source="/Resources/icon_apply_white.png"/>
+                    </StackPanel>
+                </Button>
+                <Label Width="1" Height="40" Background="Black"/>
+                <Button Click="mButtonInfo_Click" Name="mButtonInfo" Width="80" HorizontalAlignment="Right"
+                Style="{StaticResource ButtonStyle}">
+                    <Image Width="16" Height="16" Source="/Resources/icon_info_gray.png"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</UserControl>
