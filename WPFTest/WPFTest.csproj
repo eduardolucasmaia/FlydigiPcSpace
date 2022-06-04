@@ -52,6 +52,10 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.7.2\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -70,9 +74,32 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Activitys\CheckTopMost.cs" />
+    <Compile Include="Activitys\PageConfigList.xaml.cs">
+      <DependentUpon>PageConfigList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Activitys\PageConfigTest.xaml.cs">
+      <DependentUpon>PageConfigTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Activitys\PageSplash.xaml.cs">
+      <DependentUpon>PageSplash.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bean\AppUpdateInfo.cs" />
+    <Compile Include="Bean\Data.cs" />
+    <Compile Include="Bean\FDGEventInfo.cs" />
+    <Compile Include="DriverHelper\SayyoHelper.cs" />
+    <Compile Include="Pages\PageConnectGuide.xaml.cs">
+      <DependentUpon>PageConnectGuide.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Arc.xaml.cs">
+      <DependentUpon>Arc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlConfig.xaml.cs">
+      <DependentUpon>UserControlConfig.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowMain.xaml.cs">
       <DependentUpon>WindowMain.xaml</DependentUpon>
@@ -95,7 +122,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -105,19 +134,47 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Activitys\PageConfigList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Activitys\PageConfigTest.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Activitys\PageSplash.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\PageConnectGuide.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Arc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\UserControlConfig.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="WindowMain.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WPFTest.Bean\WPFTest.Bean.csproj">
-      <Project>{e8ef296e-4826-457e-86e4-ad51ef6b8ce1}</Project>
-      <Name>WPFTest.Bean</Name>
+    <ProjectReference Include="..\ApexSpace\ApexSpace.csproj">
+      <Project>{be6760a9-554a-4195-9a48-78e7b3664df0}</Project>
+      <Name>ApexSpace</Name>
     </ProjectReference>
     <ProjectReference Include="..\WPFTest.Utils\WPFTest.Utils.csproj">
       <Project>{B26C5402-432E-44FC-A730-E592D3BA93B3}</Project>
       <Name>WPFTest.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WPFTest.Windows\WPFTest.Windows.csproj">
+      <Project>{2a329994-055a-47e7-91f9-51662527031b}</Project>
+      <Name>WPFTest.Windows</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -132,5 +189,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
