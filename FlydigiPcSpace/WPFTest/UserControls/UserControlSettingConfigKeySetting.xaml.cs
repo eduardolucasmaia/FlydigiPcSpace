@@ -24,7 +24,7 @@ using WPFTest.Utils;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlSettingConfigKeySetting :
+    public partial class UserControlSettingConfigKeySetting :
       UserControl,
       DataManager.IDeviceOperateData,
       IComponentConnector
@@ -46,27 +46,27 @@ namespace WPFTest.UserControls
         private int mMacroType = 1;
         private int mMacroNum;
         private bool mFlagKeyListen;
-        internal Image mTitleKeyIcon;
-        internal Label mTitleKey;
-        internal Button mButtonMappingKey;
-        internal Button mButtonMappingMacro;
-        internal Label mLineLeft;
-        internal Label mLineRight;
-        internal StackPanel mLayoutKey;
-        internal UserControlSelectMenu mTargetKey;
-        internal UserControlDialogKey mSelectMenuKey;
-        internal StackPanel mLayoutMacro;
-        internal Label mLabelSingleTouch;
-        internal Label mLabelLongPress;
-        internal Label mLabelTime;
-        internal Label mNotice;
-        internal ScrollViewer mScrollViewer;
-        internal StackPanel mStackPanelMacro;
-        internal Button mButtonStart;
-        internal Label mButtonStartText;
-        internal Button mButtonPause;
-        internal Button mButtonClean;
-        internal UserControlMacroActionEdit mMacroActionEdit;
+        //internal Image mTitleKeyIcon;
+        //internal Label mTitleKey;
+        //internal Button mButtonMappingKey;
+        //internal Button mButtonMappingMacro;
+        //internal Label mLineLeft;
+        //internal Label mLineRight;
+        //internal StackPanel mLayoutKey;
+        //internal UserControlSelectMenu mTargetKey;
+        //internal UserControlDialogKey mSelectMenuKey;
+        //internal StackPanel mLayoutMacro;
+        //internal Label mLabelSingleTouch;
+        //internal Label mLabelLongPress;
+        //internal Label mLabelTime;
+        //internal Label mNotice;
+        //internal ScrollViewer mScrollViewer;
+        //internal StackPanel mStackPanelMacro;
+        //internal Button mButtonStart;
+        //internal Label mButtonStartText;
+        //internal Button mButtonPause;
+        //internal Button mButtonClean;
+        //internal UserControlMacroActionEdit mMacroActionEdit;
         private bool _contentLoaded;
 
         public UserControlSettingConfigKeySetting()
@@ -533,111 +533,111 @@ namespace WPFTest.UserControls
 
         private void Button_MouseLeave(object sender, MouseEventArgs e) => ((WindowMain)WindowMain.getInstance()).showLayoutFunctionDesc(false, 74, "");
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigkeysetting.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigkeysetting.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.Button_Back);
-                    break;
-                case 2:
-                    this.mTitleKeyIcon = (Image)target;
-                    break;
-                case 3:
-                    this.mTitleKey = (Label)target;
-                    break;
-                case 4:
-                    this.mButtonMappingKey = (Button)target;
-                    this.mButtonMappingKey.Click += new RoutedEventHandler(this.Button_Mapping_Key);
-                    break;
-                case 5:
-                    this.mButtonMappingMacro = (Button)target;
-                    this.mButtonMappingMacro.Click += new RoutedEventHandler(this.Button_Mapping_Mocro);
-                    break;
-                case 6:
-                    ((UIElement)target).MouseEnter += new MouseEventHandler(this.Button_MouseEnter);
-                    ((UIElement)target).MouseLeave += new MouseEventHandler(this.Button_MouseLeave);
-                    break;
-                case 7:
-                    this.mLineLeft = (Label)target;
-                    break;
-                case 8:
-                    this.mLineRight = (Label)target;
-                    break;
-                case 9:
-                    this.mLayoutKey = (StackPanel)target;
-                    break;
-                case 10:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.KeySelect_Click);
-                    break;
-                case 11:
-                    this.mTargetKey = (UserControlSelectMenu)target;
-                    break;
-                case 12:
-                    this.mSelectMenuKey = (UserControlDialogKey)target;
-                    break;
-                case 13:
-                    this.mLayoutMacro = (StackPanel)target;
-                    break;
-                case 14:
-                    this.mLabelSingleTouch = (Label)target;
-                    this.mLabelSingleTouch.MouseLeftButtonDown += new MouseButtonEventHandler(this.LabelSingleTouch_MouseLeftButtonDown);
-                    break;
-                case 15:
-                    this.mLabelLongPress = (Label)target;
-                    this.mLabelLongPress.MouseLeftButtonDown += new MouseButtonEventHandler(this.LabelLongPress_MouseLeftButtonDown);
-                    break;
-                case 16:
-                    this.mLabelTime = (Label)target;
-                    break;
-                case 17:
-                    this.mNotice = (Label)target;
-                    break;
-                case 18:
-                    this.mScrollViewer = (ScrollViewer)target;
-                    break;
-                case 19:
-                    this.mStackPanelMacro = (StackPanel)target;
-                    break;
-                case 20:
-                    this.mButtonStart = (Button)target;
-                    this.mButtonStart.Click += new RoutedEventHandler(this.Button_Start);
-                    break;
-                case 21:
-                    this.mButtonStartText = (Label)target;
-                    break;
-                case 22:
-                    this.mButtonPause = (Button)target;
-                    this.mButtonPause.Click += new RoutedEventHandler(this.Button_Pause);
-                    break;
-                case 23:
-                    this.mButtonClean = (Button)target;
-                    this.mButtonClean.Click += new RoutedEventHandler(this.Button_Clean);
-                    break;
-                case 24:
-                    this.mMacroActionEdit = (UserControlMacroActionEdit)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.Button_Back);
+        //            break;
+        //        case 2:
+        //            this.mTitleKeyIcon = (Image)target;
+        //            break;
+        //        case 3:
+        //            this.mTitleKey = (Label)target;
+        //            break;
+        //        case 4:
+        //            this.mButtonMappingKey = (Button)target;
+        //            this.mButtonMappingKey.Click += new RoutedEventHandler(this.Button_Mapping_Key);
+        //            break;
+        //        case 5:
+        //            this.mButtonMappingMacro = (Button)target;
+        //            this.mButtonMappingMacro.Click += new RoutedEventHandler(this.Button_Mapping_Mocro);
+        //            break;
+        //        case 6:
+        //            ((UIElement)target).MouseEnter += new MouseEventHandler(this.Button_MouseEnter);
+        //            ((UIElement)target).MouseLeave += new MouseEventHandler(this.Button_MouseLeave);
+        //            break;
+        //        case 7:
+        //            this.mLineLeft = (Label)target;
+        //            break;
+        //        case 8:
+        //            this.mLineRight = (Label)target;
+        //            break;
+        //        case 9:
+        //            this.mLayoutKey = (StackPanel)target;
+        //            break;
+        //        case 10:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.KeySelect_Click);
+        //            break;
+        //        case 11:
+        //            this.mTargetKey = (UserControlSelectMenu)target;
+        //            break;
+        //        case 12:
+        //            this.mSelectMenuKey = (UserControlDialogKey)target;
+        //            break;
+        //        case 13:
+        //            this.mLayoutMacro = (StackPanel)target;
+        //            break;
+        //        case 14:
+        //            this.mLabelSingleTouch = (Label)target;
+        //            this.mLabelSingleTouch.MouseLeftButtonDown += new MouseButtonEventHandler(this.LabelSingleTouch_MouseLeftButtonDown);
+        //            break;
+        //        case 15:
+        //            this.mLabelLongPress = (Label)target;
+        //            this.mLabelLongPress.MouseLeftButtonDown += new MouseButtonEventHandler(this.LabelLongPress_MouseLeftButtonDown);
+        //            break;
+        //        case 16:
+        //            this.mLabelTime = (Label)target;
+        //            break;
+        //        case 17:
+        //            this.mNotice = (Label)target;
+        //            break;
+        //        case 18:
+        //            this.mScrollViewer = (ScrollViewer)target;
+        //            break;
+        //        case 19:
+        //            this.mStackPanelMacro = (StackPanel)target;
+        //            break;
+        //        case 20:
+        //            this.mButtonStart = (Button)target;
+        //            this.mButtonStart.Click += new RoutedEventHandler(this.Button_Start);
+        //            break;
+        //        case 21:
+        //            this.mButtonStartText = (Label)target;
+        //            break;
+        //        case 22:
+        //            this.mButtonPause = (Button)target;
+        //            this.mButtonPause.Click += new RoutedEventHandler(this.Button_Pause);
+        //            break;
+        //        case 23:
+        //            this.mButtonClean = (Button)target;
+        //            this.mButtonClean.Click += new RoutedEventHandler(this.Button_Clean);
+        //            break;
+        //        case 24:
+        //            this.mMacroActionEdit = (UserControlMacroActionEdit)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

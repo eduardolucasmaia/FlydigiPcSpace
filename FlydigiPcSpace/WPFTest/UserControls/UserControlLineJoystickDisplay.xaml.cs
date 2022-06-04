@@ -18,15 +18,15 @@ using WPFTest.Utils;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlLineJoystickDisplay : UserControl, IComponentConnector
+    public partial class UserControlLineJoystickDisplay : UserControl, IComponentConnector
     {
         private int MaxDataValue = (int)sbyte.MaxValue;
         private int MaxUILength;
-        internal Grid mGrid;
-        internal Canvas mCanvas;
-        internal Line mLine1;
-        internal Line mLine2;
-        internal Line mLine3;
+        //internal Grid mGrid;
+        //internal Canvas mCanvas;
+        //internal Line mLine1;
+        //internal Line mLine2;
+        //internal Line mLine3;
         private bool _contentLoaded;
 
         public UserControlLineJoystickDisplay()
@@ -64,42 +64,42 @@ namespace WPFTest.UserControls
 
         private int getPositionY(int pos) => this.MaxUILength - (int)((double)this.MaxUILength * ((double)pos / (double)this.MaxDataValue));
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrollinejoystickdisplay.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrollinejoystickdisplay.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mGrid = (Grid)target;
-                    break;
-                case 2:
-                    this.mCanvas = (Canvas)target;
-                    break;
-                case 3:
-                    this.mLine1 = (Line)target;
-                    break;
-                case 4:
-                    this.mLine2 = (Line)target;
-                    break;
-                case 5:
-                    this.mLine3 = (Line)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mGrid = (Grid)target;
+        //            break;
+        //        case 2:
+        //            this.mCanvas = (Canvas)target;
+        //            break;
+        //        case 3:
+        //            this.mLine1 = (Line)target;
+        //            break;
+        //        case 4:
+        //            this.mLine2 = (Line)target;
+        //            break;
+        //        case 5:
+        //            this.mLine3 = (Line)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

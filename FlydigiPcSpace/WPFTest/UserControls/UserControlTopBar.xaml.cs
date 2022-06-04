@@ -20,7 +20,7 @@ using WPFTest.Windows;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlTopBar : UserControl, IComponentConnector
+    public partial class UserControlTopBar : UserControl, IComponentConnector
     {
         private Window mWindow;
         private System.Windows.Controls.Frame mFrame;
@@ -41,28 +41,28 @@ namespace WPFTest.UserControls
         public const int PAGE_SPLASH = 0;
         public const int PAGE_CONFIG_LIST = 1;
         public const int PAGE_CONFIG_SETTING = 2;
-        internal Image mDeviceState;
-        internal Button btn_min;
-        internal Image btn_min_image;
-        internal Button btn_close;
-        internal Image btn_close_image;
-        internal Button logo;
-        internal Button back;
-        internal Label mCurrentConfigName;
-        internal Label mCurrentModeName;
-        internal Label mLineConfigReset;
-        internal Button mButtonConfigReset;
-        internal Label mLabelConfigReset;
-        internal Image mImageConfigReset;
-        internal Label mLineConfigTest;
-        internal Button mButtonConfigTest;
-        internal Label mLabelConfigTest;
-        internal Image mImageConfigTest;
-        internal Label mLineConfigApply;
-        internal Button mButtonConfigApply;
-        internal Label mLabelConfigApply;
-        internal Image mImageConfigApply;
-        internal Button mButtonInfo;
+        //internal Image mDeviceState;
+        //internal Button btn_min;
+        //internal Image btn_min_image;
+        //internal Button btn_close;
+        //internal Image btn_close_image;
+        //internal Button logo;
+        //internal Button back;
+        //internal Label mCurrentConfigName;
+        //internal Label mCurrentModeName;
+        //internal Label mLineConfigReset;
+        //internal Button mButtonConfigReset;
+        //internal Label mLabelConfigReset;
+        //internal Image mImageConfigReset;
+        //internal Label mLineConfigTest;
+        //internal Button mButtonConfigTest;
+        //internal Label mLabelConfigTest;
+        //internal Image mImageConfigTest;
+        //internal Label mLineConfigApply;
+        //internal Button mButtonConfigApply;
+        //internal Label mLabelConfigApply;
+        //internal Image mImageConfigApply;
+        //internal Button mButtonInfo;
         private bool _contentLoaded;
 
         public int mCurrentModeType { get; set; }
@@ -476,101 +476,101 @@ namespace WPFTest.UserControls
 
         public void updateConfigId(int configId) => this.mConfigIndex = configId;
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontroltopbar.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontroltopbar.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mDeviceState = (Image)target;
-                    break;
-                case 2:
-                    this.btn_min = (Button)target;
-                    this.btn_min.Click += new RoutedEventHandler(this.btn_min_Click);
-                    break;
-                case 3:
-                    this.btn_min_image = (Image)target;
-                    break;
-                case 4:
-                    this.btn_close = (Button)target;
-                    this.btn_close.Click += new RoutedEventHandler(this.btn_close_Click);
-                    break;
-                case 5:
-                    this.btn_close_image = (Image)target;
-                    break;
-                case 6:
-                    this.logo = (Button)target;
-                    this.logo.Click += new RoutedEventHandler(this.logo_Click);
-                    break;
-                case 7:
-                    this.back = (Button)target;
-                    this.back.Click += new RoutedEventHandler(this.back_Click);
-                    break;
-                case 8:
-                    this.mCurrentConfigName = (Label)target;
-                    break;
-                case 9:
-                    this.mCurrentModeName = (Label)target;
-                    break;
-                case 10:
-                    this.mLineConfigReset = (Label)target;
-                    break;
-                case 11:
-                    this.mButtonConfigReset = (Button)target;
-                    this.mButtonConfigReset.Click += new RoutedEventHandler(this.mButtonConfigReset_Click);
-                    break;
-                case 12:
-                    this.mLabelConfigReset = (Label)target;
-                    break;
-                case 13:
-                    this.mImageConfigReset = (Image)target;
-                    break;
-                case 14:
-                    this.mLineConfigTest = (Label)target;
-                    break;
-                case 15:
-                    this.mButtonConfigTest = (Button)target;
-                    this.mButtonConfigTest.Click += new RoutedEventHandler(this.mButtonConfigTest_Click);
-                    break;
-                case 16:
-                    this.mLabelConfigTest = (Label)target;
-                    break;
-                case 17:
-                    this.mImageConfigTest = (Image)target;
-                    break;
-                case 18:
-                    this.mLineConfigApply = (Label)target;
-                    break;
-                case 19:
-                    this.mButtonConfigApply = (Button)target;
-                    this.mButtonConfigApply.Click += new RoutedEventHandler(this.ButtonConfigApply_Click);
-                    break;
-                case 20:
-                    this.mLabelConfigApply = (Label)target;
-                    break;
-                case 21:
-                    this.mImageConfigApply = (Image)target;
-                    break;
-                case 22:
-                    this.mButtonInfo = (Button)target;
-                    this.mButtonInfo.Click += new RoutedEventHandler(this.mButtonInfo_Click);
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mDeviceState = (Image)target;
+        //            break;
+        //        case 2:
+        //            this.btn_min = (Button)target;
+        //            this.btn_min.Click += new RoutedEventHandler(this.btn_min_Click);
+        //            break;
+        //        case 3:
+        //            this.btn_min_image = (Image)target;
+        //            break;
+        //        case 4:
+        //            this.btn_close = (Button)target;
+        //            this.btn_close.Click += new RoutedEventHandler(this.btn_close_Click);
+        //            break;
+        //        case 5:
+        //            this.btn_close_image = (Image)target;
+        //            break;
+        //        case 6:
+        //            this.logo = (Button)target;
+        //            this.logo.Click += new RoutedEventHandler(this.logo_Click);
+        //            break;
+        //        case 7:
+        //            this.back = (Button)target;
+        //            this.back.Click += new RoutedEventHandler(this.back_Click);
+        //            break;
+        //        case 8:
+        //            this.mCurrentConfigName = (Label)target;
+        //            break;
+        //        case 9:
+        //            this.mCurrentModeName = (Label)target;
+        //            break;
+        //        case 10:
+        //            this.mLineConfigReset = (Label)target;
+        //            break;
+        //        case 11:
+        //            this.mButtonConfigReset = (Button)target;
+        //            this.mButtonConfigReset.Click += new RoutedEventHandler(this.mButtonConfigReset_Click);
+        //            break;
+        //        case 12:
+        //            this.mLabelConfigReset = (Label)target;
+        //            break;
+        //        case 13:
+        //            this.mImageConfigReset = (Image)target;
+        //            break;
+        //        case 14:
+        //            this.mLineConfigTest = (Label)target;
+        //            break;
+        //        case 15:
+        //            this.mButtonConfigTest = (Button)target;
+        //            this.mButtonConfigTest.Click += new RoutedEventHandler(this.mButtonConfigTest_Click);
+        //            break;
+        //        case 16:
+        //            this.mLabelConfigTest = (Label)target;
+        //            break;
+        //        case 17:
+        //            this.mImageConfigTest = (Image)target;
+        //            break;
+        //        case 18:
+        //            this.mLineConfigApply = (Label)target;
+        //            break;
+        //        case 19:
+        //            this.mButtonConfigApply = (Button)target;
+        //            this.mButtonConfigApply.Click += new RoutedEventHandler(this.ButtonConfigApply_Click);
+        //            break;
+        //        case 20:
+        //            this.mLabelConfigApply = (Label)target;
+        //            break;
+        //        case 21:
+        //            this.mImageConfigApply = (Image)target;
+        //            break;
+        //        case 22:
+        //            this.mButtonInfo = (Button)target;
+        //            this.mButtonInfo.Click += new RoutedEventHandler(this.mButtonInfo_Click);
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

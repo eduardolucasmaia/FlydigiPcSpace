@@ -22,24 +22,24 @@ using WPFTest.Utils;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlDialogColor : UserControl, IComponentConnector
+    public partial class UserControlDialogColor : UserControl, IComponentConnector
     {
         private UserControlSelectMenuColor mSelectColor;
         private LedBean mLed;
         private int mCurrentColorIndex;
         private IDelegateCallback mIDelegateCallback;
-        internal Slider mSlider;
-        internal TextBox mLabelRGB_text;
-        internal TextBox mLabelR_text;
-        internal TextBox mLabelG_text;
-        internal TextBox mLabelB_text;
-        internal Button DefaultColor1;
-        internal Button DefaultColor2;
-        internal Button DefaultColor3;
-        internal Button DefaultColor4;
-        internal Button DefaultColor5;
-        internal Button DefaultColor6;
-        internal Button DefaultColor7;
+        //internal Slider mSlider;
+        //internal TextBox mLabelRGB_text;
+        //internal TextBox mLabelR_text;
+        //internal TextBox mLabelG_text;
+        //internal TextBox mLabelB_text;
+        //internal Button DefaultColor1;
+        //internal Button DefaultColor2;
+        //internal Button DefaultColor3;
+        //internal Button DefaultColor4;
+        //internal Button DefaultColor5;
+        //internal Button DefaultColor6;
+        //internal Button DefaultColor7;
         private bool _contentLoaded;
 
         public UserControlDialogColor() => this.InitializeComponent();
@@ -238,79 +238,79 @@ namespace WPFTest.UserControls
             this.mLabelRGB_text.Text = "#" + r.ToString("X2") + g.ToString("X2") + b.ToString("X2");
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontroldialogcolor.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontroldialogcolor.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mSlider = (Slider)target;
-                    this.mSlider.ValueChanged += new RoutedPropertyChangedEventHandler<double>(this.Slider_ValueChanged);
-                    break;
-                case 2:
-                    this.mLabelRGB_text = (TextBox)target;
-                    this.mLabelRGB_text.KeyUp += new KeyEventHandler(this.Text_valueChange);
-                    this.mLabelRGB_text.KeyDown += new KeyEventHandler(this.TextValidata_KeyDown);
-                    break;
-                case 3:
-                    this.mLabelR_text = (TextBox)target;
-                    this.mLabelR_text.KeyUp += new KeyEventHandler(this.Text_r_valueChange);
-                    this.mLabelR_text.KeyDown += new KeyEventHandler(this.TextValidata_rgb_KeyDown);
-                    break;
-                case 4:
-                    this.mLabelG_text = (TextBox)target;
-                    this.mLabelG_text.KeyUp += new KeyEventHandler(this.Text_g_valueChange);
-                    this.mLabelG_text.KeyDown += new KeyEventHandler(this.TextValidata_rgb_KeyDown);
-                    break;
-                case 5:
-                    this.mLabelB_text = (TextBox)target;
-                    this.mLabelB_text.KeyUp += new KeyEventHandler(this.Text_b_valueChange);
-                    this.mLabelB_text.KeyDown += new KeyEventHandler(this.TextValidata_rgb_KeyDown);
-                    break;
-                case 6:
-                    this.DefaultColor1 = (Button)target;
-                    this.DefaultColor1.Click += new RoutedEventHandler(this.DefaultColor_Click_1);
-                    break;
-                case 7:
-                    this.DefaultColor2 = (Button)target;
-                    this.DefaultColor2.Click += new RoutedEventHandler(this.DefaultColor_Click_2);
-                    break;
-                case 8:
-                    this.DefaultColor3 = (Button)target;
-                    this.DefaultColor3.Click += new RoutedEventHandler(this.DefaultColor_Click_3);
-                    break;
-                case 9:
-                    this.DefaultColor4 = (Button)target;
-                    this.DefaultColor4.Click += new RoutedEventHandler(this.DefaultColor_Click_4);
-                    break;
-                case 10:
-                    this.DefaultColor5 = (Button)target;
-                    this.DefaultColor5.Click += new RoutedEventHandler(this.DefaultColor_Click_5);
-                    break;
-                case 11:
-                    this.DefaultColor6 = (Button)target;
-                    this.DefaultColor6.Click += new RoutedEventHandler(this.DefaultColor_Click_6);
-                    break;
-                case 12:
-                    this.DefaultColor7 = (Button)target;
-                    this.DefaultColor7.Click += new RoutedEventHandler(this.DefaultColor_Click_7);
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mSlider = (Slider)target;
+        //            this.mSlider.ValueChanged += new RoutedPropertyChangedEventHandler<double>(this.Slider_ValueChanged);
+        //            break;
+        //        case 2:
+        //            this.mLabelRGB_text = (TextBox)target;
+        //            this.mLabelRGB_text.KeyUp += new KeyEventHandler(this.Text_valueChange);
+        //            this.mLabelRGB_text.KeyDown += new KeyEventHandler(this.TextValidata_KeyDown);
+        //            break;
+        //        case 3:
+        //            this.mLabelR_text = (TextBox)target;
+        //            this.mLabelR_text.KeyUp += new KeyEventHandler(this.Text_r_valueChange);
+        //            this.mLabelR_text.KeyDown += new KeyEventHandler(this.TextValidata_rgb_KeyDown);
+        //            break;
+        //        case 4:
+        //            this.mLabelG_text = (TextBox)target;
+        //            this.mLabelG_text.KeyUp += new KeyEventHandler(this.Text_g_valueChange);
+        //            this.mLabelG_text.KeyDown += new KeyEventHandler(this.TextValidata_rgb_KeyDown);
+        //            break;
+        //        case 5:
+        //            this.mLabelB_text = (TextBox)target;
+        //            this.mLabelB_text.KeyUp += new KeyEventHandler(this.Text_b_valueChange);
+        //            this.mLabelB_text.KeyDown += new KeyEventHandler(this.TextValidata_rgb_KeyDown);
+        //            break;
+        //        case 6:
+        //            this.DefaultColor1 = (Button)target;
+        //            this.DefaultColor1.Click += new RoutedEventHandler(this.DefaultColor_Click_1);
+        //            break;
+        //        case 7:
+        //            this.DefaultColor2 = (Button)target;
+        //            this.DefaultColor2.Click += new RoutedEventHandler(this.DefaultColor_Click_2);
+        //            break;
+        //        case 8:
+        //            this.DefaultColor3 = (Button)target;
+        //            this.DefaultColor3.Click += new RoutedEventHandler(this.DefaultColor_Click_3);
+        //            break;
+        //        case 9:
+        //            this.DefaultColor4 = (Button)target;
+        //            this.DefaultColor4.Click += new RoutedEventHandler(this.DefaultColor_Click_4);
+        //            break;
+        //        case 10:
+        //            this.DefaultColor5 = (Button)target;
+        //            this.DefaultColor5.Click += new RoutedEventHandler(this.DefaultColor_Click_5);
+        //            break;
+        //        case 11:
+        //            this.DefaultColor6 = (Button)target;
+        //            this.DefaultColor6.Click += new RoutedEventHandler(this.DefaultColor_Click_6);
+        //            break;
+        //        case 12:
+        //            this.DefaultColor7 = (Button)target;
+        //            this.DefaultColor7.Click += new RoutedEventHandler(this.DefaultColor_Click_7);
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

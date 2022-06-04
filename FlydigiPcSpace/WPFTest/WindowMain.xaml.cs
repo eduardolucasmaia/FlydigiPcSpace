@@ -31,7 +31,7 @@ using WPFTest.Windows;
 
 namespace WPFTest
 {
-    public class WindowMain : Window, DataManager.IDeviceState, IComponentConnector
+    public partial class WindowMain : Window, DataManager.IDeviceState, IComponentConnector
     {
         private int mDeviceConnected = -1;
         private bool mFirstDialogConnect;
@@ -47,44 +47,44 @@ namespace WPFTest
         public int showNum;
         public int hideNum;
         private bool mReadingState;
-        internal UserControlTopBar mTopBar;
-        internal UserControlDialogConnect mGuide;
-        internal System.Windows.Controls.Frame mFrame;
-        internal StackPanel mLayoutApplyTips;
-        internal Image mImageClose;
-        internal Grid mLayoutInfo;
-        internal Label mInfoAppVersion;
-        internal Button CheckAppVersion;
-        internal Label mInfoFirmwareVersion;
-        internal Button CheckAppVersion1;
-        internal Label mInfoDongleVersion;
-        internal Label mInfoDongleVersionType0;
-        internal Label mInfoDongleVersionType1;
-        internal Label mInfoDongleVersionType2;
-        internal Button CheckAppVersion2;
-        internal Label mInfoQQ;
-        internal Button GoWeixin;
-        internal Button GoHelpCenter;
-        internal Grid mLanguageBox;
-        internal ComboBox mLangComboBox;
-        internal CheckBox LogButtonObj;
-        internal StackPanel mLayoutFunctionDesc;
-        internal TextBlock mFunctionDesc;
-        internal Grid mLoading;
-        internal Label mLoadingLabel;
-        internal Border mTips;
-        internal TextBlock mSuccessIcon;
-        internal TextBlock mFailIcon;
-        internal Label mTipsLabel;
-        internal Border mLongTips;
-        internal TextBlock mLongIcon;
-        internal Label mLongTipsLabel;
-        internal Grid mApplyConfigNotice;
-        internal Button mApplyButtonCancel;
-        internal Button mApplyButtonOK;
-        internal Grid mApplyDefaultConfigNotice;
-        internal Button mApplyDefaultConfigButtonCancel;
-        internal Button mApplyDefaultConfigButtonOK;
+        //internal UserControlTopBar mTopBar;
+        //internal UserControlDialogConnect mGuide;
+        //internal System.Windows.Controls.Frame mFrame;
+        //internal StackPanel mLayoutApplyTips;
+        //internal Image mImageClose;
+        //internal Grid mLayoutInfo;
+        //internal Label mInfoAppVersion;
+        //internal Button CheckAppVersion;
+        //internal Label mInfoFirmwareVersion;
+        //internal Button CheckAppVersion1;
+        //internal Label mInfoDongleVersion;
+        //internal Label mInfoDongleVersionType0;
+        //internal Label mInfoDongleVersionType1;
+        //internal Label mInfoDongleVersionType2;
+        //internal Button CheckAppVersion2;
+        //internal Label mInfoQQ;
+        //internal Button GoWeixin;
+        //internal Button GoHelpCenter;
+        //internal Grid mLanguageBox;
+        //internal ComboBox mLangComboBox;
+        //internal CheckBox LogButtonObj;
+        //internal StackPanel mLayoutFunctionDesc;
+        //internal TextBlock mFunctionDesc;
+        //internal Grid mLoading;
+        //internal Label mLoadingLabel;
+        //internal Border mTips;
+        //internal TextBlock mSuccessIcon;
+        //internal TextBlock mFailIcon;
+        //internal Label mTipsLabel;
+        //internal Border mLongTips;
+        //internal TextBlock mLongIcon;
+        //internal Label mLongTipsLabel;
+        //internal Grid mApplyConfigNotice;
+        //internal Button mApplyButtonCancel;
+        //internal Button mApplyButtonOK;
+        //internal Grid mApplyDefaultConfigNotice;
+        //internal Button mApplyDefaultConfigButtonCancel;
+        //internal Button mApplyDefaultConfigButtonOK;
         private bool _contentLoaded;
 
         public WindowMain()
@@ -717,8 +717,8 @@ namespace WPFTest
 
         private void showFmUpdateDialog(int updateType, object appInfo)
         {
-            Action action1;
-            Action action2;
+            Action action1 = null;
+            Action action2 = null;
             Application.Current.Dispatcher.Invoke((Action)(() =>
             {
                 if (updateType == 0)
@@ -1044,167 +1044,167 @@ namespace WPFTest
             }
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/windows/windowmain.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/windows/windowmain.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    ((UIElement)target).MouseLeftButtonDown += new MouseButtonEventHandler(this.Window_MouseLeftButtonDown);
-                    ((FrameworkElement)target).Loaded += new RoutedEventHandler(this.Window_Loaded);
-                    ((FrameworkElement)target).Initialized += new EventHandler(this.Window_Initialized);
-                    ((Window)target).Deactivated += new EventHandler(this.appDeactivated);
-                    ((Window)target).StateChanged += new EventHandler(this.appStateChanged);
-                    break;
-                case 2:
-                    this.mTopBar = (UserControlTopBar)target;
-                    break;
-                case 3:
-                    this.mGuide = (UserControlDialogConnect)target;
-                    break;
-                case 4:
-                    this.mFrame = (System.Windows.Controls.Frame)target;
-                    this.mFrame.Navigated += new NavigatedEventHandler(this.mFrame_Navigated);
-                    break;
-                case 5:
-                    this.mLayoutApplyTips = (StackPanel)target;
-                    break;
-                case 6:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.ButtonCloseApplyTips);
-                    break;
-                case 7:
-                    this.mImageClose = (Image)target;
-                    break;
-                case 8:
-                    this.mLayoutInfo = (Grid)target;
-                    break;
-                case 9:
-                    this.mInfoAppVersion = (Label)target;
-                    break;
-                case 10:
-                    this.CheckAppVersion = (Button)target;
-                    this.CheckAppVersion.Click += new RoutedEventHandler(this.ButtonCheckAppVersion);
-                    break;
-                case 11:
-                    this.mInfoFirmwareVersion = (Label)target;
-                    break;
-                case 12:
-                    this.CheckAppVersion1 = (Button)target;
-                    this.CheckAppVersion1.Click += new RoutedEventHandler(this.ButtonCheckFmVersion);
-                    break;
-                case 13:
-                    this.mInfoDongleVersion = (Label)target;
-                    break;
-                case 14:
-                    this.mInfoDongleVersionType0 = (Label)target;
-                    break;
-                case 15:
-                    this.mInfoDongleVersionType1 = (Label)target;
-                    break;
-                case 16:
-                    this.mInfoDongleVersionType2 = (Label)target;
-                    break;
-                case 17:
-                    this.CheckAppVersion2 = (Button)target;
-                    this.CheckAppVersion2.Click += new RoutedEventHandler(this.ButtonCheckDongleVersion);
-                    break;
-                case 18:
-                    this.mInfoQQ = (Label)target;
-                    break;
-                case 19:
-                    this.GoWeixin = (Button)target;
-                    this.GoWeixin.Click += new RoutedEventHandler(this.ButtonGoWeixin);
-                    break;
-                case 20:
-                    this.GoHelpCenter = (Button)target;
-                    this.GoHelpCenter.Click += new RoutedEventHandler(this.ButtonGoHelpCenter);
-                    break;
-                case 21:
-                    this.mLanguageBox = (Grid)target;
-                    break;
-                case 22:
-                    this.mLangComboBox = (ComboBox)target;
-                    this.mLangComboBox.SelectionChanged += new SelectionChangedEventHandler(this.mLangComboBox_TextChanged);
-                    break;
-                case 23:
-                    this.LogButtonObj = (CheckBox)target;
-                    this.LogButtonObj.Click += new RoutedEventHandler(this.ButtonGoSwitchLog);
-                    break;
-                case 24:
-                    this.mLayoutFunctionDesc = (StackPanel)target;
-                    break;
-                case 25:
-                    this.mFunctionDesc = (TextBlock)target;
-                    break;
-                case 26:
-                    this.mLoading = (Grid)target;
-                    break;
-                case 27:
-                    this.mLoadingLabel = (Label)target;
-                    break;
-                case 28:
-                    this.mTips = (Border)target;
-                    break;
-                case 29:
-                    this.mSuccessIcon = (TextBlock)target;
-                    break;
-                case 30:
-                    this.mFailIcon = (TextBlock)target;
-                    break;
-                case 31:
-                    this.mTipsLabel = (Label)target;
-                    break;
-                case 32:
-                    this.mLongTips = (Border)target;
-                    break;
-                case 33:
-                    this.mLongIcon = (TextBlock)target;
-                    break;
-                case 34:
-                    this.mLongTipsLabel = (Label)target;
-                    break;
-                case 35:
-                    this.mApplyConfigNotice = (Grid)target;
-                    break;
-                case 36:
-                    this.mApplyButtonCancel = (Button)target;
-                    this.mApplyButtonCancel.Click += new RoutedEventHandler(this.mApplyButtonCancel_Click);
-                    break;
-                case 37:
-                    this.mApplyButtonOK = (Button)target;
-                    this.mApplyButtonOK.Click += new RoutedEventHandler(this.mApplyButtonOK_Click);
-                    break;
-                case 38:
-                    this.mApplyDefaultConfigNotice = (Grid)target;
-                    break;
-                case 39:
-                    this.mApplyDefaultConfigButtonCancel = (Button)target;
-                    this.mApplyDefaultConfigButtonCancel.Click += new RoutedEventHandler(this.mApplyDefaultConfigButtonCancel_Click);
-                    break;
-                case 40:
-                    this.mApplyDefaultConfigButtonOK = (Button)target;
-                    this.mApplyDefaultConfigButtonOK.Click += new RoutedEventHandler(this.mApplyDefaultConfigButtonOK_Click);
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            ((UIElement)target).MouseLeftButtonDown += new MouseButtonEventHandler(this.Window_MouseLeftButtonDown);
+        //            ((FrameworkElement)target).Loaded += new RoutedEventHandler(this.Window_Loaded);
+        //            ((FrameworkElement)target).Initialized += new EventHandler(this.Window_Initialized);
+        //            ((Window)target).Deactivated += new EventHandler(this.appDeactivated);
+        //            ((Window)target).StateChanged += new EventHandler(this.appStateChanged);
+        //            break;
+        //        case 2:
+        //            this.mTopBar = (UserControlTopBar)target;
+        //            break;
+        //        case 3:
+        //            this.mGuide = (UserControlDialogConnect)target;
+        //            break;
+        //        case 4:
+        //            this.mFrame = (System.Windows.Controls.Frame)target;
+        //            this.mFrame.Navigated += new NavigatedEventHandler(this.mFrame_Navigated);
+        //            break;
+        //        case 5:
+        //            this.mLayoutApplyTips = (StackPanel)target;
+        //            break;
+        //        case 6:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.ButtonCloseApplyTips);
+        //            break;
+        //        case 7:
+        //            this.mImageClose = (Image)target;
+        //            break;
+        //        case 8:
+        //            this.mLayoutInfo = (Grid)target;
+        //            break;
+        //        case 9:
+        //            this.mInfoAppVersion = (Label)target;
+        //            break;
+        //        case 10:
+        //            this.CheckAppVersion = (Button)target;
+        //            this.CheckAppVersion.Click += new RoutedEventHandler(this.ButtonCheckAppVersion);
+        //            break;
+        //        case 11:
+        //            this.mInfoFirmwareVersion = (Label)target;
+        //            break;
+        //        case 12:
+        //            this.CheckAppVersion1 = (Button)target;
+        //            this.CheckAppVersion1.Click += new RoutedEventHandler(this.ButtonCheckFmVersion);
+        //            break;
+        //        case 13:
+        //            this.mInfoDongleVersion = (Label)target;
+        //            break;
+        //        case 14:
+        //            this.mInfoDongleVersionType0 = (Label)target;
+        //            break;
+        //        case 15:
+        //            this.mInfoDongleVersionType1 = (Label)target;
+        //            break;
+        //        case 16:
+        //            this.mInfoDongleVersionType2 = (Label)target;
+        //            break;
+        //        case 17:
+        //            this.CheckAppVersion2 = (Button)target;
+        //            this.CheckAppVersion2.Click += new RoutedEventHandler(this.ButtonCheckDongleVersion);
+        //            break;
+        //        case 18:
+        //            this.mInfoQQ = (Label)target;
+        //            break;
+        //        case 19:
+        //            this.GoWeixin = (Button)target;
+        //            this.GoWeixin.Click += new RoutedEventHandler(this.ButtonGoWeixin);
+        //            break;
+        //        case 20:
+        //            this.GoHelpCenter = (Button)target;
+        //            this.GoHelpCenter.Click += new RoutedEventHandler(this.ButtonGoHelpCenter);
+        //            break;
+        //        case 21:
+        //            this.mLanguageBox = (Grid)target;
+        //            break;
+        //        case 22:
+        //            this.mLangComboBox = (ComboBox)target;
+        //            this.mLangComboBox.SelectionChanged += new SelectionChangedEventHandler(this.mLangComboBox_TextChanged);
+        //            break;
+        //        case 23:
+        //            this.LogButtonObj = (CheckBox)target;
+        //            this.LogButtonObj.Click += new RoutedEventHandler(this.ButtonGoSwitchLog);
+        //            break;
+        //        case 24:
+        //            this.mLayoutFunctionDesc = (StackPanel)target;
+        //            break;
+        //        case 25:
+        //            this.mFunctionDesc = (TextBlock)target;
+        //            break;
+        //        case 26:
+        //            this.mLoading = (Grid)target;
+        //            break;
+        //        case 27:
+        //            this.mLoadingLabel = (Label)target;
+        //            break;
+        //        case 28:
+        //            this.mTips = (Border)target;
+        //            break;
+        //        case 29:
+        //            this.mSuccessIcon = (TextBlock)target;
+        //            break;
+        //        case 30:
+        //            this.mFailIcon = (TextBlock)target;
+        //            break;
+        //        case 31:
+        //            this.mTipsLabel = (Label)target;
+        //            break;
+        //        case 32:
+        //            this.mLongTips = (Border)target;
+        //            break;
+        //        case 33:
+        //            this.mLongIcon = (TextBlock)target;
+        //            break;
+        //        case 34:
+        //            this.mLongTipsLabel = (Label)target;
+        //            break;
+        //        case 35:
+        //            this.mApplyConfigNotice = (Grid)target;
+        //            break;
+        //        case 36:
+        //            this.mApplyButtonCancel = (Button)target;
+        //            this.mApplyButtonCancel.Click += new RoutedEventHandler(this.mApplyButtonCancel_Click);
+        //            break;
+        //        case 37:
+        //            this.mApplyButtonOK = (Button)target;
+        //            this.mApplyButtonOK.Click += new RoutedEventHandler(this.mApplyButtonOK_Click);
+        //            break;
+        //        case 38:
+        //            this.mApplyDefaultConfigNotice = (Grid)target;
+        //            break;
+        //        case 39:
+        //            this.mApplyDefaultConfigButtonCancel = (Button)target;
+        //            this.mApplyDefaultConfigButtonCancel.Click += new RoutedEventHandler(this.mApplyDefaultConfigButtonCancel_Click);
+        //            break;
+        //        case 40:
+        //            this.mApplyDefaultConfigButtonOK = (Button)target;
+        //            this.mApplyDefaultConfigButtonOK.Click += new RoutedEventHandler(this.mApplyDefaultConfigButtonOK_Click);
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

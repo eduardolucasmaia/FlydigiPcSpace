@@ -24,7 +24,7 @@ using WPFTest.Windows;
 
 namespace WPFTest.Activitys
 {
-    public class PageConfigTest : Page, DataManager.IDeviceOperateData, IComponentConnector
+    public partial class PageConfigTest : Page, DataManager.IDeviceOperateData, IComponentConnector
     {
         private WindowMain mWindowMain;
         private System.Windows.Controls.Frame mFrame;
@@ -35,42 +35,42 @@ namespace WPFTest.Activitys
         private PageConfigSetting mPageConfigSetting;
         public bool isApplicationActive;
         private bool testJoystickReset;
-        internal Label mLabelTitle;
-        internal ImageBrush mDeviceImg1;
-        internal Image mKeyUP;
-        internal Image mKeyRight;
-        internal Image mKeyLeft;
-        internal Image mKeyDown;
-        internal Image mKeyA;
-        internal Image mKeyB;
-        internal Image mKeyX;
-        internal Image mKeyY;
-        internal Image mKeyC;
-        internal Image mKeyZ;
-        internal Image mKeySelect;
-        internal Image mKeyStart;
-        internal Image mKeyL3;
-        internal Image mKeyR3;
-        internal Image mKeyMenu;
-        internal Image mKeyHome;
-        internal Image mKeyBack;
-        internal ImageBrush mDeviceImg2;
-        internal Image mKeyM1;
-        internal Image mKeyM2;
-        internal Image mKeyM3;
-        internal Image mKeyM4;
-        internal ImageBrush mDeviceImg3;
-        internal Image mKeyRB;
-        internal Image mKeyRT;
-        internal Image mKeyLB;
-        internal Image mKeyLT;
-        internal Image mKeyM5;
-        internal Image mKeyM6;
-        internal UserControlJoystick mJoystickLeft;
-        internal UserControlJoystick mJoystickRight;
-        internal Label mLabelJoystickResetNotice;
-        internal Button mButtonJoystickReset;
-        internal Grid mLoading;
+        //internal Label mLabelTitle;
+        //internal ImageBrush mDeviceImg1;
+        //internal Image mKeyUP;
+        //internal Image mKeyRight;
+        //internal Image mKeyLeft;
+        //internal Image mKeyDown;
+        //internal Image mKeyA;
+        //internal Image mKeyB;
+        //internal Image mKeyX;
+        //internal Image mKeyY;
+        //internal Image mKeyC;
+        //internal Image mKeyZ;
+        //internal Image mKeySelect;
+        //internal Image mKeyStart;
+        //internal Image mKeyL3;
+        //internal Image mKeyR3;
+        //internal Image mKeyMenu;
+        //internal Image mKeyHome;
+        //internal Image mKeyBack;
+        //internal ImageBrush mDeviceImg2;
+        //internal Image mKeyM1;
+        //internal Image mKeyM2;
+        //internal Image mKeyM3;
+        //internal Image mKeyM4;
+        //internal ImageBrush mDeviceImg3;
+        //internal Image mKeyRB;
+        //internal Image mKeyRT;
+        //internal Image mKeyLB;
+        //internal Image mKeyLT;
+        //internal Image mKeyM5;
+        //internal Image mKeyM6;
+        //internal UserControlJoystick mJoystickLeft;
+        //internal UserControlJoystick mJoystickRight;
+        //internal Label mLabelJoystickResetNotice;
+        //internal Button mButtonJoystickReset;
+        //internal Grid mLoading;
         private bool _contentLoaded;
 
         public PageConfigTest(
@@ -390,146 +390,146 @@ namespace WPFTest.Activitys
             })).Start();
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/pages/pageconfigtest.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/pages/pageconfigtest.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    ((FrameworkElement)target).Loaded += new RoutedEventHandler(this.Page_Loaded);
-                    ((FrameworkElement)target).Initialized += new EventHandler(this.Page_Initialized);
-                    break;
-                case 2:
-                    this.mLabelTitle = (Label)target;
-                    break;
-                case 3:
-                    this.mDeviceImg1 = (ImageBrush)target;
-                    break;
-                case 4:
-                    this.mKeyUP = (Image)target;
-                    break;
-                case 5:
-                    this.mKeyRight = (Image)target;
-                    break;
-                case 6:
-                    this.mKeyLeft = (Image)target;
-                    break;
-                case 7:
-                    this.mKeyDown = (Image)target;
-                    break;
-                case 8:
-                    this.mKeyA = (Image)target;
-                    break;
-                case 9:
-                    this.mKeyB = (Image)target;
-                    break;
-                case 10:
-                    this.mKeyX = (Image)target;
-                    break;
-                case 11:
-                    this.mKeyY = (Image)target;
-                    break;
-                case 12:
-                    this.mKeyC = (Image)target;
-                    break;
-                case 13:
-                    this.mKeyZ = (Image)target;
-                    break;
-                case 14:
-                    this.mKeySelect = (Image)target;
-                    break;
-                case 15:
-                    this.mKeyStart = (Image)target;
-                    break;
-                case 16:
-                    this.mKeyL3 = (Image)target;
-                    break;
-                case 17:
-                    this.mKeyR3 = (Image)target;
-                    break;
-                case 18:
-                    this.mKeyMenu = (Image)target;
-                    break;
-                case 19:
-                    this.mKeyHome = (Image)target;
-                    break;
-                case 20:
-                    this.mKeyBack = (Image)target;
-                    break;
-                case 21:
-                    this.mDeviceImg2 = (ImageBrush)target;
-                    break;
-                case 22:
-                    this.mKeyM1 = (Image)target;
-                    break;
-                case 23:
-                    this.mKeyM2 = (Image)target;
-                    break;
-                case 24:
-                    this.mKeyM3 = (Image)target;
-                    break;
-                case 25:
-                    this.mKeyM4 = (Image)target;
-                    break;
-                case 26:
-                    this.mDeviceImg3 = (ImageBrush)target;
-                    break;
-                case 27:
-                    this.mKeyRB = (Image)target;
-                    break;
-                case 28:
-                    this.mKeyRT = (Image)target;
-                    break;
-                case 29:
-                    this.mKeyLB = (Image)target;
-                    break;
-                case 30:
-                    this.mKeyLT = (Image)target;
-                    break;
-                case 31:
-                    this.mKeyM5 = (Image)target;
-                    break;
-                case 32:
-                    this.mKeyM6 = (Image)target;
-                    break;
-                case 33:
-                    this.mJoystickLeft = (UserControlJoystick)target;
-                    break;
-                case 34:
-                    this.mJoystickRight = (UserControlJoystick)target;
-                    break;
-                case 35:
-                    this.mLabelJoystickResetNotice = (Label)target;
-                    break;
-                case 36:
-                    this.mButtonJoystickReset = (Button)target;
-                    this.mButtonJoystickReset.Click += new RoutedEventHandler(this.Joystick_Reset);
-                    this.mButtonJoystickReset.MouseEnter += new MouseEventHandler(this.mButtonJoystickReset_MouseEnter);
-                    this.mButtonJoystickReset.MouseLeave += new MouseEventHandler(this.mButtonJoystickReset_MouseLeave);
-                    break;
-                case 37:
-                    this.mLoading = (Grid)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            ((FrameworkElement)target).Loaded += new RoutedEventHandler(this.Page_Loaded);
+        //            ((FrameworkElement)target).Initialized += new EventHandler(this.Page_Initialized);
+        //            break;
+        //        case 2:
+        //            this.mLabelTitle = (Label)target;
+        //            break;
+        //        case 3:
+        //            this.mDeviceImg1 = (ImageBrush)target;
+        //            break;
+        //        case 4:
+        //            this.mKeyUP = (Image)target;
+        //            break;
+        //        case 5:
+        //            this.mKeyRight = (Image)target;
+        //            break;
+        //        case 6:
+        //            this.mKeyLeft = (Image)target;
+        //            break;
+        //        case 7:
+        //            this.mKeyDown = (Image)target;
+        //            break;
+        //        case 8:
+        //            this.mKeyA = (Image)target;
+        //            break;
+        //        case 9:
+        //            this.mKeyB = (Image)target;
+        //            break;
+        //        case 10:
+        //            this.mKeyX = (Image)target;
+        //            break;
+        //        case 11:
+        //            this.mKeyY = (Image)target;
+        //            break;
+        //        case 12:
+        //            this.mKeyC = (Image)target;
+        //            break;
+        //        case 13:
+        //            this.mKeyZ = (Image)target;
+        //            break;
+        //        case 14:
+        //            this.mKeySelect = (Image)target;
+        //            break;
+        //        case 15:
+        //            this.mKeyStart = (Image)target;
+        //            break;
+        //        case 16:
+        //            this.mKeyL3 = (Image)target;
+        //            break;
+        //        case 17:
+        //            this.mKeyR3 = (Image)target;
+        //            break;
+        //        case 18:
+        //            this.mKeyMenu = (Image)target;
+        //            break;
+        //        case 19:
+        //            this.mKeyHome = (Image)target;
+        //            break;
+        //        case 20:
+        //            this.mKeyBack = (Image)target;
+        //            break;
+        //        case 21:
+        //            this.mDeviceImg2 = (ImageBrush)target;
+        //            break;
+        //        case 22:
+        //            this.mKeyM1 = (Image)target;
+        //            break;
+        //        case 23:
+        //            this.mKeyM2 = (Image)target;
+        //            break;
+        //        case 24:
+        //            this.mKeyM3 = (Image)target;
+        //            break;
+        //        case 25:
+        //            this.mKeyM4 = (Image)target;
+        //            break;
+        //        case 26:
+        //            this.mDeviceImg3 = (ImageBrush)target;
+        //            break;
+        //        case 27:
+        //            this.mKeyRB = (Image)target;
+        //            break;
+        //        case 28:
+        //            this.mKeyRT = (Image)target;
+        //            break;
+        //        case 29:
+        //            this.mKeyLB = (Image)target;
+        //            break;
+        //        case 30:
+        //            this.mKeyLT = (Image)target;
+        //            break;
+        //        case 31:
+        //            this.mKeyM5 = (Image)target;
+        //            break;
+        //        case 32:
+        //            this.mKeyM6 = (Image)target;
+        //            break;
+        //        case 33:
+        //            this.mJoystickLeft = (UserControlJoystick)target;
+        //            break;
+        //        case 34:
+        //            this.mJoystickRight = (UserControlJoystick)target;
+        //            break;
+        //        case 35:
+        //            this.mLabelJoystickResetNotice = (Label)target;
+        //            break;
+        //        case 36:
+        //            this.mButtonJoystickReset = (Button)target;
+        //            this.mButtonJoystickReset.Click += new RoutedEventHandler(this.Joystick_Reset);
+        //            this.mButtonJoystickReset.MouseEnter += new MouseEventHandler(this.mButtonJoystickReset_MouseEnter);
+        //            this.mButtonJoystickReset.MouseLeave += new MouseEventHandler(this.mButtonJoystickReset_MouseLeave);
+        //            break;
+        //        case 37:
+        //            this.mLoading = (Grid)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

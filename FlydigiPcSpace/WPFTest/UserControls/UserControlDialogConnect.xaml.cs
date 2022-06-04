@@ -18,20 +18,20 @@ using WPFTest.Utils;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlDialogConnect : UserControl, IComponentConnector
+    public partial class UserControlDialogConnect : UserControl, IComponentConnector
     {
-        internal Image mTypeWireImg;
-        internal Label mLabelConnectMethod1;
-        internal Label mLabelCableDesce;
-        internal Image mType24GImg;
-        internal Label mLabelConnectMethod2;
-        internal TextBlock mTextBlockDesc;
-        internal Label mLabelConnectSwitchMode;
-        internal Label mLabelConnectLed2Desc;
-        internal Grid mHelpCenter;
-        internal UserControlSelectMenu mDeviceType;
-        internal Label mLabelConnectNotice;
-        internal Border mSelectMenuDeviceType;
+        //internal Image mTypeWireImg;
+        //internal Label mLabelConnectMethod1;
+        //internal Label mLabelCableDesce;
+        //internal Image mType24GImg;
+        //internal Label mLabelConnectMethod2;
+        //internal TextBlock mTextBlockDesc;
+        //internal Label mLabelConnectSwitchMode;
+        //internal Label mLabelConnectLed2Desc;
+        //internal Grid mHelpCenter;
+        //internal UserControlSelectMenu mDeviceType;
+        //internal Label mLabelConnectNotice;
+        //internal Border mSelectMenuDeviceType;
         private bool _contentLoaded;
 
         public UserControlDialogConnect()
@@ -192,82 +192,82 @@ namespace WPFTest.UserControls
                 Process.Start("http://bbs.flydigi.com/en/detail/80");
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontroldialogconnect.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontroldialogconnect.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mTypeWireImg = (Image)target;
-                    break;
-                case 2:
-                    this.mLabelConnectMethod1 = (Label)target;
-                    break;
-                case 3:
-                    this.mLabelCableDesce = (Label)target;
-                    break;
-                case 4:
-                    this.mType24GImg = (Image)target;
-                    break;
-                case 5:
-                    this.mLabelConnectMethod2 = (Label)target;
-                    break;
-                case 6:
-                    this.mTextBlockDesc = (TextBlock)target;
-                    break;
-                case 7:
-                    this.mLabelConnectSwitchMode = (Label)target;
-                    break;
-                case 8:
-                    this.mLabelConnectLed2Desc = (Label)target;
-                    break;
-                case 9:
-                    this.mHelpCenter = (Grid)target;
-                    break;
-                case 10:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.Connect_Help_Click);
-                    break;
-                case 11:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.DeviceTypeSelect_Click);
-                    break;
-                case 12:
-                    this.mDeviceType = (UserControlSelectMenu)target;
-                    break;
-                case 13:
-                    this.mLabelConnectNotice = (Label)target;
-                    break;
-                case 14:
-                    this.mSelectMenuDeviceType = (Border)target;
-                    break;
-                case 15:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.DeviceTypeItem_Click_2);
-                    break;
-                case 16:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.DeviceTypeItem_Click_0);
-                    break;
-                case 17:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.DeviceTypeItem_Click_1);
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mTypeWireImg = (Image)target;
+        //            break;
+        //        case 2:
+        //            this.mLabelConnectMethod1 = (Label)target;
+        //            break;
+        //        case 3:
+        //            this.mLabelCableDesce = (Label)target;
+        //            break;
+        //        case 4:
+        //            this.mType24GImg = (Image)target;
+        //            break;
+        //        case 5:
+        //            this.mLabelConnectMethod2 = (Label)target;
+        //            break;
+        //        case 6:
+        //            this.mTextBlockDesc = (TextBlock)target;
+        //            break;
+        //        case 7:
+        //            this.mLabelConnectSwitchMode = (Label)target;
+        //            break;
+        //        case 8:
+        //            this.mLabelConnectLed2Desc = (Label)target;
+        //            break;
+        //        case 9:
+        //            this.mHelpCenter = (Grid)target;
+        //            break;
+        //        case 10:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.Connect_Help_Click);
+        //            break;
+        //        case 11:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.DeviceTypeSelect_Click);
+        //            break;
+        //        case 12:
+        //            this.mDeviceType = (UserControlSelectMenu)target;
+        //            break;
+        //        case 13:
+        //            this.mLabelConnectNotice = (Label)target;
+        //            break;
+        //        case 14:
+        //            this.mSelectMenuDeviceType = (Border)target;
+        //            break;
+        //        case 15:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.DeviceTypeItem_Click_2);
+        //            break;
+        //        case 16:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.DeviceTypeItem_Click_0);
+        //            break;
+        //        case 17:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.DeviceTypeItem_Click_1);
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

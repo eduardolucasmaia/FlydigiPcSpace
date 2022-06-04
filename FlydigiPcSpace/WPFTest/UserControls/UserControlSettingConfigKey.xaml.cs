@@ -19,7 +19,7 @@ using WPFTest.Utils;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlSettingConfigKey : UserControl, IComponentConnector
+    public partial class UserControlSettingConfigKey : UserControl, IComponentConnector
     {
         private List<int> mListKeyMapping = new List<int>();
         private List<OneMacroBean> mListMacro = new List<OneMacroBean>();
@@ -57,15 +57,15 @@ namespace WPFTest.UserControls
       21
         };
         private Dictionary<int, UserControlKeyMapping> mDictionary = new Dictionary<int, UserControlKeyMapping>();
-        internal UserControlSettingConfigKeyDisplay mLayoutKeyDisplay;
-        internal UserControlSettingConfigKeySetting mLayoutKeySetting;
-        internal Grid mLayoutMappingKey;
-        internal UserControlTitle mTitle1;
-        internal WrapPanel mWrapPanel_1;
-        internal UserControlTitle mTitle2;
-        internal WrapPanel mWrapPanel_2;
-        internal UserControlTitle mTitle3;
-        internal WrapPanel mWrapPanel_3;
+        //internal UserControlSettingConfigKeyDisplay mLayoutKeyDisplay;
+        //internal UserControlSettingConfigKeySetting mLayoutKeySetting;
+        //internal Grid mLayoutMappingKey;
+        //internal UserControlTitle mTitle1;
+        //internal WrapPanel mWrapPanel_1;
+        //internal UserControlTitle mTitle2;
+        //internal WrapPanel mWrapPanel_2;
+        //internal UserControlTitle mTitle3;
+        //internal WrapPanel mWrapPanel_3;
         private bool _contentLoaded;
 
         public UserControlSettingConfigKey()
@@ -193,58 +193,58 @@ namespace WPFTest.UserControls
 
         public void setKeyListen(bool switchOriginData) => this.mLayoutKeySetting.setKeyListen(switchOriginData);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigkey.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigkey.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mLayoutKeyDisplay = (UserControlSettingConfigKeyDisplay)target;
-                    break;
-                case 2:
-                    this.mLayoutKeySetting = (UserControlSettingConfigKeySetting)target;
-                    break;
-                case 3:
-                    this.mLayoutMappingKey = (Grid)target;
-                    break;
-                case 4:
-                    this.mTitle1 = (UserControlTitle)target;
-                    break;
-                case 5:
-                    this.mWrapPanel_1 = (WrapPanel)target;
-                    break;
-                case 6:
-                    this.mTitle2 = (UserControlTitle)target;
-                    break;
-                case 7:
-                    this.mWrapPanel_2 = (WrapPanel)target;
-                    break;
-                case 8:
-                    this.mTitle3 = (UserControlTitle)target;
-                    break;
-                case 9:
-                    this.mWrapPanel_3 = (WrapPanel)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mLayoutKeyDisplay = (UserControlSettingConfigKeyDisplay)target;
+        //            break;
+        //        case 2:
+        //            this.mLayoutKeySetting = (UserControlSettingConfigKeySetting)target;
+        //            break;
+        //        case 3:
+        //            this.mLayoutMappingKey = (Grid)target;
+        //            break;
+        //        case 4:
+        //            this.mTitle1 = (UserControlTitle)target;
+        //            break;
+        //        case 5:
+        //            this.mWrapPanel_1 = (WrapPanel)target;
+        //            break;
+        //        case 6:
+        //            this.mTitle2 = (UserControlTitle)target;
+        //            break;
+        //        case 7:
+        //            this.mWrapPanel_2 = (WrapPanel)target;
+        //            break;
+        //        case 8:
+        //            this.mTitle3 = (UserControlTitle)target;
+        //            break;
+        //        case 9:
+        //            this.mWrapPanel_3 = (WrapPanel)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

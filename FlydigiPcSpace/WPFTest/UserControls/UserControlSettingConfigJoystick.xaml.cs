@@ -23,18 +23,18 @@ using WPFTest.Utils;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlSettingConfigJoystick : UserControl, IComponentConnector
+    public partial class UserControlSettingConfigJoystick : UserControl, IComponentConnector
     {
         private ConfigBean mFlashConfigBean;
         private JoyMappingBean mJoyMappingBean;
         private UserControlSettingConfigJoystickDisplay mLayoutJoystickDisplay;
         private string mLastJoystickJson;
-        internal Button mButtonJoystickLeft;
-        internal Button mButtonJoystickRight;
-        internal Label mLineLeft;
-        internal Label mLineRight;
-        internal UserControlLineJoystickSetting mLayoutRight;
-        internal UserControlLineJoystickSetting mLayoutLeft;
+        //internal Button mButtonJoystickLeft;
+        //internal Button mButtonJoystickRight;
+        //internal Label mLineLeft;
+        //internal Label mLineRight;
+        //internal UserControlLineJoystickSetting mLayoutRight;
+        //internal UserControlLineJoystickSetting mLayoutLeft;
         private bool _contentLoaded;
 
         public UserControlSettingConfigJoystick() => this.InitializeComponent();
@@ -166,55 +166,55 @@ namespace WPFTest.UserControls
             })).Start();
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigjoystick.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigjoystick.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mButtonJoystickLeft = (Button)target;
-                    this.mButtonJoystickLeft.Click += new RoutedEventHandler(this.Button_Joystick_Left);
-                    break;
-                case 2:
-                    this.mButtonJoystickRight = (Button)target;
-                    this.mButtonJoystickRight.Click += new RoutedEventHandler(this.Button_Joystick_Right);
-                    break;
-                case 3:
-                    ((UIElement)target).MouseEnter += new MouseEventHandler(this.Button_MouseEnter);
-                    ((UIElement)target).MouseLeave += new MouseEventHandler(this.Button_MouseLeave);
-                    break;
-                case 4:
-                    this.mLineLeft = (Label)target;
-                    break;
-                case 5:
-                    this.mLineRight = (Label)target;
-                    break;
-                case 6:
-                    this.mLayoutRight = (UserControlLineJoystickSetting)target;
-                    break;
-                case 7:
-                    this.mLayoutLeft = (UserControlLineJoystickSetting)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mButtonJoystickLeft = (Button)target;
+        //            this.mButtonJoystickLeft.Click += new RoutedEventHandler(this.Button_Joystick_Left);
+        //            break;
+        //        case 2:
+        //            this.mButtonJoystickRight = (Button)target;
+        //            this.mButtonJoystickRight.Click += new RoutedEventHandler(this.Button_Joystick_Right);
+        //            break;
+        //        case 3:
+        //            ((UIElement)target).MouseEnter += new MouseEventHandler(this.Button_MouseEnter);
+        //            ((UIElement)target).MouseLeave += new MouseEventHandler(this.Button_MouseLeave);
+        //            break;
+        //        case 4:
+        //            this.mLineLeft = (Label)target;
+        //            break;
+        //        case 5:
+        //            this.mLineRight = (Label)target;
+        //            break;
+        //        case 6:
+        //            this.mLayoutRight = (UserControlLineJoystickSetting)target;
+        //            break;
+        //        case 7:
+        //            this.mLayoutLeft = (UserControlLineJoystickSetting)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

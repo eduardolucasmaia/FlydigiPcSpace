@@ -17,15 +17,15 @@ using System.Windows.Shapes;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlJoystick : UserControl, IComponentConnector
+    public partial class UserControlJoystick : UserControl, IComponentConnector
     {
         private int MaxDataValue = 254;
         private int MaxUIValue = 260;
         private double PointHalf = 10.0;
-        internal Image mImageBg;
-        internal Line mLine1;
-        internal Ellipse mBlueCircle;
-        internal Image mPoint;
+        //internal Image mImageBg;
+        //internal Line mLine1;
+        //internal Ellipse mBlueCircle;
+        //internal Image mPoint;
         private bool _contentLoaded;
 
         public UserControlJoystick() => this.InitializeComponent();
@@ -60,39 +60,39 @@ namespace WPFTest.UserControls
 
         public void setBgImgToBlue() => this.mImageBg.Source = (ImageSource)new BitmapImage(new Uri("pack://application:,,,/Resources/bg_joystick_blue.png"));
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontroljoystick.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontroljoystick.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mImageBg = (Image)target;
-                    break;
-                case 2:
-                    this.mLine1 = (Line)target;
-                    break;
-                case 3:
-                    this.mBlueCircle = (Ellipse)target;
-                    break;
-                case 4:
-                    this.mPoint = (Image)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mImageBg = (Image)target;
+        //            break;
+        //        case 2:
+        //            this.mLine1 = (Line)target;
+        //            break;
+        //        case 3:
+        //            this.mBlueCircle = (Ellipse)target;
+        //            break;
+        //        case 4:
+        //            this.mPoint = (Image)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

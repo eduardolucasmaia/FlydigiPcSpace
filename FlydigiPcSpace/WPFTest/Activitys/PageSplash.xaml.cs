@@ -21,19 +21,19 @@ using WPFTest.Utils;
 
 namespace WPFTest.Activitys
 {
-    public class PageSplash : Page, IComponentConnector
+    public partial class PageSplash : Page, IComponentConnector
     {
         private WindowMain mWindowMain;
         private System.Windows.Controls.Frame mFrame;
         private short times;
-        internal Image mImgDeviceFront;
-        internal Button mButtonStart;
-        internal Button mButtonStartSwitch;
-        internal Button mFactoryTest;
-        internal UserControlDialogConnect connect;
-        internal Grid mPageSplashLoading;
-        internal Label mPageSplashLoadingLabel;
-        internal Label currentModeName;
+        //internal Image mImgDeviceFront;
+        //internal Button mButtonStart;
+        //internal Button mButtonStartSwitch;
+        //internal Button mFactoryTest;
+        //internal UserControlDialogConnect connect;
+        //internal Grid mPageSplashLoading;
+        //internal Label mPageSplashLoadingLabel;
+        //internal Label currentModeName;
         private bool _contentLoaded;
 
         public PageSplash(WindowMain window, System.Windows.Controls.Frame frame)
@@ -328,62 +328,62 @@ namespace WPFTest.Activitys
 
         public void updateLoaidngTips(string tips) => this.mPageSplashLoadingLabel.Content = (object)tips;
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/pages/pagesplash.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/pages/pagesplash.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    ((FrameworkElement)target).Loaded += new RoutedEventHandler(this.Page_Loaded);
-                    ((FrameworkElement)target).Initialized += new EventHandler(this.Page_Initialized);
-                    break;
-                case 2:
-                    this.mImgDeviceFront = (Image)target;
-                    break;
-                case 3:
-                    this.mButtonStart = (Button)target;
-                    this.mButtonStart.Click += new RoutedEventHandler(this.Button_Start_Click);
-                    break;
-                case 4:
-                    this.mButtonStartSwitch = (Button)target;
-                    this.mButtonStartSwitch.Click += new RoutedEventHandler(this.Button_Start_Click_Switch);
-                    break;
-                case 5:
-                    this.mFactoryTest = (Button)target;
-                    this.mFactoryTest.Click += new RoutedEventHandler(this.FactoryTest_Click);
-                    break;
-                case 6:
-                    this.connect = (UserControlDialogConnect)target;
-                    break;
-                case 7:
-                    this.mPageSplashLoading = (Grid)target;
-                    break;
-                case 8:
-                    this.mPageSplashLoadingLabel = (Label)target;
-                    break;
-                case 9:
-                    this.currentModeName = (Label)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            ((FrameworkElement)target).Loaded += new RoutedEventHandler(this.Page_Loaded);
+        //            ((FrameworkElement)target).Initialized += new EventHandler(this.Page_Initialized);
+        //            break;
+        //        case 2:
+        //            this.mImgDeviceFront = (Image)target;
+        //            break;
+        //        case 3:
+        //            this.mButtonStart = (Button)target;
+        //            this.mButtonStart.Click += new RoutedEventHandler(this.Button_Start_Click);
+        //            break;
+        //        case 4:
+        //            this.mButtonStartSwitch = (Button)target;
+        //            this.mButtonStartSwitch.Click += new RoutedEventHandler(this.Button_Start_Click_Switch);
+        //            break;
+        //        case 5:
+        //            this.mFactoryTest = (Button)target;
+        //            this.mFactoryTest.Click += new RoutedEventHandler(this.FactoryTest_Click);
+        //            break;
+        //        case 6:
+        //            this.connect = (UserControlDialogConnect)target;
+        //            break;
+        //        case 7:
+        //            this.mPageSplashLoading = (Grid)target;
+        //            break;
+        //        case 8:
+        //            this.mPageSplashLoadingLabel = (Label)target;
+        //            break;
+        //        case 9:
+        //            this.currentModeName = (Label)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

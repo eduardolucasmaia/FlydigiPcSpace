@@ -20,7 +20,7 @@ using WPFTest.Utils;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlDialogKey : UserControl, IComponentConnector
+    public partial class UserControlDialogKey : UserControl, IComponentConnector
     {
         private IDelegateCallback mDelegateCallback;
         private int[] mArrayKey = new int[16]
@@ -105,8 +105,8 @@ namespace WPFTest.UserControls
       22,
       23
         };
-        internal Border mSelectMenuKey;
-        internal WrapPanel mWrapPanel;
+        //internal Border mSelectMenuKey;
+        //internal WrapPanel mWrapPanel;
         private bool _contentLoaded;
 
         public UserControlDialogKey() => this.InitializeComponent();
@@ -250,30 +250,30 @@ namespace WPFTest.UserControls
             }
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontroldialogkey.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontroldialogkey.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            if (connectionId != 1)
-            {
-                if (connectionId == 2)
-                    this.mWrapPanel = (WrapPanel)target;
-                else
-                    this._contentLoaded = true;
-            }
-            else
-                this.mSelectMenuKey = (Border)target;
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    if (connectionId != 1)
+        //    {
+        //        if (connectionId == 2)
+        //            this.mWrapPanel = (WrapPanel)target;
+        //        else
+        //            this._contentLoaded = true;
+        //    }
+        //    else
+        //        this.mSelectMenuKey = (Border)target;
+        //}
     }
 }

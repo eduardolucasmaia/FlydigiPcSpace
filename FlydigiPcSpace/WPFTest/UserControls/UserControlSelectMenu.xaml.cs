@@ -17,12 +17,12 @@ using System.Windows.Media.Imaging;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlSelectMenu : UserControl, IComponentConnector
+    public partial class UserControlSelectMenu : UserControl, IComponentConnector
     {
-        internal Border mBorder;
-        internal Label mLabel;
-        internal Image mKeyIcon;
-        internal Image mImage;
+        //internal Border mBorder;
+        //internal Label mLabel;
+        //internal Image mKeyIcon;
+        //internal Image mImage;
         private bool _contentLoaded;
 
         public UserControlSelectMenu() => this.InitializeComponent();
@@ -75,39 +75,39 @@ namespace WPFTest.UserControls
             }
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolselectmenu.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolselectmenu.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mBorder = (Border)target;
-                    break;
-                case 2:
-                    this.mLabel = (Label)target;
-                    break;
-                case 3:
-                    this.mKeyIcon = (Image)target;
-                    break;
-                case 4:
-                    this.mImage = (Image)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mBorder = (Border)target;
+        //            break;
+        //        case 2:
+        //            this.mLabel = (Label)target;
+        //            break;
+        //        case 3:
+        //            this.mKeyIcon = (Image)target;
+        //            break;
+        //        case 4:
+        //            this.mImage = (Image)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

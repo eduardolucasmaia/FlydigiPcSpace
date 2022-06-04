@@ -19,10 +19,10 @@ using WPFTest.UserControls;
 
 namespace WPFTest.Windows
 {
-    public class WindowDialogConnect : Window, IComponentConnector
+    public partial class WindowDialogConnect : Window, IComponentConnector
     {
-        internal UserControlDialogConnect mGuide;
-        internal Image mImageClose;
+        //internal UserControlDialogConnect mGuide;
+        //internal Image mImageClose;
         private bool _contentLoaded;
 
         public WindowDialogConnect()
@@ -37,38 +37,38 @@ namespace WPFTest.Windows
 
         private void mImageClose_MouseLeave(object sender, MouseEventArgs e) => this.mImageClose.Source = (ImageSource)new BitmapImage(new Uri("pack://application:,,,/Resources/icon_close_gray.png"));
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/windows/windowdialogconnect.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/windows/windowdialogconnect.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mGuide = (UserControlDialogConnect)target;
-                    break;
-                case 2:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.Button_Click);
-                    break;
-                case 3:
-                    this.mImageClose = (Image)target;
-                    this.mImageClose.MouseEnter += new MouseEventHandler(this.mImageClose_MouseEnter);
-                    this.mImageClose.MouseLeave += new MouseEventHandler(this.mImageClose_MouseLeave);
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mGuide = (UserControlDialogConnect)target;
+        //            break;
+        //        case 2:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.Button_Click);
+        //            break;
+        //        case 3:
+        //            this.mImageClose = (Image)target;
+        //            this.mImageClose.MouseEnter += new MouseEventHandler(this.mImageClose_MouseEnter);
+        //            this.mImageClose.MouseLeave += new MouseEventHandler(this.mImageClose_MouseLeave);
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

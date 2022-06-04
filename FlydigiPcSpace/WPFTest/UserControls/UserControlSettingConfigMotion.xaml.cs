@@ -25,41 +25,41 @@ using WPFTest.Utils;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlSettingConfigMotion : UserControl, IComponentConnector
+    public partial class UserControlSettingConfigMotion : UserControl, IComponentConnector
     {
         private ConfigBean mFlashConfigBean;
         private string mLastMotionJson;
         private MotionMappingBean mMotionMappingBean;
-        internal Button mButtonMotorDefault;
-        internal Button mButtonMotorPOut;
-        internal Button modeTypeHeleBox;
-        internal Grid tipBox;
-        internal TextBlock tipBoxtextBlock;
-        internal Grid ModeBox;
-        internal Label mLineLeft;
-        internal Label mLineRight;
-        internal Grid mappingSetBox;
-        internal UserControlSelectMenu mMotionTarget;
-        internal Grid mLayoutTime;
-        internal Label mSensityValue;
-        internal Slider mSliderSensity;
-        internal Grid deadBox;
-        internal Label mZeroValue;
-        internal Slider mSliderZero;
-        internal Label startTypeBox1;
-        internal Label startTypeBox2;
-        internal Button startTypeBox3;
-        internal UserControlSelectMenu mMotionActive;
-        internal StackPanel startKeyBox;
-        internal Label mStartKeyTipLabel;
-        internal UserControlSelectMenu mTargetKey;
-        internal Button mKeySelectTwoButton;
-        internal UserControlSelectMenu mTargetKeyTwo;
-        internal Border mSelectMenuMotionTarget;
-        internal Border mSelectMenuMotionActive;
-        internal UserControlDialogKey mSelectMenuKey;
-        internal UserControlDialogKey mSelectMenuKeyTwo;
-        internal Grid mEnableShadow;
+        //internal Button mButtonMotorDefault;
+        //internal Button mButtonMotorPOut;
+        //internal Button modeTypeHeleBox;
+        //internal Grid tipBox;
+        //internal TextBlock tipBoxtextBlock;
+        //internal Grid ModeBox;
+        //internal Label mLineLeft;
+        //internal Label mLineRight;
+        //internal Grid mappingSetBox;
+        //internal UserControlSelectMenu mMotionTarget;
+        //internal Grid mLayoutTime;
+        //internal Label mSensityValue;
+        //internal Slider mSliderSensity;
+        //internal Grid deadBox;
+        //internal Label mZeroValue;
+        //internal Slider mSliderZero;
+        //internal Label startTypeBox1;
+        //internal Label startTypeBox2;
+        //internal Button startTypeBox3;
+        //internal UserControlSelectMenu mMotionActive;
+        //internal StackPanel startKeyBox;
+        //internal Label mStartKeyTipLabel;
+        //internal UserControlSelectMenu mTargetKey;
+        //internal Button mKeySelectTwoButton;
+        //internal UserControlSelectMenu mTargetKeyTwo;
+        //internal Border mSelectMenuMotionTarget;
+        //internal Border mSelectMenuMotionActive;
+        //internal UserControlDialogKey mSelectMenuKey;
+        //internal UserControlDialogKey mSelectMenuKeyTwo;
+        //internal Grid mEnableShadow;
         private bool _contentLoaded;
 
         public UserControlSettingConfigMotion()
@@ -465,156 +465,156 @@ namespace WPFTest.UserControls
         {
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigmotion.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigmotion.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mButtonMotorDefault = (Button)target;
-                    this.mButtonMotorDefault.Click += new RoutedEventHandler(this.Button_Motor_default);
-                    break;
-                case 2:
-                    this.mButtonMotorPOut = (Button)target;
-                    this.mButtonMotorPOut.Click += new RoutedEventHandler(this.Button_Motor_pout);
-                    break;
-                case 3:
-                    this.modeTypeHeleBox = (Button)target;
-                    this.modeTypeHeleBox.MouseEnter += new MouseEventHandler(this.Button_MouseEnter_mode);
-                    this.modeTypeHeleBox.MouseLeave += new MouseEventHandler(this.Button_MouseLeave_mode);
-                    break;
-                case 4:
-                    this.tipBox = (Grid)target;
-                    break;
-                case 5:
-                    this.tipBoxtextBlock = (TextBlock)target;
-                    break;
-                case 6:
-                    this.ModeBox = (Grid)target;
-                    break;
-                case 7:
-                    this.mLineLeft = (Label)target;
-                    break;
-                case 8:
-                    this.mLineRight = (Label)target;
-                    break;
-                case 9:
-                    this.mappingSetBox = (Grid)target;
-                    break;
-                case 10:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetSelect_Click);
-                    break;
-                case 11:
-                    this.mMotionTarget = (UserControlSelectMenu)target;
-                    break;
-                case 12:
-                    ((UIElement)target).MouseEnter += new MouseEventHandler(this.Button_MouseEnter);
-                    ((UIElement)target).MouseLeave += new MouseEventHandler(this.Button_MouseLeave);
-                    break;
-                case 13:
-                    this.mLayoutTime = (Grid)target;
-                    break;
-                case 14:
-                    this.mSensityValue = (Label)target;
-                    break;
-                case 15:
-                    this.mSliderSensity = (Slider)target;
-                    this.mSliderSensity.ValueChanged += new RoutedPropertyChangedEventHandler<double>(this.mSliderSensity_ValueChanged);
-                    this.mSliderSensity.AddHandler(Thumb.DragCompletedEvent, (Delegate)new DragCompletedEventHandler(this.SliderSensity_DragCompleted));
-                    break;
-                case 16:
-                    this.deadBox = (Grid)target;
-                    break;
-                case 17:
-                    this.mZeroValue = (Label)target;
-                    break;
-                case 18:
-                    this.mSliderZero = (Slider)target;
-                    this.mSliderZero.ValueChanged += new RoutedPropertyChangedEventHandler<double>(this.mSliderZero_ValueChanged);
-                    this.mSliderZero.AddHandler(Thumb.DragCompletedEvent, (Delegate)new DragCompletedEventHandler(this.SliderZero_DragCompleted));
-                    break;
-                case 19:
-                    this.startTypeBox1 = (Label)target;
-                    break;
-                case 20:
-                    this.startTypeBox2 = (Label)target;
-                    break;
-                case 21:
-                    this.startTypeBox3 = (Button)target;
-                    this.startTypeBox3.Click += new RoutedEventHandler(this.MotionActiveSelect_Click);
-                    break;
-                case 22:
-                    this.mMotionActive = (UserControlSelectMenu)target;
-                    break;
-                case 23:
-                    this.startKeyBox = (StackPanel)target;
-                    break;
-                case 24:
-                    this.mStartKeyTipLabel = (Label)target;
-                    break;
-                case 25:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.KeySelect_Click);
-                    break;
-                case 26:
-                    this.mTargetKey = (UserControlSelectMenu)target;
-                    break;
-                case 27:
-                    this.mKeySelectTwoButton = (Button)target;
-                    this.mKeySelectTwoButton.Click += new RoutedEventHandler(this.KeyNewSelect_Click);
-                    break;
-                case 28:
-                    this.mTargetKeyTwo = (UserControlSelectMenu)target;
-                    break;
-                case 29:
-                    this.mSelectMenuMotionTarget = (Border)target;
-                    break;
-                case 30:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_1);
-                    break;
-                case 31:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_2);
-                    break;
-                case 32:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_3);
-                    break;
-                case 33:
-                    this.mSelectMenuMotionActive = (Border)target;
-                    break;
-                case 34:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionActiveItem_Click_1);
-                    break;
-                case 35:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionActiveItem_Click_2);
-                    break;
-                case 36:
-                    this.mSelectMenuKey = (UserControlDialogKey)target;
-                    break;
-                case 37:
-                    this.mSelectMenuKeyTwo = (UserControlDialogKey)target;
-                    break;
-                case 38:
-                    this.mEnableShadow = (Grid)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mButtonMotorDefault = (Button)target;
+        //            this.mButtonMotorDefault.Click += new RoutedEventHandler(this.Button_Motor_default);
+        //            break;
+        //        case 2:
+        //            this.mButtonMotorPOut = (Button)target;
+        //            this.mButtonMotorPOut.Click += new RoutedEventHandler(this.Button_Motor_pout);
+        //            break;
+        //        case 3:
+        //            this.modeTypeHeleBox = (Button)target;
+        //            this.modeTypeHeleBox.MouseEnter += new MouseEventHandler(this.Button_MouseEnter_mode);
+        //            this.modeTypeHeleBox.MouseLeave += new MouseEventHandler(this.Button_MouseLeave_mode);
+        //            break;
+        //        case 4:
+        //            this.tipBox = (Grid)target;
+        //            break;
+        //        case 5:
+        //            this.tipBoxtextBlock = (TextBlock)target;
+        //            break;
+        //        case 6:
+        //            this.ModeBox = (Grid)target;
+        //            break;
+        //        case 7:
+        //            this.mLineLeft = (Label)target;
+        //            break;
+        //        case 8:
+        //            this.mLineRight = (Label)target;
+        //            break;
+        //        case 9:
+        //            this.mappingSetBox = (Grid)target;
+        //            break;
+        //        case 10:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetSelect_Click);
+        //            break;
+        //        case 11:
+        //            this.mMotionTarget = (UserControlSelectMenu)target;
+        //            break;
+        //        case 12:
+        //            ((UIElement)target).MouseEnter += new MouseEventHandler(this.Button_MouseEnter);
+        //            ((UIElement)target).MouseLeave += new MouseEventHandler(this.Button_MouseLeave);
+        //            break;
+        //        case 13:
+        //            this.mLayoutTime = (Grid)target;
+        //            break;
+        //        case 14:
+        //            this.mSensityValue = (Label)target;
+        //            break;
+        //        case 15:
+        //            this.mSliderSensity = (Slider)target;
+        //            this.mSliderSensity.ValueChanged += new RoutedPropertyChangedEventHandler<double>(this.mSliderSensity_ValueChanged);
+        //            this.mSliderSensity.AddHandler(Thumb.DragCompletedEvent, (Delegate)new DragCompletedEventHandler(this.SliderSensity_DragCompleted));
+        //            break;
+        //        case 16:
+        //            this.deadBox = (Grid)target;
+        //            break;
+        //        case 17:
+        //            this.mZeroValue = (Label)target;
+        //            break;
+        //        case 18:
+        //            this.mSliderZero = (Slider)target;
+        //            this.mSliderZero.ValueChanged += new RoutedPropertyChangedEventHandler<double>(this.mSliderZero_ValueChanged);
+        //            this.mSliderZero.AddHandler(Thumb.DragCompletedEvent, (Delegate)new DragCompletedEventHandler(this.SliderZero_DragCompleted));
+        //            break;
+        //        case 19:
+        //            this.startTypeBox1 = (Label)target;
+        //            break;
+        //        case 20:
+        //            this.startTypeBox2 = (Label)target;
+        //            break;
+        //        case 21:
+        //            this.startTypeBox3 = (Button)target;
+        //            this.startTypeBox3.Click += new RoutedEventHandler(this.MotionActiveSelect_Click);
+        //            break;
+        //        case 22:
+        //            this.mMotionActive = (UserControlSelectMenu)target;
+        //            break;
+        //        case 23:
+        //            this.startKeyBox = (StackPanel)target;
+        //            break;
+        //        case 24:
+        //            this.mStartKeyTipLabel = (Label)target;
+        //            break;
+        //        case 25:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.KeySelect_Click);
+        //            break;
+        //        case 26:
+        //            this.mTargetKey = (UserControlSelectMenu)target;
+        //            break;
+        //        case 27:
+        //            this.mKeySelectTwoButton = (Button)target;
+        //            this.mKeySelectTwoButton.Click += new RoutedEventHandler(this.KeyNewSelect_Click);
+        //            break;
+        //        case 28:
+        //            this.mTargetKeyTwo = (UserControlSelectMenu)target;
+        //            break;
+        //        case 29:
+        //            this.mSelectMenuMotionTarget = (Border)target;
+        //            break;
+        //        case 30:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_1);
+        //            break;
+        //        case 31:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_2);
+        //            break;
+        //        case 32:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_3);
+        //            break;
+        //        case 33:
+        //            this.mSelectMenuMotionActive = (Border)target;
+        //            break;
+        //        case 34:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionActiveItem_Click_1);
+        //            break;
+        //        case 35:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionActiveItem_Click_2);
+        //            break;
+        //        case 36:
+        //            this.mSelectMenuKey = (UserControlDialogKey)target;
+        //            break;
+        //        case 37:
+        //            this.mSelectMenuKeyTwo = (UserControlDialogKey)target;
+        //            break;
+        //        case 38:
+        //            this.mEnableShadow = (Grid)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

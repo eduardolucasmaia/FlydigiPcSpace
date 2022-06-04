@@ -15,9 +15,9 @@ using WPFTest.UserControls;
 
 namespace WPFTest.Pages
 {
-    public class PageConnectGuide : Page, IComponentConnector
+    public partial class PageConnectGuide : Page, IComponentConnector
     {
-        internal UserControlDialogConnect mGuide;
+        //internal UserControlDialogConnect mGuide;
         private bool _contentLoaded;
 
         public PageConnectGuide() => this.InitializeComponent();
@@ -30,33 +30,33 @@ namespace WPFTest.Pages
         {
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/pages/pageconnectguide.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/pages/pageconnectguide.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            if (connectionId != 1)
-            {
-                if (connectionId == 2)
-                    this.mGuide = (UserControlDialogConnect)target;
-                else
-                    this._contentLoaded = true;
-            }
-            else
-            {
-                ((FrameworkElement)target).Loaded += new RoutedEventHandler(this.Page_Loaded);
-                ((FrameworkElement)target).Initialized += new EventHandler(this.Page_Initialized);
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    if (connectionId != 1)
+        //    {
+        //        if (connectionId == 2)
+        //            this.mGuide = (UserControlDialogConnect)target;
+        //        else
+        //            this._contentLoaded = true;
+        //    }
+        //    else
+        //    {
+        //        ((FrameworkElement)target).Loaded += new RoutedEventHandler(this.Page_Loaded);
+        //        ((FrameworkElement)target).Initialized += new EventHandler(this.Page_Initialized);
+        //    }
+        //}
     }
 }

@@ -14,10 +14,10 @@ using System.Windows.Markup;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlSettingConfigJoystickDisplay : UserControl, IComponentConnector
+    public partial class UserControlSettingConfigJoystickDisplay : UserControl, IComponentConnector
     {
-        internal UserControlJoystick mJoystickLeft;
-        internal UserControlJoystick mJoystickRight;
+        //internal UserControlJoystick mJoystickLeft;
+        //internal UserControlJoystick mJoystickRight;
         private bool _contentLoaded;
 
         public UserControlSettingConfigJoystickDisplay() => this.InitializeComponent();
@@ -36,34 +36,34 @@ namespace WPFTest.UserControls
 
         public void setRightJoystickVisible(bool visible) => this.mJoystickRight.Visibility = visible ? Visibility.Visible : Visibility.Hidden;
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigjoystickdisplay.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigjoystickdisplay.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            if (connectionId != 1)
-            {
-                if (connectionId == 2)
-                    this.mJoystickRight = (UserControlJoystick)target;
-                else
-                    this._contentLoaded = true;
-            }
-            else
-                this.mJoystickLeft = (UserControlJoystick)target;
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    if (connectionId != 1)
+        //    {
+        //        if (connectionId == 2)
+        //            this.mJoystickRight = (UserControlJoystick)target;
+        //        else
+        //            this._contentLoaded = true;
+        //    }
+        //    else
+        //        this.mJoystickLeft = (UserControlJoystick)target;
+        //}
     }
 }

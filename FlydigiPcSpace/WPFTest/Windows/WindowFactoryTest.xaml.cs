@@ -24,7 +24,7 @@ using WPFTest.Utils;
 
 namespace WPFTest.Windows
 {
-    public class WindowFactoryTest : Window, DataManager.IDeviceOperateData, IComponentConnector
+    public partial class WindowFactoryTest : Window, DataManager.IDeviceOperateData, IComponentConnector
     {
         private FDGDeviceInfo mFDGDeviceInfo;
         private IDelegateCallback mIDelegateCallback;
@@ -36,56 +36,56 @@ namespace WPFTest.Windows
         private bool testJoystickResetting;
         private bool mLBLastPressed;
         private bool mRBLastPressed;
-        internal Label mLabelTitle;
-        internal Image mImageClose;
-        internal Label mKeyUP;
-        internal Label mKeyLeft;
-        internal Label mKeyRight;
-        internal Label mKeyDown;
-        internal UserControlJoystick mJoystickWheel;
-        internal Label mKeyA;
-        internal Label mKeyB;
-        internal Label mKeyX;
-        internal Label mKeyY;
-        internal Label mKeySelect;
-        internal Label mKeyStart;
-        internal Label mKeyLB;
-        internal Label mKeyLT;
-        internal Label mKeyRB;
-        internal Label mKeyRT;
-        internal Label mKeyL3;
-        internal Label mKeyR3;
-        internal Label mKeyC;
-        internal Label mKeyZ;
-        internal Label mKeyMenu;
-        internal Label mKeyHome;
-        internal Label mKeyBack;
-        internal Label mKeyM1;
-        internal Label mKeyM2;
-        internal Label mKeyM3;
-        internal Label mKeyM4;
-        internal Label mKeyM5;
-        internal Label mKeyM6;
-        internal UserControlJoystick mJoystickLeft;
-        internal UserControlJoystick mJoystickRight;
-        internal Label mLabelJoystickResetNotice;
-        internal Button mButtonLedTest;
-        internal Button mButtonColorTest;
-        internal Button mButtonMotorLeftTest;
-        internal Button mButtonMotorRightTest;
-        internal Button mButtonJoystickReset;
-        internal Slider mSliderLT;
-        internal Slider mSliderRT;
-        internal Label mLabelLT;
-        internal Label mLabelRT;
-        internal Label mLabelBattery;
-        internal Label mLabelFirmwareVersion;
-        internal Label mNoticeTestSuccess;
-        internal Grid mLoading;
-        internal Label mLabelL3X;
-        internal Label mLabelL3Y;
-        internal Label mLabelR3X;
-        internal Label mLabelR3Y;
+        //internal Label mLabelTitle;
+        //internal Image mImageClose;
+        //internal Label mKeyUP;
+        //internal Label mKeyLeft;
+        //internal Label mKeyRight;
+        //internal Label mKeyDown;
+        //internal UserControlJoystick mJoystickWheel;
+        //internal Label mKeyA;
+        //internal Label mKeyB;
+        //internal Label mKeyX;
+        //internal Label mKeyY;
+        //internal Label mKeySelect;
+        //internal Label mKeyStart;
+        //internal Label mKeyLB;
+        //internal Label mKeyLT;
+        //internal Label mKeyRB;
+        //internal Label mKeyRT;
+        //internal Label mKeyL3;
+        //internal Label mKeyR3;
+        //internal Label mKeyC;
+        //internal Label mKeyZ;
+        //internal Label mKeyMenu;
+        //internal Label mKeyHome;
+        //internal Label mKeyBack;
+        //internal Label mKeyM1;
+        //internal Label mKeyM2;
+        //internal Label mKeyM3;
+        //internal Label mKeyM4;
+        //internal Label mKeyM5;
+        //internal Label mKeyM6;
+        //internal UserControlJoystick mJoystickLeft;
+        //internal UserControlJoystick mJoystickRight;
+        //internal Label mLabelJoystickResetNotice;
+        //internal Button mButtonLedTest;
+        //internal Button mButtonColorTest;
+        //internal Button mButtonMotorLeftTest;
+        //internal Button mButtonMotorRightTest;
+        //internal Button mButtonJoystickReset;
+        //internal Slider mSliderLT;
+        //internal Slider mSliderRT;
+        //internal Label mLabelLT;
+        //internal Label mLabelRT;
+        //internal Label mLabelBattery;
+        //internal Label mLabelFirmwareVersion;
+        //internal Label mNoticeTestSuccess;
+        //internal Grid mLoading;
+        //internal Label mLabelL3X;
+        //internal Label mLabelL3Y;
+        //internal Label mLabelR3X;
+        //internal Label mLabelR3Y;
         private bool _contentLoaded;
 
         public WindowFactoryTest(FDGDeviceInfo info, IDelegateCallback delegateCallback)
@@ -456,8 +456,8 @@ namespace WPFTest.Windows
                         {
                             if (result == 1)
                             {
-                                byte d = 2;
-                                DataManager.getInstance().SendByteArray(DongleCommand.getTestNewJoystickResetCommand(d));
+                                byte d2 = 2;
+                                DataManager.getInstance().SendByteArray(DongleCommand.getTestNewJoystickResetCommand(d2));
                                 this.testJoystickResetting = false;
                             }
                             if (result != 2)
@@ -511,191 +511,191 @@ namespace WPFTest.Windows
             this.mRBLastPressed = currentPressed;
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/windows/windowfactorytest.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/windows/windowfactorytest.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mLabelTitle = (Label)target;
-                    break;
-                case 2:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.Button_Close_Click);
-                    break;
-                case 3:
-                    this.mImageClose = (Image)target;
-                    this.mImageClose.MouseEnter += new MouseEventHandler(this.mImageClose_MouseEnter);
-                    this.mImageClose.MouseLeave += new MouseEventHandler(this.mImageClose_MouseLeave);
-                    break;
-                case 4:
-                    this.mKeyUP = (Label)target;
-                    break;
-                case 5:
-                    this.mKeyLeft = (Label)target;
-                    break;
-                case 6:
-                    this.mKeyRight = (Label)target;
-                    break;
-                case 7:
-                    this.mKeyDown = (Label)target;
-                    break;
-                case 8:
-                    this.mJoystickWheel = (UserControlJoystick)target;
-                    break;
-                case 9:
-                    this.mKeyA = (Label)target;
-                    break;
-                case 10:
-                    this.mKeyB = (Label)target;
-                    break;
-                case 11:
-                    this.mKeyX = (Label)target;
-                    break;
-                case 12:
-                    this.mKeyY = (Label)target;
-                    break;
-                case 13:
-                    this.mKeySelect = (Label)target;
-                    break;
-                case 14:
-                    this.mKeyStart = (Label)target;
-                    break;
-                case 15:
-                    this.mKeyLB = (Label)target;
-                    break;
-                case 16:
-                    this.mKeyLT = (Label)target;
-                    break;
-                case 17:
-                    this.mKeyRB = (Label)target;
-                    break;
-                case 18:
-                    this.mKeyRT = (Label)target;
-                    break;
-                case 19:
-                    this.mKeyL3 = (Label)target;
-                    break;
-                case 20:
-                    this.mKeyR3 = (Label)target;
-                    break;
-                case 21:
-                    this.mKeyC = (Label)target;
-                    break;
-                case 22:
-                    this.mKeyZ = (Label)target;
-                    break;
-                case 23:
-                    this.mKeyMenu = (Label)target;
-                    break;
-                case 24:
-                    this.mKeyHome = (Label)target;
-                    break;
-                case 25:
-                    this.mKeyBack = (Label)target;
-                    break;
-                case 26:
-                    this.mKeyM1 = (Label)target;
-                    break;
-                case 27:
-                    this.mKeyM2 = (Label)target;
-                    break;
-                case 28:
-                    this.mKeyM3 = (Label)target;
-                    break;
-                case 29:
-                    this.mKeyM4 = (Label)target;
-                    break;
-                case 30:
-                    this.mKeyM5 = (Label)target;
-                    break;
-                case 31:
-                    this.mKeyM6 = (Label)target;
-                    break;
-                case 32:
-                    this.mJoystickLeft = (UserControlJoystick)target;
-                    break;
-                case 33:
-                    this.mJoystickRight = (UserControlJoystick)target;
-                    break;
-                case 34:
-                    this.mLabelJoystickResetNotice = (Label)target;
-                    break;
-                case 35:
-                    this.mButtonLedTest = (Button)target;
-                    this.mButtonLedTest.Click += new RoutedEventHandler(this.Led_Test_Click);
-                    break;
-                case 36:
-                    this.mButtonColorTest = (Button)target;
-                    this.mButtonColorTest.Click += new RoutedEventHandler(this.Color_Test_Click);
-                    break;
-                case 37:
-                    this.mButtonMotorLeftTest = (Button)target;
-                    this.mButtonMotorLeftTest.Click += new RoutedEventHandler(this.Motor_Left_Test_Click);
-                    break;
-                case 38:
-                    this.mButtonMotorRightTest = (Button)target;
-                    this.mButtonMotorRightTest.Click += new RoutedEventHandler(this.Motor_Right_Test_Click);
-                    break;
-                case 39:
-                    this.mButtonJoystickReset = (Button)target;
-                    this.mButtonJoystickReset.Click += new RoutedEventHandler(this.Joystick_Reset_Click);
-                    break;
-                case 40:
-                    this.mSliderLT = (Slider)target;
-                    break;
-                case 41:
-                    this.mSliderRT = (Slider)target;
-                    break;
-                case 42:
-                    this.mLabelLT = (Label)target;
-                    break;
-                case 43:
-                    this.mLabelRT = (Label)target;
-                    break;
-                case 44:
-                    this.mLabelBattery = (Label)target;
-                    break;
-                case 45:
-                    this.mLabelFirmwareVersion = (Label)target;
-                    break;
-                case 46:
-                    this.mNoticeTestSuccess = (Label)target;
-                    break;
-                case 47:
-                    this.mLoading = (Grid)target;
-                    break;
-                case 48:
-                    this.mLabelL3X = (Label)target;
-                    break;
-                case 49:
-                    this.mLabelL3Y = (Label)target;
-                    break;
-                case 50:
-                    this.mLabelR3X = (Label)target;
-                    break;
-                case 51:
-                    this.mLabelR3Y = (Label)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mLabelTitle = (Label)target;
+        //            break;
+        //        case 2:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.Button_Close_Click);
+        //            break;
+        //        case 3:
+        //            this.mImageClose = (Image)target;
+        //            this.mImageClose.MouseEnter += new MouseEventHandler(this.mImageClose_MouseEnter);
+        //            this.mImageClose.MouseLeave += new MouseEventHandler(this.mImageClose_MouseLeave);
+        //            break;
+        //        case 4:
+        //            this.mKeyUP = (Label)target;
+        //            break;
+        //        case 5:
+        //            this.mKeyLeft = (Label)target;
+        //            break;
+        //        case 6:
+        //            this.mKeyRight = (Label)target;
+        //            break;
+        //        case 7:
+        //            this.mKeyDown = (Label)target;
+        //            break;
+        //        case 8:
+        //            this.mJoystickWheel = (UserControlJoystick)target;
+        //            break;
+        //        case 9:
+        //            this.mKeyA = (Label)target;
+        //            break;
+        //        case 10:
+        //            this.mKeyB = (Label)target;
+        //            break;
+        //        case 11:
+        //            this.mKeyX = (Label)target;
+        //            break;
+        //        case 12:
+        //            this.mKeyY = (Label)target;
+        //            break;
+        //        case 13:
+        //            this.mKeySelect = (Label)target;
+        //            break;
+        //        case 14:
+        //            this.mKeyStart = (Label)target;
+        //            break;
+        //        case 15:
+        //            this.mKeyLB = (Label)target;
+        //            break;
+        //        case 16:
+        //            this.mKeyLT = (Label)target;
+        //            break;
+        //        case 17:
+        //            this.mKeyRB = (Label)target;
+        //            break;
+        //        case 18:
+        //            this.mKeyRT = (Label)target;
+        //            break;
+        //        case 19:
+        //            this.mKeyL3 = (Label)target;
+        //            break;
+        //        case 20:
+        //            this.mKeyR3 = (Label)target;
+        //            break;
+        //        case 21:
+        //            this.mKeyC = (Label)target;
+        //            break;
+        //        case 22:
+        //            this.mKeyZ = (Label)target;
+        //            break;
+        //        case 23:
+        //            this.mKeyMenu = (Label)target;
+        //            break;
+        //        case 24:
+        //            this.mKeyHome = (Label)target;
+        //            break;
+        //        case 25:
+        //            this.mKeyBack = (Label)target;
+        //            break;
+        //        case 26:
+        //            this.mKeyM1 = (Label)target;
+        //            break;
+        //        case 27:
+        //            this.mKeyM2 = (Label)target;
+        //            break;
+        //        case 28:
+        //            this.mKeyM3 = (Label)target;
+        //            break;
+        //        case 29:
+        //            this.mKeyM4 = (Label)target;
+        //            break;
+        //        case 30:
+        //            this.mKeyM5 = (Label)target;
+        //            break;
+        //        case 31:
+        //            this.mKeyM6 = (Label)target;
+        //            break;
+        //        case 32:
+        //            this.mJoystickLeft = (UserControlJoystick)target;
+        //            break;
+        //        case 33:
+        //            this.mJoystickRight = (UserControlJoystick)target;
+        //            break;
+        //        case 34:
+        //            this.mLabelJoystickResetNotice = (Label)target;
+        //            break;
+        //        case 35:
+        //            this.mButtonLedTest = (Button)target;
+        //            this.mButtonLedTest.Click += new RoutedEventHandler(this.Led_Test_Click);
+        //            break;
+        //        case 36:
+        //            this.mButtonColorTest = (Button)target;
+        //            this.mButtonColorTest.Click += new RoutedEventHandler(this.Color_Test_Click);
+        //            break;
+        //        case 37:
+        //            this.mButtonMotorLeftTest = (Button)target;
+        //            this.mButtonMotorLeftTest.Click += new RoutedEventHandler(this.Motor_Left_Test_Click);
+        //            break;
+        //        case 38:
+        //            this.mButtonMotorRightTest = (Button)target;
+        //            this.mButtonMotorRightTest.Click += new RoutedEventHandler(this.Motor_Right_Test_Click);
+        //            break;
+        //        case 39:
+        //            this.mButtonJoystickReset = (Button)target;
+        //            this.mButtonJoystickReset.Click += new RoutedEventHandler(this.Joystick_Reset_Click);
+        //            break;
+        //        case 40:
+        //            this.mSliderLT = (Slider)target;
+        //            break;
+        //        case 41:
+        //            this.mSliderRT = (Slider)target;
+        //            break;
+        //        case 42:
+        //            this.mLabelLT = (Label)target;
+        //            break;
+        //        case 43:
+        //            this.mLabelRT = (Label)target;
+        //            break;
+        //        case 44:
+        //            this.mLabelBattery = (Label)target;
+        //            break;
+        //        case 45:
+        //            this.mLabelFirmwareVersion = (Label)target;
+        //            break;
+        //        case 46:
+        //            this.mNoticeTestSuccess = (Label)target;
+        //            break;
+        //        case 47:
+        //            this.mLoading = (Grid)target;
+        //            break;
+        //        case 48:
+        //            this.mLabelL3X = (Label)target;
+        //            break;
+        //        case 49:
+        //            this.mLabelL3Y = (Label)target;
+        //            break;
+        //        case 50:
+        //            this.mLabelR3X = (Label)target;
+        //            break;
+        //        case 51:
+        //            this.mLabelR3Y = (Label)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

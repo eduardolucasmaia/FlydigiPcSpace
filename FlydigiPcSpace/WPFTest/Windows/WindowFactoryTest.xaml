@@ -167,7 +167,7 @@
            Foreground="#00FF00" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,200"
            Visibility="Hidden"/>
         <Grid Name="mLoading" Background="#80000000" Visibility="Hidden">
-            <Image Width="32" Height="32" AnimatedSource="/Resources/loading_gray.gif" AutoStart="true"/>
+            <Image Width="32" Height="32" gif:ImageBehavior.AnimatedSource="/Resources/loading_gray.gif" gif:ImageBehavior.AutoStart="true"/>
         </Grid>
         <Label HorizontalAlignment="Left" Margin="260,475,0,0" VerticalAlignment="Top"/>
         <Label Name="mLabelL3X" Content="X:" HorizontalAlignment="Left" Margin="270,494,0,0"

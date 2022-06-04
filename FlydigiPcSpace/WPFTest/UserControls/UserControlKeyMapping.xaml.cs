@@ -22,7 +22,7 @@ using WPFTest.Utils;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlKeyMapping : UserControl, IComponentConnector
+    public partial class UserControlKeyMapping : UserControl, IComponentConnector
     {
         public const int FRONT = 0;
         public const int AFTER = 1;
@@ -32,11 +32,11 @@ namespace WPFTest.UserControls
         private object mTargetObj;
         private IDelegateCallbackValueThreeObject mIDelegateCallbackValueThreeObject;
         private bool mFocusEnable = true;
-        internal Label mLabelCurrent;
-        internal Image mImageCurrent;
-        internal Label mLabelTarget;
-        internal Image mImageTarget;
-        internal Image mArrow;
+        //internal Label mLabelCurrent;
+        //internal Image mImageCurrent;
+        //internal Label mLabelTarget;
+        //internal Image mImageTarget;
+        //internal Image mArrow;
         private bool _contentLoaded;
 
         public UserControlKeyMapping() => this.InitializeComponent();
@@ -153,49 +153,49 @@ namespace WPFTest.UserControls
             this.mIDelegateCallbackValueThreeObject(2, this.mCurrentKeyId, this.mTargetObj);
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolkeymapping.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolkeymapping.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    ((UIElement)target).MouseEnter += new MouseEventHandler(this.UserControl_MouseEnter);
-                    ((UIElement)target).MouseLeave += new MouseEventHandler(this.UserControl_MouseLeave);
-                    break;
-                case 2:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.Button_Click);
-                    break;
-                case 3:
-                    this.mLabelCurrent = (Label)target;
-                    break;
-                case 4:
-                    this.mImageCurrent = (Image)target;
-                    break;
-                case 5:
-                    this.mLabelTarget = (Label)target;
-                    break;
-                case 6:
-                    this.mImageTarget = (Image)target;
-                    break;
-                case 7:
-                    this.mArrow = (Image)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            ((UIElement)target).MouseEnter += new MouseEventHandler(this.UserControl_MouseEnter);
+        //            ((UIElement)target).MouseLeave += new MouseEventHandler(this.UserControl_MouseLeave);
+        //            break;
+        //        case 2:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.Button_Click);
+        //            break;
+        //        case 3:
+        //            this.mLabelCurrent = (Label)target;
+        //            break;
+        //        case 4:
+        //            this.mImageCurrent = (Image)target;
+        //            break;
+        //        case 5:
+        //            this.mLabelTarget = (Label)target;
+        //            break;
+        //        case 6:
+        //            this.mImageTarget = (Image)target;
+        //            break;
+        //        case 7:
+        //            this.mArrow = (Image)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

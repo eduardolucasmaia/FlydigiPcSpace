@@ -21,7 +21,7 @@ using System.Windows.Media.Imaging;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlSettingConfigKeyDisplay : UserControl, IComponentConnector
+    public partial class UserControlSettingConfigKeyDisplay : UserControl, IComponentConnector
     {
         private Dictionary<int, Image> mDictionaryOutside = new Dictionary<int, Image>();
         private Dictionary<int, Image> mDictionaryInside = new Dictionary<int, Image>();
@@ -31,82 +31,82 @@ namespace WPFTest.UserControls
         private const int AFTER_RIGHT = 3;
         private const int TOP_LEFT = 4;
         private const int TOP_RIGHT = 5;
-        internal Grid mDisplayOutside;
-        internal Label mLabelTop;
-        internal Label mLabelFront;
-        internal Label mLabelAfter;
-        internal Grid mLayoutFront;
-        internal ImageBrush mImgFront;
-        internal Image mKeyUP;
-        internal Image mKeyRight;
-        internal Image mKeyLeft;
-        internal Image mKeyDown;
-        internal Image mKeyA;
-        internal Image mKeyB;
-        internal Image mKeyX;
-        internal Image mKeyY;
-        internal Image mKeyC;
-        internal Image mKeyZ;
-        internal Image mKeySelect;
-        internal Image mKeyStart;
-        internal Image mKeyL3;
-        internal Image mKeyR3;
-        internal Grid mLayoutAfter;
-        internal ImageBrush mImgAfter;
-        internal Image mKeyM1;
-        internal Image mKeyM2;
-        internal Image mKeyM3;
-        internal Image mKeyM4;
-        internal Grid mLayoutTop;
-        internal ImageBrush mImgTop;
-        internal Image mKeyRB;
-        internal Image mKeyRT;
-        internal Image mKeyLB;
-        internal Image mKeyLT;
-        internal Image mKeyM5;
-        internal Image mKeyM6;
-        internal Grid mBubble;
-        internal Label mLabelCurrent;
-        internal Image mImageCurrent;
-        internal Label mLabelTarget;
-        internal Image mImageTarget;
-        internal Grid mDisplayInside;
-        internal Grid mLayoutFrontLeft;
-        internal Image mImgFrontLeft;
-        internal Image mInsideKeyUP;
-        internal Image mInsideKeyRight;
-        internal Image mInsideKeyLeft;
-        internal Image mInsideKeyDown;
-        internal Image mInsideKeySelect;
-        internal Image mInsideKeyL3;
-        internal Grid mLayoutFrontRight;
-        internal Image mImgFrontRight;
-        internal Image mInsideKeyA;
-        internal Image mInsideKeyB;
-        internal Image mInsideKeyX;
-        internal Image mInsideKeyY;
-        internal Image mInsideKeyC;
-        internal Image mInsideKeyZ;
-        internal Image mInsideKeyStart;
-        internal Image mInsideKeyR3;
-        internal Grid mLayoutAfterLeft;
-        internal Image mImgAfterLeft;
-        internal Image mInsideKeyM1;
-        internal Image mInsideKeyM3;
-        internal Grid mLayoutAfterRight;
-        internal Image mImgAfterRight;
-        internal Image mInsideKeyM2;
-        internal Image mInsideKeyM4;
-        internal Grid mLayoutTopLeft;
-        internal Image mImgTopLeft;
-        internal Image mInsideKeyRB;
-        internal Image mInsideKeyRT;
-        internal Image mInsideKeyM5;
-        internal Grid mLayoutTopRight;
-        internal Image mImgTopRight;
-        internal Image mInsideKeyLB;
-        internal Image mInsideKeyLT;
-        internal Image mInsideKeyM6;
+        //internal Grid mDisplayOutside;
+        //internal Label mLabelTop;
+        //internal Label mLabelFront;
+        //internal Label mLabelAfter;
+        //internal Grid mLayoutFront;
+        //internal ImageBrush mImgFront;
+        //internal Image mKeyUP;
+        //internal Image mKeyRight;
+        //internal Image mKeyLeft;
+        //internal Image mKeyDown;
+        //internal Image mKeyA;
+        //internal Image mKeyB;
+        //internal Image mKeyX;
+        //internal Image mKeyY;
+        //internal Image mKeyC;
+        //internal Image mKeyZ;
+        //internal Image mKeySelect;
+        //internal Image mKeyStart;
+        //internal Image mKeyL3;
+        //internal Image mKeyR3;
+        //internal Grid mLayoutAfter;
+        //internal ImageBrush mImgAfter;
+        //internal Image mKeyM1;
+        //internal Image mKeyM2;
+        //internal Image mKeyM3;
+        //internal Image mKeyM4;
+        //internal Grid mLayoutTop;
+        //internal ImageBrush mImgTop;
+        //internal Image mKeyRB;
+        //internal Image mKeyRT;
+        //internal Image mKeyLB;
+        //internal Image mKeyLT;
+        //internal Image mKeyM5;
+        //internal Image mKeyM6;
+        //internal Grid mBubble;
+        //internal Label mLabelCurrent;
+        //internal Image mImageCurrent;
+        //internal Label mLabelTarget;
+        //internal Image mImageTarget;
+        //internal Grid mDisplayInside;
+        //internal Grid mLayoutFrontLeft;
+        //internal Image mImgFrontLeft;
+        //internal Image mInsideKeyUP;
+        //internal Image mInsideKeyRight;
+        //internal Image mInsideKeyLeft;
+        //internal Image mInsideKeyDown;
+        //internal Image mInsideKeySelect;
+        //internal Image mInsideKeyL3;
+        //internal Grid mLayoutFrontRight;
+        //internal Image mImgFrontRight;
+        //internal Image mInsideKeyA;
+        //internal Image mInsideKeyB;
+        //internal Image mInsideKeyX;
+        //internal Image mInsideKeyY;
+        //internal Image mInsideKeyC;
+        //internal Image mInsideKeyZ;
+        //internal Image mInsideKeyStart;
+        //internal Image mInsideKeyR3;
+        //internal Grid mLayoutAfterLeft;
+        //internal Image mImgAfterLeft;
+        //internal Image mInsideKeyM1;
+        //internal Image mInsideKeyM3;
+        //internal Grid mLayoutAfterRight;
+        //internal Image mImgAfterRight;
+        //internal Image mInsideKeyM2;
+        //internal Image mInsideKeyM4;
+        //internal Grid mLayoutTopLeft;
+        //internal Image mImgTopLeft;
+        //internal Image mInsideKeyRB;
+        //internal Image mInsideKeyRT;
+        //internal Image mInsideKeyM5;
+        //internal Grid mLayoutTopRight;
+        //internal Image mImgTopRight;
+        //internal Image mInsideKeyLB;
+        //internal Image mInsideKeyLT;
+        //internal Image mInsideKeyM6;
         private bool _contentLoaded;
 
         public UserControlSettingConfigKeyDisplay()
@@ -564,258 +564,258 @@ namespace WPFTest.UserControls
             }
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigkeydisplay.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigkeydisplay.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mDisplayOutside = (Grid)target;
-                    break;
-                case 2:
-                    this.mLabelTop = (Label)target;
-                    this.mLabelTop.MouseLeftButtonDown += new MouseButtonEventHandler(this.mLabelTop_MouseLeftButtonDown);
-                    break;
-                case 3:
-                    this.mLabelFront = (Label)target;
-                    this.mLabelFront.MouseLeftButtonDown += new MouseButtonEventHandler(this.mLabelFront_MouseLeftButtonDown);
-                    break;
-                case 4:
-                    this.mLabelAfter = (Label)target;
-                    this.mLabelAfter.MouseLeftButtonDown += new MouseButtonEventHandler(this.mLabelAfter_MouseLeftButtonDown);
-                    break;
-                case 5:
-                    this.mLayoutFront = (Grid)target;
-                    break;
-                case 6:
-                    this.mImgFront = (ImageBrush)target;
-                    break;
-                case 7:
-                    this.mKeyUP = (Image)target;
-                    break;
-                case 8:
-                    this.mKeyRight = (Image)target;
-                    break;
-                case 9:
-                    this.mKeyLeft = (Image)target;
-                    break;
-                case 10:
-                    this.mKeyDown = (Image)target;
-                    break;
-                case 11:
-                    this.mKeyA = (Image)target;
-                    break;
-                case 12:
-                    this.mKeyB = (Image)target;
-                    break;
-                case 13:
-                    this.mKeyX = (Image)target;
-                    break;
-                case 14:
-                    this.mKeyY = (Image)target;
-                    break;
-                case 15:
-                    this.mKeyC = (Image)target;
-                    break;
-                case 16:
-                    this.mKeyZ = (Image)target;
-                    break;
-                case 17:
-                    this.mKeySelect = (Image)target;
-                    break;
-                case 18:
-                    this.mKeyStart = (Image)target;
-                    break;
-                case 19:
-                    this.mKeyL3 = (Image)target;
-                    break;
-                case 20:
-                    this.mKeyR3 = (Image)target;
-                    break;
-                case 21:
-                    this.mLayoutAfter = (Grid)target;
-                    break;
-                case 22:
-                    this.mImgAfter = (ImageBrush)target;
-                    break;
-                case 23:
-                    this.mKeyM1 = (Image)target;
-                    break;
-                case 24:
-                    this.mKeyM2 = (Image)target;
-                    break;
-                case 25:
-                    this.mKeyM3 = (Image)target;
-                    break;
-                case 26:
-                    this.mKeyM4 = (Image)target;
-                    break;
-                case 27:
-                    this.mLayoutTop = (Grid)target;
-                    break;
-                case 28:
-                    this.mImgTop = (ImageBrush)target;
-                    break;
-                case 29:
-                    this.mKeyRB = (Image)target;
-                    break;
-                case 30:
-                    this.mKeyRT = (Image)target;
-                    break;
-                case 31:
-                    this.mKeyLB = (Image)target;
-                    break;
-                case 32:
-                    this.mKeyLT = (Image)target;
-                    break;
-                case 33:
-                    this.mKeyM5 = (Image)target;
-                    break;
-                case 34:
-                    this.mKeyM6 = (Image)target;
-                    break;
-                case 35:
-                    this.mBubble = (Grid)target;
-                    break;
-                case 36:
-                    this.mLabelCurrent = (Label)target;
-                    break;
-                case 37:
-                    this.mImageCurrent = (Image)target;
-                    break;
-                case 38:
-                    this.mLabelTarget = (Label)target;
-                    break;
-                case 39:
-                    this.mImageTarget = (Image)target;
-                    break;
-                case 40:
-                    this.mDisplayInside = (Grid)target;
-                    break;
-                case 41:
-                    this.mLayoutFrontLeft = (Grid)target;
-                    break;
-                case 42:
-                    this.mImgFrontLeft = (Image)target;
-                    break;
-                case 43:
-                    this.mInsideKeyUP = (Image)target;
-                    break;
-                case 44:
-                    this.mInsideKeyRight = (Image)target;
-                    break;
-                case 45:
-                    this.mInsideKeyLeft = (Image)target;
-                    break;
-                case 46:
-                    this.mInsideKeyDown = (Image)target;
-                    break;
-                case 47:
-                    this.mInsideKeySelect = (Image)target;
-                    break;
-                case 48:
-                    this.mInsideKeyL3 = (Image)target;
-                    break;
-                case 49:
-                    this.mLayoutFrontRight = (Grid)target;
-                    break;
-                case 50:
-                    this.mImgFrontRight = (Image)target;
-                    break;
-                case 51:
-                    this.mInsideKeyA = (Image)target;
-                    break;
-                case 52:
-                    this.mInsideKeyB = (Image)target;
-                    break;
-                case 53:
-                    this.mInsideKeyX = (Image)target;
-                    break;
-                case 54:
-                    this.mInsideKeyY = (Image)target;
-                    break;
-                case 55:
-                    this.mInsideKeyC = (Image)target;
-                    break;
-                case 56:
-                    this.mInsideKeyZ = (Image)target;
-                    break;
-                case 57:
-                    this.mInsideKeyStart = (Image)target;
-                    break;
-                case 58:
-                    this.mInsideKeyR3 = (Image)target;
-                    break;
-                case 59:
-                    this.mLayoutAfterLeft = (Grid)target;
-                    break;
-                case 60:
-                    this.mImgAfterLeft = (Image)target;
-                    break;
-                case 61:
-                    this.mInsideKeyM1 = (Image)target;
-                    break;
-                case 62:
-                    this.mInsideKeyM3 = (Image)target;
-                    break;
-                case 63:
-                    this.mLayoutAfterRight = (Grid)target;
-                    break;
-                case 64:
-                    this.mImgAfterRight = (Image)target;
-                    break;
-                case 65:
-                    this.mInsideKeyM2 = (Image)target;
-                    break;
-                case 66:
-                    this.mInsideKeyM4 = (Image)target;
-                    break;
-                case 67:
-                    this.mLayoutTopLeft = (Grid)target;
-                    break;
-                case 68:
-                    this.mImgTopLeft = (Image)target;
-                    break;
-                case 69:
-                    this.mInsideKeyRB = (Image)target;
-                    break;
-                case 70:
-                    this.mInsideKeyRT = (Image)target;
-                    break;
-                case 71:
-                    this.mInsideKeyM5 = (Image)target;
-                    break;
-                case 72:
-                    this.mLayoutTopRight = (Grid)target;
-                    break;
-                case 73:
-                    this.mImgTopRight = (Image)target;
-                    break;
-                case 74:
-                    this.mInsideKeyLB = (Image)target;
-                    break;
-                case 75:
-                    this.mInsideKeyLT = (Image)target;
-                    break;
-                case 76:
-                    this.mInsideKeyM6 = (Image)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mDisplayOutside = (Grid)target;
+        //            break;
+        //        case 2:
+        //            this.mLabelTop = (Label)target;
+        //            this.mLabelTop.MouseLeftButtonDown += new MouseButtonEventHandler(this.mLabelTop_MouseLeftButtonDown);
+        //            break;
+        //        case 3:
+        //            this.mLabelFront = (Label)target;
+        //            this.mLabelFront.MouseLeftButtonDown += new MouseButtonEventHandler(this.mLabelFront_MouseLeftButtonDown);
+        //            break;
+        //        case 4:
+        //            this.mLabelAfter = (Label)target;
+        //            this.mLabelAfter.MouseLeftButtonDown += new MouseButtonEventHandler(this.mLabelAfter_MouseLeftButtonDown);
+        //            break;
+        //        case 5:
+        //            this.mLayoutFront = (Grid)target;
+        //            break;
+        //        case 6:
+        //            this.mImgFront = (ImageBrush)target;
+        //            break;
+        //        case 7:
+        //            this.mKeyUP = (Image)target;
+        //            break;
+        //        case 8:
+        //            this.mKeyRight = (Image)target;
+        //            break;
+        //        case 9:
+        //            this.mKeyLeft = (Image)target;
+        //            break;
+        //        case 10:
+        //            this.mKeyDown = (Image)target;
+        //            break;
+        //        case 11:
+        //            this.mKeyA = (Image)target;
+        //            break;
+        //        case 12:
+        //            this.mKeyB = (Image)target;
+        //            break;
+        //        case 13:
+        //            this.mKeyX = (Image)target;
+        //            break;
+        //        case 14:
+        //            this.mKeyY = (Image)target;
+        //            break;
+        //        case 15:
+        //            this.mKeyC = (Image)target;
+        //            break;
+        //        case 16:
+        //            this.mKeyZ = (Image)target;
+        //            break;
+        //        case 17:
+        //            this.mKeySelect = (Image)target;
+        //            break;
+        //        case 18:
+        //            this.mKeyStart = (Image)target;
+        //            break;
+        //        case 19:
+        //            this.mKeyL3 = (Image)target;
+        //            break;
+        //        case 20:
+        //            this.mKeyR3 = (Image)target;
+        //            break;
+        //        case 21:
+        //            this.mLayoutAfter = (Grid)target;
+        //            break;
+        //        case 22:
+        //            this.mImgAfter = (ImageBrush)target;
+        //            break;
+        //        case 23:
+        //            this.mKeyM1 = (Image)target;
+        //            break;
+        //        case 24:
+        //            this.mKeyM2 = (Image)target;
+        //            break;
+        //        case 25:
+        //            this.mKeyM3 = (Image)target;
+        //            break;
+        //        case 26:
+        //            this.mKeyM4 = (Image)target;
+        //            break;
+        //        case 27:
+        //            this.mLayoutTop = (Grid)target;
+        //            break;
+        //        case 28:
+        //            this.mImgTop = (ImageBrush)target;
+        //            break;
+        //        case 29:
+        //            this.mKeyRB = (Image)target;
+        //            break;
+        //        case 30:
+        //            this.mKeyRT = (Image)target;
+        //            break;
+        //        case 31:
+        //            this.mKeyLB = (Image)target;
+        //            break;
+        //        case 32:
+        //            this.mKeyLT = (Image)target;
+        //            break;
+        //        case 33:
+        //            this.mKeyM5 = (Image)target;
+        //            break;
+        //        case 34:
+        //            this.mKeyM6 = (Image)target;
+        //            break;
+        //        case 35:
+        //            this.mBubble = (Grid)target;
+        //            break;
+        //        case 36:
+        //            this.mLabelCurrent = (Label)target;
+        //            break;
+        //        case 37:
+        //            this.mImageCurrent = (Image)target;
+        //            break;
+        //        case 38:
+        //            this.mLabelTarget = (Label)target;
+        //            break;
+        //        case 39:
+        //            this.mImageTarget = (Image)target;
+        //            break;
+        //        case 40:
+        //            this.mDisplayInside = (Grid)target;
+        //            break;
+        //        case 41:
+        //            this.mLayoutFrontLeft = (Grid)target;
+        //            break;
+        //        case 42:
+        //            this.mImgFrontLeft = (Image)target;
+        //            break;
+        //        case 43:
+        //            this.mInsideKeyUP = (Image)target;
+        //            break;
+        //        case 44:
+        //            this.mInsideKeyRight = (Image)target;
+        //            break;
+        //        case 45:
+        //            this.mInsideKeyLeft = (Image)target;
+        //            break;
+        //        case 46:
+        //            this.mInsideKeyDown = (Image)target;
+        //            break;
+        //        case 47:
+        //            this.mInsideKeySelect = (Image)target;
+        //            break;
+        //        case 48:
+        //            this.mInsideKeyL3 = (Image)target;
+        //            break;
+        //        case 49:
+        //            this.mLayoutFrontRight = (Grid)target;
+        //            break;
+        //        case 50:
+        //            this.mImgFrontRight = (Image)target;
+        //            break;
+        //        case 51:
+        //            this.mInsideKeyA = (Image)target;
+        //            break;
+        //        case 52:
+        //            this.mInsideKeyB = (Image)target;
+        //            break;
+        //        case 53:
+        //            this.mInsideKeyX = (Image)target;
+        //            break;
+        //        case 54:
+        //            this.mInsideKeyY = (Image)target;
+        //            break;
+        //        case 55:
+        //            this.mInsideKeyC = (Image)target;
+        //            break;
+        //        case 56:
+        //            this.mInsideKeyZ = (Image)target;
+        //            break;
+        //        case 57:
+        //            this.mInsideKeyStart = (Image)target;
+        //            break;
+        //        case 58:
+        //            this.mInsideKeyR3 = (Image)target;
+        //            break;
+        //        case 59:
+        //            this.mLayoutAfterLeft = (Grid)target;
+        //            break;
+        //        case 60:
+        //            this.mImgAfterLeft = (Image)target;
+        //            break;
+        //        case 61:
+        //            this.mInsideKeyM1 = (Image)target;
+        //            break;
+        //        case 62:
+        //            this.mInsideKeyM3 = (Image)target;
+        //            break;
+        //        case 63:
+        //            this.mLayoutAfterRight = (Grid)target;
+        //            break;
+        //        case 64:
+        //            this.mImgAfterRight = (Image)target;
+        //            break;
+        //        case 65:
+        //            this.mInsideKeyM2 = (Image)target;
+        //            break;
+        //        case 66:
+        //            this.mInsideKeyM4 = (Image)target;
+        //            break;
+        //        case 67:
+        //            this.mLayoutTopLeft = (Grid)target;
+        //            break;
+        //        case 68:
+        //            this.mImgTopLeft = (Image)target;
+        //            break;
+        //        case 69:
+        //            this.mInsideKeyRB = (Image)target;
+        //            break;
+        //        case 70:
+        //            this.mInsideKeyRT = (Image)target;
+        //            break;
+        //        case 71:
+        //            this.mInsideKeyM5 = (Image)target;
+        //            break;
+        //        case 72:
+        //            this.mLayoutTopRight = (Grid)target;
+        //            break;
+        //        case 73:
+        //            this.mImgTopRight = (Image)target;
+        //            break;
+        //        case 74:
+        //            this.mInsideKeyLB = (Image)target;
+        //            break;
+        //        case 75:
+        //            this.mInsideKeyLT = (Image)target;
+        //            break;
+        //        case 76:
+        //            this.mInsideKeyM6 = (Image)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

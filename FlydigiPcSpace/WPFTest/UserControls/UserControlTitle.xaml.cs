@@ -14,34 +14,34 @@ using System.Windows.Markup;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlTitle : UserControl, IComponentConnector
+    public partial class UserControlTitle : UserControl, IComponentConnector
     {
-        internal Label mTitle;
+        //internal Label mTitle;
         private bool _contentLoaded;
 
         public UserControlTitle() => this.InitializeComponent();
 
         public void setTitle(string title) => this.mTitle.Content = (object)title;
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontroltitle.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontroltitle.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            if (connectionId == 1)
-                this.mTitle = (Label)target;
-            else
-                this._contentLoaded = true;
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    if (connectionId == 1)
+        //        this.mTitle = (Label)target;
+        //    else
+        //        this._contentLoaded = true;
+        //}
     }
 }

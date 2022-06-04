@@ -128,7 +128,7 @@
             </Label>
         </StackPanel>
         <Grid Name="mLoading" Background="#80000000" Visibility="Collapsed">
-            <Image Width="32" Height="32" AnimatedSource="/Resources/loading_gray.gif" AutoStart="true"/>
+            <Image Width="32" Height="32" gif:ImageBehavior.AnimatedSource="/Resources/loading_gray.gif" gif:ImageBehavior.AutoStart="true"/>
             <Label Name="mLoadingLabel" Width="500" Height="40" Content="{DynamicResource tips_switch_xinput_step1}"
              VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center"
              VerticalAlignment="Center" Foreground="White" FontSize="12" Margin="350,416,350,264"

@@ -17,16 +17,16 @@ using WPFTest.Utils;
 
 namespace WPFTest.Windows
 {
-    public class WindowDialogDownload : Window, IComponentConnector
+    public partial class WindowDialogDownload : Window, IComponentConnector
     {
         private string mAppUrl;
         private string mAppVersion;
         private string mNewApplicationName;
-        internal ProgressBar mProgressBar;
-        internal Label mLabelProgress;
-        internal Button mButtonStartNewApp;
-        internal Button mButtonDownload;
-        internal Label mLabelVersion;
+        //internal ProgressBar mProgressBar;
+        //internal Label mLabelProgress;
+        //internal Button mButtonStartNewApp;
+        //internal Button mButtonDownload;
+        //internal Label mLabelVersion;
         private bool _contentLoaded;
 
         public WindowDialogDownload(string url, string version)
@@ -85,44 +85,44 @@ namespace WPFTest.Windows
 
         private void mButtonDownload_Click(object sender, RoutedEventArgs e) => this.downloadApp();
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/windows/windowdialogdownload.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/windows/windowdialogdownload.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mProgressBar = (ProgressBar)target;
-                    break;
-                case 2:
-                    this.mLabelProgress = (Label)target;
-                    break;
-                case 3:
-                    this.mButtonStartNewApp = (Button)target;
-                    this.mButtonStartNewApp.Click += new RoutedEventHandler(this.mButtonStartNewApp_Click);
-                    break;
-                case 4:
-                    this.mButtonDownload = (Button)target;
-                    this.mButtonDownload.Click += new RoutedEventHandler(this.mButtonDownload_Click);
-                    break;
-                case 5:
-                    this.mLabelVersion = (Label)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mProgressBar = (ProgressBar)target;
+        //            break;
+        //        case 2:
+        //            this.mLabelProgress = (Label)target;
+        //            break;
+        //        case 3:
+        //            this.mButtonStartNewApp = (Button)target;
+        //            this.mButtonStartNewApp.Click += new RoutedEventHandler(this.mButtonStartNewApp_Click);
+        //            break;
+        //        case 4:
+        //            this.mButtonDownload = (Button)target;
+        //            this.mButtonDownload.Click += new RoutedEventHandler(this.mButtonDownload_Click);
+        //            break;
+        //        case 5:
+        //            this.mLabelVersion = (Label)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

@@ -25,7 +25,7 @@ using WPFTest.Utils;
 
 namespace WPFTest.Windows
 {
-    public class PageConfigSetting : Page, DataManager.IDeviceOperateData, IComponentConnector
+    public partial class PageConfigSetting : Page, DataManager.IDeviceOperateData, IComponentConnector
     {
         private WindowMain mWindowMain;
         private ConfigBean mConfigBean;
@@ -35,34 +35,34 @@ namespace WPFTest.Windows
         private int mConfigIndex;
         private int mLastMotionX;
         private int mLastMotionY;
-        internal Grid mGrid;
-        internal Image mBackgroundImage;
-        internal Button mButtonLed;
-        internal Image mImageLed;
-        internal Label mLabelLed;
-        internal Button mButtonKey;
-        internal Image mImageKey;
-        internal Label mLabelKey;
-        internal Button mButtonJoystick;
-        internal Image mImageJoystick;
-        internal Label mLabelJoystick;
-        internal Button mButtonMotion;
-        internal Image mImageMotion;
-        internal Label mLabelMotion;
-        internal Button mButtonTrigger;
-        internal Image mImageTrigger;
-        internal Label mLabelTrigger;
-        internal UserControlSettingConfigBasic mLayoutBasic;
-        internal UserControlSettingConfigLed mLayoutLed;
-        internal UserControlSettingConfigKey mLayoutKey;
-        internal UserControlSettingConfigJoystick mLayoutJoystick;
-        internal UserControlSettingConfigMotion mLayoutMotion;
-        internal UserControlSettingConfigJoystickDisplay mLayoutJoystickDisplay;
-        internal UserControlSettingConfigMotionDisplay mLayoutMotionDisplay;
-        internal UserControlSettingConfigJoystick mLayoutTrigger;
-        internal UserControlSettingConfigTriggerDisplay mLayoutTriggerDisplay;
-        internal Grid mLoading;
-        internal Label mLoadingLabel;
+        //internal Grid mGrid;
+        //internal Image mBackgroundImage;
+        //internal Button mButtonLed;
+        //internal Image mImageLed;
+        //internal Label mLabelLed;
+        //internal Button mButtonKey;
+        //internal Image mImageKey;
+        //internal Label mLabelKey;
+        //internal Button mButtonJoystick;
+        //internal Image mImageJoystick;
+        //internal Label mLabelJoystick;
+        //internal Button mButtonMotion;
+        //internal Image mImageMotion;
+        //internal Label mLabelMotion;
+        //internal Button mButtonTrigger;
+        //internal Image mImageTrigger;
+        //internal Label mLabelTrigger;
+        //internal UserControlSettingConfigBasic mLayoutBasic;
+        //internal UserControlSettingConfigLed mLayoutLed;
+        //internal UserControlSettingConfigKey mLayoutKey;
+        //internal UserControlSettingConfigJoystick mLayoutJoystick;
+        //internal UserControlSettingConfigMotion mLayoutMotion;
+        //internal UserControlSettingConfigJoystickDisplay mLayoutJoystickDisplay;
+        //internal UserControlSettingConfigMotionDisplay mLayoutMotionDisplay;
+        //internal UserControlSettingConfigJoystick mLayoutTrigger;
+        //internal UserControlSettingConfigTriggerDisplay mLayoutTriggerDisplay;
+        //internal Grid mLoading;
+        //internal Label mLoadingLabel;
         private bool _contentLoaded;
 
         [DllImport("user32.dll")]
@@ -314,7 +314,7 @@ namespace WPFTest.Windows
                 {
                     NetworkUtils.FlydigiPostEvent("配置设置页-配置" + (this.mConfigIndex + 1).ToString() + "应用到手柄，宏个数：" + this.mConfigBean.Macro.ListMacro.Count.ToString());
                     delegateCallback(0);
-                    Action action;
+                    Action action = null;
                     new Thread((ThreadStart)(() =>
                     {
                         bool applySuccessed = false;
@@ -446,126 +446,126 @@ namespace WPFTest.Windows
         {
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/pages/pageconfigsetting.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/pages/pageconfigsetting.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    ((FrameworkElement)target).Loaded += new RoutedEventHandler(this.Page_Loaded);
-                    ((FrameworkElement)target).Initialized += new EventHandler(this.Page_Initialized);
-                    ((UIElement)target).MouseDown += new MouseButtonEventHandler(this.Page_MouseDown);
-                    ((FrameworkElement)target).Unloaded += new RoutedEventHandler(this.Page_Unloaded);
-                    break;
-                case 2:
-                    this.mGrid = (Grid)target;
-                    break;
-                case 3:
-                    this.mBackgroundImage = (Image)target;
-                    break;
-                case 4:
-                    this.mButtonLed = (Button)target;
-                    this.mButtonLed.Click += new RoutedEventHandler(this.mButtonLed_Click);
-                    break;
-                case 5:
-                    this.mImageLed = (Image)target;
-                    break;
-                case 6:
-                    this.mLabelLed = (Label)target;
-                    break;
-                case 7:
-                    this.mButtonKey = (Button)target;
-                    this.mButtonKey.Click += new RoutedEventHandler(this.mButtonKey_Click);
-                    break;
-                case 8:
-                    this.mImageKey = (Image)target;
-                    break;
-                case 9:
-                    this.mLabelKey = (Label)target;
-                    break;
-                case 10:
-                    this.mButtonJoystick = (Button)target;
-                    this.mButtonJoystick.Click += new RoutedEventHandler(this.mButtonJoystick_Click);
-                    break;
-                case 11:
-                    this.mImageJoystick = (Image)target;
-                    break;
-                case 12:
-                    this.mLabelJoystick = (Label)target;
-                    break;
-                case 13:
-                    this.mButtonMotion = (Button)target;
-                    this.mButtonMotion.Click += new RoutedEventHandler(this.mButtonMotion_Click);
-                    break;
-                case 14:
-                    this.mImageMotion = (Image)target;
-                    break;
-                case 15:
-                    this.mLabelMotion = (Label)target;
-                    break;
-                case 16:
-                    this.mButtonTrigger = (Button)target;
-                    this.mButtonTrigger.Click += new RoutedEventHandler(this.mButtonTrigger_Click);
-                    break;
-                case 17:
-                    this.mImageTrigger = (Image)target;
-                    break;
-                case 18:
-                    this.mLabelTrigger = (Label)target;
-                    break;
-                case 19:
-                    this.mLayoutBasic = (UserControlSettingConfigBasic)target;
-                    break;
-                case 20:
-                    this.mLayoutLed = (UserControlSettingConfigLed)target;
-                    break;
-                case 21:
-                    this.mLayoutKey = (UserControlSettingConfigKey)target;
-                    break;
-                case 22:
-                    this.mLayoutJoystick = (UserControlSettingConfigJoystick)target;
-                    break;
-                case 23:
-                    this.mLayoutMotion = (UserControlSettingConfigMotion)target;
-                    break;
-                case 24:
-                    this.mLayoutJoystickDisplay = (UserControlSettingConfigJoystickDisplay)target;
-                    break;
-                case 25:
-                    this.mLayoutMotionDisplay = (UserControlSettingConfigMotionDisplay)target;
-                    break;
-                case 26:
-                    this.mLayoutTrigger = (UserControlSettingConfigJoystick)target;
-                    break;
-                case 27:
-                    this.mLayoutTriggerDisplay = (UserControlSettingConfigTriggerDisplay)target;
-                    break;
-                case 28:
-                    this.mLoading = (Grid)target;
-                    break;
-                case 29:
-                    this.mLoadingLabel = (Label)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            ((FrameworkElement)target).Loaded += new RoutedEventHandler(this.Page_Loaded);
+        //            ((FrameworkElement)target).Initialized += new EventHandler(this.Page_Initialized);
+        //            ((UIElement)target).MouseDown += new MouseButtonEventHandler(this.Page_MouseDown);
+        //            ((FrameworkElement)target).Unloaded += new RoutedEventHandler(this.Page_Unloaded);
+        //            break;
+        //        case 2:
+        //            this.mGrid = (Grid)target;
+        //            break;
+        //        case 3:
+        //            this.mBackgroundImage = (Image)target;
+        //            break;
+        //        case 4:
+        //            this.mButtonLed = (Button)target;
+        //            this.mButtonLed.Click += new RoutedEventHandler(this.mButtonLed_Click);
+        //            break;
+        //        case 5:
+        //            this.mImageLed = (Image)target;
+        //            break;
+        //        case 6:
+        //            this.mLabelLed = (Label)target;
+        //            break;
+        //        case 7:
+        //            this.mButtonKey = (Button)target;
+        //            this.mButtonKey.Click += new RoutedEventHandler(this.mButtonKey_Click);
+        //            break;
+        //        case 8:
+        //            this.mImageKey = (Image)target;
+        //            break;
+        //        case 9:
+        //            this.mLabelKey = (Label)target;
+        //            break;
+        //        case 10:
+        //            this.mButtonJoystick = (Button)target;
+        //            this.mButtonJoystick.Click += new RoutedEventHandler(this.mButtonJoystick_Click);
+        //            break;
+        //        case 11:
+        //            this.mImageJoystick = (Image)target;
+        //            break;
+        //        case 12:
+        //            this.mLabelJoystick = (Label)target;
+        //            break;
+        //        case 13:
+        //            this.mButtonMotion = (Button)target;
+        //            this.mButtonMotion.Click += new RoutedEventHandler(this.mButtonMotion_Click);
+        //            break;
+        //        case 14:
+        //            this.mImageMotion = (Image)target;
+        //            break;
+        //        case 15:
+        //            this.mLabelMotion = (Label)target;
+        //            break;
+        //        case 16:
+        //            this.mButtonTrigger = (Button)target;
+        //            this.mButtonTrigger.Click += new RoutedEventHandler(this.mButtonTrigger_Click);
+        //            break;
+        //        case 17:
+        //            this.mImageTrigger = (Image)target;
+        //            break;
+        //        case 18:
+        //            this.mLabelTrigger = (Label)target;
+        //            break;
+        //        case 19:
+        //            this.mLayoutBasic = (UserControlSettingConfigBasic)target;
+        //            break;
+        //        case 20:
+        //            this.mLayoutLed = (UserControlSettingConfigLed)target;
+        //            break;
+        //        case 21:
+        //            this.mLayoutKey = (UserControlSettingConfigKey)target;
+        //            break;
+        //        case 22:
+        //            this.mLayoutJoystick = (UserControlSettingConfigJoystick)target;
+        //            break;
+        //        case 23:
+        //            this.mLayoutMotion = (UserControlSettingConfigMotion)target;
+        //            break;
+        //        case 24:
+        //            this.mLayoutJoystickDisplay = (UserControlSettingConfigJoystickDisplay)target;
+        //            break;
+        //        case 25:
+        //            this.mLayoutMotionDisplay = (UserControlSettingConfigMotionDisplay)target;
+        //            break;
+        //        case 26:
+        //            this.mLayoutTrigger = (UserControlSettingConfigJoystick)target;
+        //            break;
+        //        case 27:
+        //            this.mLayoutTriggerDisplay = (UserControlSettingConfigTriggerDisplay)target;
+        //            break;
+        //        case 28:
+        //            this.mLoading = (Grid)target;
+        //            break;
+        //        case 29:
+        //            this.mLoadingLabel = (Label)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

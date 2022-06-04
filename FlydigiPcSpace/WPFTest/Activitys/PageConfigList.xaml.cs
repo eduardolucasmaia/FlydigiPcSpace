@@ -25,7 +25,7 @@ using WPFTest.Windows;
 
 namespace WPFTest.Activitys
 {
-    public class PageConfigList : Page, IComponentConnector
+    public partial class PageConfigList : Page, IComponentConnector
     {
         private WindowMain mWindowMain;
         private System.Windows.Controls.Frame mFrame;
@@ -35,17 +35,17 @@ namespace WPFTest.Activitys
         private bool mLive = true;
         private int Led_Continue_Time = 500;
         private bool mReadingState;
-        internal Grid mGrid;
-        internal Image mBgImage;
-        internal StackPanel mLayoutSwitchCFGTips;
-        internal Image mImgMenu;
-        internal Image mImgBack;
-        internal Label mLabelTipsSwitch;
-        internal Button mButtonConfig1;
-        internal Button mButtonConfig2;
-        internal Button mButtonConfig3;
-        internal Button mButtonConfig4;
-        internal UserControlConfig mLayoutConfig;
+        //internal Grid mGrid;
+        //internal Image mBgImage;
+        //internal StackPanel mLayoutSwitchCFGTips;
+        //internal Image mImgMenu;
+        //internal Image mImgBack;
+        //internal Label mLabelTipsSwitch;
+        //internal Button mButtonConfig1;
+        //internal Button mButtonConfig2;
+        //internal Button mButtonConfig3;
+        //internal Button mButtonConfig4;
+        //internal UserControlConfig mLayoutConfig;
         private bool _contentLoaded;
 
         public PageConfigList(WindowMain window, System.Windows.Controls.Frame frame)
@@ -270,7 +270,7 @@ namespace WPFTest.Activitys
                 return;
             this.mReadingState = true;
             this.mWindowMain.setConfigReading(this.mReadingState);
-            ThreadStart threadStart;
+            ThreadStart threadStart = null;
             new Thread((ParameterizedThreadStart)(o =>
             {
                 bool readSuccessed = false;
@@ -547,76 +547,76 @@ namespace WPFTest.Activitys
             this.mLive = false;
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/pages/pageconfiglist.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/pages/pageconfiglist.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    ((FrameworkElement)target).Loaded += new RoutedEventHandler(this.Page_Loaded);
-                    ((FrameworkElement)target).Initialized += new EventHandler(this.Page_Initialized);
-                    ((FrameworkElement)target).Unloaded += new RoutedEventHandler(this.Page_Unloaded);
-                    break;
-                case 2:
-                    this.mGrid = (Grid)target;
-                    break;
-                case 3:
-                    this.mBgImage = (Image)target;
-                    break;
-                case 4:
-                    this.mLayoutSwitchCFGTips = (StackPanel)target;
-                    break;
-                case 5:
-                    this.mImgMenu = (Image)target;
-                    break;
-                case 6:
-                    this.mImgBack = (Image)target;
-                    break;
-                case 7:
-                    this.mLabelTipsSwitch = (Label)target;
-                    break;
-                case 8:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.ButtonCloseSwitchCFGTips);
-                    break;
-                case 9:
-                    this.mButtonConfig1 = (Button)target;
-                    this.mButtonConfig1.Click += new RoutedEventHandler(this.ButtonConfig1_Click);
-                    break;
-                case 10:
-                    this.mButtonConfig2 = (Button)target;
-                    this.mButtonConfig2.Click += new RoutedEventHandler(this.ButtonConfig2_Click);
-                    break;
-                case 11:
-                    this.mButtonConfig3 = (Button)target;
-                    this.mButtonConfig3.Click += new RoutedEventHandler(this.ButtonConfig3_Click);
-                    break;
-                case 12:
-                    this.mButtonConfig4 = (Button)target;
-                    this.mButtonConfig4.Click += new RoutedEventHandler(this.ButtonConfig4_Click);
-                    break;
-                case 13:
-                    this.mLayoutConfig = (UserControlConfig)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            ((FrameworkElement)target).Loaded += new RoutedEventHandler(this.Page_Loaded);
+        //            ((FrameworkElement)target).Initialized += new EventHandler(this.Page_Initialized);
+        //            ((FrameworkElement)target).Unloaded += new RoutedEventHandler(this.Page_Unloaded);
+        //            break;
+        //        case 2:
+        //            this.mGrid = (Grid)target;
+        //            break;
+        //        case 3:
+        //            this.mBgImage = (Image)target;
+        //            break;
+        //        case 4:
+        //            this.mLayoutSwitchCFGTips = (StackPanel)target;
+        //            break;
+        //        case 5:
+        //            this.mImgMenu = (Image)target;
+        //            break;
+        //        case 6:
+        //            this.mImgBack = (Image)target;
+        //            break;
+        //        case 7:
+        //            this.mLabelTipsSwitch = (Label)target;
+        //            break;
+        //        case 8:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.ButtonCloseSwitchCFGTips);
+        //            break;
+        //        case 9:
+        //            this.mButtonConfig1 = (Button)target;
+        //            this.mButtonConfig1.Click += new RoutedEventHandler(this.ButtonConfig1_Click);
+        //            break;
+        //        case 10:
+        //            this.mButtonConfig2 = (Button)target;
+        //            this.mButtonConfig2.Click += new RoutedEventHandler(this.ButtonConfig2_Click);
+        //            break;
+        //        case 11:
+        //            this.mButtonConfig3 = (Button)target;
+        //            this.mButtonConfig3.Click += new RoutedEventHandler(this.ButtonConfig3_Click);
+        //            break;
+        //        case 12:
+        //            this.mButtonConfig4 = (Button)target;
+        //            this.mButtonConfig4.Click += new RoutedEventHandler(this.ButtonConfig4_Click);
+        //            break;
+        //        case 13:
+        //            this.mLayoutConfig = (UserControlConfig)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

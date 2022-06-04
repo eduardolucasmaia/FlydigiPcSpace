@@ -14,7 +14,7 @@ using System.Windows.Markup;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlSettingConfigMotionDisplay : UserControl, IComponentConnector
+    public partial class UserControlSettingConfigMotionDisplay : UserControl, IComponentConnector
     {
         private int mUIWidth;
         private int mUIHeight;
@@ -23,8 +23,8 @@ namespace WPFTest.UserControls
         private int MaxDataValue = 254;
         private double mLastX;
         private double mLastY;
-        internal Canvas mCanvas;
-        internal Image mPoint;
+        //internal Canvas mCanvas;
+        //internal Image mPoint;
         private bool _contentLoaded;
 
         public UserControlSettingConfigMotionDisplay()
@@ -46,30 +46,30 @@ namespace WPFTest.UserControls
 
         private double getUIPositionY(int pos) => (double)(int)((double)this.mUIHeight * ((double)pos / (double)this.MaxDataValue));
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigmotiondisplay.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigmotiondisplay.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            if (connectionId != 1)
-            {
-                if (connectionId == 2)
-                    this.mPoint = (Image)target;
-                else
-                    this._contentLoaded = true;
-            }
-            else
-                this.mCanvas = (Canvas)target;
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    if (connectionId != 1)
+        //    {
+        //        if (connectionId == 2)
+        //            this.mPoint = (Image)target;
+        //        else
+        //            this._contentLoaded = true;
+        //    }
+        //    else
+        //        this.mCanvas = (Canvas)target;
+        //}
     }
 }

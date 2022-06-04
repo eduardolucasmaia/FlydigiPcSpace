@@ -15,10 +15,10 @@ using System.Windows.Markup;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlLedMode : UserControl, IComponentConnector
+    public partial class UserControlLedMode : UserControl, IComponentConnector
     {
-        internal Border mBorder;
-        internal Label mLabelMode;
+        //internal Border mBorder;
+        //internal Label mLabelMode;
         private bool _contentLoaded;
 
         public UserControlLedMode() => this.InitializeComponent();
@@ -33,37 +33,37 @@ namespace WPFTest.UserControls
 
         public void setTitle(string title) => this.mLabelMode.Content = (object)title;
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolledmode.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolledmode.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    ((UIElement)target).MouseEnter += new MouseEventHandler(this.UserControl_MouseEnter);
-                    ((UIElement)target).MouseLeave += new MouseEventHandler(this.UserControl_MouseLeave);
-                    break;
-                case 2:
-                    this.mBorder = (Border)target;
-                    break;
-                case 3:
-                    this.mLabelMode = (Label)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            ((UIElement)target).MouseEnter += new MouseEventHandler(this.UserControl_MouseEnter);
+        //            ((UIElement)target).MouseLeave += new MouseEventHandler(this.UserControl_MouseLeave);
+        //            break;
+        //        case 2:
+        //            this.mBorder = (Border)target;
+        //            break;
+        //        case 3:
+        //            this.mLabelMode = (Label)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

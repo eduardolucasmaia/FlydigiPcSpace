@@ -16,18 +16,18 @@ using System.Windows.Markup;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlSettingConfigBasic : UserControl, IComponentConnector
+    public partial class UserControlSettingConfigBasic : UserControl, IComponentConnector
     {
         private ConfigBean mFlashConfigBean;
         private JoyMappingBean mJoyMappingBean;
-        internal Grid mLayoutBasic;
-        internal UserControlTitle mTitle1;
-        internal WrapPanel mWrapPanel_1;
-        internal UserControlTitle mTitle2;
-        internal UserControlSelectMenu mMotionTarget;
-        internal UserControlTitle mTitle3;
-        internal UserControlSettingConfigLed mLayoutLed;
-        internal Border mSelectMenuMotionRemoteTarget;
+        //internal Grid mLayoutBasic;
+        //internal UserControlTitle mTitle1;
+        //internal WrapPanel mWrapPanel_1;
+        //internal UserControlTitle mTitle2;
+        //internal UserControlSelectMenu mMotionTarget;
+        //internal UserControlTitle mTitle3;
+        //internal UserControlSettingConfigLed mLayoutLed;
+        //internal Border mSelectMenuMotionRemoteTarget;
         private bool _contentLoaded;
 
         public UserControlSettingConfigBasic()
@@ -93,67 +93,67 @@ namespace WPFTest.UserControls
         {
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigbasic.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigbasic.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mLayoutBasic = (Grid)target;
-                    break;
-                case 2:
-                    this.mTitle1 = (UserControlTitle)target;
-                    break;
-                case 3:
-                    this.mWrapPanel_1 = (WrapPanel)target;
-                    break;
-                case 4:
-                    this.mTitle2 = (UserControlTitle)target;
-                    break;
-                case 5:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionRemoteTargetSelect_Click);
-                    break;
-                case 6:
-                    this.mMotionTarget = (UserControlSelectMenu)target;
-                    break;
-                case 7:
-                    this.mTitle3 = (UserControlTitle)target;
-                    break;
-                case 8:
-                    this.mLayoutLed = (UserControlSettingConfigLed)target;
-                    break;
-                case 9:
-                    this.mSelectMenuMotionRemoteTarget = (Border)target;
-                    break;
-                case 10:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_1);
-                    break;
-                case 11:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_2);
-                    break;
-                case 12:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_3);
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mLayoutBasic = (Grid)target;
+        //            break;
+        //        case 2:
+        //            this.mTitle1 = (UserControlTitle)target;
+        //            break;
+        //        case 3:
+        //            this.mWrapPanel_1 = (WrapPanel)target;
+        //            break;
+        //        case 4:
+        //            this.mTitle2 = (UserControlTitle)target;
+        //            break;
+        //        case 5:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionRemoteTargetSelect_Click);
+        //            break;
+        //        case 6:
+        //            this.mMotionTarget = (UserControlSelectMenu)target;
+        //            break;
+        //        case 7:
+        //            this.mTitle3 = (UserControlTitle)target;
+        //            break;
+        //        case 8:
+        //            this.mLayoutLed = (UserControlSettingConfigLed)target;
+        //            break;
+        //        case 9:
+        //            this.mSelectMenuMotionRemoteTarget = (Border)target;
+        //            break;
+        //        case 10:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_1);
+        //            break;
+        //        case 11:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_2);
+        //            break;
+        //        case 12:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_3);
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

@@ -17,12 +17,12 @@ using System.Windows.Media.Imaging;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlSelectMenuColor : UserControl, IComponentConnector
+    public partial class UserControlSelectMenuColor : UserControl, IComponentConnector
     {
-        internal Border mBorder;
-        internal Label mLabelColor;
-        internal Label mLabelRGB;
-        internal Image mImage;
+        //internal Border mBorder;
+        //internal Label mLabelColor;
+        //internal Label mLabelRGB;
+        //internal Image mImage;
         private bool _contentLoaded;
 
         public UserControlSelectMenuColor() => this.InitializeComponent();
@@ -59,39 +59,39 @@ namespace WPFTest.UserControls
             return color;
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolselectmenucolor.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolselectmenucolor.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mBorder = (Border)target;
-                    break;
-                case 2:
-                    this.mLabelColor = (Label)target;
-                    break;
-                case 3:
-                    this.mLabelRGB = (Label)target;
-                    break;
-                case 4:
-                    this.mImage = (Image)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mBorder = (Border)target;
+        //            break;
+        //        case 2:
+        //            this.mLabelColor = (Label)target;
+        //            break;
+        //        case 3:
+        //            this.mLabelRGB = (Label)target;
+        //            break;
+        //        case 4:
+        //            this.mImage = (Image)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

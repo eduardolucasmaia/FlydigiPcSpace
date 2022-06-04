@@ -18,7 +18,7 @@ using WPFTest.Utils;
 
 namespace WPFTest.Windows
 {
-    public class WindowDialogCommon : Window, IComponentConnector
+    public partial class WindowDialogCommon : Window, IComponentConnector
     {
         private IDelegateCallback mIDelegateCallback;
         public const int DIALOG_OK = 0;
@@ -28,12 +28,12 @@ namespace WPFTest.Windows
         public const int RESULT_CANCEL = 0;
         public const int RESULT_CLOSE = 2;
         public bool isApplicationActive;
-        internal Label mLabelTitle;
-        internal TextBlock mLabelContent;
-        internal Button mButtonCancel;
-        internal Button mButtonConfirm;
-        internal Button mButtonClose;
-        internal Image mImageClose;
+        //internal Label mLabelTitle;
+        //internal TextBlock mLabelContent;
+        //internal Button mButtonCancel;
+        //internal Button mButtonConfirm;
+        //internal Button mButtonClose;
+        //internal Image mImageClose;
         private bool _contentLoaded;
 
         public WindowDialogCommon(
@@ -89,50 +89,50 @@ namespace WPFTest.Windows
 
         private void mImageClose_MouseLeave(object sender, MouseEventArgs e) => this.mImageClose.Source = (ImageSource)new BitmapImage(new Uri("pack://application:,,,/Resources/icon_close_gray.png"));
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/windows/windowdialogcommon.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/windows/windowdialogcommon.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mLabelTitle = (Label)target;
-                    break;
-                case 2:
-                    this.mLabelContent = (TextBlock)target;
-                    break;
-                case 3:
-                    this.mButtonCancel = (Button)target;
-                    this.mButtonCancel.Click += new RoutedEventHandler(this.mButtonCancel_Click);
-                    break;
-                case 4:
-                    this.mButtonConfirm = (Button)target;
-                    this.mButtonConfirm.Click += new RoutedEventHandler(this.mButtonConfirm_Click);
-                    break;
-                case 5:
-                    this.mButtonClose = (Button)target;
-                    this.mButtonClose.Click += new RoutedEventHandler(this.ButtonClose_Click);
-                    break;
-                case 6:
-                    this.mImageClose = (Image)target;
-                    this.mImageClose.MouseEnter += new MouseEventHandler(this.mImageClose_MouseEnter);
-                    this.mImageClose.MouseLeave += new MouseEventHandler(this.mImageClose_MouseLeave);
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mLabelTitle = (Label)target;
+        //            break;
+        //        case 2:
+        //            this.mLabelContent = (TextBlock)target;
+        //            break;
+        //        case 3:
+        //            this.mButtonCancel = (Button)target;
+        //            this.mButtonCancel.Click += new RoutedEventHandler(this.mButtonCancel_Click);
+        //            break;
+        //        case 4:
+        //            this.mButtonConfirm = (Button)target;
+        //            this.mButtonConfirm.Click += new RoutedEventHandler(this.mButtonConfirm_Click);
+        //            break;
+        //        case 5:
+        //            this.mButtonClose = (Button)target;
+        //            this.mButtonClose.Click += new RoutedEventHandler(this.ButtonClose_Click);
+        //            break;
+        //        case 6:
+        //            this.mImageClose = (Image)target;
+        //            this.mImageClose.MouseEnter += new MouseEventHandler(this.mImageClose_MouseEnter);
+        //            this.mImageClose.MouseLeave += new MouseEventHandler(this.mImageClose_MouseLeave);
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

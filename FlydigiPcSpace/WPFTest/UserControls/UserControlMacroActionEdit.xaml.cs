@@ -23,7 +23,7 @@ using WPFTest.Utils;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlMacroActionEdit : UserControl, IComponentConnector
+    public partial class UserControlMacroActionEdit : UserControl, IComponentConnector
     {
         private IDelegateCallback mDelegateCallback;
         private List<UserControlMacroAction> mListMacroAction = new List<UserControlMacroAction>();
@@ -35,19 +35,19 @@ namespace WPFTest.UserControls
         private int MaxTime = 37500;
         private double MaxUIWidth;
         private double ThumbHalf;
-        internal UserControlSelectMenu mCurrentKey;
-        internal Image mWaitTimeDecrease;
-        internal Label mLabelWaitTime;
-        internal Image mWaitTimeIncrease;
-        internal Image mWorkTimeDecrease;
-        internal Label mLabelWorkTime;
-        internal Image mWorkTimeIncrease;
-        internal Canvas mCanvas;
-        internal Label mBgWorkTime;
-        internal Label mBgWaitTime;
-        internal Thumb mThumbWaitTime;
-        internal Thumb mThumbWorkTime;
-        internal UserControlDialogKey mSelectMenuKey;
+        //internal UserControlSelectMenu mCurrentKey;
+        //internal Image mWaitTimeDecrease;
+        //internal Label mLabelWaitTime;
+        //internal Image mWaitTimeIncrease;
+        //internal Image mWorkTimeDecrease;
+        //internal Label mLabelWorkTime;
+        //internal Image mWorkTimeIncrease;
+        //internal Canvas mCanvas;
+        //internal Label mBgWorkTime;
+        //internal Label mBgWaitTime;
+        //internal Thumb mThumbWaitTime;
+        //internal Thumb mThumbWorkTime;
+        //internal UserControlDialogKey mSelectMenuKey;
         private bool _contentLoaded;
 
         public UserControlMacroActionEdit()
@@ -272,88 +272,88 @@ namespace WPFTest.UserControls
 
         private void mThumbWorkTime_DragCompleted(object sender, DragCompletedEventArgs e) => this.handleMacroList();
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolmacroactionedit.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolmacroactionedit.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.KeySelect_Click);
-                    break;
-                case 2:
-                    this.mCurrentKey = (UserControlSelectMenu)target;
-                    break;
-                case 3:
-                    this.mWaitTimeDecrease = (Image)target;
-                    this.mWaitTimeDecrease.MouseLeftButtonDown += new MouseButtonEventHandler(this.mWaitTimeDecrease_MouseLeftButtonDown);
-                    this.mWaitTimeDecrease.MouseLeftButtonUp += new MouseButtonEventHandler(this.mWaitTimeDecrease_MouseLeftButtonUp);
-                    break;
-                case 4:
-                    this.mLabelWaitTime = (Label)target;
-                    break;
-                case 5:
-                    this.mWaitTimeIncrease = (Image)target;
-                    this.mWaitTimeIncrease.MouseLeftButtonDown += new MouseButtonEventHandler(this.mWaitTimeIncrease_MouseLeftButtonDown);
-                    this.mWaitTimeIncrease.MouseLeftButtonUp += new MouseButtonEventHandler(this.mWaitTimeIncrease_MouseLeftButtonUp);
-                    break;
-                case 6:
-                    this.mWorkTimeDecrease = (Image)target;
-                    this.mWorkTimeDecrease.MouseLeftButtonDown += new MouseButtonEventHandler(this.mWorkTimeDecrease_MouseLeftButtonDown);
-                    this.mWorkTimeDecrease.MouseLeftButtonUp += new MouseButtonEventHandler(this.mWorkTimeDecrease_MouseLeftButtonUp);
-                    break;
-                case 7:
-                    this.mLabelWorkTime = (Label)target;
-                    break;
-                case 8:
-                    this.mWorkTimeIncrease = (Image)target;
-                    this.mWorkTimeIncrease.MouseLeftButtonDown += new MouseButtonEventHandler(this.mWorkTimeIncrease_MouseLeftButtonDown);
-                    this.mWorkTimeIncrease.MouseLeftButtonUp += new MouseButtonEventHandler(this.mWorkTimeIncrease_MouseLeftButtonUp);
-                    break;
-                case 9:
-                    this.mCanvas = (Canvas)target;
-                    break;
-                case 10:
-                    this.mBgWorkTime = (Label)target;
-                    break;
-                case 11:
-                    this.mBgWaitTime = (Label)target;
-                    break;
-                case 12:
-                    this.mThumbWaitTime = (Thumb)target;
-                    this.mThumbWaitTime.DragDelta += new DragDeltaEventHandler(this.mButtonWaitTime_DragDelta);
-                    this.mThumbWaitTime.DragCompleted += new DragCompletedEventHandler(this.mThumbWaitTime_DragCompleted);
-                    break;
-                case 13:
-                    this.mThumbWorkTime = (Thumb)target;
-                    this.mThumbWorkTime.DragDelta += new DragDeltaEventHandler(this.mButtonWorkTime_DragDelta);
-                    this.mThumbWorkTime.DragCompleted += new DragCompletedEventHandler(this.mThumbWorkTime_DragCompleted);
-                    break;
-                case 14:
-                    this.mSelectMenuKey = (UserControlDialogKey)target;
-                    break;
-                case 15:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.Button_Close);
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.KeySelect_Click);
+        //            break;
+        //        case 2:
+        //            this.mCurrentKey = (UserControlSelectMenu)target;
+        //            break;
+        //        case 3:
+        //            this.mWaitTimeDecrease = (Image)target;
+        //            this.mWaitTimeDecrease.MouseLeftButtonDown += new MouseButtonEventHandler(this.mWaitTimeDecrease_MouseLeftButtonDown);
+        //            this.mWaitTimeDecrease.MouseLeftButtonUp += new MouseButtonEventHandler(this.mWaitTimeDecrease_MouseLeftButtonUp);
+        //            break;
+        //        case 4:
+        //            this.mLabelWaitTime = (Label)target;
+        //            break;
+        //        case 5:
+        //            this.mWaitTimeIncrease = (Image)target;
+        //            this.mWaitTimeIncrease.MouseLeftButtonDown += new MouseButtonEventHandler(this.mWaitTimeIncrease_MouseLeftButtonDown);
+        //            this.mWaitTimeIncrease.MouseLeftButtonUp += new MouseButtonEventHandler(this.mWaitTimeIncrease_MouseLeftButtonUp);
+        //            break;
+        //        case 6:
+        //            this.mWorkTimeDecrease = (Image)target;
+        //            this.mWorkTimeDecrease.MouseLeftButtonDown += new MouseButtonEventHandler(this.mWorkTimeDecrease_MouseLeftButtonDown);
+        //            this.mWorkTimeDecrease.MouseLeftButtonUp += new MouseButtonEventHandler(this.mWorkTimeDecrease_MouseLeftButtonUp);
+        //            break;
+        //        case 7:
+        //            this.mLabelWorkTime = (Label)target;
+        //            break;
+        //        case 8:
+        //            this.mWorkTimeIncrease = (Image)target;
+        //            this.mWorkTimeIncrease.MouseLeftButtonDown += new MouseButtonEventHandler(this.mWorkTimeIncrease_MouseLeftButtonDown);
+        //            this.mWorkTimeIncrease.MouseLeftButtonUp += new MouseButtonEventHandler(this.mWorkTimeIncrease_MouseLeftButtonUp);
+        //            break;
+        //        case 9:
+        //            this.mCanvas = (Canvas)target;
+        //            break;
+        //        case 10:
+        //            this.mBgWorkTime = (Label)target;
+        //            break;
+        //        case 11:
+        //            this.mBgWaitTime = (Label)target;
+        //            break;
+        //        case 12:
+        //            this.mThumbWaitTime = (Thumb)target;
+        //            this.mThumbWaitTime.DragDelta += new DragDeltaEventHandler(this.mButtonWaitTime_DragDelta);
+        //            this.mThumbWaitTime.DragCompleted += new DragCompletedEventHandler(this.mThumbWaitTime_DragCompleted);
+        //            break;
+        //        case 13:
+        //            this.mThumbWorkTime = (Thumb)target;
+        //            this.mThumbWorkTime.DragDelta += new DragDeltaEventHandler(this.mButtonWorkTime_DragDelta);
+        //            this.mThumbWorkTime.DragCompleted += new DragCompletedEventHandler(this.mThumbWorkTime_DragCompleted);
+        //            break;
+        //        case 14:
+        //            this.mSelectMenuKey = (UserControlDialogKey)target;
+        //            break;
+        //        case 15:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.Button_Close);
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

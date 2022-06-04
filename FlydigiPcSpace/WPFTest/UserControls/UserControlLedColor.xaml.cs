@@ -16,11 +16,11 @@ using System.Windows.Media;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlLedColor : UserControl, IComponentConnector
+    public partial class UserControlLedColor : UserControl, IComponentConnector
     {
-        internal Border mBorder;
-        internal Label mLabelColor0;
-        internal Label mLabelColor1;
+        //internal Border mBorder;
+        //internal Label mLabelColor0;
+        //internal Label mLabelColor1;
         private bool _contentLoaded;
 
         public UserControlLedColor() => this.InitializeComponent();
@@ -37,40 +37,40 @@ namespace WPFTest.UserControls
 
         public void setColor1(Brush brush) => this.mLabelColor1.Background = brush;
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolledcolor.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolledcolor.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    ((UIElement)target).MouseEnter += new MouseEventHandler(this.UserControl_MouseEnter);
-                    ((UIElement)target).MouseLeave += new MouseEventHandler(this.UserControl_MouseLeave);
-                    break;
-                case 2:
-                    this.mBorder = (Border)target;
-                    break;
-                case 3:
-                    this.mLabelColor0 = (Label)target;
-                    break;
-                case 4:
-                    this.mLabelColor1 = (Label)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            ((UIElement)target).MouseEnter += new MouseEventHandler(this.UserControl_MouseEnter);
+        //            ((UIElement)target).MouseLeave += new MouseEventHandler(this.UserControl_MouseLeave);
+        //            break;
+        //        case 2:
+        //            this.mBorder = (Border)target;
+        //            break;
+        //        case 3:
+        //            this.mLabelColor0 = (Label)target;
+        //            break;
+        //        case 4:
+        //            this.mLabelColor1 = (Label)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

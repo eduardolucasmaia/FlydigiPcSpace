@@ -20,7 +20,7 @@ using WPFTest.Utils;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlConfig : UserControl, IComponentConnector
+    public partial class UserControlConfig : UserControl, IComponentConnector
     {
         private ConfigBean mConfig;
         private IDelegateCallback mIDelegateCallback;
@@ -44,15 +44,15 @@ namespace WPFTest.UserControls
       241
         };
         private string[] MotorLevelText = new string[4];
-        internal UserControlTitle mTitle1;
-        internal WrapPanel mWrapPanel;
-        internal UserControlTitle mTitle2;
-        internal UserControlLedMode mLedMode;
-        internal UserControlLedColor mLedColor;
-        internal UserControlLedMotorLevel mLedMotorLvele;
-        internal UserControlTitle mTitle3;
-        internal UserControlLineJoystickDisplay mJoystickLeft;
-        internal UserControlLineJoystickDisplay mJoystickRight;
+        //internal UserControlTitle mTitle1;
+        //internal WrapPanel mWrapPanel;
+        //internal UserControlTitle mTitle2;
+        //internal UserControlLedMode mLedMode;
+        //internal UserControlLedColor mLedColor;
+        //internal UserControlLedMotorLevel mLedMotorLvele;
+        //internal UserControlTitle mTitle3;
+        //internal UserControlLineJoystickDisplay mJoystickLeft;
+        //internal UserControlLineJoystickDisplay mJoystickRight;
         private bool _contentLoaded;
 
         public UserControlConfig()
@@ -165,61 +165,61 @@ namespace WPFTest.UserControls
             this.mIDelegateCallback(0);
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolconfig.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolconfig.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mTitle1 = (UserControlTitle)target;
-                    break;
-                case 2:
-                    this.mWrapPanel = (WrapPanel)target;
-                    break;
-                case 3:
-                    this.mTitle2 = (UserControlTitle)target;
-                    break;
-                case 4:
-                    this.mLedMode = (UserControlLedMode)target;
-                    break;
-                case 5:
-                    this.mLedColor = (UserControlLedColor)target;
-                    break;
-                case 6:
-                    this.mLedMotorLvele = (UserControlLedMotorLevel)target;
-                    break;
-                case 7:
-                    this.mTitle3 = (UserControlTitle)target;
-                    break;
-                case 8:
-                    this.mJoystickLeft = (UserControlLineJoystickDisplay)target;
-                    break;
-                case 9:
-                    this.mJoystickRight = (UserControlLineJoystickDisplay)target;
-                    break;
-                case 10:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.Button_Click);
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mTitle1 = (UserControlTitle)target;
+        //            break;
+        //        case 2:
+        //            this.mWrapPanel = (WrapPanel)target;
+        //            break;
+        //        case 3:
+        //            this.mTitle2 = (UserControlTitle)target;
+        //            break;
+        //        case 4:
+        //            this.mLedMode = (UserControlLedMode)target;
+        //            break;
+        //        case 5:
+        //            this.mLedColor = (UserControlLedColor)target;
+        //            break;
+        //        case 6:
+        //            this.mLedMotorLvele = (UserControlLedMotorLevel)target;
+        //            break;
+        //        case 7:
+        //            this.mTitle3 = (UserControlTitle)target;
+        //            break;
+        //        case 8:
+        //            this.mJoystickLeft = (UserControlLineJoystickDisplay)target;
+        //            break;
+        //        case 9:
+        //            this.mJoystickRight = (UserControlLineJoystickDisplay)target;
+        //            break;
+        //        case 10:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.Button_Click);
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

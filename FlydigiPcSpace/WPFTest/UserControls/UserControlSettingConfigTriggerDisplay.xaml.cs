@@ -14,10 +14,10 @@ using System.Windows.Markup;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlSettingConfigTriggerDisplay : UserControl, IComponentConnector
+    public partial class UserControlSettingConfigTriggerDisplay : UserControl, IComponentConnector
     {
-        internal UserControlTrigger mTriggerLeft;
-        internal UserControlTrigger mTriggerRight;
+        //internal UserControlTrigger mTriggerLeft;
+        //internal UserControlTrigger mTriggerRight;
         private bool _contentLoaded;
 
         public UserControlSettingConfigTriggerDisplay() => this.InitializeComponent();
@@ -50,34 +50,34 @@ namespace WPFTest.UserControls
         {
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigtriggerdisplay.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigtriggerdisplay.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            if (connectionId != 1)
-            {
-                if (connectionId == 2)
-                    this.mTriggerRight = (UserControlTrigger)target;
-                else
-                    this._contentLoaded = true;
-            }
-            else
-                this.mTriggerLeft = (UserControlTrigger)target;
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    if (connectionId != 1)
+        //    {
+        //        if (connectionId == 2)
+        //            this.mTriggerRight = (UserControlTrigger)target;
+        //        else
+        //            this._contentLoaded = true;
+        //    }
+        //    else
+        //        this.mTriggerLeft = (UserControlTrigger)target;
+        //}
     }
 }

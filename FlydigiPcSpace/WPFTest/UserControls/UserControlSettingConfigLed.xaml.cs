@@ -24,7 +24,7 @@ using WPFTest.Utils;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlSettingConfigLed : UserControl, IComponentConnector
+    public partial class UserControlSettingConfigLed : UserControl, IComponentConnector
     {
         private ConfigBean mFlashConfigBean;
         private LedBean mLed;
@@ -56,29 +56,29 @@ namespace WPFTest.UserControls
       "motion_close"
         };
         private int updatePatrlyType;
-        internal UserControlTitle mTitle1;
-        internal UserControlSelectMenu mLeftMotorLevel;
-        internal UserControlTitle mTitle3;
-        internal UserControlSelectMenu mLedMode;
-        internal StackPanel mLayoutColor0;
-        internal UserControlSelectMenuColor mColor0;
-        internal StackPanel mLayoutColor1;
-        internal UserControlSelectMenuColor mColor1;
-        internal Grid mLayoutLight;
-        internal Label mLightValue;
-        internal Slider mSliderLight;
-        internal Grid mLayoutPeroid;
-        internal Label mPeroidValue;
-        internal Slider mSliderPeroid;
-        internal StackPanel mLuanpanBox;
-        internal UserControlTitle mTitle2;
-        internal StackPanel mTitle2_content;
-        internal UserControlSelectMenu mMotionTarget;
-        internal Border mSelectMenuMotionRemoteTarget;
-        internal Border mSelectMenuLedMode;
-        internal Border mSelectLeftMotorLevel;
-        internal Border mSelectRightMotorLevel;
-        internal UserControlDialogColor mSelectMenuColor;
+        //internal UserControlTitle mTitle1;
+        //internal UserControlSelectMenu mLeftMotorLevel;
+        //internal UserControlTitle mTitle3;
+        //internal UserControlSelectMenu mLedMode;
+        //internal StackPanel mLayoutColor0;
+        //internal UserControlSelectMenuColor mColor0;
+        //internal StackPanel mLayoutColor1;
+        //internal UserControlSelectMenuColor mColor1;
+        //internal Grid mLayoutLight;
+        //internal Label mLightValue;
+        //internal Slider mSliderLight;
+        //internal Grid mLayoutPeroid;
+        //internal Label mPeroidValue;
+        //internal Slider mSliderPeroid;
+        //internal StackPanel mLuanpanBox;
+        //internal UserControlTitle mTitle2;
+        //internal StackPanel mTitle2_content;
+        //internal UserControlSelectMenu mMotionTarget;
+        //internal Border mSelectMenuMotionRemoteTarget;
+        //internal Border mSelectMenuLedMode;
+        //internal Border mSelectLeftMotorLevel;
+        //internal Border mSelectRightMotorLevel;
+        //internal UserControlDialogColor mSelectMenuColor;
         private bool _contentLoaded;
 
         public UserControlSettingConfigLed()
@@ -714,171 +714,171 @@ namespace WPFTest.UserControls
         {
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigled.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrolsettingconfigled.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //internal Delegate _CreateDelegate(Type delegateType, string handler) => Delegate.CreateDelegate(delegateType, (object)this, handler);
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mTitle1 = (UserControlTitle)target;
-                    break;
-                case 2:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.LeftMotorLevelTargetSelect_Click);
-                    break;
-                case 3:
-                    this.mLeftMotorLevel = (UserControlSelectMenu)target;
-                    break;
-                case 4:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.Button_test_Click);
-                    break;
-                case 5:
-                    this.mTitle3 = (UserControlTitle)target;
-                    break;
-                case 6:
-                    ((UIElement)target).MouseEnter += new MouseEventHandler(this.Button_MouseEnter);
-                    ((UIElement)target).MouseLeave += new MouseEventHandler(this.Button_MouseLeave);
-                    break;
-                case 7:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.LedModeSelect_Click);
-                    break;
-                case 8:
-                    this.mLedMode = (UserControlSelectMenu)target;
-                    break;
-                case 9:
-                    this.mLayoutColor0 = (StackPanel)target;
-                    break;
-                case 10:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.Color0Select_Click);
-                    break;
-                case 11:
-                    this.mColor0 = (UserControlSelectMenuColor)target;
-                    break;
-                case 12:
-                    this.mLayoutColor1 = (StackPanel)target;
-                    break;
-                case 13:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.Color1Select_Click);
-                    break;
-                case 14:
-                    this.mColor1 = (UserControlSelectMenuColor)target;
-                    break;
-                case 15:
-                    this.mLayoutLight = (Grid)target;
-                    break;
-                case 16:
-                    this.mLightValue = (Label)target;
-                    break;
-                case 17:
-                    this.mSliderLight = (Slider)target;
-                    this.mSliderLight.ValueChanged += new RoutedPropertyChangedEventHandler<double>(this.mSliderLight_ValueChanged);
-                    this.mSliderLight.AddHandler(Thumb.DragCompletedEvent, (Delegate)new DragCompletedEventHandler(this.SliderLight_DragCompleted));
-                    break;
-                case 18:
-                    this.mLayoutPeroid = (Grid)target;
-                    break;
-                case 19:
-                    this.mPeroidValue = (Label)target;
-                    break;
-                case 20:
-                    this.mSliderPeroid = (Slider)target;
-                    this.mSliderPeroid.ValueChanged += new RoutedPropertyChangedEventHandler<double>(this.mSliderPeroid_ValueChanged);
-                    this.mSliderPeroid.AddHandler(Thumb.DragCompletedEvent, (Delegate)new DragCompletedEventHandler(this.SliderPeroid_DragCompleted));
-                    break;
-                case 21:
-                    this.mLuanpanBox = (StackPanel)target;
-                    break;
-                case 22:
-                    this.mTitle2 = (UserControlTitle)target;
-                    break;
-                case 23:
-                    this.mTitle2_content = (StackPanel)target;
-                    break;
-                case 24:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionRemoteTargetSelect_Click);
-                    break;
-                case 25:
-                    this.mMotionTarget = (UserControlSelectMenu)target;
-                    break;
-                case 26:
-                    this.mSelectMenuMotionRemoteTarget = (Border)target;
-                    break;
-                case 27:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_1);
-                    break;
-                case 28:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_2);
-                    break;
-                case 29:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_3);
-                    break;
-                case 30:
-                    this.mSelectMenuLedMode = (Border)target;
-                    break;
-                case 31:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.LedMode_Click_1);
-                    break;
-                case 32:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.LedMode_Click_2);
-                    break;
-                case 33:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.LedMode_Click_3);
-                    break;
-                case 34:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.LedMode_Click_4);
-                    break;
-                case 35:
-                    this.mSelectLeftMotorLevel = (Border)target;
-                    break;
-                case 36:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.LeftMotorLevelItem_Click_1);
-                    break;
-                case 37:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.LeftMotorLevelItem_Click_2);
-                    break;
-                case 38:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.LeftMotorLevelItem_Click_3);
-                    break;
-                case 39:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.LeftMotorLevelItem_Click_4);
-                    break;
-                case 40:
-                    this.mSelectRightMotorLevel = (Border)target;
-                    break;
-                case 41:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.RightMotorLevelItem_Click_1);
-                    break;
-                case 42:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.RightMotorLevelItem_Click_2);
-                    break;
-                case 43:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.RightMotorLevelItem_Click_3);
-                    break;
-                case 44:
-                    ((ButtonBase)target).Click += new RoutedEventHandler(this.RightMotorLevelItem_Click_5);
-                    break;
-                case 45:
-                    this.mSelectMenuColor = (UserControlDialogColor)target;
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mTitle1 = (UserControlTitle)target;
+        //            break;
+        //        case 2:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.LeftMotorLevelTargetSelect_Click);
+        //            break;
+        //        case 3:
+        //            this.mLeftMotorLevel = (UserControlSelectMenu)target;
+        //            break;
+        //        case 4:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.Button_test_Click);
+        //            break;
+        //        case 5:
+        //            this.mTitle3 = (UserControlTitle)target;
+        //            break;
+        //        case 6:
+        //            ((UIElement)target).MouseEnter += new MouseEventHandler(this.Button_MouseEnter);
+        //            ((UIElement)target).MouseLeave += new MouseEventHandler(this.Button_MouseLeave);
+        //            break;
+        //        case 7:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.LedModeSelect_Click);
+        //            break;
+        //        case 8:
+        //            this.mLedMode = (UserControlSelectMenu)target;
+        //            break;
+        //        case 9:
+        //            this.mLayoutColor0 = (StackPanel)target;
+        //            break;
+        //        case 10:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.Color0Select_Click);
+        //            break;
+        //        case 11:
+        //            this.mColor0 = (UserControlSelectMenuColor)target;
+        //            break;
+        //        case 12:
+        //            this.mLayoutColor1 = (StackPanel)target;
+        //            break;
+        //        case 13:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.Color1Select_Click);
+        //            break;
+        //        case 14:
+        //            this.mColor1 = (UserControlSelectMenuColor)target;
+        //            break;
+        //        case 15:
+        //            this.mLayoutLight = (Grid)target;
+        //            break;
+        //        case 16:
+        //            this.mLightValue = (Label)target;
+        //            break;
+        //        case 17:
+        //            this.mSliderLight = (Slider)target;
+        //            this.mSliderLight.ValueChanged += new RoutedPropertyChangedEventHandler<double>(this.mSliderLight_ValueChanged);
+        //            this.mSliderLight.AddHandler(Thumb.DragCompletedEvent, (Delegate)new DragCompletedEventHandler(this.SliderLight_DragCompleted));
+        //            break;
+        //        case 18:
+        //            this.mLayoutPeroid = (Grid)target;
+        //            break;
+        //        case 19:
+        //            this.mPeroidValue = (Label)target;
+        //            break;
+        //        case 20:
+        //            this.mSliderPeroid = (Slider)target;
+        //            this.mSliderPeroid.ValueChanged += new RoutedPropertyChangedEventHandler<double>(this.mSliderPeroid_ValueChanged);
+        //            this.mSliderPeroid.AddHandler(Thumb.DragCompletedEvent, (Delegate)new DragCompletedEventHandler(this.SliderPeroid_DragCompleted));
+        //            break;
+        //        case 21:
+        //            this.mLuanpanBox = (StackPanel)target;
+        //            break;
+        //        case 22:
+        //            this.mTitle2 = (UserControlTitle)target;
+        //            break;
+        //        case 23:
+        //            this.mTitle2_content = (StackPanel)target;
+        //            break;
+        //        case 24:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionRemoteTargetSelect_Click);
+        //            break;
+        //        case 25:
+        //            this.mMotionTarget = (UserControlSelectMenu)target;
+        //            break;
+        //        case 26:
+        //            this.mSelectMenuMotionRemoteTarget = (Border)target;
+        //            break;
+        //        case 27:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_1);
+        //            break;
+        //        case 28:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_2);
+        //            break;
+        //        case 29:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.MotionTargetItem_Click_3);
+        //            break;
+        //        case 30:
+        //            this.mSelectMenuLedMode = (Border)target;
+        //            break;
+        //        case 31:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.LedMode_Click_1);
+        //            break;
+        //        case 32:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.LedMode_Click_2);
+        //            break;
+        //        case 33:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.LedMode_Click_3);
+        //            break;
+        //        case 34:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.LedMode_Click_4);
+        //            break;
+        //        case 35:
+        //            this.mSelectLeftMotorLevel = (Border)target;
+        //            break;
+        //        case 36:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.LeftMotorLevelItem_Click_1);
+        //            break;
+        //        case 37:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.LeftMotorLevelItem_Click_2);
+        //            break;
+        //        case 38:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.LeftMotorLevelItem_Click_3);
+        //            break;
+        //        case 39:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.LeftMotorLevelItem_Click_4);
+        //            break;
+        //        case 40:
+        //            this.mSelectRightMotorLevel = (Border)target;
+        //            break;
+        //        case 41:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.RightMotorLevelItem_Click_1);
+        //            break;
+        //        case 42:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.RightMotorLevelItem_Click_2);
+        //            break;
+        //        case 43:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.RightMotorLevelItem_Click_3);
+        //            break;
+        //        case 44:
+        //            ((ButtonBase)target).Click += new RoutedEventHandler(this.RightMotorLevelItem_Click_5);
+        //            break;
+        //        case 45:
+        //            this.mSelectMenuColor = (UserControlDialogColor)target;
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }
