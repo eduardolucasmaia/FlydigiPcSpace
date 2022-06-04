@@ -1,0 +1,23 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: WPFTest.Utils.LoadLibraryFlags
+// Assembly: WPFTest, Version=1.0.5.6, Culture=neutral, PublicKeyToken=null
+// MVID: D95E3EB1-EF84-499C-A069-258C3C24EF0D
+// Assembly location: C:\Program Files (x86)\FlydigiPcSpace\FlydigiPcSpace.exe
+
+namespace WPFTest.Utils
+{
+  public enum LoadLibraryFlags : uint
+  {
+    DONT_RESOLVE_DLL_REFERENCES = 1,
+    LOAD_LIBRARY_AS_DATAFILE = 2,
+    LOAD_WITH_ALTERED_SEARCH_PATH = 8,
+    LOAD_IGNORE_CODE_AUTHZ_LEVEL = 16, // 0x00000010
+    LOAD_LIBRARY_AS_IMAGE_RESOURCE = 32, // 0x00000020
+    LOAD_LIBRARY_AS_DATAFILE_EXCLUSIVE = 64, // 0x00000040
+    LOAD_LIBRARY_SEARCH_DLL_LOAD_DIR = 256, // 0x00000100
+    LOAD_LIBRARY_SEARCH_APPLICATION_DIR = 512, // 0x00000200
+    LOAD_LIBRARY_SEARCH_USER_DIRS = 1024, // 0x00000400
+    LOAD_LIBRARY_SEARCH_SYSTEM32 = 2048, // 0x00000800
+    LOAD_LIBRARY_SEARCH_DEFAULT_DIRS = 4096, // 0x00001000
+  }
+}
