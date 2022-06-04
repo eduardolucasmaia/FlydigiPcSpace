@@ -23,7 +23,7 @@ namespace WPFTest.UserControls
         //internal Label mLabelColor;
         //internal Label mLabelRGB;
         //internal Image mImage;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlSelectMenuColor() => this.InitializeComponent();
 

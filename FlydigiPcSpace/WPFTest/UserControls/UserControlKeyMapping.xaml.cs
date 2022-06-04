@@ -37,7 +37,7 @@ namespace WPFTest.UserControls
         //internal Label mLabelTarget;
         //internal Image mImageTarget;
         //internal Image mArrow;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlKeyMapping() => this.InitializeComponent();
 

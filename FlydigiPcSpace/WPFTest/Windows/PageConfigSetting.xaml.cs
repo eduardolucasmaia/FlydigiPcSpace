@@ -63,7 +63,7 @@ namespace WPFTest.Windows
         //internal UserControlSettingConfigTriggerDisplay mLayoutTriggerDisplay;
         //internal Grid mLoading;
         //internal Label mLoadingLabel;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         [DllImport("user32.dll")]
         public static extern int MessageBoxTimeoutA(

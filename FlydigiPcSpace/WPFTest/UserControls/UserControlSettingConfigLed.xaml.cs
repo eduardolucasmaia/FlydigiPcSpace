@@ -79,7 +79,7 @@ namespace WPFTest.UserControls
         //internal Border mSelectLeftMotorLevel;
         //internal Border mSelectRightMotorLevel;
         //internal UserControlDialogColor mSelectMenuColor;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlSettingConfigLed()
         {

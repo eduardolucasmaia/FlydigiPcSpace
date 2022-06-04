@@ -23,7 +23,7 @@ namespace WPFTest.Windows
     {
         //internal UserControlDialogConnect mGuide;
         //internal Image mImageClose;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public WindowDialogConnect()
         {

@@ -71,7 +71,7 @@ namespace WPFTest.Activitys
         //internal Label mLabelJoystickResetNotice;
         //internal Button mButtonJoystickReset;
         //internal Grid mLoading;
-        private bool _contentLoaded;
+        //private bool _contentLoaded;
 
         public PageConfigTest(
           PageConfigSetting pageConfigSetting,

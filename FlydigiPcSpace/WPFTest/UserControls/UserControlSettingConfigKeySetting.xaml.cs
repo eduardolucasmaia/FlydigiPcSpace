@@ -67,7 +67,7 @@ namespace WPFTest.UserControls
         //internal Button mButtonPause;
         //internal Button mButtonClean;
         //internal UserControlMacroActionEdit mMacroActionEdit;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlSettingConfigKeySetting()
         {

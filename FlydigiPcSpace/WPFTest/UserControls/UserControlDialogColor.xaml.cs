@@ -40,7 +40,7 @@ namespace WPFTest.UserControls
         //internal Button DefaultColor5;
         //internal Button DefaultColor6;
         //internal Button DefaultColor7;
-        private bool _contentLoaded;
+        //private bool _contentLoaded;
 
         public UserControlDialogColor() => this.InitializeComponent();
 

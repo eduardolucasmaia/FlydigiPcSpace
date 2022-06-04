@@ -107,7 +107,7 @@ namespace WPFTest.UserControls
         //internal Image mInsideKeyLB;
         //internal Image mInsideKeyLT;
         //internal Image mInsideKeyM6;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlSettingConfigKeyDisplay()
         {

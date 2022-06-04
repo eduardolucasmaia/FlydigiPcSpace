@@ -68,7 +68,7 @@ namespace WPFTest.Windows
         //internal Label mLabelJoystickResetNotice;
         //internal Button mButtonJoystickReset;
         //internal Grid mLoading;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public WindowDialogConfigTest(
           PageConfigSetting pageConfigSetting,

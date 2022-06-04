@@ -19,7 +19,7 @@ namespace WPFTest.UserControls
     {
         //internal Border mBorder;
         //internal Label mLabelMode;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlLedMode() => this.InitializeComponent();
 

@@ -27,7 +27,7 @@ namespace WPFTest.UserControls
         //internal Ellipse mBlueCircle;
         //internal Image mPoint;
         //internal Arc arc;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlTrigger() => this.InitializeComponent();
 

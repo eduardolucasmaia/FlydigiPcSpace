@@ -224,7 +224,7 @@ namespace ApexSpace
       }
       else
       {
-        double num5;
+        double num5 =0;
         float num6 = (float) num5 - (float) Math.Floor(num5 = ((double) hue - Math.Floor((double) hue)) * 6.0);
         float num7 = brightness * (1f - saturation);
         float num8 = brightness * (float) (1.0 - (double) saturation * (double) num6);

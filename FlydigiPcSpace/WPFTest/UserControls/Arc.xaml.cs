@@ -26,7 +26,7 @@ namespace WPFTest.UserControls
         public static readonly DependencyProperty RectProperty = DependencyProperty.Register(nameof(Rect), typeof(Rect), typeof(Arc), new PropertyMetadata((object)new Rect(), new PropertyChangedCallback(Arc.propertyChangedCallback)));
         public static readonly DependencyProperty StartAngleProperty = DependencyProperty.Register(nameof(StartAngle), typeof(double), typeof(Arc), new PropertyMetadata((object)0.0, new PropertyChangedCallback(Arc.propertyChangedCallback)));
         public static readonly DependencyProperty EndAngleProperty = DependencyProperty.Register(nameof(EndAngle), typeof(double), typeof(Arc), new PropertyMetadata((object)0.0, new PropertyChangedCallback(Arc.propertyChangedCallback)));
-        private bool _contentLoaded;
+        //private bool _contentLoaded;
 
         private Geometry Data
         {

@@ -34,7 +34,7 @@ namespace WPFTest.Activitys
         //internal Grid mPageSplashLoading;
         //internal Label mPageSplashLoadingLabel;
         //internal Label currentModeName;
-        private bool _contentLoaded;
+        //private bool _contentLoaded;
 
         public PageSplash(WindowMain window, System.Windows.Controls.Frame frame)
         {

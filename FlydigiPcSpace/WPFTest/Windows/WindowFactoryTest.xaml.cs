@@ -86,7 +86,7 @@ namespace WPFTest.Windows
         //internal Label mLabelL3Y;
         //internal Label mLabelR3X;
         //internal Label mLabelR3Y;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public WindowFactoryTest(FDGDeviceInfo info, IDelegateCallback delegateCallback)
         {

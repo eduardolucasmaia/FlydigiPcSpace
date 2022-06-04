@@ -21,7 +21,7 @@ namespace WPFTest.UserControls
         //internal Border mBorder;
         //internal Label mLabelColor0;
         //internal Label mLabelColor1;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlLedColor() => this.InitializeComponent();
 

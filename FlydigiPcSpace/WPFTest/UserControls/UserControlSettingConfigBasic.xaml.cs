@@ -28,7 +28,7 @@ namespace WPFTest.UserControls
         //internal UserControlTitle mTitle3;
         //internal UserControlSettingConfigLed mLayoutLed;
         //internal Border mSelectMenuMotionRemoteTarget;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlSettingConfigBasic()
         {

@@ -85,7 +85,7 @@ namespace WPFTest
         //internal Grid mApplyDefaultConfigNotice;
         //internal Button mApplyDefaultConfigButtonCancel;
         //internal Button mApplyDefaultConfigButtonOK;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public WindowMain()
         {

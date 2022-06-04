@@ -26,7 +26,7 @@ namespace WPFTest.UserControls
         //internal Line mLine1;
         //internal Ellipse mBlueCircle;
         //internal Image mPoint;
-        private bool _contentLoaded;
+        //private bool _contentLoaded;
 
         public UserControlJoystick() => this.InitializeComponent();
 

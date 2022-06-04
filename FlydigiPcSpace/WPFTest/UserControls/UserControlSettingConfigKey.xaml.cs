@@ -66,7 +66,7 @@ namespace WPFTest.UserControls
         //internal WrapPanel mWrapPanel_2;
         //internal UserControlTitle mTitle3;
         //internal WrapPanel mWrapPanel_3;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlSettingConfigKey()
         {

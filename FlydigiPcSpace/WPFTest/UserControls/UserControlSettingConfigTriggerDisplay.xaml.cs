@@ -18,7 +18,7 @@ namespace WPFTest.UserControls
     {
         //internal UserControlTrigger mTriggerLeft;
         //internal UserControlTrigger mTriggerRight;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlSettingConfigTriggerDisplay() => this.InitializeComponent();
 

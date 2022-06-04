@@ -60,7 +60,7 @@ namespace WPFTest.UserControls
         //internal UserControlDialogKey mSelectMenuKey;
         //internal UserControlDialogKey mSelectMenuKeyTwo;
         //internal Grid mEnableShadow;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlSettingConfigMotion()
         {

@@ -63,7 +63,7 @@ namespace WPFTest.UserControls
         //internal Label mLabelConfigApply;
         //internal Image mImageConfigApply;
         //internal Button mButtonInfo;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public int mCurrentModeType { get; set; }
 

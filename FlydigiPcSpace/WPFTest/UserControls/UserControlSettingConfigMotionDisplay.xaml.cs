@@ -25,7 +25,7 @@ namespace WPFTest.UserControls
         private double mLastY;
         //internal Canvas mCanvas;
         //internal Image mPoint;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlSettingConfigMotionDisplay()
         {

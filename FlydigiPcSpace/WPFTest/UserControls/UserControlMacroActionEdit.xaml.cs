@@ -48,7 +48,7 @@ namespace WPFTest.UserControls
         //internal Thumb mThumbWaitTime;
         //internal Thumb mThumbWorkTime;
         //internal UserControlDialogKey mSelectMenuKey;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlMacroActionEdit()
         {

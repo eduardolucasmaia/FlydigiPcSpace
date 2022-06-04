@@ -107,7 +107,7 @@ namespace WPFTest.UserControls
         };
         //internal Border mSelectMenuKey;
         //internal WrapPanel mWrapPanel;
-        private bool _contentLoaded;
+        //private bool _contentLoaded;
 
         public UserControlDialogKey() => this.InitializeComponent();
 

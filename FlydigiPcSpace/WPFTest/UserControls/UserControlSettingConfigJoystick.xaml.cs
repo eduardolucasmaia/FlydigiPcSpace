@@ -35,7 +35,7 @@ namespace WPFTest.UserControls
         //internal Label mLineRight;
         //internal UserControlLineJoystickSetting mLayoutRight;
         //internal UserControlLineJoystickSetting mLayoutLeft;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlSettingConfigJoystick() => this.InitializeComponent();
 

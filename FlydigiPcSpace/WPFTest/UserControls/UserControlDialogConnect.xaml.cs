@@ -32,7 +32,7 @@ namespace WPFTest.UserControls
         //internal UserControlSelectMenu mDeviceType;
         //internal Label mLabelConnectNotice;
         //internal Border mSelectMenuDeviceType;
-        private bool _contentLoaded;
+        //private bool _contentLoaded;
 
         public UserControlDialogConnect()
         {

@@ -23,7 +23,7 @@ namespace WPFTest.UserControls
         //internal Label mLabel;
         //internal Image mKeyIcon;
         //internal Image mImage;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlSelectMenu() => this.InitializeComponent();
 

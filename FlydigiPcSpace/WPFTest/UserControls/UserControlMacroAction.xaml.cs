@@ -31,7 +31,7 @@ namespace WPFTest.UserControls
         //internal Image mImageKey;
         //internal Image mImageActionState;
         //internal Label mLabelActionDesc;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlMacroAction() => this.InitializeComponent();
 

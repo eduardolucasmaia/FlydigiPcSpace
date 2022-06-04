@@ -53,7 +53,7 @@ namespace WPFTest.UserControls
         //internal UserControlTitle mTitle3;
         //internal UserControlLineJoystickDisplay mJoystickLeft;
         //internal UserControlLineJoystickDisplay mJoystickRight;
-        private bool _contentLoaded;
+        //private bool _contentLoaded;
 
         public UserControlConfig()
         {

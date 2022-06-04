@@ -18,7 +18,7 @@ namespace WPFTest.Pages
     public partial class PageConnectGuide : Page, IComponentConnector
     {
         //internal UserControlDialogConnect mGuide;
-        private bool _contentLoaded;
+        //private bool _contentLoaded;
 
         public PageConnectGuide() => this.InitializeComponent();
 

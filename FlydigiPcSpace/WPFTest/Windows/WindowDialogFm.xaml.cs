@@ -27,7 +27,7 @@ namespace WPFTest.Windows
         //internal Button mButtonStartNewApp;
         //internal Button mButtonDownload;
         //internal Label mLabelVersion;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public WindowDialogFm(string url, string version)
         {

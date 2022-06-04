@@ -17,7 +17,7 @@ namespace WPFTest.UserControls
     public partial class UserControlTitle : UserControl, IComponentConnector
     {
         //internal Label mTitle;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlTitle() => this.InitializeComponent();
 

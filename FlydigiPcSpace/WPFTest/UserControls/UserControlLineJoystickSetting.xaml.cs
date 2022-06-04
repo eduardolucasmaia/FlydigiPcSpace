@@ -21,7 +21,7 @@ using WPFTest.Utils;
 
 namespace WPFTest.UserControls
 {
-    public class UserControlLineJoystickSetting : UserControl, IComponentConnector
+    public partial class UserControlLineJoystickSetting : UserControl, IComponentConnector
     {
         private int MaxDataValue = (int)sbyte.MaxValue;
         private int MaxUIValue;
@@ -30,17 +30,17 @@ namespace WPFTest.UserControls
         private OneJoystickBean mOneJoystickBean;
         private bool isFirstRefresh;
         private IDelegateCallback mIDelegateCallback;
-        internal Label mButtonDefault;
-        internal Label mButtonFast;
-        internal Label mButtonDelay;
-        internal Canvas mCanvas;
-        internal Line mLine1;
-        internal Line mLine2;
-        internal Line mLine3;
-        internal Thumb mZero;
-        internal Thumb mPoint1;
-        internal Thumb mPoint2;
-        private bool _contentLoaded;
+        //internal Label mButtonDefault;
+        //internal Label mButtonFast;
+        //internal Label mButtonDelay;
+        //internal Canvas mCanvas;
+        //internal Line mLine1;
+        //internal Line mLine2;
+        //internal Line mLine3;
+        //internal Thumb mZero;
+        //internal Thumb mPoint1;
+        //internal Thumb mPoint2;
+       //private bool _contentLoaded;
 
         public UserControlLineJoystickSetting()
         {
@@ -240,66 +240,66 @@ namespace WPFTest.UserControls
             this.mIDelegateCallback(0);
         }
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-                return;
-            this._contentLoaded = true;
-            Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrollinejoysticksetting.xaml", UriKind.Relative));
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //        return;
+        //    this._contentLoaded = true;
+        //    Application.LoadComponent((object)this, new Uri("/WPFTest;component/usercontrols/usercontrollinejoysticksetting.xaml", UriKind.Relative));
+        //}
 
-        [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.mButtonDefault = (Label)target;
-                    this.mButtonDefault.MouseLeftButtonDown += new MouseButtonEventHandler(this.Button_Click_Default);
-                    break;
-                case 2:
-                    this.mButtonFast = (Label)target;
-                    this.mButtonFast.MouseLeftButtonDown += new MouseButtonEventHandler(this.Button_Click_Fast);
-                    break;
-                case 3:
-                    this.mButtonDelay = (Label)target;
-                    this.mButtonDelay.MouseLeftButtonDown += new MouseButtonEventHandler(this.Button_Click_Delay);
-                    break;
-                case 4:
-                    this.mCanvas = (Canvas)target;
-                    break;
-                case 5:
-                    this.mLine1 = (Line)target;
-                    break;
-                case 6:
-                    this.mLine2 = (Line)target;
-                    break;
-                case 7:
-                    this.mLine3 = (Line)target;
-                    break;
-                case 8:
-                    this.mZero = (Thumb)target;
-                    this.mZero.DragDelta += new DragDeltaEventHandler(this.mZero_DragDelta);
-                    this.mZero.DragCompleted += new DragCompletedEventHandler(this.mZero_DragCompleted);
-                    break;
-                case 9:
-                    this.mPoint1 = (Thumb)target;
-                    this.mPoint1.DragDelta += new DragDeltaEventHandler(this.mPoint1_DragDelta);
-                    this.mPoint1.DragCompleted += new DragCompletedEventHandler(this.mPoint1_DragCompleted);
-                    break;
-                case 10:
-                    this.mPoint2 = (Thumb)target;
-                    this.mPoint2.DragDelta += new DragDeltaEventHandler(this.mPoint2_DragDelta);
-                    this.mPoint2.DragCompleted += new DragCompletedEventHandler(this.mPoint2_DragCompleted);
-                    break;
-                default:
-                    this._contentLoaded = true;
-                    break;
-            }
-        }
+        //[DebuggerNonUserCode]
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+        //[EditorBrowsable(EditorBrowsableState.Never)]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.mButtonDefault = (Label)target;
+        //            this.mButtonDefault.MouseLeftButtonDown += new MouseButtonEventHandler(this.Button_Click_Default);
+        //            break;
+        //        case 2:
+        //            this.mButtonFast = (Label)target;
+        //            this.mButtonFast.MouseLeftButtonDown += new MouseButtonEventHandler(this.Button_Click_Fast);
+        //            break;
+        //        case 3:
+        //            this.mButtonDelay = (Label)target;
+        //            this.mButtonDelay.MouseLeftButtonDown += new MouseButtonEventHandler(this.Button_Click_Delay);
+        //            break;
+        //        case 4:
+        //            this.mCanvas = (Canvas)target;
+        //            break;
+        //        case 5:
+        //            this.mLine1 = (Line)target;
+        //            break;
+        //        case 6:
+        //            this.mLine2 = (Line)target;
+        //            break;
+        //        case 7:
+        //            this.mLine3 = (Line)target;
+        //            break;
+        //        case 8:
+        //            this.mZero = (Thumb)target;
+        //            this.mZero.DragDelta += new DragDeltaEventHandler(this.mZero_DragDelta);
+        //            this.mZero.DragCompleted += new DragCompletedEventHandler(this.mZero_DragCompleted);
+        //            break;
+        //        case 9:
+        //            this.mPoint1 = (Thumb)target;
+        //            this.mPoint1.DragDelta += new DragDeltaEventHandler(this.mPoint1_DragDelta);
+        //            this.mPoint1.DragCompleted += new DragCompletedEventHandler(this.mPoint1_DragCompleted);
+        //            break;
+        //        case 10:
+        //            this.mPoint2 = (Thumb)target;
+        //            this.mPoint2.DragDelta += new DragDeltaEventHandler(this.mPoint2_DragDelta);
+        //            this.mPoint2.DragCompleted += new DragCompletedEventHandler(this.mPoint2_DragCompleted);
+        //            break;
+        //        default:
+        //            this._contentLoaded = true;
+        //            break;
+        //    }
+        //}
     }
 }

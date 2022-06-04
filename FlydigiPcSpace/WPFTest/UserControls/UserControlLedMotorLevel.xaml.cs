@@ -19,7 +19,7 @@ namespace WPFTest.UserControls
     {
         //internal Border mBorder;
         //internal Label mLedMotorLvele;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlLedMotorLevel() => this.InitializeComponent();
 

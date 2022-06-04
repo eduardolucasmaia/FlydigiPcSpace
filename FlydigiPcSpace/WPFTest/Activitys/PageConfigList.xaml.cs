@@ -46,7 +46,7 @@ namespace WPFTest.Activitys
         //internal Button mButtonConfig3;
         //internal Button mButtonConfig4;
         //internal UserControlConfig mLayoutConfig;
-        private bool _contentLoaded;
+        //private bool _contentLoaded;
 
         public PageConfigList(WindowMain window, System.Windows.Controls.Frame frame)
         {

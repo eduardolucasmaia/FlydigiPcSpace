@@ -34,7 +34,7 @@ namespace WPFTest.Windows
         //internal Button mButtonConfirm;
         //internal Button mButtonClose;
         //internal Image mImageClose;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public WindowDialogCommon(
           int dialog,

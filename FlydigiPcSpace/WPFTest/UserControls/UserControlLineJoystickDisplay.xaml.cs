@@ -27,7 +27,7 @@ namespace WPFTest.UserControls
         //internal Line mLine1;
         //internal Line mLine2;
         //internal Line mLine3;
-        private bool _contentLoaded;
+       //private bool _contentLoaded;
 
         public UserControlLineJoystickDisplay()
         {
