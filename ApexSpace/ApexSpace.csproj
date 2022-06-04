@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE6760A9-554A-4195-9A48-78E7B3664DF0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ApexSpace</RootNamespace>
+    <AssemblyName>ApexSpace</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HidSharp, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HidSharp.2.1.0\lib\net35\HidSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LibUsbDotNet.LibUsbDotNet, Version=2.2.0.0, Culture=neutral, PublicKeyToken=c677239abe1e02a9, processorArchitecture=MSIL">
+      <HintPath>..\packages\LibUsbDotNet.2.2.29\lib\net45\LibUsbDotNet.LibUsbDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonUtils.cs" />
+    <Compile Include="ConfigUtils.cs" />
+    <Compile Include="DataManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsbDataManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApexSpace.Bean\ApexSpace.Bean.csproj">
+      <Project>{c968fba9-2145-4556-85f6-48ebb111efc3}</Project>
+      <Name>ApexSpace.Bean</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ApexSpace.data\ApexSpace.data.csproj">
+      <Project>{d03b90e1-023d-454f-9049-d41e63a41ae9}</Project>
+      <Name>ApexSpace.data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ApexSpace.Utils\ApexSpace.Utils.csproj">
+      <Project>{6db4bc8d-324f-474e-b221-3b3d7bea0850}</Project>
+      <Name>ApexSpace.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WPFTest.DriverHelper\WPFTest.DriverHelper.csproj">
+      <Project>{f6c10805-400d-41c6-8d43-4d5be35dd535}</Project>
+      <Name>WPFTest.DriverHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WPFTest.Utils\WPFTest.Utils.csproj">
+      <Project>{b26c5402-432e-44fc-a730-e592d3ba93b3}</Project>
+      <Name>WPFTest.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WPFTest.Windows\WPFTest.Windows.csproj">
+      <Project>{2a329994-055a-47e7-91f9-51662527031b}</Project>
+      <Name>WPFTest.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WPFTest\WPFTest.csproj">
+      <Project>{17581118-27f4-461c-aa86-8d5ba1057327}</Project>
+      <Name>WPFTest</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
