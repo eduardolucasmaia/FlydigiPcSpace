@@ -6,7 +6,7 @@
         MouseLeftButtonDown="Window_MouseLeftButtonDown" Loaded="Window_Loaded"
         Initialized="Window_Initialized" Deactivated="appDeactivated" StateChanged="appStateChanged"
         Title="{DynamicResource app_name}" Width="1200" Height="720" Background="Black" WindowStyle="None"
-        ResizeMode="CanMinimize" Icon="/WPFTest;component/Resources/logo_blue.ico">
+        ResizeMode="CanMinimize">
     <Grid>
         <UserControls:UserControlTopBar x:Name="mTopBar" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0"/>
         <UserControls:UserControlDialogConnect x:Name="mGuide" Width="1200" Height="650" Margin="0,69,0,0"/>

@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo_blue.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="HidSharp, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\HidSharp.2.1.0\lib\net35\HidSharp.dll</HintPath>
@@ -252,6 +255,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <None Include="Resources\button.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\combobox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\scrollviewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\slider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
     <Page Include="Styles\button.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -479,6 +498,277 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="logo_blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duuuu.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\background_config_list.gif" />
+    <Resource Include="Resources\background_config_list.png" />
+    <Resource Include="Resources\background_f1p_config_list.png" />
+    <Resource Include="Resources\background_f1p_joystick.png" />
+    <Resource Include="Resources\background_f1p_led.png" />
+    <Resource Include="Resources\background_f1p_motion.png" />
+    <Resource Include="Resources\background_f1p_trigger.png" />
+    <Resource Include="Resources\background_f1_config_list.png" />
+    <Resource Include="Resources\background_f1_joystick.png" />
+    <Resource Include="Resources\background_f1_led.png" />
+    <Resource Include="Resources\background_f1_motion.png" />
+    <Resource Include="Resources\background_f1_trigger.png" />
+    <Resource Include="Resources\background_joystick.png" />
+    <Resource Include="Resources\background_key.png" />
+    <Resource Include="Resources\background_led.png" />
+    <Resource Include="Resources\background_motion.png" />
+    <Resource Include="Resources\background_splash.png" />
+    <Resource Include="Resources\bg_grid.png" />
+    <Resource Include="Resources\bg_grid_num.png" />
+    <Resource Include="Resources\bg_grid_small.png" />
+    <Resource Include="Resources\bg_grid_small_num.png" />
+    <Resource Include="Resources\bg_joystick.png" />
+    <Resource Include="Resources\bg_joystick_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\sharpdx.dll" />
+    <Content Include="Resources\sharpdx.xinput.dll" />
+    <Content Include="Resources\video_apex2.mp4" />
+    <Resource Include="Resources\flymapping_gp_front_a.png" />
+    <Resource Include="Resources\flymapping_gp_front_b.png" />
+    <Resource Include="Resources\flymapping_gp_front_back_normal.png" />
+    <Resource Include="Resources\flymapping_gp_front_c_normal.png" />
+    <Resource Include="Resources\flymapping_gp_front_down.png" />
+    <Resource Include="Resources\flymapping_gp_front_home_normal.png" />
+    <Resource Include="Resources\flymapping_gp_front_l3_normal.png" />
+    <Resource Include="Resources\flymapping_gp_front_lb.png" />
+    <Resource Include="Resources\flymapping_gp_front_left.png" />
+    <Resource Include="Resources\flymapping_gp_front_lt.png" />
+    <Resource Include="Resources\flymapping_gp_front_m1_normal.png" />
+    <Resource Include="Resources\flymapping_gp_front_m2_normal.png" />
+    <Resource Include="Resources\flymapping_gp_front_m3_normal.png" />
+    <Resource Include="Resources\flymapping_gp_front_m4_normal.png" />
+    <Resource Include="Resources\flymapping_gp_front_menu_normal.png" />
+    <Resource Include="Resources\flymapping_gp_front_r3_normal.png" />
+    <Resource Include="Resources\flymapping_gp_front_rb.png" />
+    <Resource Include="Resources\flymapping_gp_front_right.png" />
+    <Resource Include="Resources\flymapping_gp_front_rt.png" />
+    <Resource Include="Resources\flymapping_gp_front_select_normal.png" />
+    <Resource Include="Resources\flymapping_gp_front_start_normal.png" />
+    <Resource Include="Resources\flymapping_gp_front_up.png" />
+    <Resource Include="Resources\flymapping_gp_front_x.png" />
+    <Resource Include="Resources\flymapping_gp_front_y.png" />
+    <Resource Include="Resources\flymapping_gp_front_z_normal.png" />
+    <Resource Include="Resources\iconarrow_down_blue.png" />
+    <Resource Include="Resources\icon_a2_back.png" />
+    <Resource Include="Resources\icon_a2_menu.png" />
+    <Resource Include="Resources\icon_apply.png" />
+    <Resource Include="Resources\icon_apply_gray.png" />
+    <Resource Include="Resources\icon_apply_up.png" />
+    <Resource Include="Resources\icon_apply_up_gray.png" />
+    <Resource Include="Resources\icon_apply_white.png" />
+    <Resource Include="Resources\icon_arrow_down_blue.png" />
+    <Resource Include="Resources\icon_arrow_down_green.png" />
+    <Resource Include="Resources\icon_arrow_down_white.png" />
+    <Resource Include="Resources\icon_arrow_left_blue.png" />
+    <Resource Include="Resources\icon_arrow_left_white.png" />
+    <Resource Include="Resources\icon_arrow_right_blue.png" />
+    <Resource Include="Resources\icon_arrow_right_white.png" />
+    <Resource Include="Resources\icon_arrow_up_blue.png" />
+    <Resource Include="Resources\icon_arrow_up_white.png" />
+    <Resource Include="Resources\icon_back.png" />
+    <Resource Include="Resources\icon_back_pressed.png" />
+    <Resource Include="Resources\icon_back_white_thin.png" />
+    <Resource Include="Resources\icon_banji_normal.png" />
+    <Resource Include="Resources\icon_banji_select.png" />
+    <Resource Include="Resources\icon_checkbox_no.png" />
+    <Resource Include="Resources\icon_checkbox_yes.png" />
+    <Resource Include="Resources\icon_circle.png" />
+    <Resource Include="Resources\icon_clean.png" />
+    <Resource Include="Resources\icon_close_gray.png" />
+    <Resource Include="Resources\icon_close_white.png" />
+    <Resource Include="Resources\icon_connect.png" />
+    <Resource Include="Resources\icon_decrease_blue.png" />
+    <Resource Include="Resources\icon_decrease_white.png" />
+    <Resource Include="Resources\icon_end.png" />
+    <Resource Include="Resources\icon_f1_back.png" />
+    <Resource Include="Resources\icon_f1_menu.png" />
+    <Resource Include="Resources\icon_fangda_hover.png" />
+    <Resource Include="Resources\icon_finish_white.png" />
+    <Resource Include="Resources\icon_help.png" />
+    <Resource Include="Resources\icon_help_san_blue.png" />
+    <Resource Include="Resources\icon_increase_blue.png" />
+    <Resource Include="Resources\icon_increase_white.png" />
+    <Resource Include="Resources\icon_info_gray.png" />
+    <Resource Include="Resources\icon_info_white.png" />
+    <Resource Include="Resources\icon_jichu_normal.png" />
+    <Resource Include="Resources\icon_jichu_select.png" />
+    <Resource Include="Resources\icon_key_pressed_blue.png" />
+    <Resource Include="Resources\icon_key_pressed_gray.png" />
+    <Resource Include="Resources\icon_key_released_blue.png" />
+    <Resource Include="Resources\icon_key_released_gray.png" />
+    <Resource Include="Resources\icon_loading.png" />
+    <Resource Include="Resources\icon_logo_blue.png" />
+    <Resource Include="Resources\icon_logo_white.png" />
+    <Resource Include="Resources\icon_min_gray.png" />
+    <Resource Include="Resources\icon_min_white.png" />
+    <Resource Include="Resources\icon_move.png" />
+    <Resource Include="Resources\icon_move_tree.png" />
+    <Resource Include="Resources\icon_question_gray.png" />
+    <Resource Include="Resources\icon_question_white.png" />
+    <Resource Include="Resources\icon_reset_defaults.png" />
+    <Resource Include="Resources\icon_setting_joystick_gray.png" />
+    <Resource Include="Resources\icon_setting_joystick_white.png" />
+    <Resource Include="Resources\icon_setting_key_gray.png" />
+    <Resource Include="Resources\icon_setting_key_white.png" />
+    <Resource Include="Resources\icon_setting_led_gray.png" />
+    <Resource Include="Resources\icon_setting_led_white.png" />
+    <Resource Include="Resources\icon_setting_motion_gray.png" />
+    <Resource Include="Resources\icon_setting_motion_white.png" />
+    <Resource Include="Resources\icon_slider_thumb.png" />
+    <Resource Include="Resources\icon_start.png" />
+    <Resource Include="Resources\icon_test_gray.png" />
+    <Resource Include="Resources\icon_test_white.png" />
+    <Resource Include="Resources\icon_thumb_blue.png" />
+    <Resource Include="Resources\icon_thumb_green.png" />
+    <Resource Include="Resources\icon_thumb_white.png" />
+    <Resource Include="Resources\icon_tips_quit.png" />
+    <Resource Include="Resources\icon_trash_white.png" />
+    <Resource Include="Resources\icon_unconnect.png" />
+    <Resource Include="Resources\img_apex2.png" />
+    <Resource Include="Resources\img_apex2_after.png" />
+    <Resource Include="Resources\img_apex2_after_left.png" />
+    <Resource Include="Resources\img_apex2_after_right.png" />
+    <Resource Include="Resources\img_apex2_front.png" />
+    <Resource Include="Resources\img_apex2_front_left.png" />
+    <Resource Include="Resources\img_apex2_front_right.png" />
+    <Resource Include="Resources\img_apex2_top.png" />
+    <Resource Include="Resources\img_apex2_top_left.png" />
+    <Resource Include="Resources\img_apex2_top_right.png" />
+    <Resource Include="Resources\img_bg_title.png" />
+    <Resource Include="Resources\img_connect_mode_0.png" />
+    <Resource Include="Resources\img_connect_mode_0_f1.png" />
+    <Resource Include="Resources\img_connect_mode_0_f1p.png" />
+    <Resource Include="Resources\img_connect_mode_1.png" />
+    <Resource Include="Resources\img_connect_mode_1_f1.png" />
+    <Resource Include="Resources\img_connect_mode_1_f1p.png" />
+    <Resource Include="Resources\img_f1.png" />
+    <Resource Include="Resources\img_f1p_after.png" />
+    <Resource Include="Resources\img_f1p_after_left.png" />
+    <Resource Include="Resources\img_f1p_after_right.png" />
+    <Resource Include="Resources\img_f1p_front.png" />
+    <Resource Include="Resources\img_f1p_front_left.png" />
+    <Resource Include="Resources\img_f1p_front_right.png" />
+    <Resource Include="Resources\img_f1p_top.png" />
+    <Resource Include="Resources\img_f1p_top_left.png" />
+    <Resource Include="Resources\img_f1p_top_right.png" />
+    <Resource Include="Resources\img_f1_after.png" />
+    <Resource Include="Resources\img_f1_after_left.png" />
+    <Resource Include="Resources\img_f1_after_right.png" />
+    <Resource Include="Resources\img_f1_front.png" />
+    <Resource Include="Resources\img_f1_front_left.png" />
+    <Resource Include="Resources\img_f1_front_right.png" />
+    <Resource Include="Resources\img_f1_key_back.png" />
+    <Resource Include="Resources\img_f1_key_home.png" />
+    <Resource Include="Resources\img_f1_key_menu.png" />
+    <Resource Include="Resources\img_f1_key_select.png" />
+    <Resource Include="Resources\img_f1_key_start.png" />
+    <Resource Include="Resources\img_f1_top.png" />
+    <Resource Include="Resources\img_f1_top_left.png" />
+    <Resource Include="Resources\img_f1_top_right.png" />
+    <Resource Include="Resources\img_key_a.png" />
+    <Resource Include="Resources\img_key_b.png" />
+    <Resource Include="Resources\img_key_back.png" />
+    <Resource Include="Resources\img_key_c.png" />
+    <Resource Include="Resources\img_key_circle.png" />
+    <Resource Include="Resources\img_key_circle_a_blue.png" />
+    <Resource Include="Resources\img_key_circle_a_gray.png" />
+    <Resource Include="Resources\img_key_circle_b_blue.png" />
+    <Resource Include="Resources\img_key_circle_b_gray.png" />
+    <Resource Include="Resources\img_key_circle_c_blue.png" />
+    <Resource Include="Resources\img_key_circle_c_gray.png" />
+    <Resource Include="Resources\img_key_circle_down_blue.png" />
+    <Resource Include="Resources\img_key_circle_down_gray.png" />
+    <Resource Include="Resources\img_key_circle_l3_blue.png" />
+    <Resource Include="Resources\img_key_circle_l3_gray.png" />
+    <Resource Include="Resources\img_key_circle_lb_blue.png" />
+    <Resource Include="Resources\img_key_circle_lb_gray.png" />
+    <Resource Include="Resources\img_key_circle_left_blue.png" />
+    <Resource Include="Resources\img_key_circle_left_gray.png" />
+    <Resource Include="Resources\img_key_circle_lt_blue.png" />
+    <Resource Include="Resources\img_key_circle_lt_gray.png" />
+    <Resource Include="Resources\img_key_circle_m1_blue.png" />
+    <Resource Include="Resources\img_key_circle_m1_gray.png" />
+    <Resource Include="Resources\img_key_circle_m2_blue.png" />
+    <Resource Include="Resources\img_key_circle_m2_gray.png" />
+    <Resource Include="Resources\img_key_circle_m3_blue.png" />
+    <Resource Include="Resources\img_key_circle_m3_gray.png" />
+    <Resource Include="Resources\img_key_circle_m4_blue.png" />
+    <Resource Include="Resources\img_key_circle_m4_gray.png" />
+    <Resource Include="Resources\img_key_circle_m5_blue.png" />
+    <Resource Include="Resources\img_key_circle_m5_gray.png" />
+    <Resource Include="Resources\img_key_circle_m6_blue.png" />
+    <Resource Include="Resources\img_key_circle_m6_gray.png" />
+    <Resource Include="Resources\img_key_circle_r3_blue.png" />
+    <Resource Include="Resources\img_key_circle_r3_gray.png" />
+    <Resource Include="Resources\img_key_circle_rb_blue.png" />
+    <Resource Include="Resources\img_key_circle_rb_gray.png" />
+    <Resource Include="Resources\img_key_circle_right_blue.png" />
+    <Resource Include="Resources\img_key_circle_right_gray.png" />
+    <Resource Include="Resources\img_key_circle_rt_blue.png" />
+    <Resource Include="Resources\img_key_circle_rt_gray.png" />
+    <Resource Include="Resources\img_key_circle_select_blue.png" />
+    <Resource Include="Resources\img_key_circle_select_gray.png" />
+    <Resource Include="Resources\img_key_circle_start_blue.png" />
+    <Resource Include="Resources\img_key_circle_start_gray.png" />
+    <Resource Include="Resources\img_key_circle_up_blue.png" />
+    <Resource Include="Resources\img_key_circle_up_gray.png" />
+    <Resource Include="Resources\img_key_circle_x_blue.png" />
+    <Resource Include="Resources\img_key_circle_x_gray.png" />
+    <Resource Include="Resources\img_key_circle_y_blue.png" />
+    <Resource Include="Resources\img_key_circle_y_gray.png" />
+    <Resource Include="Resources\img_key_circle_z_blue.png" />
+    <Resource Include="Resources\img_key_circle_z_gray.png" />
+    <Resource Include="Resources\img_key_down.png" />
+    <Resource Include="Resources\img_key_home.png" />
+    <Resource Include="Resources\img_key_l3.png" />
+    <Resource Include="Resources\img_key_lb.png" />
+    <Resource Include="Resources\img_key_left.png" />
+    <Resource Include="Resources\img_key_lt.png" />
+    <Resource Include="Resources\img_key_m1.png" />
+    <Resource Include="Resources\img_key_m2.png" />
+    <Resource Include="Resources\img_key_m3.png" />
+    <Resource Include="Resources\img_key_m4.png" />
+    <Resource Include="Resources\img_key_m5.png" />
+    <Resource Include="Resources\img_key_m6.png" />
+    <Resource Include="Resources\img_key_menu.png" />
+    <Resource Include="Resources\img_key_r3.png" />
+    <Resource Include="Resources\img_key_rb.png" />
+    <Resource Include="Resources\img_key_right.png" />
+    <Resource Include="Resources\img_key_rt.png" />
+    <Resource Include="Resources\img_key_select.png" />
+    <Resource Include="Resources\img_key_start.png" />
+    <Resource Include="Resources\img_key_up.png" />
+    <Resource Include="Resources\img_key_x.png" />
+    <Resource Include="Resources\img_key_y.png" />
+    <Resource Include="Resources\img_key_z.png" />
+    <Resource Include="Resources\img_line_horizontal.png" />
+    <Resource Include="Resources\img_line_vertical.png" />
+    <Resource Include="Resources\img_motion.png" />
+    <Resource Include="Resources\img_special_key_down_blue.png" />
+    <Resource Include="Resources\img_special_key_down_white.png" />
+    <Resource Include="Resources\img_special_key_left_blue.png" />
+    <Resource Include="Resources\img_special_key_left_white.png" />
+    <Resource Include="Resources\img_special_key_right_blue.png" />
+    <Resource Include="Resources\img_special_key_right_white.png" />
+    <Resource Include="Resources\img_special_key_up_blue.png" />
+    <Resource Include="Resources\img_special_key_up_white.png" />
+    <Resource Include="Resources\loading.gif" />
+    <Resource Include="Resources\loading_blue.gif" />
+    <Resource Include="Resources\loading_gray.gif" />
+    <Resource Include="Resources\logo.ico" />
+    <Resource Include="Resources\logo_black.ico" />
+    <Resource Include="Resources\logo_blue.ico" />
+    <Content Include="Resources\newtonsoft.json.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

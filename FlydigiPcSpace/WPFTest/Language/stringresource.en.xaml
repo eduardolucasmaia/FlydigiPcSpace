@@ -374,4 +374,5 @@ to switch mode
   </sys:String>
   <sys:String x:Key="Calibrate_The_Joystick_btn_ok">OK</sys:String>
   <sys:String x:Key="Calibrate_The_Joystick_btn_go">To calibrate</sys:String>
+  <sys:String x:Key="save_changes">Save changes</sys:String>
 </ResourceDictionary>

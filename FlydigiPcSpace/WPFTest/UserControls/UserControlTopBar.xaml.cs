@@ -97,6 +97,8 @@ namespace WPFTest.UserControls
                     this.back.Visibility = Visibility.Hidden;
                     this.mLineConfigReset.Visibility = Visibility.Hidden;
                     this.mButtonConfigReset.Visibility = Visibility.Hidden;
+                    this.mLineSaveChanges.Visibility = Visibility.Hidden;
+                    this.mButtonSaveChanges.Visibility = Visibility.Hidden;
                     this.mLineConfigTest.Visibility = Visibility.Hidden;
                     this.mButtonConfigTest.Visibility = Visibility.Hidden;
                     this.mLineConfigApply.Visibility = Visibility.Hidden;
@@ -229,6 +231,32 @@ namespace WPFTest.UserControls
                     return;
                 this.mIDelegateCallback(9);
             }
+        }
+        private void mButtonSaveChanges_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.mDeviceConnected == -1)
+            {
+                CommonUtils.showCommonLangTip((WindowMain)WindowMain.getInstance(), Application.Current.FindResource((object)"please_connect_gamepad_first").ToString());
+            }
+            else
+            {
+                if (this.mIDelegateCallback == null)
+                    return;
+                this.mIDelegateCallback(6);
+            }
+
+
+            ////WindowMain
+            //if (content.checkConfigChange())
+            //{
+            //    this.mButtonSaveChanges.Visibility = Visibility.Visible;
+            //}
+            //else
+            //{
+            //    this.mButtonSaveChanges.Visibility = Visibility.Hidden;
+            //}
+
+
         }
 
         public void applyDefualtConfig()
