@@ -70,6 +70,9 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9e7cd3b544a090dc, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfAnimatedGif.2.0.2\lib\net40\WpfAnimatedGif.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -99,6 +102,12 @@
     </Compile>
     <Compile Include="UserControls\UserControlDialogConnect.xaml.cs">
       <DependentUpon>UserControlDialogConnect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlDialogKey.xaml.cs">
+      <DependentUpon>UserControlDialogKey.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlJoystick.xaml.cs">
+      <DependentUpon>UserControlJoystick.xaml</DependentUpon>
     </Compile>
     <Compile Include="Utils\Constant.cs" />
     <Compile Include="Utils\DongleCommand.cs" />
@@ -163,6 +172,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\UserControlDialogConnect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlDialogKey.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlJoystick.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

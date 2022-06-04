@@ -1,12 +1,79 @@
 ﻿<UserControl x:Class="WPFTest.UserControls.UserControlDialogConnect"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:WPFTest.UserControls"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+             Width="960" Height="560" Background="#101010">
+    <Grid Width="960" Height="560" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Grid Width="480" Height="560" HorizontalAlignment="Left">
+            <StackPanel>
+                <Image Name="mTypeWireImg" Width="380" Height="344" Source="/Resources/img_connect_mode_0.png"
+               HorizontalAlignment="Center" Margin="0,90,0,0"/>
+                <Label Name="mLabelConnectMethod1" Content="{DynamicResource connect_method_1}" Padding="0"
+               HorizontalAlignment="Center" Foreground="White" FontSize="15" FontWeight="Bold" Margin="0,15,0,0"/>
+                <Label Name="mLabelCableDesce" Content="{DynamicResource connect_method_data_cable_desc}" Padding="0"
+               HorizontalAlignment="Center" Foreground="#F1F1F1" FontSize="12" Margin="0,10,0,0"/>
+            </StackPanel>
+        </Grid>
+        <Grid Width="480" Height="560" HorizontalAlignment="Right">
+            <StackPanel>
+                <Image Name="mType24GImg" Width="380" Height="344" Source="/Resources/img_connect_mode_1.png"
+               Margin="0,90,0,0" HorizontalAlignment="Center"/>
+                <Label Name="mLabelConnectMethod2" Content="{DynamicResource connect_method_2}" Padding="0"
+               HorizontalAlignment="Center" Foreground="White" FontSize="15" FontWeight="Bold" Margin="0,15,0,0"/>
+                <Label HorizontalAlignment="Center" Padding="0" Foreground="#F1F1F1" FontSize="12" MaxWidth="420"
+               Margin="0,10,0,0">
+                    <TextBlock Name="mTextBlockDesc" TextWrapping="Wrap" LineHeight="20"
+                     Text="{DynamicResource connect_method_receiver_desc}"/>
+                </Label>
+            </StackPanel>
+            <Grid Width="380" Height="344" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Label Content="{DynamicResource open_the_gamepad}" Padding="0" HorizontalAlignment="Left"
+               VerticalAlignment="Top" Foreground="#0074ff" FontSize="10" Margin="66,10,0,0"/>
+                <Label Content="{DynamicResource insert_wireless_connector}" Padding="0" HorizontalAlignment="Right"
+               VerticalAlignment="Top" Foreground="#0074ff" FontSize="10" Margin="0,10,25,0"/>
+                <Label Name="mLabelConnectSwitchMode" Content="{DynamicResource connect_switch_mode}" Padding="0"
+               HorizontalAlignment="Left" VerticalAlignment="Bottom" Foreground="#0074ff" FontSize="10"
+               Margin="30,0,0,25"/>
+                <Label Name="mLabelConnectLed2Desc" Content="{DynamicResource connect_led2_desc_f1}" Padding="0"
+               HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="#0074ff" FontSize="10"
+               Margin="0,0,0,25 "/>
+            </Grid>
+        </Grid>
+        <Grid Name="mHelpCenter" Width="100" Height="28" VerticalAlignment="Top" HorizontalAlignment="Right"
+          Margin="0,20,35,0">
+            <Image Width="14" Height="14" Source="/Resources/icon_help.png" HorizontalAlignment="Left"
+             VerticalAlignment="Center" Margin="5,0,0,0"/>
+            <Label Content="{DynamicResource help_center}" Height="28" Visibility="Visible" Margin="25,0,0,0"
+             VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Padding="0"
+             Foreground="#0074ff" FontSize="12"/>
+            <Button Click="Connect_Help_Click" Width="100" Height="28" BorderThickness="0" Background="#00000000"
+              Style="{StaticResource ButtonStyleNull}"/>
+        </Grid>
+        <Button Click="DeviceTypeSelect_Click" Width="130" BorderThickness="0" Padding="0"
+            HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Background="#00000000"
+            Style="{StaticResource ButtonStyleNull}">
+            <local:UserControlSelectMenu x:Name="mDeviceType" Width="130"/>
+        </Button>
+        <Label Width="120" Height="2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,55,0,0"
+           Background="#0074ff"/>
+        <Label Name="mLabelConnectNotice" Content="{DynamicResource connect_notice}" Padding="0"
+           HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" FontSize="12"
+           FontWeight="Bold" Margin="0,65                 ,0,0"/>
+        <Image Width="1" Height="380" HorizontalAlignment="Center" VerticalAlignment="Center"
+           Source="/Resources/img_line_vertical.png"/>
+        <Border Name="mSelectMenuDeviceType" Width="150" Visibility="Hidden" BorderBrush="#0074ff"
+            BorderThickness="1" Background="#232323" Margin="0,45,0,0" HorizontalAlignment="Center"
+            VerticalAlignment="Top">
+            <StackPanel Orientation="Vertical">
+                <Button Click="DeviceTypeItem_Click_2" Content="{DynamicResource f1p_connect_tutorial}"
+                Style="{StaticResource StyleSelectItem}" FontSize="15"/>
+                <Button Click="DeviceTypeItem_Click_0" Content="{DynamicResource f1_connect_tutorial}"
+                Style="{StaticResource StyleSelectItem}" FontSize="15"/>
+                <Button Click="DeviceTypeItem_Click_1" Content="{DynamicResource a2_connect_tutorial}"
+                Style="{StaticResource StyleSelectItem}" FontSize="15"/>
+            </StackPanel>
+        </Border>
     </Grid>
 </UserControl>

@@ -84,7 +84,7 @@
             Content="摇杆矫正" FontSize="16" Foreground="#0074ff" Style="{StaticResource ButtonStyleNull}"
             Visibility="Hidden" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Margin="450,0,216.769,0"/>
         <Grid Name="mLoading" Background="#80000000" Visibility="Hidden" ColumnSpan="3">
-            <Image Width="32" Height="32" ImageBehavior.AnimatedSource="/Resources/loading_gray.gif" AutoStart="true"/>
+            <Image Width="32" Height="32" gif:ImageBehavior.AnimatedSource="/Resources/loading_gray.gif" gif:ImageBehavior.AutoStart="true"/>
         </Grid>
     </Grid>
 </Page>

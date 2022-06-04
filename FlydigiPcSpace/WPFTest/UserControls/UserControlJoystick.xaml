@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="WPFTest.UserControls.UserControlJoystick"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:WPFTest.UserControls"
+             Width="260" Height="260">
+    <Grid>
+        <Canvas>
+            <Image Name="mImageBg" Width="260" Height="260" Source="/Resources/bg_joystick.png"/>
+            <Ellipse Width="4" Height="4" Fill="#0074ff" Canvas.Top="128" Canvas.Left="128"/>
+            <Line Name="mLine1" X1="0" Y1="0" X2="0" Y2="0" Stroke="#0074FF" StrokeThickness="1"/>
+            <Ellipse Name="mBlueCircle" Width="0" Height="0" StrokeThickness="1" Stroke="#0074ff" Canvas.Top="45"
+               Canvas.Left="45" Fill="#330074ff"/>
+            <Image Name="mPoint" Width="20" Height="20" Canvas.Top="120" Canvas.Left="120"
+             Source="/Resources/icon_circle.png"/>
+        </Canvas>
+    </Grid>
+</UserControl>
