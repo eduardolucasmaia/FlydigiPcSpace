@@ -57,9 +57,6 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Drawing.Common, Version=4.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Drawing.Common.4.7.2\lib\net461\System.Drawing.Common.dll</HintPath>
-    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -79,6 +76,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Activitys\PageConfigList.xaml.cs">
+      <DependentUpon>PageConfigList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Activitys\PageConfigTest.xaml.cs">
+      <DependentUpon>PageConfigTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Activitys\PageSplash.xaml.cs">
+      <DependentUpon>PageSplash.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageConnectGuide.xaml.cs">
+      <DependentUpon>PageConnectGuide.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Arc.xaml.cs">
+      <DependentUpon>Arc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlConfig.xaml.cs">
+      <DependentUpon>UserControlConfig.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlDialogColor.xaml.cs">
+      <DependentUpon>UserControlDialogColor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlDialogConnect.xaml.cs">
+      <DependentUpon>UserControlDialogConnect.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utils\Constant.cs" />
     <Compile Include="Utils\DongleCommand.cs" />
     <Compile Include="Utils\FDllWrapper.cs" />
@@ -89,6 +110,18 @@
     <Compile Include="Utils\IDelegateCallbackValueTwoObject.cs" />
     <Compile Include="Utils\LoadLibraryFlags.cs" />
     <Compile Include="Utils\NetworkUtils.cs" />
+    <Page Include="Activitys\PageConfigList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Activitys\PageConfigTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Activitys\PageSplash.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Language\stringresource.en.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -112,6 +145,26 @@
     <Page Include="Language\stringresource.zh.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\PageConnectGuide.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Arc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlConfig.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlDialogColor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControlDialogConnect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowMain.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -150,7 +203,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pages\PageConnectGuide.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -178,7 +230,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="UserControls\" />
     <Folder Include="Windows\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

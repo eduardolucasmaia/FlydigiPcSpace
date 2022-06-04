@@ -1,0 +1,90 @@
+﻿<Page x:Class="WPFTest.Activitys.PageConfigTest"
+      xmlns:UserControls="clr-namespace:WPFTest.UserControls"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:gif="http://wpfanimatedgif.codeplex.com"
+      xmlns:local="clr-namespace:WPFTest.Activitys"
+      xmlns:Windows="clr-namespace:WPFTest.Windows"
+      Loaded="Page_Loaded" Initialized="Page_Initialized" Width="1200" Height="720"
+      Background="#80000000" Title="PageConfigTest">
+    <Grid Width="1000" Height="596" Background="#333333" Margin="103,20,97,84">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="501*"/>
+            <ColumnDefinition Width="266*"/>
+            <ColumnDefinition Width="233*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="359,30,91,0"
+                Grid.ColumnSpan="2" Width="317">
+            <Label Content="{DynamicResource please_control_the_gamepad}" Padding="0" FontSize="15" Foreground="White"/>
+            <Label Name="mLabelTitle" Content="{DynamicResource config1}" Padding="5,0,5,0" FontSize="15"
+             Foreground="#0074FF"/>
+            <Label Content="{DynamicResource key_test}" Padding="0" FontSize="15" Foreground="White"/>
+        </StackPanel>
+        <Grid Width="533" Height="394" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="48,130,0,0"
+          ColumnSpan="2">
+            <Panel.Background>
+                <ImageBrush x:Name="mDeviceImg1" ImageSource="/Resources/img_apex2_front.png"/>
+            </Panel.Background>
+            <Image Name="mKeyUP" Source="/Resources/img_key_up.png" Margin="168,146,310,218" Visibility="Hidden"/>
+            <Image Name="mKeyRight" Source="/Resources/img_key_right.png" Margin="207,173,288,188" Visibility="Hidden"/>
+            <Image Name="mKeyLeft" Source="/Resources/img_key_left.png" Margin="149,165,351,178" Visibility="Hidden"/>
+            <Image Name="mKeyDown" Source="/Resources/img_key_down.png" Margin="179,203,323,157" Visibility="Hidden"/>
+            <Image Name="mKeyA" Source="/Resources/img_key_a.png" Margin="383,126,107,231" Visibility="Hidden"/>
+            <Image Name="mKeyB" Source="/Resources/img_key_b.png" Margin="419,82,80,275" Visibility="Hidden"/>
+            <Image Name="mKeyX" Source="/Resources/img_key_x.png" Margin="350,80,140,279" Visibility="Hidden"/>
+            <Image Name="mKeyY" Source="/Resources/img_key_y.png" Margin="381,48,106,309" Visibility="Hidden"/>
+            <Image Name="mKeyC" Source="/Resources/img_key_c.png" Margin="409,179,84,175" Visibility="Hidden"/>
+            <Image Name="mKeyZ" Source="/Resources/img_key_z.png" Margin="439,148,47,208" Visibility="Hidden"/>
+            <Image Name="mKeySelect" Source="/Resources/img_key_select.png" Margin="200,65,288,290"
+             Visibility="Hidden"/>
+            <Image Name="mKeyStart" Source="/Resources/img_key_start.png" Margin="286,65,199,289" Visibility="Hidden"/>
+            <Image Name="mKeyL3" Source="/Resources/img_key_l3.png" Margin="89,61,374,265" Visibility="Hidden"/>
+            <Image Name="mKeyR3" Source="/Resources/img_key_r3.png" Margin="302,148,162,180" Visibility="Hidden"/>
+            <Image Name="mKeyMenu" Source="/Resources/img_key_menu.png" Margin="195,247,282,124" Visibility="Hidden"/>
+            <Image Name="mKeyHome" Source="/Resources/img_key_home.png" Margin="241,247,242,124" Visibility="Hidden"/>
+            <Image Name="mKeyBack" Source="/Resources/img_key_back.png" Margin="282,247,196,124" Visibility="Hidden"/>
+        </Grid>
+        <Grid Width="315" Height="204" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,130,64,0"
+          Column="1" ColumnSpan="2">
+            <Panel.Background>
+                <ImageBrush x:Name="mDeviceImg2" ImageSource="/Resources/img_apex2_after.png"/>
+            </Panel.Background>
+            <Image Name="mKeyM1" Source="/Resources/img_key_m1.png" Margin="80,95,207,81" Visibility="Hidden"/>
+            <Image Name="mKeyM2" Source="/Resources/img_key_m2.png" Margin="208,94,78,80" Visibility="Hidden"/>
+            <Image Name="mKeyM3" Width="24" Height="24" Source="/Resources/img_key_m3.png" Margin="108,85,174,89"
+             Visibility="Hidden"/>
+            <Image Name="mKeyM4" Width="24" Height="24" Source="/Resources/img_key_m4.png" Margin="175,85,107,89"
+             Visibility="Hidden"/>
+        </Grid>
+        <Grid Width="305" Height="134" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,64,88"
+          Column="1" ColumnSpan="2">
+            <Panel.Background>
+                <ImageBrush x:Name="mDeviceImg3" ImageSource="/Resources/img_apex2_top.png"/>
+            </Panel.Background>
+            <Image Name="mKeyRB" Source="/Resources/img_key_rb.png" Margin="44,32,189,67" Visibility="Hidden"/>
+            <Image Name="mKeyRT" Source="/Resources/img_key_rt.png" Margin="45,55,216,23" Visibility="Hidden"/>
+            <Image Name="mKeyLB" Source="/Resources/img_key_lb.png" Margin="190,31,44,66" Visibility="Hidden"/>
+            <Image Name="mKeyLT" Source="/Resources/img_key_lt.png" Margin="210,57,41,25" Visibility="Hidden"/>
+            <Image Name="mKeyM5" Width="24" Height="24" Source="/Resources/img_key_m5.png" Margin="91,61,190,49"
+             Visibility="Hidden"/>
+            <Image Name="mKeyM6" Width="24" Height="24" Source="/Resources/img_key_m6.png" Margin="191,61,90,49"
+             Visibility="Hidden"/>
+        </Grid>
+        <UserControls:UserControlJoystick x:Name="mJoystickLeft" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="42,94,0,0"
+                                      Visibility="Visible"/>
+        <UserControls:UserControlJoystick x:Name="mJoystickRight" HorizontalAlignment="Right" VerticalAlignment="Top"
+                                      Margin="0,182,250.769,0" Visibility="Visible" Grid.ColumnSpan="2"/>
+        <Label Name="mLabelJoystickResetNotice" Padding="0" Content="正在进行摇杆矫正,请勿操作" Foreground="White"
+           HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Visibility="Hidden"
+           Grid.ColumnSpan="2" Margin="390,286,156.769,286"/>
+        <Button Click="Joystick_Reset" MouseEnter="mButtonJoystickReset_MouseEnter"
+            MouseLeave="mButtonJoystickReset_MouseLeave" Name="mButtonJoystickReset" Width="100" Height="40"
+            Content="摇杆矫正" FontSize="16" Foreground="#0074ff" Style="{StaticResource ButtonStyleNull}"
+            Visibility="Hidden" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Margin="450,0,216.769,0"/>
+        <Grid Name="mLoading" Background="#80000000" Visibility="Hidden" ColumnSpan="3">
+            <Image Width="32" Height="32" ImageBehavior.AnimatedSource="/Resources/loading_gray.gif" AutoStart="true"/>
+        </Grid>
+    </Grid>
+</Page>

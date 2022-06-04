@@ -1,0 +1,39 @@
+﻿<Page x:Class="WPFTest.Activitys.PageSplash"
+      xmlns:UserControls="clr-namespace:WPFTest.UserControls"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:gif="http://wpfanimatedgif.codeplex.com"
+      xmlns:local="clr-namespace:WPFTest.Activitys"
+      xmlns:Windows="clr-namespace:WPFTest.Windows"
+      Loaded="Page_Loaded" Initialized="Page_Initialized" Title="PageSplash">
+    <Grid>
+        <Panel.Background>
+            <ImageBrush ImageSource="/Resources/background_splash.png"/>
+        </Panel.Background>
+        <Image Name="mImgDeviceFront" Width="420" Height="236" Source="/Resources/img_f1p_front.png"/>
+        <Button Click="Button_Start_Click" Name="mButtonStart" Width="240" Height="44" VerticalAlignment="Bottom"
+            Background="#0074ff" Foreground="White" Margin="336,0,624,124"
+            Content="{DynamicResource enter_flydigi_space_station}" Style="{StaticResource ButtonStyleNull}"/>
+        <Button Click="Button_Start_Click_Switch" Name="mButtonStartSwitch" Width="240" Height="44"
+            VerticalAlignment="Bottom" Background="#0074ff" Foreground="White" Margin="629,0,331,124"
+            Content="{DynamicResource enter_flydigi_space_station_switch}"
+            Style="{StaticResource ButtonStyleNull}"/>
+        <Button Click="FactoryTest_Click" Name="mFactoryTest" Width="240" Height="44" VerticalAlignment="Bottom"
+            Background="#0074ff" Foreground="White" Margin="0,0,0,70" Content="{DynamicResource factory_test}"
+            Style="{StaticResource ButtonStyleNull}"/>
+        <Grid Width="1180" Height="652" Background="Black" Margin="0,68,0,0" Visibility="Hidden">
+            <UserControls:UserControlDialogConnect x:Name="connect" HorizontalAlignment="Center"/>
+        </Grid>
+        <Grid x:Name="mPageSplashLoading" Background="#80000000" Visibility="Hidden">
+            <Image Width="32" Height="32" AnimatedSource="/Resources/loading_gray.gif" AutoStart="true"/>
+            <Label x:Name="mPageSplashLoadingLabel" Width="500" Height="40"
+             Content="{DynamicResource tips_switch_xinput_step1}" VerticalContentAlignment="Center"
+             HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"
+             Foreground="White" FontSize="12" Margin="350,416,350,264" Visibility="Visible"/>
+        </Grid>
+        <Label Name="currentModeName" Foreground="#fff" Content="Label" HorizontalAlignment="Left"
+           Margin="562,483,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>

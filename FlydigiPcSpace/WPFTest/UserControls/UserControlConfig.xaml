@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="WPFTest.UserControls.UserControlConfig"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:WPFTest.UserControls"
+             Width="320" Height="650" Background="#181818">
+    <Grid Margin="20,0,20,0">
+        <StackPanel Orientation="Vertical">
+            <local:UserControlTitle x:Name="mTitle1" Width="280" Height="24" Margin="0,24,0,0"/>
+            <WrapPanel Name="mWrapPanel" Margin="0,12,0,12"/>
+            <local:UserControlTitle x:Name="mTitle2" Width="280" Height="24"/>
+            <Grid Margin="0,0,0,0">
+                <local:UserControlLedMode x:Name="mLedMode" HorizontalAlignment="Left" Margin="0,-20,0,20"/>
+                <local:UserControlLedColor x:Name="mLedColor" HorizontalAlignment="Right" Margin="0,-20,0,20"/>
+                <local:UserControlLedMotorLevel x:Name="mLedMotorLvele" HorizontalAlignment="Left" Margin="0,60,0,20"/>
+            </Grid>
+            <local:UserControlTitle x:Name="mTitle3" Width="280" Height="24"/>
+            <Grid Margin="0,20,0,10">
+                <local:UserControlLineJoystickDisplay x:Name="mJoystickLeft" HorizontalAlignment="Left"/>
+                <local:UserControlLineJoystickDisplay x:Name="mJoystickRight" HorizontalAlignment="Right"/>
+            </Grid>
+            <Grid>
+                <Label Width="120" Content="{DynamicResource left_joystick}" Foreground="White" FontSize="12"
+               HorizontalAlignment="Left" HorizontalContentAlignment="Center"/>
+                <Label Width="120" Content="{DynamicResource right_joystick}" Foreground="White" FontSize="12"
+               HorizontalAlignment="Right" HorizontalContentAlignment="Center"/>
+            </Grid>
+            <Button Click="Button_Click" Content="{DynamicResource config_setting}" Width="280" Height="32"
+              Background="#0074FF" Foreground="White" BorderThickness="0" Margin="0,20,0,0" FontSize="12"
+              Style="{StaticResource ButtonStyleNull}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="WPFTest.UserControls.UserControlDialogColor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:WPFTest.UserControls"
+             Width="280" Height="170">
+    <Border BorderThickness="1" BorderBrush="#0074ff" Background="#232323" Margin="0,0,0,-24">
+        <StackPanel Margin="10">
+            <Label Content="{DynamicResource color}" Padding="0" HorizontalAlignment="Left" FontSize="13"
+             Foreground="#868788"/>
+            <Slider ValueChanged="Slider_ValueChanged" Name="mSlider" Width="260" Height="18" Margin="0,14,0,14"
+              SmallChange="1" Maximum="360" Style="{StaticResource Slider_CustomStyle_Linear}"
+              IsSnapToTickEnabled="true"/>
+            <Grid>
+                <TextBox KeyUp="Text_valueChange" KeyDown="TextValidata_KeyDown" Name="mLabelRGB_text" BorderBrush="#0074ff"
+                 BorderThickness="1" Text="#FF2200" Width="64" Height="20" Padding="0" HorizontalAlignment="Left"
+                 Foreground="White" Background="#190074ff" HorizontalContentAlignment="Center" MaxLength="7"
+                 VerticalContentAlignment="Center" InputMethod.IsInputMethodEnabled="false" CharacterCasing="Upper"
+                 VerticalAlignment="Bottom"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.ColumnSpan="2" Grid.Column="1">
+                    <Label Content="R" Width="20" Height="20" Padding="0" Foreground="#868788"
+                 HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <TextBox KeyUp="Text_r_valueChange" KeyDown="TextValidata_rgb_KeyDown" Name="mLabelR_text"
+                   BorderBrush="#0074ff" BorderThickness="1" Text="225" Width="28" Height="20" Padding="0"
+                   Foreground="White" Background="#190074ff" HorizontalContentAlignment="Center"
+                   VerticalContentAlignment="Center" InputMethod.IsInputMethodEnabled="false" MaxLength="3"/>
+                    <Label Content="G" Width="20" Height="20" Padding="0" Foreground="#868788"
+                 HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <TextBox KeyUp="Text_g_valueChange" KeyDown="TextValidata_rgb_KeyDown" Name="mLabelG_text"
+                   BorderBrush="#0074ff" BorderThickness="1" Text="225" Width="28" Height="20" Padding="0"
+                   Foreground="White" Background="#190074ff" HorizontalContentAlignment="Center"
+                   VerticalContentAlignment="Center" InputMethod.IsInputMethodEnabled="false" MaxLength="3"/>
+                    <Label Content="B" Width="20" Height="20" Padding="0" Foreground="#868788"
+                 HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <TextBox KeyUp="Text_b_valueChange" KeyDown="TextValidata_rgb_KeyDown" Name="mLabelB_text"
+                   BorderBrush="#0074ff" BorderThickness="1" Text="225" Width="28" Height="20" Padding="0"
+                   Foreground="White" Background="#190074ff" HorizontalContentAlignment="Center"
+                   VerticalContentAlignment="Center" InputMethod.IsInputMethodEnabled="false" MaxLength="3"/>
+                </StackPanel>
+            </Grid>
+            <Label Content="{DynamicResource recommend}" Padding="0" HorizontalAlignment="Left" FontSize="13"
+             Foreground="#868788" Margin="0,14,0,0"/>
+            <StackPanel Width="260" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                <Button Click="DefaultColor_Click_1" Name="DefaultColor1" Width="24" Height="24" Background="#FF0000"
+                Style="{StaticResource StyleSelectItem}"/>
+                <Button Click="DefaultColor_Click_2" Name="DefaultColor2" Width="24" Height="24" Margin="15,0,0,0"
+                Background="#FF7F00" Style="{StaticResource StyleSelectItem}"/>
+                <Button Click="DefaultColor_Click_3" Name="DefaultColor3" Width="24" Height="24" Margin="15,0,0,0"
+                Background="#CCFF00" Style="{StaticResource StyleSelectItem}"/>
+                <Button Click="DefaultColor_Click_4" Name="DefaultColor4" Width="24" Height="24" Margin="15,0,0,0"
+                Background="#13FFBA" Style="{StaticResource StyleSelectItem}"/>
+                <Button Click="DefaultColor_Click_5" Name="DefaultColor5" Width="24" Height="24" Margin="15,0,0,0"
+                Background="#00D2FF" Style="{StaticResource StyleSelectItem}"/>
+                <Button Click="DefaultColor_Click_6" Name="DefaultColor6" Width="24" Height="24" Margin="15,0,0,0"
+                Background="#006CFF" Style="{StaticResource StyleSelectItem}"/>
+                <Button Click="DefaultColor_Click_7" Name="DefaultColor7" Width="24" Height="24" Margin="15,0,0,0"
+                Background="#FFFFFF" Style="{StaticResource StyleSelectItem}"/>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</UserControl>
