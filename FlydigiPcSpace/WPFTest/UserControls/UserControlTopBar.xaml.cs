@@ -41,6 +41,9 @@ namespace WPFTest.UserControls
         public const int PAGE_SPLASH = 0;
         public const int PAGE_CONFIG_LIST = 1;
         public const int PAGE_CONFIG_SETTING = 2;
+        public const int EXPORT_CONFIG = 11;
+        public const int IMPORT_CONFIG = 12;
+
         //internal Image mDeviceState;
         //internal Button btn_min;
         //internal Image btn_min_image;
@@ -63,7 +66,7 @@ namespace WPFTest.UserControls
         //internal Label mLabelConfigApply;
         //internal Image mImageConfigApply;
         //internal Button mButtonInfo;
-       //private bool _contentLoaded;
+        //private bool _contentLoaded;
 
         public int mCurrentModeType { get; set; }
 

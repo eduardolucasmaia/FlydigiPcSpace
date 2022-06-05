@@ -85,7 +85,7 @@ namespace WPFTest
         //internal Grid mApplyDefaultConfigNotice;
         //internal Button mApplyDefaultConfigButtonCancel;
         //internal Button mApplyDefaultConfigButtonOK;
-       //private bool _contentLoaded;
+        //private bool _contentLoaded;
 
         public WindowMain()
         {
@@ -239,6 +239,12 @@ namespace WPFTest
                     case 10:
                         this.mLoading.Visibility = Visibility.Hidden;
                         CommonUtils.showCommonTip((WindowMain)WindowMain.getInstance(), Application.Current.FindResource((object)"save_successed_notice").ToString(), "success");
+                        break;
+                    case UserControlTopBar.EXPORT_CONFIG:
+                        this.mLoading.Visibility = Visibility.Hidden;
+                        break;
+                    case UserControlTopBar.IMPORT_CONFIG:
+                        this.mLoading.Visibility = Visibility.Hidden;
                         break;
                 }
             }));

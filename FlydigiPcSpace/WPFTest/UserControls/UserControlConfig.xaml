@@ -11,9 +11,13 @@
             <WrapPanel Name="mWrapPanel" Margin="0,12,0,12"/>
             <local:UserControlTitle x:Name="mTitle2" Width="280" Height="24"/>
             <Grid Margin="0,0,0,0">
-                <local:UserControlLedMode x:Name="mLedMode" HorizontalAlignment="Left" Margin="0,-20,0,20"/>
+                <!--<local:UserControlLedMode x:Name="mLedMode" HorizontalAlignment="Left" Margin="0,-20,0,20"/>
                 <local:UserControlLedColor x:Name="mLedColor" HorizontalAlignment="Right" Margin="0,-20,0,20"/>
-                <local:UserControlLedMotorLevel x:Name="mLedMotorLvele" HorizontalAlignment="Left" Margin="0,60,0,20"/>
+                <local:UserControlLedMotorLevel x:Name="mLedMotorLvele" HorizontalAlignment="Left" Margin="0,60,0,20"/>-->
+
+                <local:UserControlLedMode x:Name="mLedMode" HorizontalAlignment="Left" Margin="0,20,0,20"/>
+                <local:UserControlLedColor x:Name="mLedColor" HorizontalAlignment="Right" Margin="0,20,0,20"/>
+                <local:UserControlLedMotorLevel x:Name="mLedMotorLvele" HorizontalAlignment="Left" Visibility="Hidden" Margin="0,0,0,0"/>
             </Grid>
             <local:UserControlTitle x:Name="mTitle3" Width="280" Height="24"/>
             <Grid Margin="0,20,0,10">
@@ -27,8 +31,16 @@
                HorizontalAlignment="Right" HorizontalContentAlignment="Center"/>
             </Grid>
             <Button Click="Button_Click" Content="{DynamicResource config_setting}" Width="280" Height="32"
-              Background="#0074FF" Foreground="White" BorderThickness="0" Margin="0,20,0,0" FontSize="12"
-              Style="{StaticResource ButtonStyleNull}"/>
+                  Background="#0074FF" Foreground="White" BorderThickness="0" Margin="0,20,0,0" FontSize="12"
+                  Style="{StaticResource ButtonStyleNull}"/>
+            <Grid>
+                <Button Click="ExportConfig_Click" HorizontalAlignment="Left" Content="{DynamicResource export_config}" Width="120" Height="32"
+                  Background="#0074FF" Foreground="White" BorderThickness="0" Margin="0,20,0,0" FontSize="12"
+                  Style="{StaticResource ButtonStyleNull}"/>
+                <Button Click="ImportConfig_Click"  HorizontalAlignment="Right" Content="{DynamicResource import_config}" Width="120" Height="32"
+                  Background="#0074FF" Foreground="White" BorderThickness="0" Margin="0,20,0,0" FontSize="12"
+                  Style="{StaticResource ButtonStyleNull}"/>
+            </Grid>
         </StackPanel>
     </Grid>
 </UserControl>

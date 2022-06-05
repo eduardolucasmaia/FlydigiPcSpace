@@ -5,11 +5,13 @@
 // Assembly location: C:\Program Files (x86)\FlydigiPcSpace\FlydigiPcSpace.exe
 
 using ApexSpace.data;
+using Newtonsoft.Json;
 using System;
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -164,6 +166,28 @@ namespace WPFTest.UserControls
                 return;
             this.mIDelegateCallback(0);
         }
+
+        private void ExportConfig_Click(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
+            dlg.FileName = "Config";
+            dlg.DefaultExt = ".flc";
+            dlg.Filter = "Flydigi config files (*.flc)|*.flc|All files (*.*)|*.*";
+            dlg.FilterIndex = 0;
+            dlg.RestoreDirectory = true;
+
+            Nullable<bool> result = dlg.ShowDialog();
+            if (result == true)
+            {
+                File.WriteAllText(dlg.FileName, JsonConvert.SerializeObject(this.mConfig));
+            }
+        }
+
+        private void ImportConfig_Click(object sender, RoutedEventArgs e)
+        {
+        }
+
+
 
         //[DebuggerNonUserCode]
         //[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]

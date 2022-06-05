@@ -12,6 +12,7 @@ using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.IO;
 using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
@@ -401,28 +402,38 @@ namespace WPFTest.Activitys
                 FLog.d("切换到配置" + pageId.ToString());
                 this.mPageIndex = pageId;
                 ((WindowMain)WindowMain.getInstance()).updateConfigId(this.mPageIndex);
+
+                var resultDctionaryConfig = this.mDictionaryConfig[pageId];
+
+                string hexConfig = "#0074FF";
+                var hexForeColor = "#FFFFFF";
+                if (resultDctionaryConfig != null && resultDctionaryConfig.Led != null && resultDctionaryConfig.Led.RgbColor0.Count == 3)
+                {
+                    hexConfig = string.Format("#{0:X2}{1:X2}{2:X2}", resultDctionaryConfig.Led.RgbColor0[0], resultDctionaryConfig.Led.RgbColor0[1], resultDctionaryConfig.Led.RgbColor0[2]);
+                    hexForeColor = (((resultDctionaryConfig.Led.RgbColor0[0] + resultDctionaryConfig.Led.RgbColor0[1] + resultDctionaryConfig.Led.RgbColor0[2]) / 3) > 128 ?  "#000000" : "#FFFFFF");
+                }
                 this.mLayoutConfig.setData(this.mDictionaryConfig[pageId]);
                 this.colorReset();
                 switch (pageId)
                 {
                     case 0:
-                        this.mButtonConfig1.Background = (Brush)new BrushConverter().ConvertFrom((object)"#0074FF");
-                        this.mButtonConfig1.Foreground = (Brush)new BrushConverter().ConvertFrom((object)"#FFFFFF");
+                        this.mButtonConfig1.Background = (Brush)new BrushConverter().ConvertFrom((object)hexConfig);
+                        this.mButtonConfig1.Foreground = (Brush)new BrushConverter().ConvertFrom((object)hexForeColor);
                         this.mButtonConfig1.FontWeight = FontWeights.Bold;
                         break;
                     case 1:
-                        this.mButtonConfig2.Background = (Brush)new BrushConverter().ConvertFrom((object)"#0074FF");
-                        this.mButtonConfig2.Foreground = (Brush)new BrushConverter().ConvertFrom((object)"#FFFFFF");
+                        this.mButtonConfig2.Background = (Brush)new BrushConverter().ConvertFrom((object)hexConfig);
+                        this.mButtonConfig2.Foreground = (Brush)new BrushConverter().ConvertFrom((object)hexForeColor);
                         this.mButtonConfig2.FontWeight = FontWeights.Bold;
                         break;
                     case 2:
-                        this.mButtonConfig3.Background = (Brush)new BrushConverter().ConvertFrom((object)"#0074FF");
-                        this.mButtonConfig3.Foreground = (Brush)new BrushConverter().ConvertFrom((object)"#FFFFFF");
+                        this.mButtonConfig3.Background = (Brush)new BrushConverter().ConvertFrom((object)hexConfig);
+                        this.mButtonConfig3.Foreground = (Brush)new BrushConverter().ConvertFrom((object)hexForeColor);
                         this.mButtonConfig3.FontWeight = FontWeights.Bold;
                         break;
                     case 3:
-                        this.mButtonConfig4.Background = (Brush)new BrushConverter().ConvertFrom((object)"#0074FF");
-                        this.mButtonConfig4.Foreground = (Brush)new BrushConverter().ConvertFrom((object)"#FFFFFF");
+                        this.mButtonConfig4.Background = (Brush)new BrushConverter().ConvertFrom((object)hexConfig);
+                        this.mButtonConfig4.Foreground = (Brush)new BrushConverter().ConvertFrom((object)hexForeColor);
                         this.mButtonConfig4.FontWeight = FontWeights.Bold;
                         break;
                 }

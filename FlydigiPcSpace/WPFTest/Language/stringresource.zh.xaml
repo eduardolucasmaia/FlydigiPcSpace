@@ -1,268 +1,270 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:sys="clr-namespace:System;assembly=mscorlib">
-  <sys:String x:Key="app_name">飞智PC空间站</sys:String>
-  <sys:String x:Key="app_version">软件版本号：</sys:String>
-  <sys:String x:Key="check_for_updates">检测更新&gt;</sys:String>
-  <sys:String x:Key="firmware_version">固件版本号：</sys:String>
-  <sys:String x:Key="dongle_version">接收器版本号：</sys:String>
-  <sys:String x:Key="device_power">设备电量</sys:String>
-  <sys:String x:Key="customer_service">客服热线：4008503336</sys:String>
-  <sys:String x:Key="language_text">语言:</sys:String>
-  <sys:String x:Key="language_en">英文</sys:String>
-  <sys:String x:Key="language_zh">中文</sys:String>
-  <sys:String x:Key="language_ko">韩文</sys:String>
-  <sys:String x:Key="log">日志:</sys:String>
-  <sys:String x:Key="log_start">开启</sys:String>
-  <sys:String x:Key="log_close">关闭</sys:String>
-  <sys:String x:Key="function_description">功能描述</sys:String>
-  <sys:String x:Key="do_you_want_apply">是否将修改的配置保存到手柄？</sys:String>
-  <sys:String x:Key="yes">是</sys:String>
-  <sys:String x:Key="no">否</sys:String>
-  <sys:String x:Key="cancel">取消</sys:String>
-  <sys:String x:Key="ok">确定</sys:String>
-  <sys:String x:Key="connect_notice">手柄未连接，请尝试以下方式进行连接</sys:String>
-  <sys:String x:Key="connect_method_1">方式一：数据线连接</sys:String>
-  <sys:String x:Key="connect_method_2">方式二：接收器连接</sys:String>
-  <sys:String x:Key="connect_method_data_cable_desc">将手柄开机，并通过数据线与电脑连接即可</sys:String>
-  <sys:String x:Key="connect_method_receiver_desc">
-    1、打开手柄，将无线接收器插入电脑；
+    <sys:String x:Key="app_name">飞智PC空间站</sys:String>
+    <sys:String x:Key="app_version">软件版本号：</sys:String>
+    <sys:String x:Key="check_for_updates">检测更新&gt;</sys:String>
+    <sys:String x:Key="firmware_version">固件版本号：</sys:String>
+    <sys:String x:Key="dongle_version">接收器版本号：</sys:String>
+    <sys:String x:Key="device_power">设备电量</sys:String>
+    <sys:String x:Key="customer_service">客服热线：4008503336</sys:String>
+    <sys:String x:Key="language_text">语言:</sys:String>
+    <sys:String x:Key="language_en">英文</sys:String>
+    <sys:String x:Key="language_zh">中文</sys:String>
+    <sys:String x:Key="language_ko">韩文</sys:String>
+    <sys:String x:Key="log">日志:</sys:String>
+    <sys:String x:Key="log_start">开启</sys:String>
+    <sys:String x:Key="log_close">关闭</sys:String>
+    <sys:String x:Key="function_description">功能描述</sys:String>
+    <sys:String x:Key="do_you_want_apply">是否将修改的配置保存到手柄？</sys:String>
+    <sys:String x:Key="yes">是</sys:String>
+    <sys:String x:Key="no">否</sys:String>
+    <sys:String x:Key="cancel">取消</sys:String>
+    <sys:String x:Key="ok">确定</sys:String>
+    <sys:String x:Key="connect_notice">手柄未连接，请尝试以下方式进行连接</sys:String>
+    <sys:String x:Key="connect_method_1">方式一：数据线连接</sys:String>
+    <sys:String x:Key="connect_method_2">方式二：接收器连接</sys:String>
+    <sys:String x:Key="connect_method_data_cable_desc">将手柄开机，并通过数据线与电脑连接即可</sys:String>
+    <sys:String x:Key="connect_method_receiver_desc">
+        1、打开手柄，将无线接收器插入电脑；
 2、如果手柄处于蓝牙模式（第一个灯亮），需同时按住配对键和A键3秒，切换至2.4G无线（第二个灯亮）。
-  </sys:String>
-  <sys:String x:Key="open_the_gamepad">打开手柄开关</sys:String>
-  <sys:String x:Key="insert_wireless_connector">接收器插入电脑</sys:String>
-  <sys:String x:Key="connect_led2_desc">第二个灯亮代表手柄处于2.4G无线</sys:String>
-  <sys:String x:Key="connect_switch_mode">长按配对键和A键3秒切换模式</sys:String>
-  <sys:String x:Key="enter_flydigi_space_station">PC 模式设置</sys:String>
-  <sys:String x:Key="enter_flydigi_space_station_switch">Switch 模式设置</sys:String>
-  <sys:String x:Key="config">配置</sys:String>
-  <sys:String x:Key="config1">配置1</sys:String>
-  <sys:String x:Key="config2">配置2</sys:String>
-  <sys:String x:Key="config3">配置3</sys:String>
-  <sys:String x:Key="config4">配置4</sys:String>
-  <sys:String x:Key="frequently_used_keys">常用按键</sys:String>
-  <sys:String x:Key="key">按键</sys:String>
-  <sys:String x:Key="macro">宏</sys:String>
-  <sys:String x:Key="mapping_to">映射为</sys:String>
-  <sys:String x:Key="lighting_mode">灯光模式</sys:String>
-  <sys:String x:Key="joystick_curve">摇杆曲线</sys:String>
-  <sys:String x:Key="left_joystick">左摇杆</sys:String>
-  <sys:String x:Key="right_joystick">右摇杆</sys:String>
-  <sys:String x:Key="config_setting">修改配置</sys:String>
-  <sys:String x:Key="test">测试</sys:String>
-  <sys:String x:Key="apply_to_gamepad">应用到手柄</sys:String>
-  <sys:String x:Key="light_adjustment">灯光调节</sys:String>
-  <sys:String x:Key="basic_adjustment">基础调节</sys:String>
-  <sys:String x:Key="key_adjustment">按键调节</sys:String>
-  <sys:String x:Key="joystick_adjustment">摇杆调节</sys:String>
-  <sys:String x:Key="sensing_adjustment">体感调节</sys:String>
-  <sys:String x:Key="trigger_adjustment">扳机调节</sys:String>
-  <sys:String x:Key="mode">模式</sys:String>
-  <sys:String x:Key="led_mode_alert">警戒</sys:String>
-  <sys:String x:Key="led_mode_hunt">猎杀</sys:String>
-  <sys:String x:Key="led_mode_float">浮游</sys:String>
-  <sys:String x:Key="led_mode_hide">潜伏</sys:String>
-  <sys:String x:Key="led_mode_close">关闭</sys:String>
-  <sys:String x:Key="led_mode_alert_desc">警戒（常亮）</sys:String>
-  <sys:String x:Key="led_mode_hunt_desc">猎杀（按下即亮）</sys:String>
-  <sys:String x:Key="led_mode_float_desc">浮游（自由切换）</sys:String>
-  <sys:String x:Key="led_mode_hide_desc">潜伏（呼吸）</sys:String>
-  <sys:String x:Key="color">颜色</sys:String>
-  <sys:String x:Key="color1">颜色1</sys:String>
-  <sys:String x:Key="color2">颜色2</sys:String>
-  <sys:String x:Key="brightness">亮度</sys:String>
-  <sys:String x:Key="time">时间</sys:String>
-  <sys:String x:Key="recommend">推荐</sys:String>
-  <sys:String x:Key="front">正面</sys:String>
-  <sys:String x:Key="side">侧面</sys:String>
-  <sys:String x:Key="back">背面</sys:String>
-  <sys:String x:Key="front_key">正面按键</sys:String>
-  <sys:String x:Key="side_key">侧面按键</sys:String>
-  <sys:String x:Key="back_key">背面按键</sys:String>
-  <sys:String x:Key="sensitivity">灵敏度</sys:String>
-  <sys:String x:Key="sensitivity_curve">灵敏度曲线</sys:String>
-  <sys:String x:Key="default">默认</sys:String>
-  <sys:String x:Key="permanent_output">持续输出</sys:String>
-  <sys:String x:Key="immediate">立即</sys:String>
-  <sys:String x:Key="delay">延时</sys:String>
-  <sys:String x:Key="input">输入</sys:String>
-  <sys:String x:Key="output">输出</sys:String>
-  <sys:String x:Key="sensing_maps_to">体感映射到</sys:String>
-  <sys:String x:Key="remote_sensing_maps_to">轮盘遥感映射到</sys:String>
-  <sys:String x:Key="remote_sensing_maps_to_tip">该方式下可以同时添加2个开启键</sys:String>
-  <sys:String x:Key="open_sensing_mapping_method">开启体感映射方式</sys:String>
-  <sys:String x:Key="press_open_or_close">按下开启，再按关闭</sys:String>
-  <sys:String x:Key="hold_press_release_close">按下开启，松开关闭</sys:String>
-  <sys:String x:Key="open_key">开启键</sys:String>
-  <sys:String x:Key="zone_of_game_joystick">补偿游戏摇杆死区</sys:String>
-  <sys:String x:Key="key_attributes">键属性</sys:String>
-  <sys:String x:Key="trigger_method">触发方式</sys:String>
-  <sys:String x:Key="click">单击</sys:String>
-  <sys:String x:Key="pressing">长按</sys:String>
-  <sys:String x:Key="key_pressed">键按下</sys:String>
-  <sys:String x:Key="key_released">键松开</sys:String>
-  <sys:String x:Key="total_time">总时长</sys:String>
-  <sys:String x:Key="key_value">键值</sys:String>
-  <sys:String x:Key="time_from_macro_start">距离宏开始的时间</sys:String>
-  <sys:String x:Key="current_action_duration">当前动作持续时间</sys:String>
-  <sys:String x:Key="the_green_bar_desc">绿条代表距离宏开始的时间</sys:String>
-  <sys:String x:Key="the_blue_bar_desc">蓝条代表当前动作持续时间</sys:String>
-  <sys:String x:Key="record">录制</sys:String>
-  <sys:String x:Key="re_record">重新录制</sys:String>
-  <sys:String x:Key="stop">停止</sys:String>
-  <sys:String x:Key="clear">清除</sys:String>
-  <sys:String x:Key="please_control_the_gamepad">请操纵手柄对</sys:String>
-  <sys:String x:Key="key_test">进行按键测试</sys:String>
-  <sys:String x:Key="factory_test">工厂手柄测试</sys:String>
-  <sys:String x:Key="key_setting_desc">
-    按键调节：
+    </sys:String>
+    <sys:String x:Key="open_the_gamepad">打开手柄开关</sys:String>
+    <sys:String x:Key="insert_wireless_connector">接收器插入电脑</sys:String>
+    <sys:String x:Key="connect_led2_desc">第二个灯亮代表手柄处于2.4G无线</sys:String>
+    <sys:String x:Key="connect_switch_mode">长按配对键和A键3秒切换模式</sys:String>
+    <sys:String x:Key="enter_flydigi_space_station">PC 模式设置</sys:String>
+    <sys:String x:Key="enter_flydigi_space_station_switch">Switch 模式设置</sys:String>
+    <sys:String x:Key="config">配置</sys:String>
+    <sys:String x:Key="config1">配置1</sys:String>
+    <sys:String x:Key="config2">配置2</sys:String>
+    <sys:String x:Key="config3">配置3</sys:String>
+    <sys:String x:Key="config4">配置4</sys:String>
+    <sys:String x:Key="frequently_used_keys">常用按键</sys:String>
+    <sys:String x:Key="key">按键</sys:String>
+    <sys:String x:Key="macro">宏</sys:String>
+    <sys:String x:Key="mapping_to">映射为</sys:String>
+    <sys:String x:Key="lighting_mode">灯光模式</sys:String>
+    <sys:String x:Key="joystick_curve">摇杆曲线</sys:String>
+    <sys:String x:Key="left_joystick">左摇杆</sys:String>
+    <sys:String x:Key="right_joystick">右摇杆</sys:String>
+    <sys:String x:Key="config_setting">修改配置</sys:String>
+    <sys:String x:Key="test">测试</sys:String>
+    <sys:String x:Key="apply_to_gamepad">应用到手柄</sys:String>
+    <sys:String x:Key="light_adjustment">灯光调节</sys:String>
+    <sys:String x:Key="basic_adjustment">基础调节</sys:String>
+    <sys:String x:Key="key_adjustment">按键调节</sys:String>
+    <sys:String x:Key="joystick_adjustment">摇杆调节</sys:String>
+    <sys:String x:Key="sensing_adjustment">体感调节</sys:String>
+    <sys:String x:Key="trigger_adjustment">扳机调节</sys:String>
+    <sys:String x:Key="mode">模式</sys:String>
+    <sys:String x:Key="led_mode_alert">警戒</sys:String>
+    <sys:String x:Key="led_mode_hunt">猎杀</sys:String>
+    <sys:String x:Key="led_mode_float">浮游</sys:String>
+    <sys:String x:Key="led_mode_hide">潜伏</sys:String>
+    <sys:String x:Key="led_mode_close">关闭</sys:String>
+    <sys:String x:Key="led_mode_alert_desc">警戒（常亮）</sys:String>
+    <sys:String x:Key="led_mode_hunt_desc">猎杀（按下即亮）</sys:String>
+    <sys:String x:Key="led_mode_float_desc">浮游（自由切换）</sys:String>
+    <sys:String x:Key="led_mode_hide_desc">潜伏（呼吸）</sys:String>
+    <sys:String x:Key="color">颜色</sys:String>
+    <sys:String x:Key="color1">颜色1</sys:String>
+    <sys:String x:Key="color2">颜色2</sys:String>
+    <sys:String x:Key="brightness">亮度</sys:String>
+    <sys:String x:Key="time">时间</sys:String>
+    <sys:String x:Key="recommend">推荐</sys:String>
+    <sys:String x:Key="front">正面</sys:String>
+    <sys:String x:Key="side">侧面</sys:String>
+    <sys:String x:Key="back">背面</sys:String>
+    <sys:String x:Key="front_key">正面按键</sys:String>
+    <sys:String x:Key="side_key">侧面按键</sys:String>
+    <sys:String x:Key="back_key">背面按键</sys:String>
+    <sys:String x:Key="sensitivity">灵敏度</sys:String>
+    <sys:String x:Key="sensitivity_curve">灵敏度曲线</sys:String>
+    <sys:String x:Key="default">默认</sys:String>
+    <sys:String x:Key="permanent_output">持续输出</sys:String>
+    <sys:String x:Key="immediate">立即</sys:String>
+    <sys:String x:Key="delay">延时</sys:String>
+    <sys:String x:Key="input">输入</sys:String>
+    <sys:String x:Key="output">输出</sys:String>
+    <sys:String x:Key="sensing_maps_to">体感映射到</sys:String>
+    <sys:String x:Key="remote_sensing_maps_to">轮盘遥感映射到</sys:String>
+    <sys:String x:Key="remote_sensing_maps_to_tip">该方式下可以同时添加2个开启键</sys:String>
+    <sys:String x:Key="open_sensing_mapping_method">开启体感映射方式</sys:String>
+    <sys:String x:Key="press_open_or_close">按下开启，再按关闭</sys:String>
+    <sys:String x:Key="hold_press_release_close">按下开启，松开关闭</sys:String>
+    <sys:String x:Key="open_key">开启键</sys:String>
+    <sys:String x:Key="zone_of_game_joystick">补偿游戏摇杆死区</sys:String>
+    <sys:String x:Key="key_attributes">键属性</sys:String>
+    <sys:String x:Key="trigger_method">触发方式</sys:String>
+    <sys:String x:Key="click">单击</sys:String>
+    <sys:String x:Key="pressing">长按</sys:String>
+    <sys:String x:Key="key_pressed">键按下</sys:String>
+    <sys:String x:Key="key_released">键松开</sys:String>
+    <sys:String x:Key="total_time">总时长</sys:String>
+    <sys:String x:Key="key_value">键值</sys:String>
+    <sys:String x:Key="time_from_macro_start">距离宏开始的时间</sys:String>
+    <sys:String x:Key="current_action_duration">当前动作持续时间</sys:String>
+    <sys:String x:Key="the_green_bar_desc">绿条代表距离宏开始的时间</sys:String>
+    <sys:String x:Key="the_blue_bar_desc">蓝条代表当前动作持续时间</sys:String>
+    <sys:String x:Key="record">录制</sys:String>
+    <sys:String x:Key="re_record">重新录制</sys:String>
+    <sys:String x:Key="stop">停止</sys:String>
+    <sys:String x:Key="clear">清除</sys:String>
+    <sys:String x:Key="please_control_the_gamepad">请操纵手柄对</sys:String>
+    <sys:String x:Key="key_test">进行按键测试</sys:String>
+    <sys:String x:Key="factory_test">工厂手柄测试</sys:String>
+    <sys:String x:Key="key_setting_desc">
+        按键调节：
 按键可以映射为其它按键，拓展出多种操作方式；宏可以录制多个动作，实现一键执行
-  </sys:String>
-  <sys:String x:Key="joystick_setting_desc">
-    摇杆调节：
+    </sys:String>
+    <sys:String x:Key="joystick_setting_desc">
+        摇杆调节：
 你可以根据游戏类型调整摇杆的【灵敏度曲线】
-  </sys:String>
-  <sys:String x:Key="sensing_setting_desc">
-    体感调节：
+    </sys:String>
+    <sys:String x:Key="sensing_setting_desc">
+        体感调节：
 你可以根据游戏类型调整体感操作的细腻程度
 设置为【关闭】可禁用体感
-  </sys:String>
-  <sys:String x:Key="sensing_mode_setting_desc">
-    体感模式：
+    </sys:String>
+    <sys:String x:Key="sensing_mode_setting_desc">
+        体感模式：
 持续输出模式适合赛车游戏，竞技类游戏
 默认...
-  </sys:String>
-  <sys:String x:Key="add_least_one_action">至少添加一个宏动作</sys:String>
-  <sys:String x:Key="special_key_button_is_forbidden">当前宏设置不支持C/Z以及M1-M6键</sys:String>
-  <sys:String x:Key="special_key_ltrt_button_is_forbidden">当前宏设置不支持LT/RT键</sys:String>
-  <sys:String x:Key="special_key_self_button_is_forbidden">当前宏设置不支持自身键</sys:String>
-  <sys:String x:Key="please_stop_recording">请先停止录制</sys:String>
-  <sys:String x:Key="the_maximum_macro_actions">1个宏最大动作数为：</sys:String>
-  <sys:String x:Key="click_record_button_to_start">点击录制按钮开始宏录制</sys:String>
-  <sys:String x:Key="reading_firmare">正在读取手柄固件信息等,请稍等</sys:String>
-  <sys:String x:Key="only_support_notice">
-    飞智空间站当前只支持八爪鱼2手柄，其他手柄的敬请期待
-  </sys:String>
-  <sys:String x:Key="new_version_of_flydigi_space">飞智空间站新版本</sys:String>
-  <sys:String x:Key="new_version_of_flydigi_space_fm">新固件版本</sys:String>
-  <sys:String x:Key="download_progress">下载进度：</sys:String>
-  <sys:String x:Key="start_new_version">启动新版本</sys:String>
-  <sys:String x:Key="download_again">重新下载</sys:String>
-  <sys:String x:Key="new_version">新版本</sys:String>
-  <sys:String x:Key="apply_successed_notice">配置应用成功</sys:String>
-  <sys:String x:Key="save_successed_notice">配置应用成功</sys:String>
-  <sys:String x:Key="apply_successed_notice_desc">
-    请点击【去玩游戏】，手柄会自动切换到360模式，即可在游戏中使用
-  </sys:String>
-  <sys:String x:Key="play_game">去玩游戏</sys:String>
-  <sys:String x:Key="config_test">配置测试</sys:String>
-  <sys:String x:Key="apply_failed_notice">应用到手柄失败，请重新应用</sys:String>
-  <sys:String x:Key="config_apply_failed">配置应用失败</sys:String>
-  <sys:String x:Key="current_version_is_the_latest">当前版本已是最新</sys:String>
-  <sys:String x:Key="please_check_network">请检查当前网络</sys:String>
-  <sys:String x:Key="notice">提示</sys:String>
-  <sys:String x:Key="update">立即更新</sys:String>
-  <sys:String x:Key="start_app">去升级</sys:String>
-  <sys:String x:Key="maximum_number_of_macro">
-    每个配置中，允许启用的宏按键最大个数为：
-  </sys:String>
-  <sys:String x:Key="maximum_number_of_macro_actions">所有宏动作最大个数为：</sys:String>
-  <sys:String x:Key="please_connect_gamepad_first">请先连接手柄</sys:String>
-  <sys:String x:Key="your_current_fw_lower">
-    您当前手柄固件版本较低，请通过手机下载飞智游戏厅，将固件升级至最新后，重新连接
-  </sys:String>
-  <sys:String x:Key="reconnect">重新连接</sys:String>
-  <sys:String x:Key="tutorial">查看教程</sys:String>
-  <sys:String x:Key="motion_close">关闭</sys:String>
-  <sys:String x:Key="a2_connect_tutorial">八爪鱼2</sys:String>
-  <sys:String x:Key="f1_connect_tutorial">黑武士2</sys:String>
-  <sys:String x:Key="f1p_connect_tutorial">黑武士2Pro</sys:String>
-  <sys:String x:Key="connect_switch_mode_f1">长按+键和A键4秒切换模式</sys:String>
-  <sys:String x:Key="connect_led2_desc_f1">白色常亮代表手柄处于2.4G无线</sys:String>
-  <sys:String x:Key="connect_led2_desc_f1p">白色常亮代表手柄处于2.4G无线</sys:String>
-  <sys:String x:Key="connect_method_receiver_desc_f1">
-    1、打开手柄，将无线接收器插入电脑；
+    </sys:String>
+    <sys:String x:Key="add_least_one_action">至少添加一个宏动作</sys:String>
+    <sys:String x:Key="special_key_button_is_forbidden">当前宏设置不支持C/Z以及M1-M6键</sys:String>
+    <sys:String x:Key="special_key_ltrt_button_is_forbidden">当前宏设置不支持LT/RT键</sys:String>
+    <sys:String x:Key="special_key_self_button_is_forbidden">当前宏设置不支持自身键</sys:String>
+    <sys:String x:Key="please_stop_recording">请先停止录制</sys:String>
+    <sys:String x:Key="the_maximum_macro_actions">1个宏最大动作数为：</sys:String>
+    <sys:String x:Key="click_record_button_to_start">点击录制按钮开始宏录制</sys:String>
+    <sys:String x:Key="reading_firmare">正在读取手柄固件信息等,请稍等</sys:String>
+    <sys:String x:Key="only_support_notice">
+        飞智空间站当前只支持八爪鱼2手柄，其他手柄的敬请期待
+    </sys:String>
+    <sys:String x:Key="new_version_of_flydigi_space">飞智空间站新版本</sys:String>
+    <sys:String x:Key="new_version_of_flydigi_space_fm">新固件版本</sys:String>
+    <sys:String x:Key="download_progress">下载进度：</sys:String>
+    <sys:String x:Key="start_new_version">启动新版本</sys:String>
+    <sys:String x:Key="download_again">重新下载</sys:String>
+    <sys:String x:Key="new_version">新版本</sys:String>
+    <sys:String x:Key="apply_successed_notice">配置应用成功</sys:String>
+    <sys:String x:Key="save_successed_notice">配置应用成功</sys:String>
+    <sys:String x:Key="apply_successed_notice_desc">
+        请点击【去玩游戏】，手柄会自动切换到360模式，即可在游戏中使用
+    </sys:String>
+    <sys:String x:Key="play_game">去玩游戏</sys:String>
+    <sys:String x:Key="config_test">配置测试</sys:String>
+    <sys:String x:Key="apply_failed_notice">应用到手柄失败，请重新应用</sys:String>
+    <sys:String x:Key="config_apply_failed">配置应用失败</sys:String>
+    <sys:String x:Key="current_version_is_the_latest">当前版本已是最新</sys:String>
+    <sys:String x:Key="please_check_network">请检查当前网络</sys:String>
+    <sys:String x:Key="notice">提示</sys:String>
+    <sys:String x:Key="update">立即更新</sys:String>
+    <sys:String x:Key="start_app">去升级</sys:String>
+    <sys:String x:Key="maximum_number_of_macro">
+        每个配置中，允许启用的宏按键最大个数为：
+    </sys:String>
+    <sys:String x:Key="maximum_number_of_macro_actions">所有宏动作最大个数为：</sys:String>
+    <sys:String x:Key="please_connect_gamepad_first">请先连接手柄</sys:String>
+    <sys:String x:Key="your_current_fw_lower">
+        您当前手柄固件版本较低，请通过手机下载飞智游戏厅，将固件升级至最新后，重新连接
+    </sys:String>
+    <sys:String x:Key="reconnect">重新连接</sys:String>
+    <sys:String x:Key="tutorial">查看教程</sys:String>
+    <sys:String x:Key="motion_close">关闭</sys:String>
+    <sys:String x:Key="a2_connect_tutorial">八爪鱼2</sys:String>
+    <sys:String x:Key="f1_connect_tutorial">黑武士2</sys:String>
+    <sys:String x:Key="f1p_connect_tutorial">黑武士2Pro</sys:String>
+    <sys:String x:Key="connect_switch_mode_f1">长按+键和A键4秒切换模式</sys:String>
+    <sys:String x:Key="connect_led2_desc_f1">白色常亮代表手柄处于2.4G无线</sys:String>
+    <sys:String x:Key="connect_led2_desc_f1p">白色常亮代表手柄处于2.4G无线</sys:String>
+    <sys:String x:Key="connect_method_receiver_desc_f1">
+        1、打开手柄，将无线接收器插入电脑；
 2、如果手柄处于蓝牙模式（状态灯1蓝色常亮），需同时按住+键和A键4秒，切换至无线模式（状态灯1白色常亮）。
-  </sys:String>
-  <sys:String x:Key="connect_method_receiver_desc_f1p">
-    1、打开手柄，将无线接收器插入电脑；
+    </sys:String>
+    <sys:String x:Key="connect_method_receiver_desc_f1p">
+        1、打开手柄，将无线接收器插入电脑；
 2、如果手柄处于蓝牙模式（状态灯1蓝色常亮），需同时按住+键和A键4秒，切换至无线模式（状态灯1白色常亮）。
-  </sys:String>
-  <sys:String x:Key="config_reset">恢复默认</sys:String>
-  <sys:String x:Key="config_reset_notice">是否将当前配置恢复默认？</sys:String>
-  <sys:String x:Key="reset_config_success">恢复默认成功</sys:String>
-  <sys:String x:Key="reset_config_fail">恢复默认失败</sys:String>
-  <sys:String x:Key="help_center">帮助中心</sys:String>
-  <sys:String x:Key="go_help_center">帮助中心&gt;</sys:String>
-  <sys:String x:Key="tips_apply_config">修改配置后必须先应用到手柄才能生效</sys:String>
-  <sys:String x:Key="tips_keys_change_config_a2">
-    游戏中，同时点击【配对】和【返回】可在多个配置中依次切换
-  </sys:String>
-  <sys:String x:Key="tips_keys_change_config_f1">
-    游戏中，同时点击【+】和【-】可在多个配置中依次切换
-  </sys:String>
-  <sys:String x:Key="tips_switch_xinput_step1">模式切换中...</sys:String>
-  <sys:String x:Key="tips_switch_xinput_step2">数据读取中...</sys:String>
-  <sys:String x:Key="tips_switch_xinput_step3">页面加载中...</sys:String>
-  <sys:String x:Key="tips_QQ">微信群：</sys:String>
-  <sys:String x:Key="go_weixin">点击加入&gt;</sys:String>
-  <sys:String x:Key="basic_vibration_intensity">震动强度</sys:String>
-  <sys:String x:Key="vibration">震动</sys:String>
-  <sys:String x:Key="left_motor">马达</sys:String>
-  <sys:String x:Key="test_motor">测试</sys:String>
-  <sys:String x:Key="motor_level_242">低</sys:String>
-  <sys:String x:Key="motor_level_0">中</sys:String>
-  <sys:String x:Key="motor_level_243">高</sys:String>
-  <sys:String x:Key="motor_level_241">关闭</sys:String>
-  <sys:String x:Key="motor_level_255">中</sys:String>
-  <sys:String x:Key="motor_level_1">低</sys:String>
-  <sys:String x:Key="motor_level_2">高</sys:String>
-  <sys:String x:Key="motor_level_3">关闭</sys:String>
-  <sys:String x:Key="motor_level_5">5级</sys:String>
-  <sys:String x:Key="right_motor">右马达</sys:String>
-  <sys:String x:Key="basic_roulette_mapping">轮盘映射</sys:String>
-  <sys:String x:Key="basic_adjusting_colour">颜色调节</sys:String>
-  <sys:String x:Key="wired">有线</sys:String>
-  <sys:String x:Key="wireless">无线</sys:String>
-  <sys:String x:Key="unknown">未知</sys:String>
-  <sys:String x:Key="The_handle_does_not_support_PC_firmware_upgrade">该手柄不支持PC端固件升级</sys:String>
-  <sys:String x:Key="Firmware_version_not_obtained">固件版本未获取到</sys:String>
-  <sys:String x:Key="open_pc_error">
-    无法打开升级工具，请到官网重新下载空间站
-  </sys:String>
-  <sys:String x:Key="config_apply_success_title">配置应用成功</sys:String>
-  <sys:String x:Key="config_apply_success_content_tip">
-    请按照以下方法将手柄切回Switch模式：
-  </sys:String>
-  <sys:String x:Key="config_apply_success_content_wired">
-    拔掉手柄上的数据线，同时按住+和X两个键，直到第一个指示灯变为橙色
-  </sys:String>
-  <sys:String x:Key="config_apply_success_contnet_Wireless">
-    同时按住+和X两个键，直到第一个指示灯变为橙色
-  </sys:String>
-  <sys:String x:Key="config_apply_success_confirm">确定</sys:String>
-  <sys:String x:Key="tipinfo1">手柄信息加载中，请稍后...</sys:String>
-  <sys:String x:Key="tipinfo2">该手柄不支持Switch模式</sys:String>
-  <sys:String x:Key="tipinfo3">该手柄固件版本过低，请升级固件</sys:String>
-  <sys:String x:Key="tipinfo4">当前页面暂不支持测试体感</sys:String>
-  <sys:String x:Key="pcMode">PC 模式设置</sys:String>
-  <sys:String x:Key="switchMode">Switch 模式设置</sys:String>
-  <sys:String x:Key="joytick_reset_title">摇杆矫正</sys:String>
-  <sys:String x:Key="joytick_reset_ok">完成校准</sys:String>
-  <sys:String x:Key="joytick_reset_tip">
-    请将手柄在桌面静置三秒，然后将左右摇杆推到底，并慢速旋转两圈，同时按压LT和RT两次，操作完成后点击“完成校准”按钮即可
-  </sys:String>
-  <sys:String x:Key="mustInstallDriver">必须安装驱动</sys:String>
-  <sys:String x:Key="driver_install_title">升级驱动缺失提示</sys:String>
-  <sys:String x:Key="driver_install_btn">去安装</sys:String>
-  <sys:String x:Key="driver_install_tip">
-    检测到您系统中必要的驱动程序缺失，请安装驱动程序后再来升级
-  </sys:String>
-  <sys:String x:Key="Calibrate_The_Joystick_title">请校准摇杆</sys:String>
-  <sys:String x:Key="Calibrate_The_Joystick_content">
-    本次升级需要校准摇杆，否则摇杆无法使用。请同时按下SELECT+START+R3(右摇杆下压)，红灯闪烁进入校准模式。将手柄在桌面静置三秒，然后将左右摇杆推到底，慢速旋转两圈，按压LT和RT两次，操作完成后再次按下SELECT+START+R3，完成校准
-  </sys:String>
-  <sys:String x:Key="Calibrate_The_Joystick_btn_ok">已完成校准</sys:String>
-  <sys:String x:Key="Calibrate_The_Joystick_btn_go">查看视频演示</sys:String>
-  <sys:String x:Key="save_changes">Save changes</sys:String>
+    </sys:String>
+    <sys:String x:Key="config_reset">恢复默认</sys:String>
+    <sys:String x:Key="config_reset_notice">是否将当前配置恢复默认？</sys:String>
+    <sys:String x:Key="reset_config_success">恢复默认成功</sys:String>
+    <sys:String x:Key="reset_config_fail">恢复默认失败</sys:String>
+    <sys:String x:Key="help_center">帮助中心</sys:String>
+    <sys:String x:Key="go_help_center">帮助中心&gt;</sys:String>
+    <sys:String x:Key="tips_apply_config">修改配置后必须先应用到手柄才能生效</sys:String>
+    <sys:String x:Key="tips_keys_change_config_a2">
+        游戏中，同时点击【配对】和【返回】可在多个配置中依次切换
+    </sys:String>
+    <sys:String x:Key="tips_keys_change_config_f1">
+        游戏中，同时点击【+】和【-】可在多个配置中依次切换
+    </sys:String>
+    <sys:String x:Key="tips_switch_xinput_step1">模式切换中...</sys:String>
+    <sys:String x:Key="tips_switch_xinput_step2">数据读取中...</sys:String>
+    <sys:String x:Key="tips_switch_xinput_step3">页面加载中...</sys:String>
+    <sys:String x:Key="tips_QQ">微信群：</sys:String>
+    <sys:String x:Key="go_weixin">点击加入&gt;</sys:String>
+    <sys:String x:Key="basic_vibration_intensity">震动强度</sys:String>
+    <sys:String x:Key="vibration">震动</sys:String>
+    <sys:String x:Key="left_motor">马达</sys:String>
+    <sys:String x:Key="test_motor">测试</sys:String>
+    <sys:String x:Key="motor_level_242">低</sys:String>
+    <sys:String x:Key="motor_level_0">中</sys:String>
+    <sys:String x:Key="motor_level_243">高</sys:String>
+    <sys:String x:Key="motor_level_241">关闭</sys:String>
+    <sys:String x:Key="motor_level_255">中</sys:String>
+    <sys:String x:Key="motor_level_1">低</sys:String>
+    <sys:String x:Key="motor_level_2">高</sys:String>
+    <sys:String x:Key="motor_level_3">关闭</sys:String>
+    <sys:String x:Key="motor_level_5">5级</sys:String>
+    <sys:String x:Key="right_motor">右马达</sys:String>
+    <sys:String x:Key="basic_roulette_mapping">轮盘映射</sys:String>
+    <sys:String x:Key="basic_adjusting_colour">颜色调节</sys:String>
+    <sys:String x:Key="wired">有线</sys:String>
+    <sys:String x:Key="wireless">无线</sys:String>
+    <sys:String x:Key="unknown">未知</sys:String>
+    <sys:String x:Key="The_handle_does_not_support_PC_firmware_upgrade">该手柄不支持PC端固件升级</sys:String>
+    <sys:String x:Key="Firmware_version_not_obtained">固件版本未获取到</sys:String>
+    <sys:String x:Key="open_pc_error">
+        无法打开升级工具，请到官网重新下载空间站
+    </sys:String>
+    <sys:String x:Key="config_apply_success_title">配置应用成功</sys:String>
+    <sys:String x:Key="config_apply_success_content_tip">
+        请按照以下方法将手柄切回Switch模式：
+    </sys:String>
+    <sys:String x:Key="config_apply_success_content_wired">
+        拔掉手柄上的数据线，同时按住+和X两个键，直到第一个指示灯变为橙色
+    </sys:String>
+    <sys:String x:Key="config_apply_success_contnet_Wireless">
+        同时按住+和X两个键，直到第一个指示灯变为橙色
+    </sys:String>
+    <sys:String x:Key="config_apply_success_confirm">确定</sys:String>
+    <sys:String x:Key="tipinfo1">手柄信息加载中，请稍后...</sys:String>
+    <sys:String x:Key="tipinfo2">该手柄不支持Switch模式</sys:String>
+    <sys:String x:Key="tipinfo3">该手柄固件版本过低，请升级固件</sys:String>
+    <sys:String x:Key="tipinfo4">当前页面暂不支持测试体感</sys:String>
+    <sys:String x:Key="pcMode">PC 模式设置</sys:String>
+    <sys:String x:Key="switchMode">Switch 模式设置</sys:String>
+    <sys:String x:Key="joytick_reset_title">摇杆矫正</sys:String>
+    <sys:String x:Key="joytick_reset_ok">完成校准</sys:String>
+    <sys:String x:Key="joytick_reset_tip">
+        请将手柄在桌面静置三秒，然后将左右摇杆推到底，并慢速旋转两圈，同时按压LT和RT两次，操作完成后点击“完成校准”按钮即可
+    </sys:String>
+    <sys:String x:Key="mustInstallDriver">必须安装驱动</sys:String>
+    <sys:String x:Key="driver_install_title">升级驱动缺失提示</sys:String>
+    <sys:String x:Key="driver_install_btn">去安装</sys:String>
+    <sys:String x:Key="driver_install_tip">
+        检测到您系统中必要的驱动程序缺失，请安装驱动程序后再来升级
+    </sys:String>
+    <sys:String x:Key="Calibrate_The_Joystick_title">请校准摇杆</sys:String>
+    <sys:String x:Key="Calibrate_The_Joystick_content">
+        本次升级需要校准摇杆，否则摇杆无法使用。请同时按下SELECT+START+R3(右摇杆下压)，红灯闪烁进入校准模式。将手柄在桌面静置三秒，然后将左右摇杆推到底，慢速旋转两圈，按压LT和RT两次，操作完成后再次按下SELECT+START+R3，完成校准
+    </sys:String>
+    <sys:String x:Key="Calibrate_The_Joystick_btn_ok">已完成校准</sys:String>
+    <sys:String x:Key="Calibrate_The_Joystick_btn_go">查看视频演示</sys:String>
+    <sys:String x:Key="save_changes">Save changes</sys:String>
+    <sys:String x:Key="export_config">Export config</sys:String>
+    <sys:String x:Key="import_config">Import config</sys:String>
 </ResourceDictionary>

@@ -1,378 +1,380 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:sys="clr-namespace:System;assembly=mscorlib">
-  <sys:String x:Key="app_name">Flydigi Space</sys:String>
-  <sys:String x:Key="app_version">App Version：</sys:String>
-  <sys:String x:Key="check_for_updates">update&gt;</sys:String>
-  <sys:String x:Key="firmware_version">Firmware Version：</sys:String>
-  <sys:String x:Key="dongle_version">Dongle Version：</sys:String>
-  <sys:String x:Key="device_power">Power</sys:String>
-  <sys:String x:Key="customer_service">
-    Customer service：4008503336
-  </sys:String>
-  <sys:String x:Key="language_text">Language:</sys:String>
-  <sys:String x:Key="language_en">English</sys:String>
-  <sys:String x:Key="language_zh">Chinese</sys:String>
-  <sys:String x:Key="language_ko">Korean</sys:String>
-  <sys:String x:Key="log">Log:</sys:String>
-  <sys:String x:Key="log_start">start</sys:String>
-  <sys:String x:Key="log_close">close</sys:String>
-  <sys:String x:Key="function_description">
-    Function description
-  </sys:String>
-  <sys:String x:Key="do_you_want_apply">
-    Do you want to save the modified config to the controller?
-  </sys:String>
-  <sys:String x:Key="yes">Yes</sys:String>
-  <sys:String x:Key="no">No</sys:String>
-  <sys:String x:Key="cancel">Cancel</sys:String>
-  <sys:String x:Key="ok">OK</sys:String>
-  <sys:String x:Key="connect_notice">
-    The gamepad is not connected, please try the following ways to connect
-  </sys:String>
-  <sys:String x:Key="connect_method_1">
-    Method 1: Data cable connection
-  </sys:String>
-  <sys:String x:Key="connect_method_2">
-    Method 2: Wireless connection
-  </sys:String>
-  <sys:String x:Key="connect_method_data_cable_desc">
-    Turn gamepad on and connect it to the computer via the data cable
-  </sys:String>
-  <sys:String x:Key="connect_method_receiver_desc">
-    1. Turn gamepad on and Plug wireless connector in computer;
+    <sys:String x:Key="app_name">Flydigi Space</sys:String>
+    <sys:String x:Key="app_version">App Version：</sys:String>
+    <sys:String x:Key="check_for_updates">update&gt;</sys:String>
+    <sys:String x:Key="firmware_version">Firmware Version：</sys:String>
+    <sys:String x:Key="dongle_version">Dongle Version：</sys:String>
+    <sys:String x:Key="device_power">Power</sys:String>
+    <sys:String x:Key="customer_service">
+        Customer service：4008503336
+    </sys:String>
+    <sys:String x:Key="language_text">Language:</sys:String>
+    <sys:String x:Key="language_en">English</sys:String>
+    <sys:String x:Key="language_zh">Chinese</sys:String>
+    <sys:String x:Key="language_ko">Korean</sys:String>
+    <sys:String x:Key="log">Log:</sys:String>
+    <sys:String x:Key="log_start">start</sys:String>
+    <sys:String x:Key="log_close">close</sys:String>
+    <sys:String x:Key="function_description">
+        Function description
+    </sys:String>
+    <sys:String x:Key="do_you_want_apply">
+        Do you want to save the modified config to the controller?
+    </sys:String>
+    <sys:String x:Key="yes">Yes</sys:String>
+    <sys:String x:Key="no">No</sys:String>
+    <sys:String x:Key="cancel">Cancel</sys:String>
+    <sys:String x:Key="ok">OK</sys:String>
+    <sys:String x:Key="connect_notice">
+        The gamepad is not connected, please try the following ways to connect
+    </sys:String>
+    <sys:String x:Key="connect_method_1">
+        Method 1: Data cable connection
+    </sys:String>
+    <sys:String x:Key="connect_method_2">
+        Method 2: Wireless connection
+    </sys:String>
+    <sys:String x:Key="connect_method_data_cable_desc">
+        Turn gamepad on and connect it to the computer via the data cable
+    </sys:String>
+    <sys:String x:Key="connect_method_receiver_desc">
+        1. Turn gamepad on and Plug wireless connector in computer;
 2. If the gamepad is in Bluetooth mode (LED1 is on), you need to press【)))】+【A】 for 3 seconds to switch the 2.4G wireless (LED2 is on).
-  </sys:String>
-  <sys:String x:Key="open_the_gamepad">Turn gamepad on</sys:String>
-  <sys:String x:Key="insert_wireless_connector">
-    Plug in wireless connector
-  </sys:String>
-  <sys:String x:Key="connect_led2_desc">
-    The LED2 means that the gamepad
+    </sys:String>
+    <sys:String x:Key="open_the_gamepad">Turn gamepad on</sys:String>
+    <sys:String x:Key="insert_wireless_connector">
+        Plug in wireless connector
+    </sys:String>
+    <sys:String x:Key="connect_led2_desc">
+        The LED2 means that the gamepad
  is in 2.4G wireless
-  </sys:String>
-  <sys:String x:Key="connect_switch_mode">
-    Press【)))】+【A】for 3 seconds
+    </sys:String>
+    <sys:String x:Key="connect_switch_mode">
+        Press【)))】+【A】for 3 seconds
 to switch mode
-  </sys:String>
-  <sys:String x:Key="enter_flydigi_space_station">
-    PC mode Flydigi Space-&gt;
-  </sys:String>
-  <sys:String x:Key="enter_flydigi_space_station_switch">
-    Switch mode Flydigi Space-&gt;
-  </sys:String>
-  <sys:String x:Key="config">Config</sys:String>
-  <sys:String x:Key="config1">Config1</sys:String>
-  <sys:String x:Key="config2">Config2</sys:String>
-  <sys:String x:Key="config3">Config3</sys:String>
-  <sys:String x:Key="config4">Config4</sys:String>
-  <sys:String x:Key="frequently_used_keys">
-    Frequently used keys
-  </sys:String>
-  <sys:String x:Key="key">Key</sys:String>
-  <sys:String x:Key="macro">Macro</sys:String>
-  <sys:String x:Key="mapping_to">Mapping to</sys:String>
-  <sys:String x:Key="lighting_mode">Lighting Mode</sys:String>
-  <sys:String x:Key="joystick_curve">Joystick curve</sys:String>
-  <sys:String x:Key="left_joystick">Left Joystick</sys:String>
-  <sys:String x:Key="right_joystick">Right Joystick</sys:String>
-  <sys:String x:Key="config_setting">Config Setting</sys:String>
-  <sys:String x:Key="test">Test</sys:String>
-  <sys:String x:Key="apply_to_gamepad">Apply</sys:String>
-  <sys:String x:Key="light_adjustment">Light</sys:String>
-  <sys:String x:Key="basic_adjustment">Baisc</sys:String>
-  <sys:String x:Key="key_adjustment">Key</sys:String>
-  <sys:String x:Key="joystick_adjustment">Joystick</sys:String>
-  <sys:String x:Key="sensing_adjustment">Sensing</sys:String>
-  <sys:String x:Key="trigger_adjustment">Trigger</sys:String>
-  <sys:String x:Key="mode">Mode</sys:String>
-  <sys:String x:Key="led_mode_alert">Alert</sys:String>
-  <sys:String x:Key="led_mode_hunt">Hunt</sys:String>
-  <sys:String x:Key="led_mode_float">Float</sys:String>
-  <sys:String x:Key="led_mode_hide">Hide</sys:String>
-  <sys:String x:Key="led_mode_close">Close</sys:String>
-  <sys:String x:Key="led_mode_alert_desc">Alert (Constant)</sys:String>
-  <sys:String x:Key="led_mode_hunt_desc">
-    Hunt (Press to light)
-  </sys:String>
-  <sys:String x:Key="led_mode_float_desc">
-    Float (Automatic color switching)
-  </sys:String>
-  <sys:String x:Key="led_mode_hide_desc">Hide (Breathe)</sys:String>
-  <sys:String x:Key="color">Color</sys:String>
-  <sys:String x:Key="color1">Color1</sys:String>
-  <sys:String x:Key="color2">Color2</sys:String>
-  <sys:String x:Key="brightness">Brightness</sys:String>
-  <sys:String x:Key="time">Time</sys:String>
-  <sys:String x:Key="recommend">Recommend</sys:String>
-  <sys:String x:Key="front">Front</sys:String>
-  <sys:String x:Key="side">Side</sys:String>
-  <sys:String x:Key="back">Back</sys:String>
-  <sys:String x:Key="front_key">Front Key</sys:String>
-  <sys:String x:Key="side_key">Side Key</sys:String>
-  <sys:String x:Key="back_key">Back Key</sys:String>
-  <sys:String x:Key="sensitivity">Sensitivity</sys:String>
-  <sys:String x:Key="sensitivity_curve">Sensitivity curve</sys:String>
-  <sys:String x:Key="default">Default</sys:String>
-  <sys:String x:Key="permanent_output">Permanent output</sys:String>
-  <sys:String x:Key="immediate">Immediately</sys:String>
-  <sys:String x:Key="delay">Delay</sys:String>
-  <sys:String x:Key="input">input</sys:String>
-  <sys:String x:Key="output">output</sys:String>
-  <sys:String x:Key="sensing_maps_to">Mapping to</sys:String>
-  <sys:String x:Key="remote_sensing_maps_to">Mapping to</sys:String>
-  <sys:String x:Key="remote_sensing_maps_to_tip"/>
-  <sys:String x:Key="open_sensing_mapping_method">Open sensing method</sys:String>
-  <sys:String x:Key="open_sensing_mapping_method_tip">
-    Open sensing method tip
-  </sys:String>
-  <sys:String x:Key="press_open_or_close">Press to open/close</sys:String>
-  <sys:String x:Key="hold_press_release_close">
-    Hold to open,release to close
-  </sys:String>
-  <sys:String x:Key="open_key">Open Key</sys:String>
-  <sys:String x:Key="zone_of_game_joystick">
-    Dead zone of game joystick
-  </sys:String>
-  <sys:String x:Key="key_attributes">Key Attributes</sys:String>
-  <sys:String x:Key="trigger_method">Trigger</sys:String>
-  <sys:String x:Key="click">Click</sys:String>
-  <sys:String x:Key="pressing">Hold</sys:String>
-  <sys:String x:Key="key_pressed">key pressed</sys:String>
-  <sys:String x:Key="key_released">key released</sys:String>
-  <sys:String x:Key="total_time">Total time</sys:String>
-  <sys:String x:Key="key_value">Key value</sys:String>
-  <sys:String x:Key="time_from_macro_start">
-    Time from macro start
-  </sys:String>
-  <sys:String x:Key="current_action_duration">
-    Current action duration
-  </sys:String>
-  <sys:String x:Key="the_green_bar_desc">
-    Represents time from macro start
-  </sys:String>
-  <sys:String x:Key="the_blue_bar_desc">
-    Represents current action duration
-  </sys:String>
-  <sys:String x:Key="record">Record</sys:String>
-  <sys:String x:Key="re_record">Re-record</sys:String>
-  <sys:String x:Key="stop">Stop</sys:String>
-  <sys:String x:Key="clear">Clear</sys:String>
-  <sys:String x:Key="please_control_the_gamepad">
-    Please control the gamepad to
-  </sys:String>
-  <sys:String x:Key="key_test">key test</sys:String>
-  <sys:String x:Key="factory_test">
-    Factory Gamepad Test
-  </sys:String>
-  <sys:String x:Key="key_setting_desc">
-    Key Setting: The keys can be mapped to other keys, a variety of operation methods can be expanded. The macros can record multiple actions and perform with one key.
-  </sys:String>
-  <sys:String x:Key="joystick_setting_desc">
-    Joystick Setting: You can adjust the [sensitivity curve] of the joystick according to the game type.
-  </sys:String>
-  <sys:String x:Key="sensing_setting_desc">
-    Sensing Setting: You can adjust the delicateness of sensing operation according to the type of game; Set【OFF】to disable somatosensory sensing
-  </sys:String>
-  <sys:String x:Key="sensing_mode_setting_desc">
-    Sensing Setting: You can adjust the delicateness of sensing operation according to the type of game; Set【OFF】to disable somatosensory sensing
-  </sys:String>
-  <sys:String x:Key="add_least_one_action">
-    Add at least one macro action
-  </sys:String>
-  <sys:String x:Key="special_key_button_is_forbidden">
-    The current macro setting doesn't support C/Z and M1-M6 keys
-  </sys:String>
-  <sys:String x:Key="special_key_ltrt_button_is_forbidden">
-    The current macro setting doesn't support LT/RT keys
-  </sys:String>
-  <sys:String x:Key="special_key_self_button_is_forbidden">
-    The current macro setting doesn't support self key
-  </sys:String>
-  <sys:String x:Key="please_stop_recording">
-    Please stop recording
-  </sys:String>
-  <sys:String x:Key="the_maximum_macro_actions">
-    The maximum number of actions for a macro is:
-  </sys:String>
-  <sys:String x:Key="click_record_button_to_start">
-    Click the record button to start recording
-  </sys:String>
-  <sys:String x:Key="reading_firmare">
-    Reading the controller firmware information···
-  </sys:String>
-  <sys:String x:Key="only_support_notice">
-    Flydigi Space currently only supports Apex 2 gamepad, please stay tuned for other gamepads
-  </sys:String>
-  <sys:String x:Key="new_version_of_flydigi_space">
-    New version of Flydigi Space
-  </sys:String>
-  <sys:String x:Key="new_version_of_flydigi_space_fm">
-    New version of firmware
-  </sys:String>
-  <sys:String x:Key="download_progress">Download progress：</sys:String>
-  <sys:String x:Key="start_new_version">Start</sys:String>
-  <sys:String x:Key="download_again">Download again</sys:String>
-  <sys:String x:Key="new_version">New version</sys:String>
-  <sys:String x:Key="apply_successed_notice">successful</sys:String>
-  <sys:String x:Key="save_successed_notice">successful</sys:String>
-  <sys:String x:Key="apply_successed_notice_desc">
-    Please click "Go to play" to take effect in the game
-  </sys:String>
-  <sys:String x:Key="play_game">Play Game</sys:String>
-  <sys:String x:Key="config_test">Config test</sys:String>
-  <sys:String x:Key="apply_failed_notice">
-    Failed to apply to the gamepad, please reapply
-  </sys:String>
-  <sys:String x:Key="config_apply_failed">Apply failed</sys:String>
-  <sys:String x:Key="current_version_is_the_latest">
-    The current version is the latest
-  </sys:String>
-  <sys:String x:Key="please_check_network">
-    Please check the network
-  </sys:String>
-  <sys:String x:Key="notice">Notice</sys:String>
-  <sys:String x:Key="update">Update</sys:String>
-  <sys:String x:Key="start_app">To upgrade</sys:String>
-  <sys:String x:Key="maximum_number_of_macro">
-    The maximum number of macro is:
-  </sys:String>
-  <sys:String x:Key="maximum_number_of_macro_actions">
-    The maximum number of macro actions is:
-  </sys:String>
-  <sys:String x:Key="please_connect_gamepad_first">
-    Please connect the gamepad first
-  </sys:String>
-  <sys:String x:Key="your_current_fw_lower">
-    Your current gamepd firmware version is lower, please upgrade the firmware to latest, then reconnect
-  </sys:String>
-  <sys:String x:Key="reconnect">reconnect</sys:String>
-  <sys:String x:Key="tutorial">Tutorial</sys:String>
-  <sys:String x:Key="motion_close">Close</sys:String>
-  <sys:String x:Key="a2_connect_tutorial">Apex 2</sys:String>
-  <sys:String x:Key="f1_connect_tutorial">Vader 2</sys:String>
-  <sys:String x:Key="f1p_connect_tutorial">Vader 2 Pro</sys:String>
-  <sys:String x:Key="connect_switch_mode_f1">
-    Press【+】+【A】for 4 seconds 
+    </sys:String>
+    <sys:String x:Key="enter_flydigi_space_station">
+        PC mode Flydigi Space-&gt;
+    </sys:String>
+    <sys:String x:Key="enter_flydigi_space_station_switch">
+        Switch mode Flydigi Space-&gt;
+    </sys:String>
+    <sys:String x:Key="config">Config</sys:String>
+    <sys:String x:Key="config1">Config1</sys:String>
+    <sys:String x:Key="config2">Config2</sys:String>
+    <sys:String x:Key="config3">Config3</sys:String>
+    <sys:String x:Key="config4">Config4</sys:String>
+    <sys:String x:Key="frequently_used_keys">
+        Frequently used keys
+    </sys:String>
+    <sys:String x:Key="key">Key</sys:String>
+    <sys:String x:Key="macro">Macro</sys:String>
+    <sys:String x:Key="mapping_to">Mapping to</sys:String>
+    <sys:String x:Key="lighting_mode">Lighting Mode</sys:String>
+    <sys:String x:Key="joystick_curve">Joystick curve</sys:String>
+    <sys:String x:Key="left_joystick">Left Joystick</sys:String>
+    <sys:String x:Key="right_joystick">Right Joystick</sys:String>
+    <sys:String x:Key="config_setting">Config Setting</sys:String>
+    <sys:String x:Key="test">Test</sys:String>
+    <sys:String x:Key="apply_to_gamepad">Apply</sys:String>
+    <sys:String x:Key="light_adjustment">Light</sys:String>
+    <sys:String x:Key="basic_adjustment">Baisc</sys:String>
+    <sys:String x:Key="key_adjustment">Key</sys:String>
+    <sys:String x:Key="joystick_adjustment">Joystick</sys:String>
+    <sys:String x:Key="sensing_adjustment">Sensing</sys:String>
+    <sys:String x:Key="trigger_adjustment">Trigger</sys:String>
+    <sys:String x:Key="mode">Mode</sys:String>
+    <sys:String x:Key="led_mode_alert">Alert</sys:String>
+    <sys:String x:Key="led_mode_hunt">Hunt</sys:String>
+    <sys:String x:Key="led_mode_float">Float</sys:String>
+    <sys:String x:Key="led_mode_hide">Hide</sys:String>
+    <sys:String x:Key="led_mode_close">Close</sys:String>
+    <sys:String x:Key="led_mode_alert_desc">Alert (Constant)</sys:String>
+    <sys:String x:Key="led_mode_hunt_desc">
+        Hunt (Press to light)
+    </sys:String>
+    <sys:String x:Key="led_mode_float_desc">
+        Float (Automatic color switching)
+    </sys:String>
+    <sys:String x:Key="led_mode_hide_desc">Hide (Breathe)</sys:String>
+    <sys:String x:Key="color">Color</sys:String>
+    <sys:String x:Key="color1">Color1</sys:String>
+    <sys:String x:Key="color2">Color2</sys:String>
+    <sys:String x:Key="brightness">Brightness</sys:String>
+    <sys:String x:Key="time">Time</sys:String>
+    <sys:String x:Key="recommend">Recommend</sys:String>
+    <sys:String x:Key="front">Front</sys:String>
+    <sys:String x:Key="side">Side</sys:String>
+    <sys:String x:Key="back">Back</sys:String>
+    <sys:String x:Key="front_key">Front Key</sys:String>
+    <sys:String x:Key="side_key">Side Key</sys:String>
+    <sys:String x:Key="back_key">Back Key</sys:String>
+    <sys:String x:Key="sensitivity">Sensitivity</sys:String>
+    <sys:String x:Key="sensitivity_curve">Sensitivity curve</sys:String>
+    <sys:String x:Key="default">Default</sys:String>
+    <sys:String x:Key="permanent_output">Permanent output</sys:String>
+    <sys:String x:Key="immediate">Immediately</sys:String>
+    <sys:String x:Key="delay">Delay</sys:String>
+    <sys:String x:Key="input">input</sys:String>
+    <sys:String x:Key="output">output</sys:String>
+    <sys:String x:Key="sensing_maps_to">Mapping to</sys:String>
+    <sys:String x:Key="remote_sensing_maps_to">Mapping to</sys:String>
+    <sys:String x:Key="remote_sensing_maps_to_tip"/>
+    <sys:String x:Key="open_sensing_mapping_method">Open sensing method</sys:String>
+    <sys:String x:Key="open_sensing_mapping_method_tip">
+        Open sensing method tip
+    </sys:String>
+    <sys:String x:Key="press_open_or_close">Press to open/close</sys:String>
+    <sys:String x:Key="hold_press_release_close">
+        Hold to open,release to close
+    </sys:String>
+    <sys:String x:Key="open_key">Open Key</sys:String>
+    <sys:String x:Key="zone_of_game_joystick">
+        Dead zone of game joystick
+    </sys:String>
+    <sys:String x:Key="key_attributes">Key Attributes</sys:String>
+    <sys:String x:Key="trigger_method">Trigger</sys:String>
+    <sys:String x:Key="click">Click</sys:String>
+    <sys:String x:Key="pressing">Hold</sys:String>
+    <sys:String x:Key="key_pressed">key pressed</sys:String>
+    <sys:String x:Key="key_released">key released</sys:String>
+    <sys:String x:Key="total_time">Total time</sys:String>
+    <sys:String x:Key="key_value">Key value</sys:String>
+    <sys:String x:Key="time_from_macro_start">
+        Time from macro start
+    </sys:String>
+    <sys:String x:Key="current_action_duration">
+        Current action duration
+    </sys:String>
+    <sys:String x:Key="the_green_bar_desc">
+        Represents time from macro start
+    </sys:String>
+    <sys:String x:Key="the_blue_bar_desc">
+        Represents current action duration
+    </sys:String>
+    <sys:String x:Key="record">Record</sys:String>
+    <sys:String x:Key="re_record">Re-record</sys:String>
+    <sys:String x:Key="stop">Stop</sys:String>
+    <sys:String x:Key="clear">Clear</sys:String>
+    <sys:String x:Key="please_control_the_gamepad">
+        Please control the gamepad to
+    </sys:String>
+    <sys:String x:Key="key_test">key test</sys:String>
+    <sys:String x:Key="factory_test">
+        Factory Gamepad Test
+    </sys:String>
+    <sys:String x:Key="key_setting_desc">
+        Key Setting: The keys can be mapped to other keys, a variety of operation methods can be expanded. The macros can record multiple actions and perform with one key.
+    </sys:String>
+    <sys:String x:Key="joystick_setting_desc">
+        Joystick Setting: You can adjust the [sensitivity curve] of the joystick according to the game type.
+    </sys:String>
+    <sys:String x:Key="sensing_setting_desc">
+        Sensing Setting: You can adjust the delicateness of sensing operation according to the type of game; Set【OFF】to disable somatosensory sensing
+    </sys:String>
+    <sys:String x:Key="sensing_mode_setting_desc">
+        Sensing Setting: You can adjust the delicateness of sensing operation according to the type of game; Set【OFF】to disable somatosensory sensing
+    </sys:String>
+    <sys:String x:Key="add_least_one_action">
+        Add at least one macro action
+    </sys:String>
+    <sys:String x:Key="special_key_button_is_forbidden">
+        The current macro setting doesn't support C/Z and M1-M6 keys
+    </sys:String>
+    <sys:String x:Key="special_key_ltrt_button_is_forbidden">
+        The current macro setting doesn't support LT/RT keys
+    </sys:String>
+    <sys:String x:Key="special_key_self_button_is_forbidden">
+        The current macro setting doesn't support self key
+    </sys:String>
+    <sys:String x:Key="please_stop_recording">
+        Please stop recording
+    </sys:String>
+    <sys:String x:Key="the_maximum_macro_actions">
+        The maximum number of actions for a macro is:
+    </sys:String>
+    <sys:String x:Key="click_record_button_to_start">
+        Click the record button to start recording
+    </sys:String>
+    <sys:String x:Key="reading_firmare">
+        Reading the controller firmware information···
+    </sys:String>
+    <sys:String x:Key="only_support_notice">
+        Flydigi Space currently only supports Apex 2 gamepad, please stay tuned for other gamepads
+    </sys:String>
+    <sys:String x:Key="new_version_of_flydigi_space">
+        New version of Flydigi Space
+    </sys:String>
+    <sys:String x:Key="new_version_of_flydigi_space_fm">
+        New version of firmware
+    </sys:String>
+    <sys:String x:Key="download_progress">Download progress：</sys:String>
+    <sys:String x:Key="start_new_version">Start</sys:String>
+    <sys:String x:Key="download_again">Download again</sys:String>
+    <sys:String x:Key="new_version">New version</sys:String>
+    <sys:String x:Key="apply_successed_notice">successful</sys:String>
+    <sys:String x:Key="save_successed_notice">successful</sys:String>
+    <sys:String x:Key="apply_successed_notice_desc">
+        Please click "Go to play" to take effect in the game
+    </sys:String>
+    <sys:String x:Key="play_game">Play Game</sys:String>
+    <sys:String x:Key="config_test">Config test</sys:String>
+    <sys:String x:Key="apply_failed_notice">
+        Failed to apply to the gamepad, please reapply
+    </sys:String>
+    <sys:String x:Key="config_apply_failed">Apply failed</sys:String>
+    <sys:String x:Key="current_version_is_the_latest">
+        The current version is the latest
+    </sys:String>
+    <sys:String x:Key="please_check_network">
+        Please check the network
+    </sys:String>
+    <sys:String x:Key="notice">Notice</sys:String>
+    <sys:String x:Key="update">Update</sys:String>
+    <sys:String x:Key="start_app">To upgrade</sys:String>
+    <sys:String x:Key="maximum_number_of_macro">
+        The maximum number of macro is:
+    </sys:String>
+    <sys:String x:Key="maximum_number_of_macro_actions">
+        The maximum number of macro actions is:
+    </sys:String>
+    <sys:String x:Key="please_connect_gamepad_first">
+        Please connect the gamepad first
+    </sys:String>
+    <sys:String x:Key="your_current_fw_lower">
+        Your current gamepd firmware version is lower, please upgrade the firmware to latest, then reconnect
+    </sys:String>
+    <sys:String x:Key="reconnect">reconnect</sys:String>
+    <sys:String x:Key="tutorial">Tutorial</sys:String>
+    <sys:String x:Key="motion_close">Close</sys:String>
+    <sys:String x:Key="a2_connect_tutorial">Apex 2</sys:String>
+    <sys:String x:Key="f1_connect_tutorial">Vader 2</sys:String>
+    <sys:String x:Key="f1p_connect_tutorial">Vader 2 Pro</sys:String>
+    <sys:String x:Key="connect_switch_mode_f1">
+        Press【+】+【A】for 4 seconds 
  to switch mode
-  </sys:String>
-  <sys:String x:Key="connect_led2_desc_f1">
-    The white light means that the 
+    </sys:String>
+    <sys:String x:Key="connect_led2_desc_f1">
+        The white light means that the 
  gamepad is in 2.4G wireless
-  </sys:String>
-  <sys:String x:Key="connect_led2_desc_f1p">
-    The white light means that the 
+    </sys:String>
+    <sys:String x:Key="connect_led2_desc_f1p">
+        The white light means that the 
  gamepad is in 2.4G wireless
-  </sys:String>
-  <sys:String x:Key="connect_method_receiver_desc_f1">
-    1. Turn gamepad on and Plug wireless connector in computer;
+    </sys:String>
+    <sys:String x:Key="connect_method_receiver_desc_f1">
+        1. Turn gamepad on and Plug wireless connector in computer;
 2. If the gamepad is in Bluetooth mode (LED1 is on), you need to press【+】+【A】for 4 seconds to switch the 2.4G wireless (LED2 is on).
-  </sys:String>
-  <sys:String x:Key="connect_method_receiver_desc_f1p">
-    1. Turn gamepad on and Plug wireless connector in computer;
+    </sys:String>
+    <sys:String x:Key="connect_method_receiver_desc_f1p">
+        1. Turn gamepad on and Plug wireless connector in computer;
 2. If the gamepad is in Bluetooth mode (LED1 is on), you need to press【+】+【A】for 4 seconds to switch the 2.4G wireless (LED2 is on).
-  </sys:String>
-  <sys:String x:Key="config_reset">Config reset</sys:String>
-  <sys:String x:Key="config_reset_notice">
-    Are you sure to reset current config to default？
-  </sys:String>
-  <sys:String x:Key="reset_config_success">
-    reset config successed
-  </sys:String>
-  <sys:String x:Key="reset_config_fail">reset config failed</sys:String>
-  <sys:String x:Key="help_center">Help Center</sys:String>
-  <sys:String x:Key="go_help_center">Help Center&gt;</sys:String>
-  <sys:String x:Key="go_weixin">
-    oversea_customer@flydigi.com
-  </sys:String>
-  <sys:String x:Key="tips_apply_config">
-    The configuration must be applied to the controller to take effect
-  </sys:String>
-  <sys:String x:Key="tips_keys_change_config_a2">
-    Click the【Menu】key and【Back】key to switch configuration
-  </sys:String>
-  <sys:String x:Key="tips_keys_change_config_f1">
-    Click【+】key and【-】key to switch configuration
-  </sys:String>
-  <sys:String x:Key="tips_switch_xinput_step1">Mode switching...</sys:String>
-  <sys:String x:Key="tips_switch_xinput_step2">Data processing...</sys:String>
-  <sys:String x:Key="tips_switch_xinput_step3">Page loading...</sys:String>
-  <sys:String x:Key="tips_QQ">Email:</sys:String>
-  <sys:String x:Key="basic_vibration_intensity">Vibration intensity</sys:String>
-  <sys:String x:Key="vibration">Vibration</sys:String>
-  <sys:String x:Key="left_motor">Left motor</sys:String>
-  <sys:String x:Key="test_motor">Test</sys:String>
-  <sys:String x:Key="motor_level_242">Low</sys:String>
-  <sys:String x:Key="motor_level_0">Middle</sys:String>
-  <sys:String x:Key="motor_level_243">High</sys:String>
-  <sys:String x:Key="motor_level_241">Close</sys:String>
-  <sys:String x:Key="motor_level_255">Middle</sys:String>
-  <sys:String x:Key="motor_level_1">Low</sys:String>
-  <sys:String x:Key="motor_level_2">High</sys:String>
-  <sys:String x:Key="motor_level_3">Close</sys:String>
-  <sys:String x:Key="motor_level_5">Level 1</sys:String>
-  <sys:String x:Key="right_motor">Right motor</sys:String>
-  <sys:String x:Key="basic_roulette_mapping">Roulette mapping</sys:String>
-  <sys:String x:Key="basic_adjusting_colour">Adjusting colour</sys:String>
-  <sys:String x:Key="wired">wired</sys:String>
-  <sys:String x:Key="wireless">wireless</sys:String>
-  <sys:String x:Key="unknown">unknown</sys:String>
-  <sys:String x:Key="The_handle_does_not_support_PC_firmware_upgrade">
-    The handle does not support PC firmware upgrade
-  </sys:String>
-  <sys:String x:Key="Firmware_version_not_obtained">
-    Firmware version not obtained
-  </sys:String>
-  <sys:String x:Key="open_pc_error">
-    Please go to the official website to download the latest version.
-  </sys:String>
-  <sys:String x:Key="config_apply_success_title">
-    configuration applied successful
-  </sys:String>
-  <sys:String x:Key="config_apply_success_content_tip">
-    Please follow these way to switch the controller to the Switch mode:
-  </sys:String>
-  <sys:String x:Key="config_apply_success_content_wired">
-    Disconnected the cable from controller to the PC. Press and hold the “+” and “X” untill the first light turn to orange
-  </sys:String>
-  <sys:String x:Key="config_apply_success_contnet_Wireless">
-    Press and hold “+” and “X” untill the first light turn to orange
-  </sys:String>
-  <sys:String x:Key="config_apply_success_confirm">Comfirm</sys:String>
-  <sys:String x:Key="tipinfo1">
-    Connecting the controller, please wait...
-  </sys:String>
-  <sys:String x:Key="tipinfo2">
-    This controller do not support Switch mode
-  </sys:String>
-  <sys:String x:Key="tipinfo3">
-    The firmware of the controller is too low please update the firmware
-  </sys:String>
-  <sys:String x:Key="tipinfo4">
-    The current page does not support somatosensory testing
-  </sys:String>
-  <sys:String x:Key="pcMode">PC Mode Setting</sys:String>
-  <sys:String x:Key="switchMode">Switch Mode Setting</sys:String>
-  <sys:String x:Key="joytick_reset_title">摇杆矫正</sys:String>
-  <sys:String x:Key="joytick_reset_ok">完成校准</sys:String>
-  <sys:String x:Key="joytick_reset_tip">
-    请将手柄在桌面静置三秒，然后将左右摇杆推到底，并慢速旋转两圈，同时按压LT和RT两次，操作完成后点击“完成校准”按钮即可
-  </sys:String>
-  <sys:String x:Key="mustInstallDriver">mustInstallDriver</sys:String>
-  <sys:String x:Key="driver_install_title">
-    Upgrade driver missing
-  </sys:String>
-  <sys:String x:Key="driver_install_btn">Install</sys:String>
-  <sys:String x:Key="driver_install_tip">
-    It is detected that the necessary driver in your system is missing. Please install the driver before upgrading.
-  </sys:String>
-  <sys:String x:Key="Calibrate_The_Joystick_title">
-    Calibrate The Joystick
-  </sys:String>
-  <sys:String x:Key="Calibrate_The_Joystick_content">
-    This upgrade needs to calibrate the joystick, otherwise the joystick cannot be used. Please press SELECT+START+R3(press the right joystick)at the same time , the red light flashes to enter the calibration mode. Leave the controller on the desktop stand for three seconds, then push the each joystick to the max range and Slow rotation 2 turns, press LT and RT twice. After done the rotation please press the "finish" button to finish the joystick calibration
-  </sys:String>
-  <sys:String x:Key="Calibrate_The_Joystick_btn_ok">OK</sys:String>
-  <sys:String x:Key="Calibrate_The_Joystick_btn_go">To calibrate</sys:String>
-  <sys:String x:Key="save_changes">Save changes</sys:String>
+    </sys:String>
+    <sys:String x:Key="config_reset">Config reset</sys:String>
+    <sys:String x:Key="config_reset_notice">
+        Are you sure to reset current config to default？
+    </sys:String>
+    <sys:String x:Key="reset_config_success">
+        reset config successed
+    </sys:String>
+    <sys:String x:Key="reset_config_fail">reset config failed</sys:String>
+    <sys:String x:Key="help_center">Help Center</sys:String>
+    <sys:String x:Key="go_help_center">Help Center&gt;</sys:String>
+    <sys:String x:Key="go_weixin">
+        oversea_customer@flydigi.com
+    </sys:String>
+    <sys:String x:Key="tips_apply_config">
+        The configuration must be applied to the controller to take effect
+    </sys:String>
+    <sys:String x:Key="tips_keys_change_config_a2">
+        Click the【Menu】key and【Back】key to switch configuration
+    </sys:String>
+    <sys:String x:Key="tips_keys_change_config_f1">
+        Click【+】key and【-】key to switch configuration
+    </sys:String>
+    <sys:String x:Key="tips_switch_xinput_step1">Mode switching...</sys:String>
+    <sys:String x:Key="tips_switch_xinput_step2">Data processing...</sys:String>
+    <sys:String x:Key="tips_switch_xinput_step3">Page loading...</sys:String>
+    <sys:String x:Key="tips_QQ">Email:</sys:String>
+    <sys:String x:Key="basic_vibration_intensity">Vibration intensity</sys:String>
+    <sys:String x:Key="vibration">Vibration</sys:String>
+    <sys:String x:Key="left_motor">Left motor</sys:String>
+    <sys:String x:Key="test_motor">Test</sys:String>
+    <sys:String x:Key="motor_level_242">Low</sys:String>
+    <sys:String x:Key="motor_level_0">Middle</sys:String>
+    <sys:String x:Key="motor_level_243">High</sys:String>
+    <sys:String x:Key="motor_level_241">Close</sys:String>
+    <sys:String x:Key="motor_level_255">Middle</sys:String>
+    <sys:String x:Key="motor_level_1">Low</sys:String>
+    <sys:String x:Key="motor_level_2">High</sys:String>
+    <sys:String x:Key="motor_level_3">Close</sys:String>
+    <sys:String x:Key="motor_level_5">Level 1</sys:String>
+    <sys:String x:Key="right_motor">Right motor</sys:String>
+    <sys:String x:Key="basic_roulette_mapping">Roulette mapping</sys:String>
+    <sys:String x:Key="basic_adjusting_colour">Adjusting colour</sys:String>
+    <sys:String x:Key="wired">wired</sys:String>
+    <sys:String x:Key="wireless">wireless</sys:String>
+    <sys:String x:Key="unknown">unknown</sys:String>
+    <sys:String x:Key="The_handle_does_not_support_PC_firmware_upgrade">
+        The handle does not support PC firmware upgrade
+    </sys:String>
+    <sys:String x:Key="Firmware_version_not_obtained">
+        Firmware version not obtained
+    </sys:String>
+    <sys:String x:Key="open_pc_error">
+        Please go to the official website to download the latest version.
+    </sys:String>
+    <sys:String x:Key="config_apply_success_title">
+        configuration applied successful
+    </sys:String>
+    <sys:String x:Key="config_apply_success_content_tip">
+        Please follow these way to switch the controller to the Switch mode:
+    </sys:String>
+    <sys:String x:Key="config_apply_success_content_wired">
+        Disconnected the cable from controller to the PC. Press and hold the “+” and “X” untill the first light turn to orange
+    </sys:String>
+    <sys:String x:Key="config_apply_success_contnet_Wireless">
+        Press and hold “+” and “X” untill the first light turn to orange
+    </sys:String>
+    <sys:String x:Key="config_apply_success_confirm">Comfirm</sys:String>
+    <sys:String x:Key="tipinfo1">
+        Connecting the controller, please wait...
+    </sys:String>
+    <sys:String x:Key="tipinfo2">
+        This controller do not support Switch mode
+    </sys:String>
+    <sys:String x:Key="tipinfo3">
+        The firmware of the controller is too low please update the firmware
+    </sys:String>
+    <sys:String x:Key="tipinfo4">
+        The current page does not support somatosensory testing
+    </sys:String>
+    <sys:String x:Key="pcMode">PC Mode Setting</sys:String>
+    <sys:String x:Key="switchMode">Switch Mode Setting</sys:String>
+    <sys:String x:Key="joytick_reset_title">摇杆矫正</sys:String>
+    <sys:String x:Key="joytick_reset_ok">完成校准</sys:String>
+    <sys:String x:Key="joytick_reset_tip">
+        请将手柄在桌面静置三秒，然后将左右摇杆推到底，并慢速旋转两圈，同时按压LT和RT两次，操作完成后点击“完成校准”按钮即可
+    </sys:String>
+    <sys:String x:Key="mustInstallDriver">mustInstallDriver</sys:String>
+    <sys:String x:Key="driver_install_title">
+        Upgrade driver missing
+    </sys:String>
+    <sys:String x:Key="driver_install_btn">Install</sys:String>
+    <sys:String x:Key="driver_install_tip">
+        It is detected that the necessary driver in your system is missing. Please install the driver before upgrading.
+    </sys:String>
+    <sys:String x:Key="Calibrate_The_Joystick_title">
+        Calibrate The Joystick
+    </sys:String>
+    <sys:String x:Key="Calibrate_The_Joystick_content">
+        This upgrade needs to calibrate the joystick, otherwise the joystick cannot be used. Please press SELECT+START+R3(press the right joystick)at the same time , the red light flashes to enter the calibration mode. Leave the controller on the desktop stand for three seconds, then push the each joystick to the max range and Slow rotation 2 turns, press LT and RT twice. After done the rotation please press the "finish" button to finish the joystick calibration
+    </sys:String>
+    <sys:String x:Key="Calibrate_The_Joystick_btn_ok">OK</sys:String>
+    <sys:String x:Key="Calibrate_The_Joystick_btn_go">To calibrate</sys:String>
+    <sys:String x:Key="save_changes">Save changes</sys:String>
+    <sys:String x:Key="export_config">Export config</sys:String>
+    <sys:String x:Key="import_config">Import config</sys:String>
 </ResourceDictionary>

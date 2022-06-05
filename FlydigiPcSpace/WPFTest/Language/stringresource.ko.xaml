@@ -1,303 +1,305 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:sys="clr-namespace:System;assembly=mscorlib">
-  <sys:String x:Key="app_name">플라이디지 스페이스</sys:String>
-  <sys:String x:Key="app_version">앱 버전 :</sys:String>
-  <sys:String x:Key="check_for_updates">업데이트&gt;</sys:String>
-  <sys:String x:Key="firmware_version">펌웨어 버전 :</sys:String>
-  <sys:String x:Key="dongle_version">동글 버전 :</sys:String>
-  <sys:String x:Key="device_power">전원</sys:String>
-  <sys:String x:Key="customer_service">고객 서비스 : 4008503336</sys:String>
-  <sys:String x:Key="language_text">언어:</sys:String>
-  <sys:String x:Key="language_en">영어</sys:String>
-  <sys:String x:Key="language_zh">중국어</sys:String>
-  <sys:String x:Key="language_ko">한글</sys:String>
-  <sys:String x:Key="log">로그:</sys:String>
-  <sys:String x:Key="log_start">시작</sys:String>
-  <sys:String x:Key="log_close">닫기</sys:String>
-  <sys:String x:Key="function_description">기능 설명</sys:String>
-  <sys:String x:Key="do_you_want_apply">
-    수정된 구성을 컨트롤러에 저장하시겠습니까?
-  </sys:String>
-  <sys:String x:Key="yes">네</sys:String>
-  <sys:String x:Key="no">아니요</sys:String>
-  <sys:String x:Key="cancel">취소</sys:String>
-  <sys:String x:Key="ok">OK</sys:String>
-  <sys:String x:Key="connect_notice">
-    게임패드가 연결되지 않았습니다. 다음과 같은 방법으로 연결을 시도하십시오.
-  </sys:String>
-  <sys:String x:Key="connect_method_1">방법 1: 유선 연결</sys:String>
-  <sys:String x:Key="connect_method_2">방법 2: 무선 연결</sys:String>
-  <sys:String x:Key="connect_method_data_cable_desc">
-    게임패드를 켠 후 데이터 케이블을 PC에 연결
-  </sys:String>
-  <sys:String x:Key="connect_method_receiver_desc">
-    1. 게임패드를 켜고 동글을 PC에 연결하십시오. ; 2. 게임패드가 블루투스 모드(LED1 점등)에 있는 경우,【)))】+【A】를 3초 동안 길게 눌러 2.4G 무선모드로 전환해야 합니다.(LED2 점등)
-  </sys:String>
-  <sys:String x:Key="open_the_gamepad">게임패드 켜기</sys:String>
-  <sys:String x:Key="insert_wireless_connector">무선 동글 연결</sys:String>
-  <sys:String x:Key="connect_led2_desc">LED2 : 2.4G 무선모드 상태</sys:String>
-  <sys:String x:Key="connect_switch_mode">
-    【)))】+【A】버튼 3초 눌러 모드 변경
-  </sys:String>
-  <sys:String x:Key="enter_flydigi_space_station">
-    PC모드 플라이디지 스페이스-&gt;
-  </sys:String>
-  <sys:String x:Key="enter_flydigi_space_station_switch">
-    스위치 모드 플라이디지 스페이스-&gt;
-  </sys:String>
-  <sys:String x:Key="config">구성</sys:String>
-  <sys:String x:Key="config1">구성1</sys:String>
-  <sys:String x:Key="config2">구성2</sys:String>
-  <sys:String x:Key="config3">구성3</sys:String>
-  <sys:String x:Key="config4">구성4</sys:String>
-  <sys:String x:Key="frequently_used_keys">자주 사용하는 키</sys:String>
-  <sys:String x:Key="key">키</sys:String>
-  <sys:String x:Key="macro">매크로</sys:String>
-  <sys:String x:Key="mapping_to">맵핑 대상</sys:String>
-  <sys:String x:Key="lighting_mode">조명 모드</sys:String>
-  <sys:String x:Key="joystick_curve">조이스틱 곡선</sys:String>
-  <sys:String x:Key="left_joystick">왼쪽</sys:String>
-  <sys:String x:Key="right_joystick">오른쪽</sys:String>
-  <sys:String x:Key="config_setting">구성 설정</sys:String>
-  <sys:String x:Key="test">테스트</sys:String>
-  <sys:String x:Key="apply_to_gamepad">적용</sys:String>
-  <sys:String x:Key="light_adjustment">조명 모드</sys:String>
-  <sys:String x:Key="basic_adjustment">기본</sys:String>
-  <sys:String x:Key="key_adjustment">키</sys:String>
-  <sys:String x:Key="joystick_adjustment">조이스틱</sys:String>
-  <sys:String x:Key="sensing_adjustment">자이로 센서</sys:String>
-  <sys:String x:Key="trigger_adjustment">트리거</sys:String>
-  <sys:String x:Key="mode">모드</sys:String>
-  <sys:String x:Key="led_mode_alert">계속 켜짐</sys:String>
-  <sys:String x:Key="led_mode_hunt">버튼 누르면 켜짐</sys:String>
-  <sys:String x:Key="led_mode_float">자동 색상 전환</sys:String>
-  <sys:String x:Key="led_mode_hide">점멸</sys:String>
-  <sys:String x:Key="led_mode_close">닫기</sys:String>
-  <sys:String x:Key="led_mode_alert_desc">계속 켜짐</sys:String>
-  <sys:String x:Key="led_mode_hunt_desc">버튼 누르면 켜짐</sys:String>
-  <sys:String x:Key="led_mode_float_desc">자동 색상 전환</sys:String>
-  <sys:String x:Key="led_mode_hide_desc">점멸</sys:String>
-  <sys:String x:Key="color">컬러</sys:String>
-  <sys:String x:Key="color1">컬러1</sys:String>
-  <sys:String x:Key="color2">컬러2</sys:String>
-  <sys:String x:Key="brightness">밝기</sys:String>
-  <sys:String x:Key="time">시간</sys:String>
-  <sys:String x:Key="recommend">추천</sys:String>
-  <sys:String x:Key="front">전면</sys:String>
-  <sys:String x:Key="side">윗면</sys:String>
-  <sys:String x:Key="back">후면</sys:String>
-  <sys:String x:Key="front_key">전면 키</sys:String>
-  <sys:String x:Key="side_key">윗면 키</sys:String>
-  <sys:String x:Key="back_key">후면 키</sys:String>
-  <sys:String x:Key="sensitivity">감도</sys:String>
-  <sys:String x:Key="sensitivity_curve">감도 곡선</sys:String>
-  <sys:String x:Key="default">기본</sys:String>
-  <sys:String x:Key="permanent_output">연속 출력</sys:String>
-  <sys:String x:Key="immediate">즉시</sys:String>
-  <sys:String x:Key="delay">지연</sys:String>
-  <sys:String x:Key="input">입력</sys:String>
-  <sys:String x:Key="output">출력</sys:String>
-  <sys:String x:Key="sensing_maps_to">맵핑 대상</sys:String>
-  <sys:String x:Key="remote_sensing_maps_to">맵핑 대상</sys:String>
-  <sys:String x:Key="remote_sensing_maps_to_tip">
-    이런 식으로 2개의 키를 동시에 추가할 수 있습니다.
-  </sys:String>
-  <sys:String x:Key="open_sensing_mapping_method">센서 작동 방식</sys:String>
-  <sys:String x:Key="press_open_or_close">눌러서 켜기/끄기</sys:String>
-  <sys:String x:Key="hold_press_release_close">누른 상태에서 작동</sys:String>
-  <sys:String x:Key="open_key">작동 버튼</sys:String>
-  <sys:String x:Key="zone_of_game_joystick">조이스틱의 데드존</sys:String>
-  <sys:String x:Key="key_attributes">주요 속성</sys:String>
-  <sys:String x:Key="trigger_method">트리거</sys:String>
-  <sys:String x:Key="click">클릭</sys:String>
-  <sys:String x:Key="pressing">홀드</sys:String>
-  <sys:String x:Key="key_pressed">키 누름</sys:String>
-  <sys:String x:Key="key_released">키 떼기</sys:String>
-  <sys:String x:Key="total_time">총 시간</sys:String>
-  <sys:String x:Key="key_value">키 값</sys:String>
-  <sys:String x:Key="time_from_macro_start">매크로 시작 시간</sys:String>
-  <sys:String x:Key="current_action_duration">현재 작업 시간</sys:String>
-  <sys:String x:Key="the_green_bar_desc">매크로가 시작한 시간을 나타냅니다.</sys:String>
-  <sys:String x:Key="the_blue_bar_desc">현재 작업 시간을 나타냅니다.</sys:String>
-  <sys:String x:Key="record">기록</sys:String>
-  <sys:String x:Key="re_record">다시 기록</sys:String>
-  <sys:String x:Key="stop">중지</sys:String>
-  <sys:String x:Key="clear">클리어</sys:String>
-  <sys:String x:Key="please_control_the_gamepad">손잡이를 조종해 주세요</sys:String>
-  <sys:String x:Key="key_test">키 테스트</sys:String>
-  <sys:String x:Key="factory_test">공장 게임패드 테스트</sys:String>
-  <sys:String x:Key="key_setting_desc">
-    키 설정: 키를 다른 키에 맵핑할 수 있고 다양한 조작 방법으로 확장할 수 있습니다. 매크로는 여러 동작을 기록하고 하나의 키로 수행할 수 있습니다.
-  </sys:String>
-  <sys:String x:Key="joystick_setting_desc">
-    조이스틱 설정 : 게임의 종류에 따라 조이스틱의 [감도 곡선]을 조절할 수 있습니다.
-  </sys:String>
-  <sys:String x:Key="sensing_setting_desc">
-    모션 센서 조절: 게임 유형에 따라 자이로센서의 민감도를 조절할 수 있습니다. 모션 감지를 비활성화하려면 [끄기]로 설정하십시오.
-  </sys:String>
-  <sys:String x:Key="sensing_mode_setting_desc">
-    모션 센서 조절: 게임 유형에 따라 자이로센서의 민감도를 조절할 수 있습니다. 모션 감지를 비활성화하려면 [끄기]로 설정하십시오.
-  </sys:String>
-  <sys:String x:Key="add_least_one_action">하나 이상의 매크로 동작 추가</sys:String>
-  <sys:String x:Key="special_key_button_is_forbidden">
-    현재 매크로 설정은 C/Z 및 M1-M6 키를 지원하지 않습니다.
-  </sys:String>
-  <sys:String x:Key="special_key_ltrt_button_is_forbidden">
-    현재 매크로 설정은 LT/RT 키를 지원하지 않습니다.
-  </sys:String>
-  <sys:String x:Key="special_key_self_button_is_forbidden">
-    현재 매크로 설정은 자체 키를 지원하지 않습니다.
-  </sys:String>
-  <sys:String x:Key="please_stop_recording">기록을 멈춰주십시오.</sys:String>
-  <sys:String x:Key="the_maximum_macro_actions">
-    매크로 작업의 최대 수는 다음과 같습니다 :
-  </sys:String>
-  <sys:String x:Key="click_record_button_to_start">
-    기록 버튼을 클릭하여 기록을 시작하십시오.
-  </sys:String>
-  <sys:String x:Key="reading_firmare">컨트롤러 펌웨어 정보 확인 중…</sys:String>
-  <sys:String x:Key="only_support_notice">
-    플라이디지 스페이스는 현재 Apex 2 만 지원합니다. 추후 다른 게임패드도 업데이트 예정입니다.
-  </sys:String>
-  <sys:String x:Key="new_version_of_flydigi_space">플라이디지 스페이스의 새 버전</sys:String>
-  <sys:String x:Key="new_version_of_flydigi_space_fm">새 버전 펌웨어</sys:String>
-  <sys:String x:Key="download_progress">다운로드 진행률 :</sys:String>
-  <sys:String x:Key="start_new_version">시작</sys:String>
-  <sys:String x:Key="download_again">다시 다운로드</sys:String>
-  <sys:String x:Key="new_version">새로운 버전</sys:String>
-  <sys:String x:Key="apply_successed_notice">성공</sys:String>
-  <sys:String x:Key="save_successed_notice">성공</sys:String>
-  <sys:String x:Key="apply_successed_notice_desc">
-    적용하려면 "게임으로 이동"을 클릭하십시오.
-  </sys:String>
-  <sys:String x:Key="play_game">게임하기</sys:String>
-  <sys:String x:Key="config_test">구성 테스트</sys:String>
-  <sys:String x:Key="apply_failed_notice">
-    게임패드에 적용하지 못했습니다. 다시 적용하십시오.
-  </sys:String>
-  <sys:String x:Key="config_apply_failed">적용 실패</sys:String>
-  <sys:String x:Key="current_version_is_the_latest">현재 버전은 최신 버전 입니다.</sys:String>
-  <sys:String x:Key="please_check_network">네트워크를 확인해 주십시오.</sys:String>
-  <sys:String x:Key="notice">공지</sys:String>
-  <sys:String x:Key="update">업데이트</sys:String>
-  <sys:String x:Key="start_app">업그레이드</sys:String>
-  <sys:String x:Key="maximum_number_of_macro">
-    최대 매크로 수는 다음과 같습니다 :
-  </sys:String>
-  <sys:String x:Key="maximum_number_of_macro_actions">
-    매크로 작업의 최대 수는 다음과 같습니다 :
-  </sys:String>
-  <sys:String x:Key="please_connect_gamepad_first">먼저 게임패드를 연결하십시오.</sys:String>
-  <sys:String x:Key="your_current_fw_lower">
-    현재 게임패드 펌웨어 버전이 낮습니다. 펌웨어를 최신으로 업그레이드 후 다시 연결하십시오.
-  </sys:String>
-  <sys:String x:Key="reconnect">다시 연결</sys:String>
-  <sys:String x:Key="tutorial">튜토리얼</sys:String>
-  <sys:String x:Key="motion_close">끄기</sys:String>
-  <sys:String x:Key="a2_connect_tutorial">Apex 2</sys:String>
-  <sys:String x:Key="f1_connect_tutorial">Vader 2</sys:String>
-  <sys:String x:Key="f1p_connect_tutorial">Vader 2프로</sys:String>
-  <sys:String x:Key="connect_switch_mode_f1">모드전환:【+】+【A】4초간 누름</sys:String>
-  <sys:String x:Key="connect_led2_desc_f1">흰색LED : 2.4G 무선 모드</sys:String>
-  <sys:String x:Key="connect_led2_desc_f1p">흰색LED : 2.4G 무선 모드</sys:String>
-  <sys:String x:Key="connect_method_receiver_desc_f1">
-    1. 게임패드를 켜고 동글을 PC에 연결하십시오. ; 2. 게임패드가 블루투스 모드(LED1 점등)에 있는 경우,【+】+【A】를 4초 동안 길게 눌러 2.4G 무선모드로 전환해야 합니다.(LED2 점등)
-  </sys:String>
-  <sys:String x:Key="connect_method_receiver_desc_f1p">
-    1. 게임패드를 켜고 동글을 PC에 연결하십시오. ; 2. 게임패드가 블루투스 모드(LED1 점등)에 있는 경우,【+】+【A】를 4초 동안 길게 눌러 2.4G 무선모드로 전환해야 합니다.(LED2 점등)
-  </sys:String>
-  <sys:String x:Key="config_reset">구성 초기화</sys:String>
-  <sys:String x:Key="config_reset_notice">
-    현재 구성을 기본값으로 재설정 하시겠습니까?
-  </sys:String>
-  <sys:String x:Key="reset_config_success">구성 초기화 성공</sys:String>
-  <sys:String x:Key="reset_config_fail">구성 초기화 실패</sys:String>
-  <sys:String x:Key="help_center">도움말</sys:String>
-  <sys:String x:Key="go_help_center">도움말&gt;</sys:String>
-  <sys:String x:Key="tips_apply_config">
-    적용하려면 컨트롤러에 구성을 적용해야 합니다.
-  </sys:String>
-  <sys:String x:Key="tips_keys_change_config_a2">
-    【Menu】키와 【Back】키를 클릭하여 구성을 전환합니다.
-  </sys:String>
-  <sys:String x:Key="tips_keys_change_config_f1">
-    【+】키와 【-】키를 클릭하여 구성을 전환합니다.
-  </sys:String>
-  <sys:String x:Key="tips_switch_xinput_step1">모드 전환 중…</sys:String>
-  <sys:String x:Key="tips_switch_xinput_step2">데이터 읽기…</sys:String>
-  <sys:String x:Key="tips_switch_xinput_step3">페이지 로드 중…</sys:String>
-  <sys:String x:Key="tips_QQ">이메일 :</sys:String>
-  <sys:String x:Key="go_weixin">
-    oversea_customer@flydigi.com
-  </sys:String>
-  <sys:String x:Key="basic_vibration_intensity">진동 세기</sys:String>
-  <sys:String x:Key="vibration">진동 세기</sys:String>
-  <sys:String x:Key="left_motor">왼쪽 모터</sys:String>
-  <sys:String x:Key="test_motor">테스트</sys:String>
-  <sys:String x:Key="motor_level_242">약함</sys:String>
-  <sys:String x:Key="motor_level_0">중간</sys:String>
-  <sys:String x:Key="motor_level_243">강함</sys:String>
-  <sys:String x:Key="motor_level_241">끄기</sys:String>
-  <sys:String x:Key="motor_level_255">중간</sys:String>
-  <sys:String x:Key="motor_level_1">약함</sys:String>
-  <sys:String x:Key="motor_level_2">강함</sys:String>
-  <sys:String x:Key="motor_level_3">끄기</sys:String>
-  <sys:String x:Key="motor_level_5">레벨 1</sys:String>
-  <sys:String x:Key="right_motor">오른쪽 모터</sys:String>
-  <sys:String x:Key="basic_roulette_mapping">룰렛 맵핑</sys:String>
-  <sys:String x:Key="basic_adjusting_colour">색상 조절</sys:String>
-  <sys:String x:Key="wired">유선</sys:String>
-  <sys:String x:Key="wireless">무선</sys:String>
-  <sys:String x:Key="unknown">알 수 없음</sys:String>
-  <sys:String x:Key="The_handle_does_not_support_PC_firmware_upgrade">
-    이 컨트롤러는 PC펌웨어 업그레이드를 지원하지 않습니다.
-  </sys:String>
-  <sys:String x:Key="Firmware_version_not_obtained">펌웨어 버전을 얻지 못했습니다.</sys:String>
-  <sys:String x:Key="open_pc_error">
-    최신 버전을 다운로드 하려면 공식 웹 사이트로 이동하십시오.
-  </sys:String>
-  <sys:String x:Key="config_apply_success_title">구성 적용 성공</sys:String>
-  <sys:String x:Key="config_apply_success_content_tip">
-    컨트롤러를 스위치 모드로 전환하려면 다음 방법을 따르십시오.
-  </sys:String>
-  <sys:String x:Key="config_apply_success_content_wired">
-    컨트롤러에서 PC로 연결되는 케이블을 분리했습니다. 첫 번째 표시등이 주황색으로 바뀔 때까지 "+"와 "X"를 길게 눌러주십시오.
-  </sys:String>
-  <sys:String x:Key="config_apply_success_contnet_Wireless">
-    첫 번째 표시등이 주황색으로 바뀔 때까지 "+"와"X"를 길게 누릅니다.
-  </sys:String>
-  <sys:String x:Key="config_apply_success_confirm">확인</sys:String>
-  <sys:String x:Key="tipinfo1">
-    컨트롤러를 연결하는 중입니다. 잠시만 기다려 주십시오…
-  </sys:String>
-  <sys:String x:Key="tipinfo2">
-    이 컨트롤러는 스위치 모드를 지원하지 않습니다.
-  </sys:String>
-  <sys:String x:Key="tipinfo3">
-    컨트롤러 펌웨어 버전이 낮습니다. 펌웨어를 업그레이드 하십시오.
-  </sys:String>
-  <sys:String x:Key="tipinfo4">
-    현재 페이지는 테스트를 지원하지 않습니다.
-  </sys:String>
-  <sys:String x:Key="pcMode">PC 모드 설정</sys:String>
-  <sys:String x:Key="switchMode">스위치 모드 설정</sys:String>
-  <sys:String x:Key="joytick_reset_title">스틱보정</sys:String>
-  <sys:String x:Key="joytick_reset_ok">보정마침</sys:String>
-  <sys:String x:Key="joytick_reset_tip">
-    3초간 테이블에 게임패드를 고정시킨 후 좌우 스틱을 끝까지 밀어서 천천히 두 바퀴 회전시키고 LT와 RT를 동시에 두 번 눌러 조작 완료 후 "보정마침" 버튼을 클릭하시면 됩니다.
-  </sys:String>
-  <sys:String x:Key="mustInstallDriver">드라이버를 설치해야 합니다.</sys:String>
-  <sys:String x:Key="driver_install_title">업그레이드 드라이버 누락</sys:String>
-  <sys:String x:Key="driver_install_btn">설치</sys:String>
-  <sys:String x:Key="driver_install_tip">
-    시스템에 필요한 드라이버가 누락된 것으로 감지되었습니다. 업그레이드하기 전에 드라이버를 설치하십시오.
-  </sys:String>
-  <sys:String x:Key="Calibrate_The_Joystick_title">조이스틱 보정</sys:String>
-  <sys:String x:Key="Calibrate_The_Joystick_content">
-    이 업그레이드는 조이스틱을 보정하지 않으면 조이스틱을 사용할 수 없습니다. SELECT+START+R3(오른쪽 조이스틱 누르기)을 동시에 누르십시오. 빨간색 표시등이 깜박이며 보정 모드로 들어갑니다. 컨트롤러를 데스크탑 스탠드에 두십시오. 3초 동안 각 조이스틱을 최대 범위로 밀고 느린 회전 2회, LT 및 RT를 두 번 누릅니다. 회전이 완료되면 "마침" 버튼을 눌러 조이스틱 보정을 마칩니다.
-  </sys:String>
-  <sys:String x:Key="Calibrate_The_Joystick_btn_ok">OK</sys:String>
-  <sys:String x:Key="Calibrate_The_Joystick_btn_go">보정하기</sys:String>
-  <sys:String x:Key="save_changes">Save changes</sys:String>
+    <sys:String x:Key="app_name">플라이디지 스페이스</sys:String>
+    <sys:String x:Key="app_version">앱 버전 :</sys:String>
+    <sys:String x:Key="check_for_updates">업데이트&gt;</sys:String>
+    <sys:String x:Key="firmware_version">펌웨어 버전 :</sys:String>
+    <sys:String x:Key="dongle_version">동글 버전 :</sys:String>
+    <sys:String x:Key="device_power">전원</sys:String>
+    <sys:String x:Key="customer_service">고객 서비스 : 4008503336</sys:String>
+    <sys:String x:Key="language_text">언어:</sys:String>
+    <sys:String x:Key="language_en">영어</sys:String>
+    <sys:String x:Key="language_zh">중국어</sys:String>
+    <sys:String x:Key="language_ko">한글</sys:String>
+    <sys:String x:Key="log">로그:</sys:String>
+    <sys:String x:Key="log_start">시작</sys:String>
+    <sys:String x:Key="log_close">닫기</sys:String>
+    <sys:String x:Key="function_description">기능 설명</sys:String>
+    <sys:String x:Key="do_you_want_apply">
+        수정된 구성을 컨트롤러에 저장하시겠습니까?
+    </sys:String>
+    <sys:String x:Key="yes">네</sys:String>
+    <sys:String x:Key="no">아니요</sys:String>
+    <sys:String x:Key="cancel">취소</sys:String>
+    <sys:String x:Key="ok">OK</sys:String>
+    <sys:String x:Key="connect_notice">
+        게임패드가 연결되지 않았습니다. 다음과 같은 방법으로 연결을 시도하십시오.
+    </sys:String>
+    <sys:String x:Key="connect_method_1">방법 1: 유선 연결</sys:String>
+    <sys:String x:Key="connect_method_2">방법 2: 무선 연결</sys:String>
+    <sys:String x:Key="connect_method_data_cable_desc">
+        게임패드를 켠 후 데이터 케이블을 PC에 연결
+    </sys:String>
+    <sys:String x:Key="connect_method_receiver_desc">
+        1. 게임패드를 켜고 동글을 PC에 연결하십시오. ; 2. 게임패드가 블루투스 모드(LED1 점등)에 있는 경우,【)))】+【A】를 3초 동안 길게 눌러 2.4G 무선모드로 전환해야 합니다.(LED2 점등)
+    </sys:String>
+    <sys:String x:Key="open_the_gamepad">게임패드 켜기</sys:String>
+    <sys:String x:Key="insert_wireless_connector">무선 동글 연결</sys:String>
+    <sys:String x:Key="connect_led2_desc">LED2 : 2.4G 무선모드 상태</sys:String>
+    <sys:String x:Key="connect_switch_mode">
+        【)))】+【A】버튼 3초 눌러 모드 변경
+    </sys:String>
+    <sys:String x:Key="enter_flydigi_space_station">
+        PC모드 플라이디지 스페이스-&gt;
+    </sys:String>
+    <sys:String x:Key="enter_flydigi_space_station_switch">
+        스위치 모드 플라이디지 스페이스-&gt;
+    </sys:String>
+    <sys:String x:Key="config">구성</sys:String>
+    <sys:String x:Key="config1">구성1</sys:String>
+    <sys:String x:Key="config2">구성2</sys:String>
+    <sys:String x:Key="config3">구성3</sys:String>
+    <sys:String x:Key="config4">구성4</sys:String>
+    <sys:String x:Key="frequently_used_keys">자주 사용하는 키</sys:String>
+    <sys:String x:Key="key">키</sys:String>
+    <sys:String x:Key="macro">매크로</sys:String>
+    <sys:String x:Key="mapping_to">맵핑 대상</sys:String>
+    <sys:String x:Key="lighting_mode">조명 모드</sys:String>
+    <sys:String x:Key="joystick_curve">조이스틱 곡선</sys:String>
+    <sys:String x:Key="left_joystick">왼쪽</sys:String>
+    <sys:String x:Key="right_joystick">오른쪽</sys:String>
+    <sys:String x:Key="config_setting">구성 설정</sys:String>
+    <sys:String x:Key="test">테스트</sys:String>
+    <sys:String x:Key="apply_to_gamepad">적용</sys:String>
+    <sys:String x:Key="light_adjustment">조명 모드</sys:String>
+    <sys:String x:Key="basic_adjustment">기본</sys:String>
+    <sys:String x:Key="key_adjustment">키</sys:String>
+    <sys:String x:Key="joystick_adjustment">조이스틱</sys:String>
+    <sys:String x:Key="sensing_adjustment">자이로 센서</sys:String>
+    <sys:String x:Key="trigger_adjustment">트리거</sys:String>
+    <sys:String x:Key="mode">모드</sys:String>
+    <sys:String x:Key="led_mode_alert">계속 켜짐</sys:String>
+    <sys:String x:Key="led_mode_hunt">버튼 누르면 켜짐</sys:String>
+    <sys:String x:Key="led_mode_float">자동 색상 전환</sys:String>
+    <sys:String x:Key="led_mode_hide">점멸</sys:String>
+    <sys:String x:Key="led_mode_close">닫기</sys:String>
+    <sys:String x:Key="led_mode_alert_desc">계속 켜짐</sys:String>
+    <sys:String x:Key="led_mode_hunt_desc">버튼 누르면 켜짐</sys:String>
+    <sys:String x:Key="led_mode_float_desc">자동 색상 전환</sys:String>
+    <sys:String x:Key="led_mode_hide_desc">점멸</sys:String>
+    <sys:String x:Key="color">컬러</sys:String>
+    <sys:String x:Key="color1">컬러1</sys:String>
+    <sys:String x:Key="color2">컬러2</sys:String>
+    <sys:String x:Key="brightness">밝기</sys:String>
+    <sys:String x:Key="time">시간</sys:String>
+    <sys:String x:Key="recommend">추천</sys:String>
+    <sys:String x:Key="front">전면</sys:String>
+    <sys:String x:Key="side">윗면</sys:String>
+    <sys:String x:Key="back">후면</sys:String>
+    <sys:String x:Key="front_key">전면 키</sys:String>
+    <sys:String x:Key="side_key">윗면 키</sys:String>
+    <sys:String x:Key="back_key">후면 키</sys:String>
+    <sys:String x:Key="sensitivity">감도</sys:String>
+    <sys:String x:Key="sensitivity_curve">감도 곡선</sys:String>
+    <sys:String x:Key="default">기본</sys:String>
+    <sys:String x:Key="permanent_output">연속 출력</sys:String>
+    <sys:String x:Key="immediate">즉시</sys:String>
+    <sys:String x:Key="delay">지연</sys:String>
+    <sys:String x:Key="input">입력</sys:String>
+    <sys:String x:Key="output">출력</sys:String>
+    <sys:String x:Key="sensing_maps_to">맵핑 대상</sys:String>
+    <sys:String x:Key="remote_sensing_maps_to">맵핑 대상</sys:String>
+    <sys:String x:Key="remote_sensing_maps_to_tip">
+        이런 식으로 2개의 키를 동시에 추가할 수 있습니다.
+    </sys:String>
+    <sys:String x:Key="open_sensing_mapping_method">센서 작동 방식</sys:String>
+    <sys:String x:Key="press_open_or_close">눌러서 켜기/끄기</sys:String>
+    <sys:String x:Key="hold_press_release_close">누른 상태에서 작동</sys:String>
+    <sys:String x:Key="open_key">작동 버튼</sys:String>
+    <sys:String x:Key="zone_of_game_joystick">조이스틱의 데드존</sys:String>
+    <sys:String x:Key="key_attributes">주요 속성</sys:String>
+    <sys:String x:Key="trigger_method">트리거</sys:String>
+    <sys:String x:Key="click">클릭</sys:String>
+    <sys:String x:Key="pressing">홀드</sys:String>
+    <sys:String x:Key="key_pressed">키 누름</sys:String>
+    <sys:String x:Key="key_released">키 떼기</sys:String>
+    <sys:String x:Key="total_time">총 시간</sys:String>
+    <sys:String x:Key="key_value">키 값</sys:String>
+    <sys:String x:Key="time_from_macro_start">매크로 시작 시간</sys:String>
+    <sys:String x:Key="current_action_duration">현재 작업 시간</sys:String>
+    <sys:String x:Key="the_green_bar_desc">매크로가 시작한 시간을 나타냅니다.</sys:String>
+    <sys:String x:Key="the_blue_bar_desc">현재 작업 시간을 나타냅니다.</sys:String>
+    <sys:String x:Key="record">기록</sys:String>
+    <sys:String x:Key="re_record">다시 기록</sys:String>
+    <sys:String x:Key="stop">중지</sys:String>
+    <sys:String x:Key="clear">클리어</sys:String>
+    <sys:String x:Key="please_control_the_gamepad">손잡이를 조종해 주세요</sys:String>
+    <sys:String x:Key="key_test">키 테스트</sys:String>
+    <sys:String x:Key="factory_test">공장 게임패드 테스트</sys:String>
+    <sys:String x:Key="key_setting_desc">
+        키 설정: 키를 다른 키에 맵핑할 수 있고 다양한 조작 방법으로 확장할 수 있습니다. 매크로는 여러 동작을 기록하고 하나의 키로 수행할 수 있습니다.
+    </sys:String>
+    <sys:String x:Key="joystick_setting_desc">
+        조이스틱 설정 : 게임의 종류에 따라 조이스틱의 [감도 곡선]을 조절할 수 있습니다.
+    </sys:String>
+    <sys:String x:Key="sensing_setting_desc">
+        모션 센서 조절: 게임 유형에 따라 자이로센서의 민감도를 조절할 수 있습니다. 모션 감지를 비활성화하려면 [끄기]로 설정하십시오.
+    </sys:String>
+    <sys:String x:Key="sensing_mode_setting_desc">
+        모션 센서 조절: 게임 유형에 따라 자이로센서의 민감도를 조절할 수 있습니다. 모션 감지를 비활성화하려면 [끄기]로 설정하십시오.
+    </sys:String>
+    <sys:String x:Key="add_least_one_action">하나 이상의 매크로 동작 추가</sys:String>
+    <sys:String x:Key="special_key_button_is_forbidden">
+        현재 매크로 설정은 C/Z 및 M1-M6 키를 지원하지 않습니다.
+    </sys:String>
+    <sys:String x:Key="special_key_ltrt_button_is_forbidden">
+        현재 매크로 설정은 LT/RT 키를 지원하지 않습니다.
+    </sys:String>
+    <sys:String x:Key="special_key_self_button_is_forbidden">
+        현재 매크로 설정은 자체 키를 지원하지 않습니다.
+    </sys:String>
+    <sys:String x:Key="please_stop_recording">기록을 멈춰주십시오.</sys:String>
+    <sys:String x:Key="the_maximum_macro_actions">
+        매크로 작업의 최대 수는 다음과 같습니다 :
+    </sys:String>
+    <sys:String x:Key="click_record_button_to_start">
+        기록 버튼을 클릭하여 기록을 시작하십시오.
+    </sys:String>
+    <sys:String x:Key="reading_firmare">컨트롤러 펌웨어 정보 확인 중…</sys:String>
+    <sys:String x:Key="only_support_notice">
+        플라이디지 스페이스는 현재 Apex 2 만 지원합니다. 추후 다른 게임패드도 업데이트 예정입니다.
+    </sys:String>
+    <sys:String x:Key="new_version_of_flydigi_space">플라이디지 스페이스의 새 버전</sys:String>
+    <sys:String x:Key="new_version_of_flydigi_space_fm">새 버전 펌웨어</sys:String>
+    <sys:String x:Key="download_progress">다운로드 진행률 :</sys:String>
+    <sys:String x:Key="start_new_version">시작</sys:String>
+    <sys:String x:Key="download_again">다시 다운로드</sys:String>
+    <sys:String x:Key="new_version">새로운 버전</sys:String>
+    <sys:String x:Key="apply_successed_notice">성공</sys:String>
+    <sys:String x:Key="save_successed_notice">성공</sys:String>
+    <sys:String x:Key="apply_successed_notice_desc">
+        적용하려면 "게임으로 이동"을 클릭하십시오.
+    </sys:String>
+    <sys:String x:Key="play_game">게임하기</sys:String>
+    <sys:String x:Key="config_test">구성 테스트</sys:String>
+    <sys:String x:Key="apply_failed_notice">
+        게임패드에 적용하지 못했습니다. 다시 적용하십시오.
+    </sys:String>
+    <sys:String x:Key="config_apply_failed">적용 실패</sys:String>
+    <sys:String x:Key="current_version_is_the_latest">현재 버전은 최신 버전 입니다.</sys:String>
+    <sys:String x:Key="please_check_network">네트워크를 확인해 주십시오.</sys:String>
+    <sys:String x:Key="notice">공지</sys:String>
+    <sys:String x:Key="update">업데이트</sys:String>
+    <sys:String x:Key="start_app">업그레이드</sys:String>
+    <sys:String x:Key="maximum_number_of_macro">
+        최대 매크로 수는 다음과 같습니다 :
+    </sys:String>
+    <sys:String x:Key="maximum_number_of_macro_actions">
+        매크로 작업의 최대 수는 다음과 같습니다 :
+    </sys:String>
+    <sys:String x:Key="please_connect_gamepad_first">먼저 게임패드를 연결하십시오.</sys:String>
+    <sys:String x:Key="your_current_fw_lower">
+        현재 게임패드 펌웨어 버전이 낮습니다. 펌웨어를 최신으로 업그레이드 후 다시 연결하십시오.
+    </sys:String>
+    <sys:String x:Key="reconnect">다시 연결</sys:String>
+    <sys:String x:Key="tutorial">튜토리얼</sys:String>
+    <sys:String x:Key="motion_close">끄기</sys:String>
+    <sys:String x:Key="a2_connect_tutorial">Apex 2</sys:String>
+    <sys:String x:Key="f1_connect_tutorial">Vader 2</sys:String>
+    <sys:String x:Key="f1p_connect_tutorial">Vader 2프로</sys:String>
+    <sys:String x:Key="connect_switch_mode_f1">모드전환:【+】+【A】4초간 누름</sys:String>
+    <sys:String x:Key="connect_led2_desc_f1">흰색LED : 2.4G 무선 모드</sys:String>
+    <sys:String x:Key="connect_led2_desc_f1p">흰색LED : 2.4G 무선 모드</sys:String>
+    <sys:String x:Key="connect_method_receiver_desc_f1">
+        1. 게임패드를 켜고 동글을 PC에 연결하십시오. ; 2. 게임패드가 블루투스 모드(LED1 점등)에 있는 경우,【+】+【A】를 4초 동안 길게 눌러 2.4G 무선모드로 전환해야 합니다.(LED2 점등)
+    </sys:String>
+    <sys:String x:Key="connect_method_receiver_desc_f1p">
+        1. 게임패드를 켜고 동글을 PC에 연결하십시오. ; 2. 게임패드가 블루투스 모드(LED1 점등)에 있는 경우,【+】+【A】를 4초 동안 길게 눌러 2.4G 무선모드로 전환해야 합니다.(LED2 점등)
+    </sys:String>
+    <sys:String x:Key="config_reset">구성 초기화</sys:String>
+    <sys:String x:Key="config_reset_notice">
+        현재 구성을 기본값으로 재설정 하시겠습니까?
+    </sys:String>
+    <sys:String x:Key="reset_config_success">구성 초기화 성공</sys:String>
+    <sys:String x:Key="reset_config_fail">구성 초기화 실패</sys:String>
+    <sys:String x:Key="help_center">도움말</sys:String>
+    <sys:String x:Key="go_help_center">도움말&gt;</sys:String>
+    <sys:String x:Key="tips_apply_config">
+        적용하려면 컨트롤러에 구성을 적용해야 합니다.
+    </sys:String>
+    <sys:String x:Key="tips_keys_change_config_a2">
+        【Menu】키와 【Back】키를 클릭하여 구성을 전환합니다.
+    </sys:String>
+    <sys:String x:Key="tips_keys_change_config_f1">
+        【+】키와 【-】키를 클릭하여 구성을 전환합니다.
+    </sys:String>
+    <sys:String x:Key="tips_switch_xinput_step1">모드 전환 중…</sys:String>
+    <sys:String x:Key="tips_switch_xinput_step2">데이터 읽기…</sys:String>
+    <sys:String x:Key="tips_switch_xinput_step3">페이지 로드 중…</sys:String>
+    <sys:String x:Key="tips_QQ">이메일 :</sys:String>
+    <sys:String x:Key="go_weixin">
+        oversea_customer@flydigi.com
+    </sys:String>
+    <sys:String x:Key="basic_vibration_intensity">진동 세기</sys:String>
+    <sys:String x:Key="vibration">진동 세기</sys:String>
+    <sys:String x:Key="left_motor">왼쪽 모터</sys:String>
+    <sys:String x:Key="test_motor">테스트</sys:String>
+    <sys:String x:Key="motor_level_242">약함</sys:String>
+    <sys:String x:Key="motor_level_0">중간</sys:String>
+    <sys:String x:Key="motor_level_243">강함</sys:String>
+    <sys:String x:Key="motor_level_241">끄기</sys:String>
+    <sys:String x:Key="motor_level_255">중간</sys:String>
+    <sys:String x:Key="motor_level_1">약함</sys:String>
+    <sys:String x:Key="motor_level_2">강함</sys:String>
+    <sys:String x:Key="motor_level_3">끄기</sys:String>
+    <sys:String x:Key="motor_level_5">레벨 1</sys:String>
+    <sys:String x:Key="right_motor">오른쪽 모터</sys:String>
+    <sys:String x:Key="basic_roulette_mapping">룰렛 맵핑</sys:String>
+    <sys:String x:Key="basic_adjusting_colour">색상 조절</sys:String>
+    <sys:String x:Key="wired">유선</sys:String>
+    <sys:String x:Key="wireless">무선</sys:String>
+    <sys:String x:Key="unknown">알 수 없음</sys:String>
+    <sys:String x:Key="The_handle_does_not_support_PC_firmware_upgrade">
+        이 컨트롤러는 PC펌웨어 업그레이드를 지원하지 않습니다.
+    </sys:String>
+    <sys:String x:Key="Firmware_version_not_obtained">펌웨어 버전을 얻지 못했습니다.</sys:String>
+    <sys:String x:Key="open_pc_error">
+        최신 버전을 다운로드 하려면 공식 웹 사이트로 이동하십시오.
+    </sys:String>
+    <sys:String x:Key="config_apply_success_title">구성 적용 성공</sys:String>
+    <sys:String x:Key="config_apply_success_content_tip">
+        컨트롤러를 스위치 모드로 전환하려면 다음 방법을 따르십시오.
+    </sys:String>
+    <sys:String x:Key="config_apply_success_content_wired">
+        컨트롤러에서 PC로 연결되는 케이블을 분리했습니다. 첫 번째 표시등이 주황색으로 바뀔 때까지 "+"와 "X"를 길게 눌러주십시오.
+    </sys:String>
+    <sys:String x:Key="config_apply_success_contnet_Wireless">
+        첫 번째 표시등이 주황색으로 바뀔 때까지 "+"와"X"를 길게 누릅니다.
+    </sys:String>
+    <sys:String x:Key="config_apply_success_confirm">확인</sys:String>
+    <sys:String x:Key="tipinfo1">
+        컨트롤러를 연결하는 중입니다. 잠시만 기다려 주십시오…
+    </sys:String>
+    <sys:String x:Key="tipinfo2">
+        이 컨트롤러는 스위치 모드를 지원하지 않습니다.
+    </sys:String>
+    <sys:String x:Key="tipinfo3">
+        컨트롤러 펌웨어 버전이 낮습니다. 펌웨어를 업그레이드 하십시오.
+    </sys:String>
+    <sys:String x:Key="tipinfo4">
+        현재 페이지는 테스트를 지원하지 않습니다.
+    </sys:String>
+    <sys:String x:Key="pcMode">PC 모드 설정</sys:String>
+    <sys:String x:Key="switchMode">스위치 모드 설정</sys:String>
+    <sys:String x:Key="joytick_reset_title">스틱보정</sys:String>
+    <sys:String x:Key="joytick_reset_ok">보정마침</sys:String>
+    <sys:String x:Key="joytick_reset_tip">
+        3초간 테이블에 게임패드를 고정시킨 후 좌우 스틱을 끝까지 밀어서 천천히 두 바퀴 회전시키고 LT와 RT를 동시에 두 번 눌러 조작 완료 후 "보정마침" 버튼을 클릭하시면 됩니다.
+    </sys:String>
+    <sys:String x:Key="mustInstallDriver">드라이버를 설치해야 합니다.</sys:String>
+    <sys:String x:Key="driver_install_title">업그레이드 드라이버 누락</sys:String>
+    <sys:String x:Key="driver_install_btn">설치</sys:String>
+    <sys:String x:Key="driver_install_tip">
+        시스템에 필요한 드라이버가 누락된 것으로 감지되었습니다. 업그레이드하기 전에 드라이버를 설치하십시오.
+    </sys:String>
+    <sys:String x:Key="Calibrate_The_Joystick_title">조이스틱 보정</sys:String>
+    <sys:String x:Key="Calibrate_The_Joystick_content">
+        이 업그레이드는 조이스틱을 보정하지 않으면 조이스틱을 사용할 수 없습니다. SELECT+START+R3(오른쪽 조이스틱 누르기)을 동시에 누르십시오. 빨간색 표시등이 깜박이며 보정 모드로 들어갑니다. 컨트롤러를 데스크탑 스탠드에 두십시오. 3초 동안 각 조이스틱을 최대 범위로 밀고 느린 회전 2회, LT 및 RT를 두 번 누릅니다. 회전이 완료되면 "마침" 버튼을 눌러 조이스틱 보정을 마칩니다.
+    </sys:String>
+    <sys:String x:Key="Calibrate_The_Joystick_btn_ok">OK</sys:String>
+    <sys:String x:Key="Calibrate_The_Joystick_btn_go">보정하기</sys:String>
+    <sys:String x:Key="save_changes">Save changes</sys:String>
+    <sys:String x:Key="export_config">Export config</sys:String>
+    <sys:String x:Key="import_config">Import config</sys:String>
 </ResourceDictionary>
