@@ -170,7 +170,7 @@ namespace WPFTest.UserControls
         private void ExportConfig_Click(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
-            dlg.FileName = "Config";
+            dlg.FileName = this.mConfig.Name;
             dlg.DefaultExt = ".flc";
             dlg.Filter = "Flydigi config files (*.flc)|*.flc|All files (*.*)|*.*";
             dlg.FilterIndex = 0;

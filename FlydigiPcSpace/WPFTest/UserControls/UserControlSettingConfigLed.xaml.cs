@@ -83,7 +83,8 @@ namespace WPFTest.UserControls
 
         public UserControlSettingConfigLed()
         {
-            this.InitializeComponent();
+            this.InitializeComponent();    
+            this.mTitle0.setTitle(Application.Current.FindResource((object)"description_name").ToString());
             this.mTitle1.setTitle(Application.Current.FindResource((object)"basic_vibration_intensity").ToString());
             this.mTitle2.setTitle(Application.Current.FindResource((object)"basic_roulette_mapping").ToString());
             this.mTitle3.setTitle(Application.Current.FindResource((object)"basic_adjusting_colour").ToString());

@@ -469,7 +469,7 @@ namespace ApexSpace
       LunpanBean lunpanBean = new LunpanBean();
       ConfigBean modeDefaultConfig = new ConfigBean();
       modeDefaultConfig.Version = "0.1";
-      modeDefaultConfig.Name = "我的默认配置";
+      modeDefaultConfig.Name = "Padrão";
       modeDefaultConfig.Led = ledBean;
       modeDefaultConfig.ListKeyMapping.AddRange((IEnumerable<int>) collection2);
       modeDefaultConfig.JoyMapping = joyMappingBean;
@@ -578,7 +578,7 @@ namespace ApexSpace
       LunpanBean lunpanBean = new LunpanBean();
       ConfigBean defaultConfig = new ConfigBean();
       defaultConfig.Version = "0.1";
-      defaultConfig.Name = "我的默认配置";
+      defaultConfig.Name = "Padrão";
       defaultConfig.Led = ledBean;
       defaultConfig.ListKeyMapping.AddRange((IEnumerable<int>) collection2);
       defaultConfig.JoyMapping = joyMappingBean;
